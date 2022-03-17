@@ -6,7 +6,7 @@
     <div class="img sp-pc pc"><img src="/assets/img/local-professionals-news-map01.svg" alt=""></div>
   </div>
   <div class="main-aside-wrap">
-    <main class="mian local-professionals-news-map">
+    <main class="main local-professionals-news-map">
       <section class="section-content countries">
         <div class="inner">
           <div class="sp-pc sp">

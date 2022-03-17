@@ -1170,6 +1170,219 @@ body > .header .inner .search-toggle .fa-search {
   cursor: pointer;
 }
 
+.contents-wrap .main-aside-wrap {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*--- IE10用 ---*/
+  -webkit-flex-wrap: wrap;
+  /*--- safari（PC）用 ---*/
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contents-wrap .main-aside-wrap .main {
+  width: 100%;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .contents-wrap .main-aside-wrap .main {
+    max-width: calc(100% - 400px);
+  }
+}
+
+.contents-wrap .main-aside-wrap .aside {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .contents-wrap .main-aside-wrap .aside {
+    max-width: 340px;
+    margin-top: 40px;
+    margin-left: auto;
+  }
+}
+
+.contents-wrap .main-aside-wrap .aside .box {
+  margin-bottom: 60px;
+}
+
+.contents-wrap .main-aside-wrap .aside .box > .head {
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #E4E4E4;
+}
+
+.contents-wrap .main-aside-wrap .aside .box .link {
+  text-align: right;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.search .submit-wrap {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.search .submit-wrap .text {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 20px;
+  min-height: 50px;
+  border: 1px solid #3DCDE6;
+  padding-right: 60px;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.search .submit-wrap .text::-webkit-input-placeholder {
+  color: #E4E4E4;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.search .submit-wrap .text:-ms-input-placeholder {
+  color: #E4E4E4;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.search .submit-wrap .text::-ms-input-placeholder {
+  color: #E4E4E4;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.search .submit-wrap .text::placeholder {
+  color: #E4E4E4;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.search .submit-wrap .submit {
+  position: absolute;
+  display: block;
+  right: 10px;
+  top: calc(50% - 16px);
+  width: 60px;
+  height: 32px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  background-color: #3DCDE6;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.area ul {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*--- IE10用 ---*/
+  -webkit-flex-wrap: wrap;
+  /*--- safari（PC）用 ---*/
+  list-style-type: none;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.area ul li {
+  width: 50%;
+  padding: 10px 0;
+  border-bottom: 1px solid #E4E4E4;
+  font-size: 16px;
+  padding-left: 20px;
+  line-height: 2.4rem;
+  position: relative;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.area ul li:before {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #00A9C6;
+  border-radius: 50%;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.area ul li a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.hushtags .tags {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*--- IE10用 ---*/
+  -webkit-flex-wrap: wrap;
+  /*--- safari（PC）用 ---*/
+  list-style-type: none;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E4E4E4;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.hushtags .tags li {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.hushtags .tags li a {
+  color: #333;
+  padding: 0 10px;
+  background-color: #E4E4E4;
+  text-decoration: none;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.ranking .post {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E4E4E4;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.ranking .post .img {
+  width: 100%;
+  max-width: 100px;
+  max-height: 100px;
+  position: relative;
+  background-color: #E4E4E4;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.ranking .post .img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.ranking .post .img .num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.ranking .post .info {
+  margin-left: 20px;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.ranking .post .info .country-name {
+  font-size: 1.2rem;
+}
+
+.contents-wrap .main-aside-wrap .aside .box.ranking .post .info .title {
+  font-size: 1.4rem;
+}
+
 .footer {
   background: -webkit-gradient(linear, left bottom, left top, from(#d8f5fa), to(#e0f8f0));
   background: -webkit-linear-gradient(bottom, #d8f5fa 0%, #e0f8f0 100%);
@@ -5261,147 +5474,111 @@ main.information-single .section-content .navi ul li .active {
   height: auto;
 }
 
-.main-aside-wrap {
-  display: -webkit-box;
-  display: flex;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  /*--- IE10用 ---*/
-  -webkit-flex-wrap: wrap;
-  /*--- safari（PC）用 ---*/
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.main-aside-wrap main.local-professionals-news,
-.main-aside-wrap main.local-professionals-news-articles,
-.main-aside-wrap main.local-professionals-news-category,
-.main-aside-wrap main.local-professionals-news-post,
-.main-aside-wrap main.local-professionals-news-map {
-  width: 100%;
-  margin-top: 40px;
-}
-
-@media screen and (min-width: 768px) {
-  .main-aside-wrap main.local-professionals-news,
-  .main-aside-wrap main.local-professionals-news-articles,
-  .main-aside-wrap main.local-professionals-news-category,
-  .main-aside-wrap main.local-professionals-news-post,
-  .main-aside-wrap main.local-professionals-news-map {
-    max-width: calc(100% - 400px);
-  }
-}
-
-.main-aside-wrap main.local-professionals-news .section-content .inner > .head,
-.main-aside-wrap main.local-professionals-news-articles .section-content .inner > .head,
-.main-aside-wrap main.local-professionals-news-category .section-content .inner > .head,
-.main-aside-wrap main.local-professionals-news-post .section-content .inner > .head,
-.main-aside-wrap main.local-professionals-news-map .section-content .inner > .head {
+main.local-professionals-news .section-content .inner > .head,
+main.local-professionals-news-articles .section-content .inner > .head,
+main.local-professionals-news-category .section-content .inner > .head,
+main.local-professionals-news-post .section-content .inner > .head,
+main.local-professionals-news-map .section-content .inner > .head {
   font-size: 2.8rem;
   color: #4FE0B0;
   padding-bottom: 15px;
   border-bottom: 2px solid #E4E4E4;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.page-head .text,
-.main-aside-wrap main.local-professionals-news-articles .section-content.page-head .text,
-.main-aside-wrap main.local-professionals-news-category .section-content.page-head .text,
-.main-aside-wrap main.local-professionals-news-post .section-content.page-head .text,
-.main-aside-wrap main.local-professionals-news-map .section-content.page-head .text {
+main.local-professionals-news .section-content.page-head .text,
+main.local-professionals-news-articles .section-content.page-head .text,
+main.local-professionals-news-category .section-content.page-head .text,
+main.local-professionals-news-post .section-content.page-head .text,
+main.local-professionals-news-map .section-content.page-head .text {
   text-align: center;
   margin-top: 20px;
   font-size: 1.6rem;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup, .main-aside-wrap main.local-professionals-news .section-content.latest,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest {
+main.local-professionals-news .section-content.pickup, main.local-professionals-news .section-content.latest,
+main.local-professionals-news-articles .section-content.pickup,
+main.local-professionals-news-articles .section-content.latest,
+main.local-professionals-news-category .section-content.pickup,
+main.local-professionals-news-category .section-content.latest,
+main.local-professionals-news-post .section-content.pickup,
+main.local-professionals-news-post .section-content.latest,
+main.local-professionals-news-map .section-content.pickup,
+main.local-professionals-news-map .section-content.latest {
   padding-bottom: 80px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper, main.local-professionals-news .section-content.latest .swiper-container-wrapper,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper {
   position: relative;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide, main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide {
   margin-top: 20px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a, main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a {
   text-decoration: none;
   color: #333;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .img, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .img,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .img,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .img,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .img,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .img,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .img,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .img,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .img,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .img {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .img, main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .img,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .img,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .img,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .img,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .img,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .img,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .img,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .img,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .img {
   position: relative;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .img img, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .img img,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .img img,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .img img,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .img img,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .img img,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .img img,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .img img,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .img img,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .img img {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .img img, main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .img img,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .img img,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .img img,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .img img,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .img img,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .img img,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .img img,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .img img,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .img img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .new, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .img .new,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .new,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .img .new,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .new,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .img .new,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .new,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .img .new,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .new,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .new {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .new, main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .img .new,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .new,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .img .new,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .new,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .img .new,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .new,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .img .new,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .new,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .new {
   position: absolute;
   left: 0;
   top: 0;
@@ -5410,15 +5587,15 @@ main.information-single .section-content .navi ul li .active {
   padding: 0 10px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info, main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info {
   position: absolute;
   width: 100%;
   left: 0px;
@@ -5431,27 +5608,27 @@ main.information-single .section-content .navi ul li .active {
   color: #fff;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .num, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .num,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .num,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .num,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .num,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .num,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .num,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .num,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .num,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .num {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .num, main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .num,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .num,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .num,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .num,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .num,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .num,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .num,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .num,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .num {
   font-size: 1.4rem;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .country-name, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .country-name,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .country-name,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .country-name,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .country-name,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .country-name,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .country-name,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .country-name,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .country-name,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .country-name {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .country-name, main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .country-name,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .country-name,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .country-name,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .country-name,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .country-name,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .country-name,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .country-name,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .img .info .country-name,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .country-name {
   display: inline-block;
   font-size: 1.2rem;
   background-color: #fff;
@@ -5460,27 +5637,27 @@ main.information-single .section-content .navi ul li .active {
   line-height: 20px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .title, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .title,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .title,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .title,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .title,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .title,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .title,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .title,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .title,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .title {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .title, main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .title,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .title,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .title,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .title,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .title,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .title,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .title,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .title,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .title {
   font-size: 1.6rem;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .tags,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .tags,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .tags,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .tags,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .tags {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags, main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .tags,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .tags,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .tags,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .tags,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .tags {
   display: -webkit-box;
   display: flex;
   display: -webkit-flex;
@@ -5494,15 +5671,15 @@ main.information-single .section-content .navi ul li .active {
   margin-top: 30px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li, main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li {
   margin-right: 10px;
   margin-top: 10px;
   padding: 0 10px;
@@ -5511,77 +5688,77 @@ main.information-single .section-content .navi ul li .active {
   line-height: 20px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li a, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li a,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li a,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li a,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li a,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li a,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li a,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li a,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li a,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li a {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li a, main.local-professionals-news .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li a,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li a,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li a,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li a,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li a,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li a,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li a,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .swiper-slide a .tags li a,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li a {
   color: #333;
   padding: 0 10px;
   background-color: #E4E4E4;
   text-decoration: none;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .pager .swiper-button-next {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next, main.local-professionals-news .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .pager .swiper-button-next {
   width: 44px;
   background-image: none;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev, main.local-professionals-news .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .pager .swiper-button-prev,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev {
   left: 0;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next, .main-aside-wrap main.local-professionals-news .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .pager .swiper-button-next {
+main.local-professionals-news .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next, main.local-professionals-news .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-articles .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-articles .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-category .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-category .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-post .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-post .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-map .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
+main.local-professionals-news-map .section-content.latest .swiper-container-wrapper .pager .swiper-button-next {
   right: 0;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .button, .main-aside-wrap main.local-professionals-news .section-content.latest .button,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .button,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .button,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .button,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .button,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .button,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .button,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .button,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .button {
+main.local-professionals-news .section-content.pickup .button, main.local-professionals-news .section-content.latest .button,
+main.local-professionals-news-articles .section-content.pickup .button,
+main.local-professionals-news-articles .section-content.latest .button,
+main.local-professionals-news-category .section-content.pickup .button,
+main.local-professionals-news-category .section-content.latest .button,
+main.local-professionals-news-post .section-content.pickup .button,
+main.local-professionals-news-post .section-content.latest .button,
+main.local-professionals-news-map .section-content.pickup .button,
+main.local-professionals-news-map .section-content.latest .button {
   width: 100%;
   display: block;
   text-align: center;
@@ -5608,27 +5785,27 @@ main.information-single .section-content .navi ul li .active {
   font-size: 2rem;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .button:hover, .main-aside-wrap main.local-professionals-news .section-content.latest .button:hover,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .button:hover,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .button:hover,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .button:hover,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .button:hover,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .button:hover,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .button:hover,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .button:hover,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .button:hover {
+main.local-professionals-news .section-content.pickup .button:hover, main.local-professionals-news .section-content.latest .button:hover,
+main.local-professionals-news-articles .section-content.pickup .button:hover,
+main.local-professionals-news-articles .section-content.latest .button:hover,
+main.local-professionals-news-category .section-content.pickup .button:hover,
+main.local-professionals-news-category .section-content.latest .button:hover,
+main.local-professionals-news-post .section-content.pickup .button:hover,
+main.local-professionals-news-post .section-content.latest .button:hover,
+main.local-professionals-news-map .section-content.pickup .button:hover,
+main.local-professionals-news-map .section-content.latest .button:hover {
   cursor: pointer;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.pickup .button::after, .main-aside-wrap main.local-professionals-news .section-content.latest .button::after,
-.main-aside-wrap main.local-professionals-news-articles .section-content.pickup .button::after,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest .button::after,
-.main-aside-wrap main.local-professionals-news-category .section-content.pickup .button::after,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest .button::after,
-.main-aside-wrap main.local-professionals-news-post .section-content.pickup .button::after,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest .button::after,
-.main-aside-wrap main.local-professionals-news-map .section-content.pickup .button::after,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest .button::after {
+main.local-professionals-news .section-content.pickup .button::after, main.local-professionals-news .section-content.latest .button::after,
+main.local-professionals-news-articles .section-content.pickup .button::after,
+main.local-professionals-news-articles .section-content.latest .button::after,
+main.local-professionals-news-category .section-content.pickup .button::after,
+main.local-professionals-news-category .section-content.latest .button::after,
+main.local-professionals-news-post .section-content.pickup .button::after,
+main.local-professionals-news-post .section-content.latest .button::after,
+main.local-professionals-news-map .section-content.pickup .button::after,
+main.local-professionals-news-map .section-content.latest .button::after {
   position: absolute;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -5638,37 +5815,37 @@ main.information-single .section-content .navi ul li .active {
   color: #fff;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.latest,
-.main-aside-wrap main.local-professionals-news-articles .section-content.latest,
-.main-aside-wrap main.local-professionals-news-category .section-content.latest,
-.main-aside-wrap main.local-professionals-news-post .section-content.latest,
-.main-aside-wrap main.local-professionals-news-map .section-content.latest {
+main.local-professionals-news .section-content.latest,
+main.local-professionals-news-articles .section-content.latest,
+main.local-professionals-news-category .section-content.latest,
+main.local-professionals-news-post .section-content.latest,
+main.local-professionals-news-map .section-content.latest {
   padding-bottom: 40px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.posts,
-.main-aside-wrap main.local-professionals-news-articles .section-content.posts,
-.main-aside-wrap main.local-professionals-news-category .section-content.posts,
-.main-aside-wrap main.local-professionals-news-post .section-content.posts,
-.main-aside-wrap main.local-professionals-news-map .section-content.posts {
+main.local-professionals-news .section-content.posts,
+main.local-professionals-news-articles .section-content.posts,
+main.local-professionals-news-category .section-content.posts,
+main.local-professionals-news-post .section-content.posts,
+main.local-professionals-news-map .section-content.posts {
   padding-bottom: 100px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.posts .post,
-.main-aside-wrap main.local-professionals-news-articles .section-content.posts .post,
-.main-aside-wrap main.local-professionals-news-category .section-content.posts .post,
-.main-aside-wrap main.local-professionals-news-post .section-content.posts .post,
-.main-aside-wrap main.local-professionals-news-map .section-content.posts .post {
+main.local-professionals-news .section-content.posts .post,
+main.local-professionals-news-articles .section-content.posts .post,
+main.local-professionals-news-category .section-content.posts .post,
+main.local-professionals-news-post .section-content.posts .post,
+main.local-professionals-news-map .section-content.posts .post {
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 2px solid #E4E4E4;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.posts .post .img,
-.main-aside-wrap main.local-professionals-news-articles .section-content.posts .post .img,
-.main-aside-wrap main.local-professionals-news-category .section-content.posts .post .img,
-.main-aside-wrap main.local-professionals-news-post .section-content.posts .post .img,
-.main-aside-wrap main.local-professionals-news-map .section-content.posts .post .img {
+main.local-professionals-news .section-content.posts .post .img,
+main.local-professionals-news-articles .section-content.posts .post .img,
+main.local-professionals-news-category .section-content.posts .post .img,
+main.local-professionals-news-post .section-content.posts .post .img,
+main.local-professionals-news-map .section-content.posts .post .img {
   display: block;
   width: 100%;
   max-width: 160px;
@@ -5679,21 +5856,21 @@ main.information-single .section-content .navi ul li .active {
   position: relative;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.posts .post .img img,
-.main-aside-wrap main.local-professionals-news-articles .section-content.posts .post .img img,
-.main-aside-wrap main.local-professionals-news-category .section-content.posts .post .img img,
-.main-aside-wrap main.local-professionals-news-post .section-content.posts .post .img img,
-.main-aside-wrap main.local-professionals-news-map .section-content.posts .post .img img {
+main.local-professionals-news .section-content.posts .post .img img,
+main.local-professionals-news-articles .section-content.posts .post .img img,
+main.local-professionals-news-category .section-content.posts .post .img img,
+main.local-professionals-news-post .section-content.posts .post .img img,
+main.local-professionals-news-map .section-content.posts .post .img img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.posts .post .img .new,
-.main-aside-wrap main.local-professionals-news-articles .section-content.posts .post .img .new,
-.main-aside-wrap main.local-professionals-news-category .section-content.posts .post .img .new,
-.main-aside-wrap main.local-professionals-news-post .section-content.posts .post .img .new,
-.main-aside-wrap main.local-professionals-news-map .section-content.posts .post .img .new {
+main.local-professionals-news .section-content.posts .post .img .new,
+main.local-professionals-news-articles .section-content.posts .post .img .new,
+main.local-professionals-news-category .section-content.posts .post .img .new,
+main.local-professionals-news-post .section-content.posts .post .img .new,
+main.local-professionals-news-map .section-content.posts .post .img .new {
   position: absolute;
   left: 0;
   top: 0;
@@ -5703,11 +5880,11 @@ main.information-single .section-content .navi ul li .active {
 }
 
 @media screen and (min-width: 1024px) {
-  .main-aside-wrap main.local-professionals-news .section-content.posts .post .info .meta,
-  .main-aside-wrap main.local-professionals-news-articles .section-content.posts .post .info .meta,
-  .main-aside-wrap main.local-professionals-news-category .section-content.posts .post .info .meta,
-  .main-aside-wrap main.local-professionals-news-post .section-content.posts .post .info .meta,
-  .main-aside-wrap main.local-professionals-news-map .section-content.posts .post .info .meta {
+  main.local-professionals-news .section-content.posts .post .info .meta,
+  main.local-professionals-news-articles .section-content.posts .post .info .meta,
+  main.local-professionals-news-category .section-content.posts .post .info .meta,
+  main.local-professionals-news-post .section-content.posts .post .info .meta,
+  main.local-professionals-news-map .section-content.posts .post .info .meta {
     display: -webkit-box;
     display: flex;
     display: -webkit-flex;
@@ -5722,45 +5899,45 @@ main.information-single .section-content .navi ul li .active {
 }
 
 @media screen and (min-width: 1024px) {
-  .main-aside-wrap main.local-professionals-news .section-content.posts .post .info .meta .date,
-  .main-aside-wrap main.local-professionals-news .section-content.posts .post .info .meta .num,
-  .main-aside-wrap main.local-professionals-news-articles .section-content.posts .post .info .meta .date,
-  .main-aside-wrap main.local-professionals-news-articles .section-content.posts .post .info .meta .num,
-  .main-aside-wrap main.local-professionals-news-category .section-content.posts .post .info .meta .date,
-  .main-aside-wrap main.local-professionals-news-category .section-content.posts .post .info .meta .num,
-  .main-aside-wrap main.local-professionals-news-post .section-content.posts .post .info .meta .date,
-  .main-aside-wrap main.local-professionals-news-post .section-content.posts .post .info .meta .num,
-  .main-aside-wrap main.local-professionals-news-map .section-content.posts .post .info .meta .date,
-  .main-aside-wrap main.local-professionals-news-map .section-content.posts .post .info .meta .num {
+  main.local-professionals-news .section-content.posts .post .info .meta .date,
+  main.local-professionals-news .section-content.posts .post .info .meta .num,
+  main.local-professionals-news-articles .section-content.posts .post .info .meta .date,
+  main.local-professionals-news-articles .section-content.posts .post .info .meta .num,
+  main.local-professionals-news-category .section-content.posts .post .info .meta .date,
+  main.local-professionals-news-category .section-content.posts .post .info .meta .num,
+  main.local-professionals-news-post .section-content.posts .post .info .meta .date,
+  main.local-professionals-news-post .section-content.posts .post .info .meta .num,
+  main.local-professionals-news-map .section-content.posts .post .info .meta .date,
+  main.local-professionals-news-map .section-content.posts .post .info .meta .num {
     padding-right: 10px;
     margin-right: 10px;
     border-right: 1px solid #333;
   }
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.posts .post .info .title,
-.main-aside-wrap main.local-professionals-news-articles .section-content.posts .post .info .title,
-.main-aside-wrap main.local-professionals-news-category .section-content.posts .post .info .title,
-.main-aside-wrap main.local-professionals-news-post .section-content.posts .post .info .title,
-.main-aside-wrap main.local-professionals-news-map .section-content.posts .post .info .title {
+main.local-professionals-news .section-content.posts .post .info .title,
+main.local-professionals-news-articles .section-content.posts .post .info .title,
+main.local-professionals-news-category .section-content.posts .post .info .title,
+main.local-professionals-news-post .section-content.posts .post .info .title,
+main.local-professionals-news-map .section-content.posts .post .info .title {
   font-size: 1.6rem;
   font-weight: bold;
   margin-top: 10px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.posts .post .info .company-name,
-.main-aside-wrap main.local-professionals-news-articles .section-content.posts .post .info .company-name,
-.main-aside-wrap main.local-professionals-news-category .section-content.posts .post .info .company-name,
-.main-aside-wrap main.local-professionals-news-post .section-content.posts .post .info .company-name,
-.main-aside-wrap main.local-professionals-news-map .section-content.posts .post .info .company-name {
+main.local-professionals-news .section-content.posts .post .info .company-name,
+main.local-professionals-news-articles .section-content.posts .post .info .company-name,
+main.local-professionals-news-category .section-content.posts .post .info .company-name,
+main.local-professionals-news-post .section-content.posts .post .info .company-name,
+main.local-professionals-news-map .section-content.posts .post .info .company-name {
   margin-top: 40px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.posts .post .info .tags,
-.main-aside-wrap main.local-professionals-news-articles .section-content.posts .post .info .tags,
-.main-aside-wrap main.local-professionals-news-category .section-content.posts .post .info .tags,
-.main-aside-wrap main.local-professionals-news-post .section-content.posts .post .info .tags,
-.main-aside-wrap main.local-professionals-news-map .section-content.posts .post .info .tags {
+main.local-professionals-news .section-content.posts .post .info .tags,
+main.local-professionals-news-articles .section-content.posts .post .info .tags,
+main.local-professionals-news-category .section-content.posts .post .info .tags,
+main.local-professionals-news-post .section-content.posts .post .info .tags,
+main.local-professionals-news-map .section-content.posts .post .info .tags {
   display: -webkit-box;
   display: flex;
   display: -webkit-flex;
@@ -5773,33 +5950,33 @@ main.information-single .section-content .navi ul li .active {
   list-style-type: none;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.posts .post .info .tags li,
-.main-aside-wrap main.local-professionals-news-articles .section-content.posts .post .info .tags li,
-.main-aside-wrap main.local-professionals-news-category .section-content.posts .post .info .tags li,
-.main-aside-wrap main.local-professionals-news-post .section-content.posts .post .info .tags li,
-.main-aside-wrap main.local-professionals-news-map .section-content.posts .post .info .tags li {
+main.local-professionals-news .section-content.posts .post .info .tags li,
+main.local-professionals-news-articles .section-content.posts .post .info .tags li,
+main.local-professionals-news-category .section-content.posts .post .info .tags li,
+main.local-professionals-news-post .section-content.posts .post .info .tags li,
+main.local-professionals-news-map .section-content.posts .post .info .tags li {
   margin-right: 10px;
   margin-top: 10px;
   padding: 0 10px;
   background-color: #E4E4E4;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.posts .post .info .tags li a,
-.main-aside-wrap main.local-professionals-news-articles .section-content.posts .post .info .tags li a,
-.main-aside-wrap main.local-professionals-news-category .section-content.posts .post .info .tags li a,
-.main-aside-wrap main.local-professionals-news-post .section-content.posts .post .info .tags li a,
-.main-aside-wrap main.local-professionals-news-map .section-content.posts .post .info .tags li a {
+main.local-professionals-news .section-content.posts .post .info .tags li a,
+main.local-professionals-news-articles .section-content.posts .post .info .tags li a,
+main.local-professionals-news-category .section-content.posts .post .info .tags li a,
+main.local-professionals-news-post .section-content.posts .post .info .tags li a,
+main.local-professionals-news-map .section-content.posts .post .info .tags li a {
   color: #333;
   padding: 0 10px;
   background-color: #E4E4E4;
   text-decoration: none;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.posts .pager,
-.main-aside-wrap main.local-professionals-news-articles .section-content.posts .pager,
-.main-aside-wrap main.local-professionals-news-category .section-content.posts .pager,
-.main-aside-wrap main.local-professionals-news-post .section-content.posts .pager,
-.main-aside-wrap main.local-professionals-news-map .section-content.posts .pager {
+main.local-professionals-news .section-content.posts .pager,
+main.local-professionals-news-articles .section-content.posts .pager,
+main.local-professionals-news-category .section-content.posts .pager,
+main.local-professionals-news-post .section-content.posts .pager,
+main.local-professionals-news-map .section-content.posts .pager {
   display: -webkit-box;
   display: flex;
   display: -webkit-flex;
@@ -5811,40 +5988,40 @@ main.information-single .section-content .navi ul li .active {
   margin-top: 60px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.posts .pager .navi,
-.main-aside-wrap main.local-professionals-news-articles .section-content.posts .pager .navi,
-.main-aside-wrap main.local-professionals-news-category .section-content.posts .pager .navi,
-.main-aside-wrap main.local-professionals-news-post .section-content.posts .pager .navi,
-.main-aside-wrap main.local-professionals-news-map .section-content.posts .pager .navi {
+main.local-professionals-news .section-content.posts .pager .navi,
+main.local-professionals-news-articles .section-content.posts .pager .navi,
+main.local-professionals-news-category .section-content.posts .pager .navi,
+main.local-professionals-news-post .section-content.posts .pager .navi,
+main.local-professionals-news-map .section-content.posts .pager .navi {
   display: block;
   padding: 4px 15px;
   border: 1px solid #00A9C6;
   margin: 0 10px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.categories .hashtag_wrapper,
-.main-aside-wrap main.local-professionals-news-articles .section-content.categories .hashtag_wrapper,
-.main-aside-wrap main.local-professionals-news-category .section-content.categories .hashtag_wrapper,
-.main-aside-wrap main.local-professionals-news-post .section-content.categories .hashtag_wrapper,
-.main-aside-wrap main.local-professionals-news-map .section-content.categories .hashtag_wrapper {
+main.local-professionals-news .section-content.categories .hashtag_wrapper,
+main.local-professionals-news-articles .section-content.categories .hashtag_wrapper,
+main.local-professionals-news-category .section-content.categories .hashtag_wrapper,
+main.local-professionals-news-post .section-content.categories .hashtag_wrapper,
+main.local-professionals-news-map .section-content.categories .hashtag_wrapper {
   position: relative;
   margin-bottom: 45px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.categories .text,
-.main-aside-wrap main.local-professionals-news-articles .section-content.categories .text,
-.main-aside-wrap main.local-professionals-news-category .section-content.categories .text,
-.main-aside-wrap main.local-professionals-news-post .section-content.categories .text,
-.main-aside-wrap main.local-professionals-news-map .section-content.categories .text {
+main.local-professionals-news .section-content.categories .text,
+main.local-professionals-news-articles .section-content.categories .text,
+main.local-professionals-news-category .section-content.categories .text,
+main.local-professionals-news-post .section-content.categories .text,
+main.local-professionals-news-map .section-content.categories .text {
   height: 90px;
   overflow: hidden;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.categories .show_hashtag,
-.main-aside-wrap main.local-professionals-news-articles .section-content.categories .show_hashtag,
-.main-aside-wrap main.local-professionals-news-category .section-content.categories .show_hashtag,
-.main-aside-wrap main.local-professionals-news-post .section-content.categories .show_hashtag,
-.main-aside-wrap main.local-professionals-news-map .section-content.categories .show_hashtag {
+main.local-professionals-news .section-content.categories .show_hashtag,
+main.local-professionals-news-articles .section-content.categories .show_hashtag,
+main.local-professionals-news-category .section-content.categories .show_hashtag,
+main.local-professionals-news-post .section-content.categories .show_hashtag,
+main.local-professionals-news-map .section-content.categories .show_hashtag {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -5861,11 +6038,11 @@ main.information-single .section-content .navi ul li .active {
   transition: bottom 0.2s;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.categories .show_hashtag span,
-.main-aside-wrap main.local-professionals-news-articles .section-content.categories .show_hashtag span,
-.main-aside-wrap main.local-professionals-news-category .section-content.categories .show_hashtag span,
-.main-aside-wrap main.local-professionals-news-post .section-content.categories .show_hashtag span,
-.main-aside-wrap main.local-professionals-news-map .section-content.categories .show_hashtag span {
+main.local-professionals-news .section-content.categories .show_hashtag span,
+main.local-professionals-news-articles .section-content.categories .show_hashtag span,
+main.local-professionals-news-category .section-content.categories .show_hashtag span,
+main.local-professionals-news-post .section-content.categories .show_hashtag span,
+main.local-professionals-news-map .section-content.categories .show_hashtag span {
   width: 100%;
   display: block;
   text-align: center;
@@ -5884,19 +6061,19 @@ main.information-single .section-content .navi ul li .active {
   margin-top: 20px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.categories .show_hashtag span:hover,
-.main-aside-wrap main.local-professionals-news-articles .section-content.categories .show_hashtag span:hover,
-.main-aside-wrap main.local-professionals-news-category .section-content.categories .show_hashtag span:hover,
-.main-aside-wrap main.local-professionals-news-post .section-content.categories .show_hashtag span:hover,
-.main-aside-wrap main.local-professionals-news-map .section-content.categories .show_hashtag span:hover {
+main.local-professionals-news .section-content.categories .show_hashtag span:hover,
+main.local-professionals-news-articles .section-content.categories .show_hashtag span:hover,
+main.local-professionals-news-category .section-content.categories .show_hashtag span:hover,
+main.local-professionals-news-post .section-content.categories .show_hashtag span:hover,
+main.local-professionals-news-map .section-content.categories .show_hashtag span:hover {
   cursor: pointer;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.categories .show_hashtag span.open::after,
-.main-aside-wrap main.local-professionals-news-articles .section-content.categories .show_hashtag span.open::after,
-.main-aside-wrap main.local-professionals-news-category .section-content.categories .show_hashtag span.open::after,
-.main-aside-wrap main.local-professionals-news-post .section-content.categories .show_hashtag span.open::after,
-.main-aside-wrap main.local-professionals-news-map .section-content.categories .show_hashtag span.open::after {
+main.local-professionals-news .section-content.categories .show_hashtag span.open::after,
+main.local-professionals-news-articles .section-content.categories .show_hashtag span.open::after,
+main.local-professionals-news-category .section-content.categories .show_hashtag span.open::after,
+main.local-professionals-news-post .section-content.categories .show_hashtag span.open::after,
+main.local-professionals-news-map .section-content.categories .show_hashtag span.open::after {
   position: absolute;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -5904,11 +6081,11 @@ main.information-single .section-content .navi ul li .active {
   right: 20px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.categories .show_hashtag span.close::after,
-.main-aside-wrap main.local-professionals-news-articles .section-content.categories .show_hashtag span.close::after,
-.main-aside-wrap main.local-professionals-news-category .section-content.categories .show_hashtag span.close::after,
-.main-aside-wrap main.local-professionals-news-post .section-content.categories .show_hashtag span.close::after,
-.main-aside-wrap main.local-professionals-news-map .section-content.categories .show_hashtag span.close::after {
+main.local-professionals-news .section-content.categories .show_hashtag span.close::after,
+main.local-professionals-news-articles .section-content.categories .show_hashtag span.close::after,
+main.local-professionals-news-category .section-content.categories .show_hashtag span.close::after,
+main.local-professionals-news-post .section-content.categories .show_hashtag span.close::after,
+main.local-professionals-news-map .section-content.categories .show_hashtag span.close::after {
   position: absolute;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -5916,11 +6093,11 @@ main.information-single .section-content .navi ul li .active {
   right: 20px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.categories .tags,
-.main-aside-wrap main.local-professionals-news-articles .section-content.categories .tags,
-.main-aside-wrap main.local-professionals-news-category .section-content.categories .tags,
-.main-aside-wrap main.local-professionals-news-post .section-content.categories .tags,
-.main-aside-wrap main.local-professionals-news-map .section-content.categories .tags {
+main.local-professionals-news .section-content.categories .tags,
+main.local-professionals-news-articles .section-content.categories .tags,
+main.local-professionals-news-category .section-content.categories .tags,
+main.local-professionals-news-post .section-content.categories .tags,
+main.local-professionals-news-map .section-content.categories .tags {
   display: -webkit-box;
   display: flex;
   display: -webkit-flex;
@@ -5934,39 +6111,39 @@ main.information-single .section-content .navi ul li .active {
   list-style-type: none;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.categories .tags li,
-.main-aside-wrap main.local-professionals-news-articles .section-content.categories .tags li,
-.main-aside-wrap main.local-professionals-news-category .section-content.categories .tags li,
-.main-aside-wrap main.local-professionals-news-post .section-content.categories .tags li,
-.main-aside-wrap main.local-professionals-news-map .section-content.categories .tags li {
+main.local-professionals-news .section-content.categories .tags li,
+main.local-professionals-news-articles .section-content.categories .tags li,
+main.local-professionals-news-category .section-content.categories .tags li,
+main.local-professionals-news-post .section-content.categories .tags li,
+main.local-professionals-news-map .section-content.categories .tags li {
   margin-right: 10px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content {
+main.local-professionals-news .section-content.entry-content,
+main.local-professionals-news-articles .section-content.entry-content,
+main.local-professionals-news-category .section-content.entry-content,
+main.local-professionals-news-post .section-content.entry-content,
+main.local-professionals-news-map .section-content.entry-content {
   position: relative;
   padding-top: 60px;
   padding-bottom: 100px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .id,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .id,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .id,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .id,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .id {
+main.local-professionals-news .section-content.entry-content .id,
+main.local-professionals-news-articles .section-content.entry-content .id,
+main.local-professionals-news-category .section-content.entry-content .id,
+main.local-professionals-news-post .section-content.entry-content .id,
+main.local-professionals-news-map .section-content.entry-content .id {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .like,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .like,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .like,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .like,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .like {
+main.local-professionals-news .section-content.entry-content .like,
+main.local-professionals-news-articles .section-content.entry-content .like,
+main.local-professionals-news-category .section-content.entry-content .like,
+main.local-professionals-news-post .section-content.entry-content .like,
+main.local-professionals-news-map .section-content.entry-content .like {
   position: absolute;
   right: 0;
   top: 0;
@@ -5975,56 +6152,56 @@ main.information-single .section-content .navi ul li .active {
   border-radius: 4px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .like.liked .far,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .like.liked .far,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .like.liked .far,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .like.liked .far,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .like.liked .far {
+main.local-professionals-news .section-content.entry-content .like.liked .far,
+main.local-professionals-news-articles .section-content.entry-content .like.liked .far,
+main.local-professionals-news-category .section-content.entry-content .like.liked .far,
+main.local-professionals-news-post .section-content.entry-content .like.liked .far,
+main.local-professionals-news-map .section-content.entry-content .like.liked .far {
   display: none;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .like.liked .fas,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .like.liked .fas,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .like.liked .fas,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .like.liked .fas,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .like.liked .fas {
+main.local-professionals-news .section-content.entry-content .like.liked .fas,
+main.local-professionals-news-articles .section-content.entry-content .like.liked .fas,
+main.local-professionals-news-category .section-content.entry-content .like.liked .fas,
+main.local-professionals-news-post .section-content.entry-content .like.liked .fas,
+main.local-professionals-news-map .section-content.entry-content .like.liked .fas {
   display: inline-block;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .like .far,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .like .far,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .like .far,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .like .far,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .like .far {
+main.local-professionals-news .section-content.entry-content .like .far,
+main.local-professionals-news-articles .section-content.entry-content .like .far,
+main.local-professionals-news-category .section-content.entry-content .like .far,
+main.local-professionals-news-post .section-content.entry-content .like .far,
+main.local-professionals-news-map .section-content.entry-content .like .far {
   display: inline-block;
   color: #DC000C;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .like .fas,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .like .fas,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .like .fas,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .like .fas,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .like .fas {
+main.local-professionals-news .section-content.entry-content .like .fas,
+main.local-professionals-news-articles .section-content.entry-content .like .fas,
+main.local-professionals-news-category .section-content.entry-content .like .fas,
+main.local-professionals-news-post .section-content.entry-content .like .fas,
+main.local-professionals-news-map .section-content.entry-content .like .fas {
   display: none;
   color: #DC000C;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .title,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .title,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .title,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .title,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .title {
+main.local-professionals-news .section-content.entry-content .title,
+main.local-professionals-news-articles .section-content.entry-content .title,
+main.local-professionals-news-category .section-content.entry-content .title,
+main.local-professionals-news-post .section-content.entry-content .title,
+main.local-professionals-news-map .section-content.entry-content .title {
   font-size: 2.4rem;
   font-weight: bold;
   color: #00A9C6;
   margin-top: 15px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .info,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .info,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .info,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .info,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .info {
+main.local-professionals-news .section-content.entry-content .info,
+main.local-professionals-news-articles .section-content.entry-content .info,
+main.local-professionals-news-category .section-content.entry-content .info,
+main.local-professionals-news-post .section-content.entry-content .info,
+main.local-professionals-news-map .section-content.entry-content .info {
   display: -webkit-box;
   display: flex;
   display: -webkit-flex;
@@ -6038,34 +6215,34 @@ main.information-single .section-content .navi ul li .active {
   line-height: 20px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .info .date,
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .info .num,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .info .date,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .info .num,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .info .date,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .info .num,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .info .date,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .info .num,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .info .date,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .info .num {
+main.local-professionals-news .section-content.entry-content .info .date,
+main.local-professionals-news .section-content.entry-content .info .num,
+main.local-professionals-news-articles .section-content.entry-content .info .date,
+main.local-professionals-news-articles .section-content.entry-content .info .num,
+main.local-professionals-news-category .section-content.entry-content .info .date,
+main.local-professionals-news-category .section-content.entry-content .info .num,
+main.local-professionals-news-post .section-content.entry-content .info .date,
+main.local-professionals-news-post .section-content.entry-content .info .num,
+main.local-professionals-news-map .section-content.entry-content .info .date,
+main.local-professionals-news-map .section-content.entry-content .info .num {
   padding-right: 10px;
   margin-right: 10px;
   border-right: 1px solid #333;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .company-name,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .company-name,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .company-name,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .company-name,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .company-name {
+main.local-professionals-news .section-content.entry-content .company-name,
+main.local-professionals-news-articles .section-content.entry-content .company-name,
+main.local-professionals-news-category .section-content.entry-content .company-name,
+main.local-professionals-news-post .section-content.entry-content .company-name,
+main.local-professionals-news-map .section-content.entry-content .company-name {
   margin-top: 10px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .tags,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .tags,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .tags,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .tags,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .tags {
+main.local-professionals-news .section-content.entry-content .tags,
+main.local-professionals-news-articles .section-content.entry-content .tags,
+main.local-professionals-news-category .section-content.entry-content .tags,
+main.local-professionals-news-post .section-content.entry-content .tags,
+main.local-professionals-news-map .section-content.entry-content .tags {
   display: -webkit-box;
   display: flex;
   display: -webkit-flex;
@@ -6078,59 +6255,59 @@ main.information-single .section-content .navi ul li .active {
   list-style-type: none;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .tags li,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .tags li,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .tags li,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .tags li,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .tags li {
+main.local-professionals-news .section-content.entry-content .tags li,
+main.local-professionals-news-articles .section-content.entry-content .tags li,
+main.local-professionals-news-category .section-content.entry-content .tags li,
+main.local-professionals-news-post .section-content.entry-content .tags li,
+main.local-professionals-news-map .section-content.entry-content .tags li {
   margin-right: 10px;
   margin-top: 10px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .tags li a,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .tags li a,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .tags li a,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .tags li a,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .tags li a {
+main.local-professionals-news .section-content.entry-content .tags li a,
+main.local-professionals-news-articles .section-content.entry-content .tags li a,
+main.local-professionals-news-category .section-content.entry-content .tags li a,
+main.local-professionals-news-post .section-content.entry-content .tags li a,
+main.local-professionals-news-map .section-content.entry-content .tags li a {
   color: #333;
   padding: 0 10px;
   background-color: #E4E4E4;
   text-decoration: none;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .img,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .img,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .img,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .img,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .img {
+main.local-professionals-news .section-content.entry-content .img,
+main.local-professionals-news-articles .section-content.entry-content .img,
+main.local-professionals-news-category .section-content.entry-content .img,
+main.local-professionals-news-post .section-content.entry-content .img,
+main.local-professionals-news-map .section-content.entry-content .img {
   margin-top: 20px;
   margin-bottom: 40px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .img img,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .img img,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .img img,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .img img,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .img img {
+main.local-professionals-news .section-content.entry-content .img img,
+main.local-professionals-news-articles .section-content.entry-content .img img,
+main.local-professionals-news-category .section-content.entry-content .img img,
+main.local-professionals-news-post .section-content.entry-content .img img,
+main.local-professionals-news-map .section-content.entry-content .img img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content {
+main.local-professionals-news .section-content.entry-content .content,
+main.local-professionals-news-articles .section-content.entry-content .content,
+main.local-professionals-news-category .section-content.entry-content .content,
+main.local-professionals-news-post .section-content.entry-content .content,
+main.local-professionals-news-map .section-content.entry-content .content {
   padding-bottom: 60px;
   border-bottom: 1px solid #00A9C6;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content h2,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content h2,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content h2,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content h2,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content h2 {
+main.local-professionals-news .section-content.entry-content .content h2,
+main.local-professionals-news-articles .section-content.entry-content .content h2,
+main.local-professionals-news-category .section-content.entry-content .content h2,
+main.local-professionals-news-post .section-content.entry-content .content h2,
+main.local-professionals-news-map .section-content.entry-content .content h2 {
   background-color: #00A9C6;
   font-size: 2.4rem;
   color: #fff;
@@ -6138,81 +6315,81 @@ main.information-single .section-content .navi ul li .active {
   margin-bottom: 30px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content h3,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content h3,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content h3,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content h3,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content h3 {
+main.local-professionals-news .section-content.entry-content .content h3,
+main.local-professionals-news-articles .section-content.entry-content .content h3,
+main.local-professionals-news-category .section-content.entry-content .content h3,
+main.local-professionals-news-post .section-content.entry-content .content h3,
+main.local-professionals-news-map .section-content.entry-content .content h3 {
   font-size: 2rem;
   padding-bottom: 5px;
   border-bottom: 2px solid #00A9C6;
   margin-bottom: 30px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content h4,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content h4,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content h4,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content h4,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content h4 {
+main.local-professionals-news .section-content.entry-content .content h4,
+main.local-professionals-news-articles .section-content.entry-content .content h4,
+main.local-professionals-news-category .section-content.entry-content .content h4,
+main.local-professionals-news-post .section-content.entry-content .content h4,
+main.local-professionals-news-map .section-content.entry-content .content h4 {
   font-size: 1.8rem;
   padding-left: 20px;
   border-left: 2px solid #00A9C6;
   margin-bottom: 30px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content h5,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content h5,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content h5,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content h5,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content h5 {
+main.local-professionals-news .section-content.entry-content .content h5,
+main.local-professionals-news-articles .section-content.entry-content .content h5,
+main.local-professionals-news-category .section-content.entry-content .content h5,
+main.local-professionals-news-post .section-content.entry-content .content h5,
+main.local-professionals-news-map .section-content.entry-content .content h5 {
   font-size: 1.4rem;
   padding-bottom: 5px;
   border-bottom: 2px solid #00A9C6;
   margin-bottom: 30px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content h6,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content h6,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content h6,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content h6,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content h6 {
+main.local-professionals-news .section-content.entry-content .content h6,
+main.local-professionals-news-articles .section-content.entry-content .content h6,
+main.local-professionals-news-category .section-content.entry-content .content h6,
+main.local-professionals-news-post .section-content.entry-content .content h6,
+main.local-professionals-news-map .section-content.entry-content .content h6 {
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content p,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content p,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content p,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content p,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content p {
+main.local-professionals-news .section-content.entry-content .content p,
+main.local-professionals-news-articles .section-content.entry-content .content p,
+main.local-professionals-news-category .section-content.entry-content .content p,
+main.local-professionals-news-post .section-content.entry-content .content p,
+main.local-professionals-news-map .section-content.entry-content .content p {
   font-size: 1.4rem;
   line-height: 1.8rem;
   margin-bottom: 60px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content a,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content a,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content a,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content a,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content a {
+main.local-professionals-news .section-content.entry-content .content a,
+main.local-professionals-news-articles .section-content.entry-content .content a,
+main.local-professionals-news-category .section-content.entry-content .content a,
+main.local-professionals-news-post .section-content.entry-content .content a,
+main.local-professionals-news-map .section-content.entry-content .content a {
   color: #333;
   font-size: 1.7rem;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content ul,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content ul,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content ul,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content ul,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content ul {
+main.local-professionals-news .section-content.entry-content .content ul,
+main.local-professionals-news-articles .section-content.entry-content .content ul,
+main.local-professionals-news-category .section-content.entry-content .content ul,
+main.local-professionals-news-post .section-content.entry-content .content ul,
+main.local-professionals-news-map .section-content.entry-content .content ul {
   list-style-type: none;
   margin-bottom: 60px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content ul li,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content ul li,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content ul li,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content ul li,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content ul li {
+main.local-professionals-news .section-content.entry-content .content ul li,
+main.local-professionals-news-articles .section-content.entry-content .content ul li,
+main.local-professionals-news-category .section-content.entry-content .content ul li,
+main.local-professionals-news-post .section-content.entry-content .content ul li,
+main.local-professionals-news-map .section-content.entry-content .content ul li {
   font-size: 16px;
   padding-left: 20px;
   line-height: 2.4rem;
@@ -6220,11 +6397,11 @@ main.information-single .section-content .navi ul li .active {
   margin-bottom: 15px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content ul li:before,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content ul li:before,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content ul li:before,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content ul li:before,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content ul li:before {
+main.local-professionals-news .section-content.entry-content .content ul li:before,
+main.local-professionals-news-articles .section-content.entry-content .content ul li:before,
+main.local-professionals-news-category .section-content.entry-content .content ul li:before,
+main.local-professionals-news-post .section-content.entry-content .content ul li:before,
+main.local-professionals-news-map .section-content.entry-content .content ul li:before {
   position: absolute;
   top: 8px;
   left: 0px;
@@ -6237,98 +6414,98 @@ main.information-single .section-content .navi ul li .active {
   margin-bottom: 30px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content ul li ul,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content ul li ul,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content ul li ul,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content ul li ul,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content ul li ul {
+main.local-professionals-news .section-content.entry-content .content ul li ul,
+main.local-professionals-news-articles .section-content.entry-content .content ul li ul,
+main.local-professionals-news-category .section-content.entry-content .content ul li ul,
+main.local-professionals-news-post .section-content.entry-content .content ul li ul,
+main.local-professionals-news-map .section-content.entry-content .content ul li ul {
   margin-bottom: 0;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content ol,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content ol,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content ol,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content ol,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content ol {
+main.local-professionals-news .section-content.entry-content .content ol,
+main.local-professionals-news-articles .section-content.entry-content .content ol,
+main.local-professionals-news-category .section-content.entry-content .content ol,
+main.local-professionals-news-post .section-content.entry-content .content ol,
+main.local-professionals-news-map .section-content.entry-content .content ol {
   margin-bottom: 20px;
   padding-left: 15px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content ol li,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content ol li,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content ol li,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content ol li,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content ol li {
+main.local-professionals-news .section-content.entry-content .content ol li,
+main.local-professionals-news-articles .section-content.entry-content .content ol li,
+main.local-professionals-news-category .section-content.entry-content .content ol li,
+main.local-professionals-news-post .section-content.entry-content .content ol li,
+main.local-professionals-news-map .section-content.entry-content .content ol li {
   font-size: 16px;
   line-height: 2.4rem;
   position: relative;
   margin-bottom: 15px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content ol li ol,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content ol li ol,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content ol li ol,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content ol li ol,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content ol li ol {
+main.local-professionals-news .section-content.entry-content .content ol li ol,
+main.local-professionals-news-articles .section-content.entry-content .content ol li ol,
+main.local-professionals-news-category .section-content.entry-content .content ol li ol,
+main.local-professionals-news-post .section-content.entry-content .content ol li ol,
+main.local-professionals-news-map .section-content.entry-content .content ol li ol {
   padding-left: 15px;
   margin-bottom: 0;
   margin-top: 20px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content img,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content img,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content img,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content img,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content img {
+main.local-professionals-news .section-content.entry-content .content img,
+main.local-professionals-news-articles .section-content.entry-content .content img,
+main.local-professionals-news-category .section-content.entry-content .content img,
+main.local-professionals-news-post .section-content.entry-content .content img,
+main.local-professionals-news-map .section-content.entry-content .content img {
   display: block;
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content img.aligncenter,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content img.aligncenter,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content img.aligncenter,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content img.aligncenter,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content img.aligncenter {
+main.local-professionals-news .section-content.entry-content .content img.aligncenter,
+main.local-professionals-news-articles .section-content.entry-content .content img.aligncenter,
+main.local-professionals-news-category .section-content.entry-content .content img.aligncenter,
+main.local-professionals-news-post .section-content.entry-content .content img.aligncenter,
+main.local-professionals-news-map .section-content.entry-content .content img.aligncenter {
   margin: 0 auto 40px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content img.alignleft,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content img.alignleft,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content img.alignleft,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content img.alignleft,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content img.alignleft {
+main.local-professionals-news .section-content.entry-content .content img.alignleft,
+main.local-professionals-news-articles .section-content.entry-content .content img.alignleft,
+main.local-professionals-news-category .section-content.entry-content .content img.alignleft,
+main.local-professionals-news-post .section-content.entry-content .content img.alignleft,
+main.local-professionals-news-map .section-content.entry-content .content img.alignleft {
   float: left;
   margin-right: 20px;
   margin-bottom: 40px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content img.alignright,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content img.alignright,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content img.alignright,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content img.alignright,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content img.alignright {
+main.local-professionals-news .section-content.entry-content .content img.alignright,
+main.local-professionals-news-articles .section-content.entry-content .content img.alignright,
+main.local-professionals-news-category .section-content.entry-content .content img.alignright,
+main.local-professionals-news-post .section-content.entry-content .content img.alignright,
+main.local-professionals-news-map .section-content.entry-content .content img.alignright {
   float: right;
   margin-left: 20px;
   margin-bottom: 40px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content table,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content table,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content table,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content table,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content table {
+main.local-professionals-news .section-content.entry-content .content table,
+main.local-professionals-news-articles .section-content.entry-content .content table,
+main.local-professionals-news-category .section-content.entry-content .content table,
+main.local-professionals-news-post .section-content.entry-content .content table,
+main.local-professionals-news-map .section-content.entry-content .content table {
   width: 100%;
   margin-bottom: 70px;
   border-top: 1px solid #25393B;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content table thead tr,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content table thead tr,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content table thead tr,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content table thead tr,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content table thead tr {
+main.local-professionals-news .section-content.entry-content .content table thead tr,
+main.local-professionals-news-articles .section-content.entry-content .content table thead tr,
+main.local-professionals-news-category .section-content.entry-content .content table thead tr,
+main.local-professionals-news-post .section-content.entry-content .content table thead tr,
+main.local-professionals-news-map .section-content.entry-content .content table thead tr {
   display: -webkit-box;
   display: flex;
   display: -webkit-flex;
@@ -6344,11 +6521,11 @@ main.information-single .section-content .navi ul li .active {
   height: auto !important;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content table thead tr th,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content table thead tr th,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content table thead tr th,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content table thead tr th,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content table thead tr th {
+main.local-professionals-news .section-content.entry-content .content table thead tr th,
+main.local-professionals-news-articles .section-content.entry-content .content table thead tr th,
+main.local-professionals-news-category .section-content.entry-content .content table thead tr th,
+main.local-professionals-news-post .section-content.entry-content .content table thead tr th,
+main.local-professionals-news-map .section-content.entry-content .content table thead tr th {
   border-bottom: 1px solid #25393B;
   width: 100%;
   padding: 15px 0;
@@ -6363,19 +6540,19 @@ main.information-single .section-content .navi ul li .active {
   height: auto !important;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content table thead tr th:last-child,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content table thead tr th:last-child,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content table thead tr th:last-child,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content table thead tr th:last-child,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content table thead tr th:last-child {
+main.local-professionals-news .section-content.entry-content .content table thead tr th:last-child,
+main.local-professionals-news-articles .section-content.entry-content .content table thead tr th:last-child,
+main.local-professionals-news-category .section-content.entry-content .content table thead tr th:last-child,
+main.local-professionals-news-post .section-content.entry-content .content table thead tr th:last-child,
+main.local-professionals-news-map .section-content.entry-content .content table thead tr th:last-child {
   border-left: none;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content table tbody tr,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content table tbody tr,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content table tbody tr,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content table tbody tr,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content table tbody tr {
+main.local-professionals-news .section-content.entry-content .content table tbody tr,
+main.local-professionals-news-articles .section-content.entry-content .content table tbody tr,
+main.local-professionals-news-category .section-content.entry-content .content table tbody tr,
+main.local-professionals-news-post .section-content.entry-content .content table tbody tr,
+main.local-professionals-news-map .section-content.entry-content .content table tbody tr {
   display: -webkit-box;
   display: flex;
   display: -webkit-flex;
@@ -6383,11 +6560,11 @@ main.information-single .section-content .navi ul li .active {
   height: auto !important;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content table tbody tr th,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content table tbody tr th,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content table tbody tr th,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content table tbody tr th,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content table tbody tr th {
+main.local-professionals-news .section-content.entry-content .content table tbody tr th,
+main.local-professionals-news-articles .section-content.entry-content .content table tbody tr th,
+main.local-professionals-news-category .section-content.entry-content .content table tbody tr th,
+main.local-professionals-news-post .section-content.entry-content .content table tbody tr th,
+main.local-professionals-news-map .section-content.entry-content .content table tbody tr th {
   width: 100%;
   display: block;
   padding: 15px;
@@ -6399,11 +6576,11 @@ main.information-single .section-content .navi ul li .active {
   height: auto !important;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content table tbody tr td,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content table tbody tr td,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content table tbody tr td,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content table tbody tr td,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content table tbody tr td {
+main.local-professionals-news .section-content.entry-content .content table tbody tr td,
+main.local-professionals-news-articles .section-content.entry-content .content table tbody tr td,
+main.local-professionals-news-category .section-content.entry-content .content table tbody tr td,
+main.local-professionals-news-post .section-content.entry-content .content table tbody tr td,
+main.local-professionals-news-map .section-content.entry-content .content table tbody tr td {
   width: 100%;
   display: block;
   padding: 15px;
@@ -6413,11 +6590,11 @@ main.information-single .section-content .navi ul li .active {
   height: auto !important;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content dl,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content dl,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content dl,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content dl,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content dl {
+main.local-professionals-news .section-content.entry-content .content dl,
+main.local-professionals-news-articles .section-content.entry-content .content dl,
+main.local-professionals-news-category .section-content.entry-content .content dl,
+main.local-professionals-news-post .section-content.entry-content .content dl,
+main.local-professionals-news-map .section-content.entry-content .content dl {
   display: -webkit-box;
   display: flex;
   display: -webkit-flex;
@@ -6430,42 +6607,42 @@ main.information-single .section-content .navi ul li .active {
   margin-bottom: 20px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content dl dt,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content dl dt,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content dl dt,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content dl dt,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content dl dt {
+main.local-professionals-news .section-content.entry-content .content dl dt,
+main.local-professionals-news-articles .section-content.entry-content .content dl dt,
+main.local-professionals-news-category .section-content.entry-content .content dl dt,
+main.local-professionals-news-post .section-content.entry-content .content dl dt,
+main.local-professionals-news-map .section-content.entry-content .content dl dt {
   width: 20%;
   line-height: 3.0rem;
   margin-bottom: 20px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content dl dd,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content dl dd,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content dl dd,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content dl dd,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content dl dd {
+main.local-professionals-news .section-content.entry-content .content dl dd,
+main.local-professionals-news-articles .section-content.entry-content .content dl dd,
+main.local-professionals-news-category .section-content.entry-content .content dl dd,
+main.local-professionals-news-post .section-content.entry-content .content dl dd,
+main.local-professionals-news-map .section-content.entry-content .content dl dd {
   width: 80%;
   line-height: 3.0rem;
   margin-bottom: 20px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content blockquote,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content blockquote,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content blockquote,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content blockquote,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content blockquote {
+main.local-professionals-news .section-content.entry-content .content blockquote,
+main.local-professionals-news-articles .section-content.entry-content .content blockquote,
+main.local-professionals-news-category .section-content.entry-content .content blockquote,
+main.local-professionals-news-post .section-content.entry-content .content blockquote,
+main.local-professionals-news-map .section-content.entry-content .content blockquote {
   font-size: 1.4rem;
   line-height: 3.2rem;
   padding: 20px;
   margin-bottom: 60px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content code,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content code,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content code,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content code,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content code {
+main.local-professionals-news .section-content.entry-content .content code,
+main.local-professionals-news-articles .section-content.entry-content .content code,
+main.local-professionals-news-category .section-content.entry-content .content code,
+main.local-professionals-news-post .section-content.entry-content .content code,
+main.local-professionals-news-map .section-content.entry-content .content code {
   display: block;
   padding: 8px;
   border-radius: 2px;
@@ -6474,11 +6651,11 @@ main.information-single .section-content .navi ul li .active {
   margin-bottom: 40px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content .gallery,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content .gallery,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content .gallery,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content .gallery,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content .gallery {
+main.local-professionals-news .section-content.entry-content .content .gallery,
+main.local-professionals-news-articles .section-content.entry-content .content .gallery,
+main.local-professionals-news-category .section-content.entry-content .content .gallery,
+main.local-professionals-news-post .section-content.entry-content .content .gallery,
+main.local-professionals-news-map .section-content.entry-content .content .gallery {
   display: -webkit-box;
   display: flex;
   display: -webkit-flex;
@@ -6490,113 +6667,113 @@ main.information-single .section-content .navi ul li .active {
   /*--- safari（PC）用 ---*/
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content .gallery dl dt,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content .gallery dl dt,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content .gallery dl dt,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content .gallery dl dt,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content .gallery dl dt {
+main.local-professionals-news .section-content.entry-content .content .gallery dl dt,
+main.local-professionals-news-articles .section-content.entry-content .content .gallery dl dt,
+main.local-professionals-news-category .section-content.entry-content .content .gallery dl dt,
+main.local-professionals-news-post .section-content.entry-content .content .gallery dl dt,
+main.local-professionals-news-map .section-content.entry-content .content .gallery dl dt {
   width: 100%;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content .gallery dl dt a,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content .gallery dl dt a,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content .gallery dl dt a,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content .gallery dl dt a,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content .gallery dl dt a {
+main.local-professionals-news .section-content.entry-content .content .gallery dl dt a,
+main.local-professionals-news-articles .section-content.entry-content .content .gallery dl dt a,
+main.local-professionals-news-category .section-content.entry-content .content .gallery dl dt a,
+main.local-professionals-news-post .section-content.entry-content .content .gallery dl dt a,
+main.local-professionals-news-map .section-content.entry-content .content .gallery dl dt a {
   display: block;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content .gallery dl dt a img,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content .gallery dl dt a img,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content .gallery dl dt a img,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content .gallery dl dt a img,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content .gallery dl dt a img {
+main.local-professionals-news .section-content.entry-content .content .gallery dl dt a img,
+main.local-professionals-news-articles .section-content.entry-content .content .gallery dl dt a img,
+main.local-professionals-news-category .section-content.entry-content .content .gallery dl dt a img,
+main.local-professionals-news-post .section-content.entry-content .content .gallery dl dt a img,
+main.local-professionals-news-map .section-content.entry-content .content .gallery dl dt a img {
   display: block;
   margin: auto;
   max-width: 100%;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content .gallery.gallery-columns-4 .gallery-item,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content .gallery.gallery-columns-4 .gallery-item,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content .gallery.gallery-columns-4 .gallery-item,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content .gallery.gallery-columns-4 .gallery-item,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content .gallery.gallery-columns-4 .gallery-item {
+main.local-professionals-news .section-content.entry-content .content .gallery.gallery-columns-4 .gallery-item,
+main.local-professionals-news-articles .section-content.entry-content .content .gallery.gallery-columns-4 .gallery-item,
+main.local-professionals-news-category .section-content.entry-content .content .gallery.gallery-columns-4 .gallery-item,
+main.local-professionals-news-post .section-content.entry-content .content .gallery.gallery-columns-4 .gallery-item,
+main.local-professionals-news-map .section-content.entry-content .content .gallery.gallery-columns-4 .gallery-item {
   width: calc(100% / 4);
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content .gallery.gallery-columns-3 .gallery-item,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content .gallery.gallery-columns-3 .gallery-item,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content .gallery.gallery-columns-3 .gallery-item,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content .gallery.gallery-columns-3 .gallery-item,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content .gallery.gallery-columns-3 .gallery-item {
+main.local-professionals-news .section-content.entry-content .content .gallery.gallery-columns-3 .gallery-item,
+main.local-professionals-news-articles .section-content.entry-content .content .gallery.gallery-columns-3 .gallery-item,
+main.local-professionals-news-category .section-content.entry-content .content .gallery.gallery-columns-3 .gallery-item,
+main.local-professionals-news-post .section-content.entry-content .content .gallery.gallery-columns-3 .gallery-item,
+main.local-professionals-news-map .section-content.entry-content .content .gallery.gallery-columns-3 .gallery-item {
   width: calc(100% / 3);
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content .gallery.gallery-columns-2 .gallery-item,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content .gallery.gallery-columns-2 .gallery-item,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content .gallery.gallery-columns-2 .gallery-item,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content .gallery.gallery-columns-2 .gallery-item,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content .gallery.gallery-columns-2 .gallery-item {
+main.local-professionals-news .section-content.entry-content .content .gallery.gallery-columns-2 .gallery-item,
+main.local-professionals-news-articles .section-content.entry-content .content .gallery.gallery-columns-2 .gallery-item,
+main.local-professionals-news-category .section-content.entry-content .content .gallery.gallery-columns-2 .gallery-item,
+main.local-professionals-news-post .section-content.entry-content .content .gallery.gallery-columns-2 .gallery-item,
+main.local-professionals-news-map .section-content.entry-content .content .gallery.gallery-columns-2 .gallery-item {
   width: calc(100% / 2);
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .content .gallery.gallery-columns-1 .gallery-item,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .content .gallery.gallery-columns-1 .gallery-item,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .content .gallery.gallery-columns-1 .gallery-item,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .content .gallery.gallery-columns-1 .gallery-item,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .content .gallery.gallery-columns-1 .gallery-item {
+main.local-professionals-news .section-content.entry-content .content .gallery.gallery-columns-1 .gallery-item,
+main.local-professionals-news-articles .section-content.entry-content .content .gallery.gallery-columns-1 .gallery-item,
+main.local-professionals-news-category .section-content.entry-content .content .gallery.gallery-columns-1 .gallery-item,
+main.local-professionals-news-post .section-content.entry-content .content .gallery.gallery-columns-1 .gallery-item,
+main.local-professionals-news-map .section-content.entry-content .content .gallery.gallery-columns-1 .gallery-item {
   width: 100%;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .pager,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .pager,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .pager,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .pager,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .pager {
+main.local-professionals-news .section-content.entry-content .pager,
+main.local-professionals-news-articles .section-content.entry-content .pager,
+main.local-professionals-news-category .section-content.entry-content .pager,
+main.local-professionals-news-post .section-content.entry-content .pager,
+main.local-professionals-news-map .section-content.entry-content .pager {
   margin-top: 60px;
   text-align: center;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .pager a,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .pager a,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .pager a,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .pager a,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .pager a {
+main.local-professionals-news .section-content.entry-content .pager a,
+main.local-professionals-news-articles .section-content.entry-content .pager a,
+main.local-professionals-news-category .section-content.entry-content .pager a,
+main.local-professionals-news-post .section-content.entry-content .pager a,
+main.local-professionals-news-map .section-content.entry-content .pager a {
   text-decoration: none;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .pager .index,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .pager .index,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .pager .index,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .pager .index,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .pager .index {
+main.local-professionals-news .section-content.entry-content .pager .index,
+main.local-professionals-news-articles .section-content.entry-content .pager .index,
+main.local-professionals-news-category .section-content.entry-content .pager .index,
+main.local-professionals-news-post .section-content.entry-content .pager .index,
+main.local-professionals-news-map .section-content.entry-content .pager .index {
   padding: 4px 50px;
   background-color: #00A9C6;
   color: #fff;
   margin: 0 10px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.entry-content .pager .fas,
-.main-aside-wrap main.local-professionals-news-articles .section-content.entry-content .pager .fas,
-.main-aside-wrap main.local-professionals-news-category .section-content.entry-content .pager .fas,
-.main-aside-wrap main.local-professionals-news-post .section-content.entry-content .pager .fas,
-.main-aside-wrap main.local-professionals-news-map .section-content.entry-content .pager .fas {
+main.local-professionals-news .section-content.entry-content .pager .fas,
+main.local-professionals-news-articles .section-content.entry-content .pager .fas,
+main.local-professionals-news-category .section-content.entry-content .pager .fas,
+main.local-professionals-news-post .section-content.entry-content .pager .fas,
+main.local-professionals-news-map .section-content.entry-content .pager .fas {
   font-size: 2rem;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.countries .page-navi,
-.main-aside-wrap main.local-professionals-news-articles .section-content.countries .page-navi,
-.main-aside-wrap main.local-professionals-news-category .section-content.countries .page-navi,
-.main-aside-wrap main.local-professionals-news-post .section-content.countries .page-navi,
-.main-aside-wrap main.local-professionals-news-map .section-content.countries .page-navi {
+main.local-professionals-news .section-content.countries .page-navi,
+main.local-professionals-news-articles .section-content.countries .page-navi,
+main.local-professionals-news-category .section-content.countries .page-navi,
+main.local-professionals-news-post .section-content.countries .page-navi,
+main.local-professionals-news-map .section-content.countries .page-navi {
   margin-bottom: 30px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.countries .page-navi a,
-.main-aside-wrap main.local-professionals-news-articles .section-content.countries .page-navi a,
-.main-aside-wrap main.local-professionals-news-category .section-content.countries .page-navi a,
-.main-aside-wrap main.local-professionals-news-post .section-content.countries .page-navi a,
-.main-aside-wrap main.local-professionals-news-map .section-content.countries .page-navi a {
+main.local-professionals-news .section-content.countries .page-navi a,
+main.local-professionals-news-articles .section-content.countries .page-navi a,
+main.local-professionals-news-category .section-content.countries .page-navi a,
+main.local-professionals-news-post .section-content.countries .page-navi a,
+main.local-professionals-news-map .section-content.countries .page-navi a {
   display: block;
   background-color: #00A9C6;
   color: #fff;
@@ -6607,211 +6784,82 @@ main.information-single .section-content .navi ul li .active {
   padding: 5px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.countries ul,
-.main-aside-wrap main.local-professionals-news-articles .section-content.countries ul,
-.main-aside-wrap main.local-professionals-news-category .section-content.countries ul,
-.main-aside-wrap main.local-professionals-news-post .section-content.countries ul,
-.main-aside-wrap main.local-professionals-news-map .section-content.countries ul {
+main.local-professionals-news .section-content.countries ul,
+main.local-professionals-news-articles .section-content.countries ul,
+main.local-professionals-news-category .section-content.countries ul,
+main.local-professionals-news-post .section-content.countries ul,
+main.local-professionals-news-map .section-content.countries ul {
   list-style-type: none;
   margin-bottom: 40px;
 }
 
-.main-aside-wrap main.local-professionals-news .section-content.countries ul li a,
-.main-aside-wrap main.local-professionals-news-articles .section-content.countries ul li a,
-.main-aside-wrap main.local-professionals-news-category .section-content.countries ul li a,
-.main-aside-wrap main.local-professionals-news-post .section-content.countries ul li a,
-.main-aside-wrap main.local-professionals-news-map .section-content.countries ul li a {
+main.local-professionals-news .section-content.countries ul li a,
+main.local-professionals-news-articles .section-content.countries ul li a,
+main.local-professionals-news-category .section-content.countries ul li a,
+main.local-professionals-news-post .section-content.countries ul li a,
+main.local-professionals-news-map .section-content.countries ul li a {
   color: #333;
   text-decoration: none;
   font-size: 1.6rem;
 }
 
-.main-aside-wrap main.local-professionals-news-category .section-content.posts {
+main.local-professionals-news-category .section-content.posts {
   padding-top: 60px;
 }
 
-.main-aside-wrap .aside {
+.contents-wrap.mypage {
+  background-color: #EFF7F8;
+}
+
+.contents-wrap.mypage .main-aside-wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 90px;
+  background-color: #fff;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
-  .main-aside-wrap .aside {
-    max-width: 340px;
-    margin-top: 40px;
-    margin-left: auto;
+  .contents-wrap.mypage .main-aside-wrap {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: initial;
   }
 }
 
-.main-aside-wrap .aside .box {
-  margin-bottom: 60px;
-}
-
-.main-aside-wrap .aside .box > .head {
-  font-size: 1.6rem;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #E4E4E4;
-}
-
-.main-aside-wrap .aside .box .link {
-  text-align: right;
-}
-
-.main-aside-wrap .aside .box.search .submit-wrap {
-  position: relative;
+.contents-wrap.mypage .main-aside-wrap .main {
   width: 100%;
-  margin-top: 10px;
+  background-color: #fff;
 }
 
-.main-aside-wrap .aside .box.search .submit-wrap .text {
+@media screen and (min-width: 768px) {
+  .contents-wrap.mypage .main-aside-wrap .main {
+    max-width: calc(100% - 320px);
+  }
+}
+
+.contents-wrap.mypage .main-aside-wrap .aside {
   width: 100%;
-  border-radius: 10px;
-  padding: 10px 20px;
-  min-height: 50px;
-  border: 1px solid #3DCDE6;
-  padding-right: 60px;
+  background-color: #fff;
 }
 
-.main-aside-wrap .aside .box.search .submit-wrap .text::-webkit-input-placeholder {
-  color: #E4E4E4;
-}
-
-.main-aside-wrap .aside .box.search .submit-wrap .text:-ms-input-placeholder {
-  color: #E4E4E4;
-}
-
-.main-aside-wrap .aside .box.search .submit-wrap .text::-ms-input-placeholder {
-  color: #E4E4E4;
-}
-
-.main-aside-wrap .aside .box.search .submit-wrap .text::placeholder {
-  color: #E4E4E4;
-}
-
-.main-aside-wrap .aside .box.search .submit-wrap .submit {
-  position: absolute;
-  display: block;
-  right: 10px;
-  top: calc(50% - 16px);
-  width: 60px;
-  height: 32px;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  background-color: #3DCDE6;
-}
-
-.main-aside-wrap .aside .box.area ul {
-  display: -webkit-box;
-  display: flex;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  /*--- IE10用 ---*/
-  -webkit-flex-wrap: wrap;
-  /*--- safari（PC）用 ---*/
-  list-style-type: none;
-}
-
-.main-aside-wrap .aside .box.area ul li {
-  width: 50%;
-  padding: 10px 0;
-  border-bottom: 1px solid #E4E4E4;
-  font-size: 16px;
-  padding-left: 20px;
-  line-height: 2.4rem;
-  position: relative;
-}
-
-.main-aside-wrap .aside .box.area ul li:before {
-  position: absolute;
-  top: 20px;
-  left: 0px;
-  display: block;
-  content: '';
-  width: 10px;
-  height: 10px;
-  background-color: #00A9C6;
-  border-radius: 50%;
-}
-
-.main-aside-wrap .aside .box.area ul li a {
-  display: block;
-  color: #333;
-  text-decoration: none;
-}
-
-.main-aside-wrap .aside .box.hushtags .tags {
-  display: -webkit-box;
-  display: flex;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  /*--- IE10用 ---*/
-  -webkit-flex-wrap: wrap;
-  /*--- safari（PC）用 ---*/
-  list-style-type: none;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #E4E4E4;
-}
-
-.main-aside-wrap .aside .box.hushtags .tags li {
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
-.main-aside-wrap .aside .box.hushtags .tags li a {
-  color: #333;
-  padding: 0 10px;
-  background-color: #E4E4E4;
-  text-decoration: none;
-}
-
-.main-aside-wrap .aside .box.ranking .post {
-  display: -webkit-box;
-  display: flex;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #E4E4E4;
-}
-
-.main-aside-wrap .aside .box.ranking .post .img {
-  width: 100%;
-  max-width: 100px;
-  max-height: 100px;
-  position: relative;
-  background-color: #E4E4E4;
-}
-
-.main-aside-wrap .aside .box.ranking .post .img img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.main-aside-wrap .aside .box.ranking .post .img .num {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  line-height: 20px;
-  text-align: center;
-  color: #fff;
-  background-color: #333;
-}
-
-.main-aside-wrap .aside .box.ranking .post .info {
-  margin-left: 20px;
-}
-
-.main-aside-wrap .aside .box.ranking .post .info .country-name {
-  font-size: 1.2rem;
-}
-
-.main-aside-wrap .aside .box.ranking .post .info .title {
-  font-size: 1.4rem;
+@media screen and (min-width: 768px) {
+  .contents-wrap.mypage .main-aside-wrap .aside {
+    max-width: 260px;
+    margin-left: 0;
+    margin-right: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

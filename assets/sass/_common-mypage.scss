@@ -1,0 +1,32 @@
+.contents-wrap.mypage {
+    background-color: #EFF7F8;
+    @media screen and (min-width: $tablet) {}
+    .main-aside-wrap {
+        @include reverce;
+        @include inner;
+        padding-bottom: 90px;
+        background-color: #fff;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        @media screen and (min-width: $tablet) {
+            @include inner;
+            background-color: initial;
+        }
+        .main {
+            width: 100%;
+            background-color: #fff;
+            @media screen and (min-width: $tablet) {
+                max-width: calc(100% - 320px);
+            }
+        }
+        .aside {
+            width: 100%;
+            background-color: #fff;
+            @media screen and (min-width: $tablet) {
+                max-width: 260px;
+                margin-left: 0;
+                margin-right: auto;
+            }
+        }
+    }
+}

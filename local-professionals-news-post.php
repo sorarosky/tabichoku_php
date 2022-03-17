@@ -2,7 +2,7 @@
 <?php include 'breadcrumb.php';?>
 <div class="contents-wrap">
   <div class="main-aside-wrap">
-    <main class="mian local-professionals-news-post">
+    <main class="main local-professionals-news-post">
       <section class="section-content entry-content">
         <div class="inner">
           <div class="id">ID:000000000</div>

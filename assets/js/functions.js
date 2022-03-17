@@ -215,7 +215,7 @@ jQuery(function($) {
                 // }
             }
         });
-        var mySwiper = new Swiper('.swiper-container-local-professionals-news', {
+        var mySwiper = new Swiper('.swiper-container-local-professionals-news-pickup', {
             loop: true,
             speed: 1000,
             autoplay: {
