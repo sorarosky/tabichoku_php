@@ -1,0 +1,134 @@
+main.local-partner-recruit {
+    .section-content {
+        .inner {
+            @include inner;
+            >.head {
+                font-size: 2.4rem;
+                color: $green;
+                font-weight: bold;
+                text-align: center;
+                @media screen and (min-width: $tablet) {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+        &.page-head {
+            background-image: url(assets/img/page-head-local-partner-recruit.jpg);
+        }
+        &.merit {
+            padding-top: 60px;
+            padding-bottom: 80px;
+            .inner {
+                .row {
+                    margin-top: 100px;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                    @media screen and (min-width: $tablet) {}
+                    &.primary {
+                        margin-top: 10px;
+                    }
+                    &.secondary {
+                        @include reverce;
+                    }
+                    .col {
+                        margin-top: 20px;
+                        padding-right: 20px;
+                        padding-left: 20px;
+                        .img {
+                            img {
+                                @include img;
+                            }
+                        }
+                        .head {
+                            font-size: 1.8rem;
+                        }
+                        .text {
+                            font-size: 1.6rem;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        &.local-business {
+            padding-top: 60px;
+            padding-bottom: 80px;
+            .inner {
+                max-width: 1020px;
+                .row {
+                    margin-top: 15px;
+                    .col {
+                        margin-top: 15px;
+                        span {
+                            display: block;
+                            padding: 0 10px;
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        &.local-partner {
+            padding-top: 60px;
+            padding-bottom: 100px;
+            .inner {
+                .img {
+                    img {
+                        @include img;
+                    }
+                }
+                .text {
+                    margin-top: 30px;
+                    max-width: 900px;
+                    margin: 0 auto;
+                    margin-top: 30px;
+                }
+                .form {
+                    border: 1px solid $green;
+                    max-width: 900px;
+                    margin: 0 auto;
+                    padding: 50px 0;
+                    .head {
+                        font-size: 3.2rem;
+                        color: $green;
+                        text-align: center;
+                    }
+                    .text {
+                        text-align: center;
+                        margin-top: 50px;
+                    }
+                    .row {
+                        max-width: 600px;
+                        margin: 0 auto;
+                        .col {
+                            margin-top: 20px;
+                            span {
+                                font-size: 1.6rem;
+                                &.required {
+                                    &::after {
+                                        padding: 0 4px;
+                                        content: "必須";
+                                        background-color: $red;
+                                        color: #fff;
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+                            @include form_input;
+                        }
+                    }
+                    .button {
+                        @include btn;
+                        @include gradient;
+                        max-width: 340px;
+                        color: #fff;
+                        padding: 20px;
+                        border-radius: 50px;
+                        font-size: 1.8rem;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

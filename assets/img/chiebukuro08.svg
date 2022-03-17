@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="280" height="280" viewBox="0 0 280 280">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.241" y1="-0.119" x2="0.802" y2="1.108" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3dcde6"/>
+      <stop offset="1" stop-color="#68dcb6"/>
+    </linearGradient>
+  </defs>
+  <g id="_8" data-name="8" transform="translate(-830 -2715)">
+    <rect id="Rectangle_2495" data-name="Rectangle 2495" width="280" height="280" transform="translate(830 2715)" fill="#fff"/>
+    <g id="bed" transform="translate(860 2744)">
+      <rect id="Rectangle_3133" data-name="Rectangle 3133" width="220" height="220" transform="translate(0 1)" fill="rgba(255,255,255,0)"/>
+      <path id="Union_7" data-name="Union 7" d="M1841.992,12796.152l-2.155-18.523h27.947l-2.149,18.523Zm-121.627,0-2.149-18.523h27.947l-2.152,18.523Zm-14.179-24.725a13.184,13.184,0,0,1-13.185-13.184v-21.176h200v21.176a13.184,13.184,0,0,1-13.185,13.184Zm-11.727-39.121,25.643-66.131h145.8l25.643,66.131Zm25.643-71.816v-33.184a12.3,12.3,0,0,1,12.305-12.3h121.186a12.3,12.3,0,0,1,12.306,12.3v33.18h-20.784a9.437,9.437,0,0,0,1.117-4.393v-12.258a9.554,9.554,0,0,0-9.551-9.551h-30.56a9.551,9.551,0,0,0-9.548,9.551v12.258a9.437,9.437,0,0,0,1.117,4.393h-9.376a9.406,9.406,0,0,0,1.12-4.393v-12.258a9.554,9.554,0,0,0-9.551-9.551h-30.56a9.554,9.554,0,0,0-9.551,9.551v12.258a9.467,9.467,0,0,0,1.117,4.4Z" transform="translate(-1682.999 -12595.002)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

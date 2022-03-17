@@ -1,0 +1,136 @@
+main.chiebukuro {
+    .section-content {
+        &.page-head {
+            background-image: url(assets/img/page-head-chiebukuro.jpg);
+        }
+        &.contents {
+            padding-top: 60px;
+            padding-bottom: 100px;
+            >.inner {
+                @include inner;
+                >.head {
+                    font-size: 2.4rem;
+                    color: $green;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-bottom: -150px;
+                    @media screen and (min-width: $tablet) {
+                        font-size: 2.4rem;
+                    }
+                }
+                >.row {
+                    margin-top: 190px;
+                    .col {
+                        .img {
+                            width: 100%;
+                            max-width: 150px;
+                            margin: 0 auto;
+                            @media screen and (min-width: $tablet) {
+                                max-width: 280px;
+                            }
+                            img {
+                                @include img;
+                            }
+                        }
+                        .head {
+                            font-size: 1.8rem;
+                            @media screen and (min-width: $tablet) {
+                                font-size: 2.8rem;
+                            }
+                        }
+                        .text {
+                            font-size: 1.6rem;
+                            margin-top: 20px;
+                            line-height: 3.6rem;
+                        }
+                        .link {
+                            font-size: 1.6rem;
+                            margin-top: 60px;
+                            &:before {
+                                font-family: "Font Awesome 5 Free";
+                                font-weight: 900;
+                                content: "\f0c6";
+                                margin-right: 10px;
+                            }
+                            span {
+                                color: $blue;
+                            }
+                        }
+                    }
+                }
+                .orverlay {
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    z-index: 9999;
+                    &.show {
+                        @include flex;
+                        @include wrap;
+                    }
+                    .inner {
+                        display: none;
+                        margin: auto;
+                        overflow-x: scroll;
+                        img {
+                            @include img;
+                            min-width: 800px;
+                        }
+                    }
+                }
+            }
+            .infos {
+                border: 1px solid $blue02;
+                padding: 40px;
+                margin-top: 150px;
+                .text {
+                    font-size: 1.6rem;
+                    text-align: center;
+                }
+                .links {
+                    width: 100%;
+                    max-width: 470px;
+                    margin: 0 auto;
+                    .link {
+                        margin-top: 35px;
+                        a {
+                            border: 1px solid $blue02;
+                            padding: 10px;
+                            text-align: center;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        &.category-navi {
+            .col {
+                @include flex;
+                @include wrap;
+                padding-top: 100px;
+                padding-bottom: 100px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                color: #fff;
+                &.travel-content {
+                    background-image: url(assets/img/category-navi01.jpg);
+                }
+                &.professionals-news {
+                    background-image: url(assets/img/category-navi02.jpg);
+                }
+                .text-wrap {
+                    text-align: center;
+                    font-size: 4rem;
+                    margin: auto;
+                    span {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

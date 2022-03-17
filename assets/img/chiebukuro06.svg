@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="280" height="280" viewBox="0 0 280 280">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.241" y1="-0.119" x2="0.802" y2="1.108" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3dcde6"/>
+      <stop offset="1" stop-color="#68dcb6"/>
+    </linearGradient>
+  </defs>
+  <g id="_6" data-name="6" transform="translate(-830 -2013)">
+    <rect id="Rectangle_2497" data-name="Rectangle 2497" width="280" height="280" transform="translate(830 2013)" fill="#fff"/>
+    <g id="restaurant" transform="translate(860 2047)">
+      <rect id="Rectangle_3131" data-name="Rectangle 3131" width="220" height="220" transform="translate(0 -4)" fill="rgba(255,255,255,0)"/>
+      <path id="Union_8" data-name="Union 8" d="M1699.132,13432.76v-113.185a14.97,14.97,0,0,1-6.132-12.059l20-57.517h24.051l-13.985,57.517a15,15,0,0,1-11.358,14.525v98.138h82.784v-66.4h57.149v66.4H1874.3v-98.138a15,15,0,0,1-11.358-14.525L1848.949,13250H1873l20,57.517a14.976,14.976,0,0,1-6.129,12.059v113.185Zm104.79-12.58h38.285v-56.966h-38.285Zm-68.188-37.429v-33.429h33.43v33.429Zm84.72-75.234-5.49-57.517h24.051l11.5,57.517a15.031,15.031,0,1,1-30.063,0Zm-42.486,0,3.007-57.517h24.051l3,57.517a15.031,15.031,0,1,1-30.063,0Zm-42.486,0,11.505-57.517h24.051l-5.487,57.517a15.034,15.034,0,1,1-30.069,0Z" transform="translate(-1683 -13235.001)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

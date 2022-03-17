@@ -1,0 +1,112 @@
+main.faq {
+    .section-content {
+        &.page-head {
+            background-image: url(assets/img/page-head-ad.jpg);
+        }
+        &.contents {
+            padding-bottom: 100px;
+            .inner {
+                @include inner;
+                max-width: 1040px;
+                .links {
+                    margin-top: 20px;
+                    .link {
+                        margin-top: 20px;
+                        a {
+                            display: block;
+                            background-color: $blue;
+                            color: $blue;
+                            text-align: center;
+                            text-decoration: none;
+                            border-radius: 10px;
+                            padding: 15px;
+                            position: relative;
+                            color: #fff;
+                            &::after {
+                                position: absolute;
+                                font-family: "Font Awesome 5 Free";
+                                font-weight: 900;
+                                content: "\f107";
+                                right: 20px;
+                            }
+                        }
+                    }
+                }
+                >.head {
+                    padding: 15px;
+                    color: #fff;
+                    background-color: $blue;
+                    margin-top: 60px;
+                    margin-bottom: 20px;
+                    font-size: 1.8rem;
+                }
+                .acordion-wrap {
+                    border: 1px solid $gray;
+                    padding: 20px;
+                    margin-top: 20px;
+                    .acordion-head {
+                        position: relative;
+                        padding-left: 40px;
+                        &:before {
+                            display: block;
+                            content: 'Q';
+                            padding: 0;
+                            color: #fff;
+                            font-size: 1.6rem;
+                            position: absolute;
+                            background-color: $blue;
+                            width: 32px;
+                            height: 32px;
+                            text-align: center;
+                            margin-right: 10px;
+                            left: 0;
+                        }
+                        &::after {
+                            position: absolute;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            content: "\f078";
+                            right: 0px;
+                            transform: rotate(-90deg);
+                            transition: transform 0.3s ease-in-out;
+                        }
+                        &.shown {
+                            &::after {
+                                content: "\f078";
+                                transform: rotate(0deg);
+                                transition: transform 0.3s ease-in-out;
+                            }
+                        }
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                    .acordion-content {
+                        .text {
+                            background-color: $blue03;
+                            position: relative;
+                            padding-left: 40px;
+                            padding: 20px 20px 70px 70px;
+                            border-radius: 10px;
+                            margin-top: 10px;
+                            &:before {
+                                display: block;
+                                content: 'A';
+                                padding: 0;
+                                color: $blue;
+                                font-size: 1.6rem;
+                                position: absolute;
+                                background-color: #fff;
+                                width: 32px;
+                                height: 32px;
+                                text-align: center;
+                                margin-right: 10px;
+                                left: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

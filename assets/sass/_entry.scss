@@ -1,0 +1,277 @@
+main.entry-form,
+main.entry-form-conf,
+main.entry-form-thx {
+    .section-content {
+        padding-top: 60px;
+        padding-bottom: 100px;
+        .inner {
+            @include inner;
+            max-width: 940px;
+            >.head {
+                font-size: 3.2rem;
+                text-align: center;
+                color: $green;
+                font-weight: bold;
+            }
+            .states {
+                max-width: calc(190px * 3);
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 60px;
+                .points {
+                    @include flex;
+                    @include sb;
+                    width: 100%;
+                    .point {
+                        position: relative;
+                        width: calc(100% / 3);
+                        text-align: center;
+                        padding-top: 24px;
+                        color: #ccc;
+                        font-weight: bold;
+                        &:before {
+                            position: absolute;
+                            display: block;
+                            width: 14px;
+                            height: 14px;
+                            content: '';
+                            left: calc(50% - 7px);
+                            top: 0;
+                            background-color: #ccc;
+                            border-radius: 50%;
+                            z-index: 2;
+                        }
+                        &:after {
+                            position: absolute;
+                            display: block;
+                            width: 100%;
+                            height: 2px;
+                            content: '';
+                            left: 50%;
+                            top: 6px;
+                            background-color: #ccc;
+                            z-index: 1;
+                        }
+                        &:last-child {
+                            &:after {
+                                display: none;
+                            }
+                        }
+                        &.current {
+                            color: $black;
+                            &:before {
+                                background-color: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+            >.text {
+                margin-top: 40px;
+            }
+            .form {
+                width: 100%;
+                margin-top: 60px;
+                table {
+                    width: 100%;
+                    border-top: 1px solid $gray;
+                    tr {
+                        @include flex;
+                        @include wrap;
+                        border-bottom: 1px solid $gray;
+                        width: 100%;
+                        th {
+                            width: 100%;
+                            text-align-last: left;
+                            padding: 20px 0;
+                            padding-right: 50px;
+                            position: relative;
+                            &::after {
+                                content: "任意";
+                                position: absolute;
+                                padding: 0 4px;
+                                background-color: #888888;
+                                color: #fff;
+                                top: 20px;
+                                right: 0px;
+                                @media screen and (min-width: $tablet) {
+                                    right: 20px;
+                                }
+                            }
+                            &.reqired {
+                                &::after {
+                                    content: "必須";
+                                    padding: 0 2px;
+                                    background-color: $red;
+                                    color: #fff;
+                                }
+                            }
+                            @media screen and (min-width: $tablet) {
+                                width: 20%;
+                            }
+                        }
+                        td {
+                            width: 100%;
+                            padding-top: 0px;
+                            padding-bottom: 20px;
+                            @media screen and (min-width: $tablet) {
+                                width: 80%;
+                                padding-top: 20px;
+                            }
+                        }
+                        input,
+                        textarea {
+                            width: 100%;
+                            padding: 10px;
+                            border-radius: 4px;
+                            border: 1px solid $gray;
+                            &.country-num {
+                                width: 90%;
+                            }
+                        }
+                        .select-wrap {
+                            position: relative;
+                            width: 100%;
+                            max-width: 480px;
+                            border-radius: 4px;
+                            &::after {
+                                font-size: 1rem;
+                                position: absolute;
+                                right: 10px;
+                                top: calc(50% - 13px);
+                                font-family: "Font Awesome 5 Free";
+                                font-weight: 900;
+                                content: "\f078";
+                            }
+                            select {
+                                @include form_input;
+                                background-color: #fff;
+                                text-overflow: ellipsis;
+                                outline: none;
+                                background-image: none;
+                                box-shadow: none;
+                                -webkit-appearance: none;
+                                appearance: none;
+                                padding-right: 20px;
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                .text,
+                .privacy {
+                    width: 100%;
+                    max-width: 800px;
+                    margin: 0 auto;
+                }
+                .text {
+                    margin-top: 40px;
+                    .fa-window-restore {}
+                }
+                .privacy {
+                    text-align: center;
+                    input {
+                        transform: scale(150%);
+                        margin-right: 10px;
+                    }
+                }
+                .btn-wrap {
+                    position: relative;
+                    max-width: 400px;
+                    margin: 0 auto;
+                    &::after {
+                        position: absolute;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: "\f105";
+                        right: 20px;
+                        top: calc(50% - 15px);
+                        color: #fff;
+                    }
+                    .button {
+                        @include btn;
+                        background-color: $blue02;
+                        padding: 20px;
+                        color: #fff;
+                        border-radius: 40px;
+                        font-size: 2rem;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main.entry-form-conf {
+    .form {
+        text-align: center;
+        .privacy {
+            .fa-check {
+                color: $green;
+                font-size: 2rem;
+            }
+        }
+    }
+    .button {
+        @include btn;
+        max-width: 360px;
+        padding: 20px 0;
+        background-color: $blue02;
+        border-radius: 40px;
+        color: #fff;
+        margin-top: 30px;
+    }
+}
+
+main.entry-form-thx {
+    .section-content {
+        padding-top: 60px;
+        padding-bottom: 100px;
+        .inner {
+            @include inner;
+            max-width: 640px;
+            >.text {
+                font-size: 2.8rem;
+                text-align: center;
+                line-height: 3.7rem;
+                .fa-check-circle {
+                    color: $green;
+                    font-size: 4rem;
+                }
+            }
+            ul {
+                margin-top: 30px;
+                font-size: 1.6rem;
+            }
+            .contact {
+                border: 2px solid $blue02;
+                border-radius: 10px;
+                padding: 20px 0 30px;
+                margin-top: 50px;
+                .logo {
+                    max-width: 200px;
+                    margin: 0 auto;
+                    img {
+                        @include img;
+                    }
+                }
+                .button {
+                    @include btn;
+                    max-width: 360px;
+                    padding: 20px 0;
+                    background-color: $blue02;
+                    border-radius: 40px;
+                    color: #fff;
+                    margin-top: 30px;
+                }
+            }
+            .link {
+                text-align: center;
+                margin-top: 60px;
+            }
+        }
+    }
+}

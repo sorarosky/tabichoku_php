@@ -1,0 +1,569 @@
+main.home {
+    width: 100%;
+    .section-content {
+        &.kv {
+            .orverlay {
+                @include flex;
+                @include wrap;
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding-top: 70px;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                min-height: 530px;
+                z-index: 9997;
+                .inner {
+                    margin: auto;
+                    max-width: 335px;
+                    @media screen and (min-width: $tablet) {
+                        max-width: 800px;
+                    }
+                    .copy {
+                        margin-top: auto;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 2.4rem;
+                    }
+                    >.text {
+                        text-align: center;
+                        color: #fff;
+                        font-size: 1.4rem;
+                        margin-top: 20px;
+                        line-height: 2rem;
+                        @media screen and (min-width: $tablet) {
+                            margin-top: 50px;
+                        }
+                    }
+                    .form {
+                        .head {
+                            color: #fff;
+                            margin-top: 20px;
+                        }
+                        .submit-wrap {
+                            position: relative;
+                            width: 100%;
+                            .text {
+                                width: 100%;
+                                border-radius: 10px;
+                                padding: 20px;
+                                min-height: 50px;
+                                border: 1px solid $blue02;
+                                padding-right: 60px;
+                                &::placeholder {
+                                    color: $gray;
+                                }
+                            }
+                            .submit {
+                                position: absolute;
+                                display: block;
+                                right: 10px;
+                                top: calc(50% - 16px);
+                                width: 60px;
+                                height: 32px;
+                                color: #fff;
+                                border: none;
+                                border-radius: 6px;
+                                background-color: $blue02;
+                            }
+                        }
+                    }
+                    .search-navi {
+                        margin-top: 20px;
+                        list-style-type: none;
+                        .col {
+                            a {
+                                @include flex;
+                                @include wrap;
+                                background-color: $blue;
+                                color: #fff;
+                                font-size: 1.2rem;
+                                text-align: center;
+                                border-radius: 10px;
+                                line-height: 1.6rem;
+                                min-height: 40px;
+                                text-decoration: none;
+                                span {
+                                    display: block;
+                                    margin: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-container-top-kv-wrapper {
+                width: 100%;
+                .swiper-slide {
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    min-height: 530px;
+                    &.top-kv01 {
+                        background-image: url(assets/img/top-kv01.jpg);
+                    }
+                    &.top-kv02 {
+                        background-image: url(assets/img/top-kv02.jpg);
+                    }
+                    &.top-kv03 {
+                        background-image: url(assets/img/top-kv03.jpg);
+                    }
+                    &.top-kv04 {
+                        background-image: url(assets/img/top-kv04.jpg);
+                    }
+                    &.top-kv05 {
+                        background-image: url(assets/img/top-kv05.jpg);
+                    }
+                }
+            }
+        }
+        &.new-content {
+            @include top-section;
+            .inner {
+                @include gradient;
+                position: relative;
+                z-index: 1;
+                max-width: 100%;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 266px;
+                    background-color: #fff;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+        &.recommended-content {
+            @include top-section;
+            .inner {
+                max-width: 100%;
+                .button {
+                    @include gradient;
+                    color: #fff;
+                }
+            }
+        }
+        &.local-professionals {
+            @include top-section;
+            .inner {
+                @include inner;
+                @include gradient;
+                max-width: 100%;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 480px;
+                    background-color: #fff;
+                    bottom: 0;
+                    left: 0;
+                }
+                .head {
+                    color: #fff;
+                }
+                .sub-head {
+                    color: #fff;
+                }
+                .text {
+                    color: #fff;
+                }
+                .swiper-slide {
+                    margin-top: 30px;
+                    border-radius: 0 10px 10px 10px;
+                    overflow: hidden;
+                    background-color: #fff;
+                    padding-bottom: 40px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+                    .img {
+                        position: relative;
+                        .country-name {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            color: #fff;
+                            background-color: $black;
+                            padding: 0 5px;
+                        }
+                        img {
+                            @include img;
+                        }
+                        .company-name {
+                            position: absolute;
+                            bottom: 0;
+                            padding: 0 5px;
+                            color: #fff;
+                            background-color: $black;
+                        }
+                    }
+                    .title {
+                        padding: 0 10px;
+                        font-size: 1.6rem;
+                        line-height: 2rem;
+                    }
+                    .countries {
+                        margin-top: 20px;
+                        padding: 0 10px;
+                        color: #009664;
+                    }
+                    .tags {
+                        margin-top: 20px;
+                        font-weight: bold;
+                        padding: 0 10px;
+                        color: #007C91;
+                    }
+                }
+                .button {
+                    @include gradient;
+                    color: #fff;
+                }
+            }
+        }
+        &.travel-content {
+            padding-top: 40px;
+            padding-bottom: 60px;
+            >.inner {
+                @include inner;
+                @include header-module;
+                @include search-module;
+                max-width: 1200px;
+                .form {
+                    margin-top: 20px;
+                }
+                .inner {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                }
+            }
+        }
+        &.consultation {
+            @include gradient;
+            padding-top: 40px;
+            padding-bottom: 60px;
+            .inner {
+                @include inner;
+                @include header-module;
+                max-width: 1200px;
+                .head {
+                    color: #fff;
+                }
+                .sub-head {
+                    color: #fff;
+                }
+                .row {
+                    margin-top: 10px;
+                    .col {
+                        dl {
+                            dt {
+                                margin-top: 20px;
+                                color: #fff;
+                                &.reqired {
+                                    &::after {
+                                        content: '必須';
+                                        padding: 0 4px;
+                                        background-color: #fff;
+                                        color: $blue;
+                                        margin-left: 20px;
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                            }
+                            dd {
+                                input,
+                                textarea {
+                                    @include form_input;
+                                }
+                            }
+                        }
+                    }
+                }
+                .links {
+                    @include flex;
+                    @include wrap;
+                    @include center;
+                    list-style-type: none;
+                    max-width: 240px;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    a {
+                        padding: 0 10px;
+                        color: #fff;
+                    }
+                }
+                .privacy {
+                    margin-top: 30px;
+                    color: #fff;
+                    input {
+                        transform: scale(1.5);
+                        margin-right: 10px;
+                    }
+                }
+                .privacy-label {
+                    color: #fff;
+                }
+                .button {
+                    @include btn;
+                    margin-top: 40px;
+                    border-radius: 100px;
+                    min-height: 50px;
+                    line-height: 40px;
+                    background-color: #fff;
+                    max-width: 280px;
+                    &::after {
+                        position: absolute;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: "\f105";
+                        right: 20px;
+                    }
+                }
+            }
+        }
+        &.local-professionals-news {
+            padding-top: 40px;
+            background-color: #F5F5F4;
+            @include top-section;
+            .inner {
+                @include inner;
+                max-width: 100%;
+                .swiper-slide {
+                    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+                    .date {
+                        padding: 0 10px;
+                    }
+                    .tags {
+                        @include flex;
+                        @include wrap;
+                        list-style-type: none;
+                        padding: 0 10px;
+                        li {
+                            padding: 0 5px;
+                            background-color: $gray;
+                            margin-right: 5px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+                .button {
+                    @include btn;
+                    @include gradient;
+                    margin-top: 40px;
+                    border-radius: 100px;
+                    min-height: 50px;
+                    line-height: 40px;
+                    background-color: $blue;
+                    color: #fff;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+                    &::after {
+                        position: absolute;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: "\f105";
+                        right: 20px;
+                    }
+                }
+            }
+        }
+        &.who-we-are {
+            padding-bottom: 13%;
+            .wrap {
+                @include inner;
+                .img {
+                    @media screen and (min-width: $tablet) {
+                        position: absolute;
+                        right: 0;
+                        width: calc(700px + (50vw - 500px));
+                    }
+                    img {
+                        @include img;
+                    }
+                }
+                .inner {
+                    @include inner;
+                    @include header-module;
+                    padding-top: 40px;
+                    margin-left: 0;
+                    &.primary {
+                        @media screen and (min-width: $tablet) {
+                            width: 300px;
+                        }
+                    }
+                    .navi {
+                        .links {
+                            margin-top: 30px;
+                            .link {
+                                margin-top: 20px;
+                                a {
+                                    @include btn;
+                                    border-radius: 50px;
+                                }
+                                &.primary {
+                                    a {
+                                        background-color: $blue;
+                                        color: #fff;
+                                    }
+                                }
+                                &.secondary {
+                                    a {
+                                        background-color: $green;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .inner.secondary {
+                @include inner;
+            }
+        }
+        &.merit {
+            >.inner {
+                @include inner;
+                @include header-module;
+                .box {
+                    @include box;
+                    box-shadow: 0 0 10px #00000029;
+                    margin-top: 20px;
+                    padding: 20px;
+                    position: relative;
+                    &.merit01,
+                    &.merit02,
+                    &.merit03 {
+                        .img {
+                            &.primary {
+                                float: right;
+                                @media screen and (min-width: $tablet) {
+                                    display: none;
+                                }
+                            }
+                            &.secondary {
+                                display: none;
+                                @media screen and (min-width: $tablet) {
+                                    display: block;
+                                    max-width: 180px;
+                                    margin: 0 auto;
+                                }
+                            }
+                            img {
+                                @include img;
+                            }
+                        }
+                        .head {
+                            color: $blue;
+                            span {
+                                font-size: 4.4rem;
+                            }
+                        }
+                        .sub-head {
+                            text-align: center;
+                            font-size: 1.6rem;
+                            @media screen and (min-width: $tablet) {
+                                font-size: 2.2rem;
+                            }
+                        }
+                    }
+                }
+                .row {
+                    .head {
+                        font-size: 1.6rem;
+                        font-weight: bold;
+                        text-align: left;
+                        color: $blue;
+                        margin-top: 30px;
+                    }
+                    .col {
+                        margin-top: 10px;
+                        a {
+                            @include box;
+                            padding: 10px;
+                            display: block;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+                            text-decoration: none;
+                            @media screen and (min-width: $tablet) {
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .button {
+                        @include btn;
+                        background-color: $blue02;
+                        border-radius: 50px;
+                        color: #fff;
+                        padding: 5px;
+                        font-size: 1.6rem;
+                        margin-top: 30px;
+                        line-height: 40px;
+                        max-width: 360px;
+                        &::after {
+                            position: absolute;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            content: "\f105";
+                            right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        &.information {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            .inner {
+                @include inner;
+                @include header-module;
+                .post {
+                    margin-top: 20px;
+                    @media screen and (min-width: $tablet) {
+                        @include flex;
+                        @include wrap;
+                    }
+                    .info {
+                        width: 100%;
+                        @include flex;
+                        @include wrap;
+                        @media screen and (min-width: $tablet) {
+                            width: initial;
+                            margin-right: 10px;
+                        }
+                        .date {
+                            font-size: 1.4rem;
+                        }
+                        .category {
+                            border: 1px solid $blue;
+                            color: $blue;
+                            padding: 0 5px;
+                            margin-left: 10px;
+                        }
+                    }
+                    .title {
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                            opacity: 1;
+                        }
+                    }
+                }
+                .button {
+                    @include btn;
+                    margin-top: 40px;
+                    border-radius: 100px;
+                    min-height: 50px;
+                    line-height: 40px;
+                    color: #fff;
+                    max-width: 360px;
+                    @include gradient;
+                    &::after {
+                        position: absolute;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: "\f105";
+                        right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

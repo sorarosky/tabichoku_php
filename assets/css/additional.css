@@ -1,0 +1,20 @@
+/*drawerメニューのバグ回避*/
+.drawer--top.drawer-open .drawer-nav {
+  top: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.drawer--left.drawer-open .drawer-nav,
+.drawer--left .drawer-hamburger,
+.drawer--left.drawer-open .drawer-navbar .drawer-hamburger {
+  left: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.drawer--right.drawer-open .drawer-nav,
+.drawer--right .drawer-hamburger,
+.drawer--right.drawer-open .drawer-navbar .drawer-hamburger {
+  right: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}

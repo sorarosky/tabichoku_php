@@ -1,0 +1,648 @@
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    @include font01;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    color: $black;
+    &.fixed {
+        overflow: auto;
+        height: 100%;
+    }
+    &.drawer-open {
+        .drawer-hamburger {
+            .open {
+                display: none;
+            }
+            .close {
+                display: block;
+            }
+        }
+        .drawer-hamburger-icon {
+            z-index: 9999;
+            background-color: transparent !important;
+        }
+    }
+}
+
+a {
+    color: $blue;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    &:hover {
+        color: $blue;
+        text-decoration: none;
+        opacity: 0.6;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -ms-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+    }
+}
+
+.sp-pc {
+    @include sp-pc;
+}
+
+body>.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    max-width: 100%;
+    padding: 0;
+    .inner {
+        @include inner;
+        @include flex;
+        min-height: 70px;
+        max-width: 1640px;
+        @media screen and (min-width: $tablet) {
+            min-height: 70px;
+            padding-right: 20px;
+        }
+        .logo {
+            display: block;
+            margin-top: auto;
+            margin-bottom: auto;
+            max-width: 150px;
+            @media screen and (min-width: $tablet) {
+                max-width: 240px;
+            }
+            img {
+                @include img;
+            }
+        }
+        .g-navi {
+            @include flex;
+            .links {
+                display: none;
+                @media screen and (min-width: $tablet_wide) {
+                    @include flex;
+                    @include wrap;
+                }
+                margin-top: auto;
+                margin-bottom: auto;
+                .link {
+                    a {
+                        font-size: 1.6rem;
+                        font-weight: bold;
+                        color: $black;
+                        text-decoration: none;
+                    }
+                }
+            }
+            &.primary {
+                margin-right: auto;
+                .link {
+                    margin-left: 20px;
+                    @media screen and (min-width: $pc) {
+                        margin-left: 50px;
+                    }
+                }
+            }
+            &.secondary {
+                max-width: 310px;
+                .link {
+                    &.login {
+                        margin-right: 10px;
+                    }
+                    &.signin {
+                        margin-left: 10px;
+                        color: #fff;
+                        a {
+                            @include gradient;
+                            color: #fff;
+                        }
+                    }
+                    a {
+                        @include btn;
+                        padding: 0 40px;
+                    }
+                }
+            }
+        }
+        .search-toggle {
+            position: absolute;
+            right: 80px;
+            top: 14px;
+            @media screen and (min-width: $tablet_wide) {
+                display: none;
+            }
+            .fa-search {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+.menu.drawer-hamburger {
+    position: absolute;
+    right: 25px !important;
+    width: 30px;
+    height: 70px;
+    padding: 0;
+    @media screen and (min-width: $tablet_wide) {
+        display: none;
+    }
+    .open {
+        display: block;
+    }
+    .close {
+        display: none;
+    }
+}
+
+.drawer-search {
+    width: 100%;
+    z-index: 3;
+    z-index: 9998;
+    background-color: #F5F5F4;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    max-height: 100%;
+    overflow-y: scroll;
+    bottom: 100%;
+    transition: bottom 0.3s ease-in-out;
+    position: fixed;
+    &.shown {
+        bottom: 0;
+        transition: bottom 0.3s ease-in-out;
+    }
+    @include search-module;
+}
+
+.drawer-nav {
+    width: 100%;
+    z-index: 3;
+    z-index: 9998;
+    background-color: #F5F5F4;
+    padding-top: 70px;
+    .drawer-menu {
+        max-width: 100%;
+        padding-bottom: 30px;
+        .links {
+            &.account {
+                padding: 20px;
+                margin: 0;
+                a.button {
+                    @include btn;
+                    &.signin {
+                        color: #fff;
+                        @include gradient;
+                    }
+                }
+            }
+            &.mypage-navi,
+            &.g-navi {
+                li {
+                    a {
+                        display: block;
+                        width: 100%;
+                        font-size: 1.6rem;
+                        padding: 10px 30px;
+                        background-color: #fff;
+                        text-decoration: none;
+                        color: $black;
+                        &::after {
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            content: "\f105";
+                            position: absolute;
+                            right: 10px;
+                        }
+                    }
+                }
+            }
+            &.mypage-navi {
+                li {
+                    a {
+                        &.travel {}
+                        &.user {}
+                        &.member {}
+                        &.payment {}
+                        &.account {}
+                        &.template {}
+                        &.fav {}
+                    }
+                }
+            }
+        }
+        .sub-navi {
+            @include flex;
+            @include wrap;
+            padding: 0 30px 20px;
+            margin: 0;
+            .head {
+                font-size: 1.4rem;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+            ul {
+                li {
+                    margin-top: 20px;
+                    a {
+                        font-size: 1.2rem;
+                        color: $black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .mypage {
+            padding: 0 20px;
+            .name-wrap {
+                text-align: center;
+                .name {
+                    display: inline;
+                }
+            }
+            .button {
+                @include btn;
+                max-width: 300px;
+                margin-top: 20px;
+            }
+        }
+        >.head {
+            padding: 0 20px;
+            color: $blue;
+            font-size: 1.6rem;
+            margin-top: 20px;
+        }
+        .logout {
+            display: block;
+            padding: 10px;
+            background-color: #fff;
+            a {
+                display: block;
+                padding: 10px;
+                margin: 0 20px;
+                border-top: 1px solid $black;
+                color: $black;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.drawer--right .drawer-nav {
+    right: -100%;
+    overflow: auto;
+}
+
+.drawer-overlay {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.breadcrumb-wrap {
+    width: 100%;
+    overflow: hidden;
+    height: 29px;
+    margin-top: 70px;
+    background-color: #D8F5FA;
+    .breadcrumb {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+        overflow-x: scroll;
+        background-color: initial;
+        ul {
+            @include flex;
+            @include inner;
+            margin: auto;
+            list-style-type: none;
+            li {
+                min-width: fit-content;
+                font-size: 1.4rem;
+                line-height: 3.0rem;
+                &:after {
+                    content: ">";
+                    padding: 0 15px;
+                }
+                &:last-child {
+                    &:after {
+                        content: "";
+                    }
+                }
+                a {
+                    color: $black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    max-width: 100%;
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+        .col {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+.contents-wrap {
+    width: 100%;
+    overflow: hidden;
+    @include flex;
+    @include wrap;
+    @include sb;
+    .main {
+        width: 100%;
+        section.section-content {
+            max-width: 100%;
+            &.page-head {
+                position: relative;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                @media screen and (min-width: 1208px) {
+                    margin-bottom: 20px;
+                }
+                .name {
+                    display: block;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 1.8rem;
+                    background-color: rgba(50, 50, 50, 0.7);
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                    @media screen and (min-width: $tablet) {
+                        font-size: 4rem;
+                        padding-top: 100px;
+                        padding-bottom: 100px;
+                    }
+                    @media screen and (min-width: $pc) {
+                        padding-bottom: 140px;
+                    }
+                }
+                .page-navi {
+                    background-color: #fff;
+                    @media screen and (min-width: $pc) {
+                        @include inner;
+                        width: 1280px;
+                        position: absolute;
+                        bottom: -20px;
+                        left: calc(50% - 640px);
+                    }
+                    .links {
+                        @include flex;
+                        @include wrap;
+                        @media screen and (min-width: $tablet) {
+                            @include nowrap;
+                        }
+                        .link {
+                            width: 50%;
+                            @media screen and (min-width: $tablet) {
+                                width: 100%;
+                            }
+                            &.current {
+                                a {
+                                    border-bottom: 2px solid $blue02;
+                                }
+                            }
+                            a {
+                                text-decoration: none;
+                                display: block;
+                                padding: 10px;
+                                background-color: #fff;
+                                color: $black;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+            &.bg-color {
+                background-color: #F5F5F4;
+            }
+            &.cta {
+                >.inner {
+                    @include inner;
+                    @media screen and (min-width: $tablet) {
+                        max-width: 800px;
+                    }
+                    .row {
+                        .col {
+                            padding-bottom: 60px;
+                            &.online {
+                                border-bottom: 1px solid $black;
+                                position: relative;
+                                @media screen and (min-width: $tablet) {
+                                    border-bottom: none;
+                                    &::after {
+                                        position: absolute;
+                                        right: 0;
+                                        top: calc(50% - 93px);
+                                        display: block;
+                                        content: '';
+                                        width: 1px;
+                                        height: 187px;
+                                        background-color: $black;
+                                    }
+                                }
+                            }
+                            .inner {
+                                margin: auto;
+                                margin-top: 60px;
+                                max-width: 270px;
+                                .head {
+                                    font-size: 2.3rem;
+                                    text-align: center;
+                                }
+                                .text {
+                                    margin-top: 35px;
+                                }
+                                .button {
+                                    @include btn;
+                                    margin-top: 90px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background: linear-gradient(0deg, rgba(216, 245, 250, 1) 0%, rgba(224, 248, 240, 1) 100%);
+    .page-top {
+        position: fixed;
+        bottom: 120px;
+        right: 20px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        z-index: 9999;
+        background-color: $black;
+        @media screen and (min-width: $tablet) {
+            bottom: 420px;
+        }
+        &::after {
+            display: block;
+            content: "";
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: calc(50% - 5px);
+            left: calc(50% - 5px);
+            transform: rotate(-135deg);
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+        }
+    }
+    >.inner {
+        @include inner;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        @media screen and (min-width: $tablet) {
+            padding-top: 80px;
+        }
+        .logo {
+            width: 100%;
+            max-width: 150px;
+            margin: 0 auto;
+            @media screen and (min-width: $tablet) {
+                max-width: 260px;
+            }
+            img {
+                @include img;
+            }
+        }
+        .sns {
+            width: 100%;
+            max-width: 240px;
+            margin: 0 auto;
+            margin-top: 20px;
+            .links {
+                @include flex;
+                @include wrap;
+                @include sb;
+                .link {
+                    a {
+                        img {
+                            @include img;
+                        }
+                    }
+                }
+            }
+        }
+        .g-navi {
+            @media screen and (min-width: $tablet) {
+                margin-top: -30px;
+            }
+            .links {
+                margin-top: 15px;
+                .head {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    border-bottom: 2px solid $blue02;
+                }
+                .link {
+                    margin-top: 16px;
+                    a {
+                        text-decoration: none;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+    .contents {
+        background-color: #fff;
+        padding-top: 30px;
+        .inner {
+            @include inner;
+            padding-bottom: 40px;
+            .head {
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            .logo02 {
+                max-width: 330px;
+                margin: 0 auto;
+                @media screen and (min-width: $tablet) {
+                    margin: auto;
+                }
+                img {
+                    @include img;
+                }
+            }
+            .col {
+                flex: 1 0 100%;
+                @media screen and (min-width: $tablet) {
+                    flex: 1 0 0%;
+                }
+            }
+            .text {
+                text-align: center;
+                @media screen and (min-width: $tablet) {
+                    margin: auto;
+                }
+            }
+            .logo03 {
+                max-width: 170px;
+                margin: 0 auto;
+                flex: 1 0 100%;
+                @media screen and (min-width: $tablet) {
+                    margin: auto;
+                    flex: 1 0 0%;
+                }
+                @media screen and (min-width: $tablet_wide) {
+                    margin-right: 130px;
+                }
+                img {
+                    @include img;
+                }
+            }
+            .caption {
+                font-size: 1.6rem;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 40px;
+                flex: 1 0 100%;
+                @media screen and (min-width: $tablet) {
+                    margin-top: 0px;
+                    flex: 1 0 0%;
+                }
+            }
+            .button {
+                @include btn;
+                padding: 15px 0;
+                background-color: $blue02;
+                color: #fff;
+                font-size: 1.6rem;
+                border-radius: 50px;
+            }
+        }
+        .caption {
+            @include inner;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+    .copy {
+        background-color: #3DCDE6;
+        text-align: center;
+        color: #fff;
+        padding: 10px 0;
+    }
+}

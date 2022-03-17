@@ -1,0 +1,38 @@
+main.advertise {
+    .section-content {
+        &.page-head {
+            background-image: url(assets/img/page-head-ad.jpg);
+        }
+        &.contents {
+            padding-top: 60px;
+            padding-bottom: 100px;
+            .inner {
+                @include inner;
+                >.head {
+                    font-size: 2.4rem;
+                    color: $green;
+                    font-weight: bold;
+                    text-align: center;
+                    @media screen and (min-width: $tablet) {
+                        font-size: 2.4rem;
+                    }
+                }
+                .text {
+                    text-align: center;
+                    line-height: 3.6rem;
+                    font-size: 1.6rem;
+                    margin-top: 40px;
+                }
+                .button {
+                    @include btn;
+                    max-width: 300px;
+                    margin: 0 auto;
+                    background-color: $blue;
+                    color: #fff;
+                    margin-top: 80px;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+}

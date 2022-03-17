@@ -1,0 +1,62 @@
+main.plan-etimate {
+    .section-content {
+        &.page-head {
+            background-image: url(assets/img/page-head-recruit.jpg);
+        }
+        &.contents {
+            padding-top: 60px;
+            padding-bottom: 200px;
+            .inner {
+                @include inner;
+                .links {
+                    margin-top: 20px;
+                    margin-bottom: 60px;
+                    .link {
+                        margin-top: 20px;
+                        a {
+                            display: block;
+                            background-color: $blue;
+                            color: $blue;
+                            text-align: center;
+                            text-decoration: none;
+                            border-radius: 10px;
+                            padding: 15px;
+                            position: relative;
+                            color: #fff;
+                            &::after {
+                                position: absolute;
+                                font-family: "Font Awesome 5 Free";
+                                font-weight: 900;
+                                content: "\f107";
+                                right: 20px;
+                            }
+                        }
+                    }
+                }
+                >.head {
+                    font-size: 2.4rem;
+                    color: $green;
+                    font-weight: bold;
+                    text-align: center;
+                    @media screen and (min-width: $tablet) {
+                        font-size: 2.4rem;
+                    }
+                }
+                .text {
+                    width: 100%;
+                    max-width: 900px;
+                    margin: 0 auto;
+                    margin-top: 30px;
+                }
+                .content {
+                    .col {
+                        margin-top: 20px;
+                        @media screen and (min-width: $tablet) {
+                            margin-top: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

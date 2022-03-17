@@ -1,0 +1,79 @@
+main.information,
+main.information-single {
+    .section-content {
+        padding-bottom: 100px;
+        .section-head {
+            font-size: 4rem;
+            color: $blue02;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .inner {
+            @include inner;
+            @include flex;
+            @include sb;
+            @include wrap;
+            >.head {
+                font-size: 2.4rem;
+                margin-top: 50px;
+            }
+            .sort {
+                @include flex;
+                @include wrap;
+                margin-top: 50px;
+                .category {
+                    margin-left: auto;
+                }
+            }
+            .posts {
+                width: 100%;
+                border-top: 1px solid #E4E4E4;
+                margin-top: 20px;
+                .post {
+                    @include flex;
+                    @include wrap;
+                    padding: 20px 0;
+                    font-size: 1.4rem;
+                    border-bottom: 1px solid #E4E4E4;
+                }
+                .category {
+                    font-size: 1.2rem;
+                    border: 1px solid $blue;
+                    color: $blue;
+                    padding: 0 40px;
+                    margin: 0 20px;
+                }
+                .title {
+                    font-size: 1.2rem;
+                    color: $blue02;
+                }
+            }
+        }
+        .navi {
+            @include flex;
+            @include wrap;
+            @include center;
+            margin: 0 auto;
+            margin-top: 60px;
+            ul {
+                list-style-type: none;
+                @include flex;
+                li {
+                    a,
+                    span {
+                        display: block;
+                        border: 1px solid $blue;
+                        padding: 0 10px;
+                        margin: 0 5px;
+                    }
+                    .active {
+                        border: none;
+                        background-color: $blue;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
