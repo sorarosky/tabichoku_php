@@ -2828,23 +2828,6 @@ main.home .section-content.consultation .inner .row .col dl dd textarea {
   border-radius: 5px;
 }
 
-main.home .section-content.consultation .inner .row .col dl dd input.primary,
-main.home .section-content.consultation .inner .row .col dl dd textarea.primary {
-  width: 45%;
-}
-
-main.home .section-content.consultation .inner .row .col dl dd input.secondary,
-main.home .section-content.consultation .inner .row .col dl dd textarea.secondary {
-  width: 45%;
-}
-
-main.home .section-content.consultation .inner .row .col dl dd input.code,
-main.home .section-content.consultation .inner .row .col dl dd textarea.code {
-  width: 119px;
-  margin-bottom: 14px;
-  margin-right: 15px;
-}
-
 main.home .section-content.consultation .inner .row .col dl dd input::-webkit-input-placeholder,
 main.home .section-content.consultation .inner .row .col dl dd textarea::-webkit-input-placeholder {
   color: #BBB;
@@ -3730,20 +3713,6 @@ main.local-partner-recruit .section-content.local-partner .inner .form .row .col
   margin-left: 10px;
 }
 
-main.local-partner-recruit .section-content.local-partner .inner .form .row .col.primary {
-  width: 45%;
-}
-
-main.local-partner-recruit .section-content.local-partner .inner .form .row .col.secondary {
-  width: 45%;
-}
-
-main.local-partner-recruit .section-content.local-partner .inner .form .row .col.code {
-  width: 119px;
-  margin-bottom: 14px;
-  margin-right: 15px;
-}
-
 main.local-partner-recruit .section-content.local-partner .inner .form .row .col::-webkit-input-placeholder {
   color: #BBB;
 }
@@ -4531,26 +4500,6 @@ main.contact-form-thx .section-content .inner .form table tr .select-wrap select
   padding-right: 20px;
 }
 
-main.contact-form .section-content .inner .form table tr .select-wrap select.primary,
-main.contact-form-conf .section-content .inner .form table tr .select-wrap select.primary,
-main.contact-form-thx .section-content .inner .form table tr .select-wrap select.primary {
-  width: 45%;
-}
-
-main.contact-form .section-content .inner .form table tr .select-wrap select.secondary,
-main.contact-form-conf .section-content .inner .form table tr .select-wrap select.secondary,
-main.contact-form-thx .section-content .inner .form table tr .select-wrap select.secondary {
-  width: 45%;
-}
-
-main.contact-form .section-content .inner .form table tr .select-wrap select.code,
-main.contact-form-conf .section-content .inner .form table tr .select-wrap select.code,
-main.contact-form-thx .section-content .inner .form table tr .select-wrap select.code {
-  width: 119px;
-  margin-bottom: 14px;
-  margin-right: 15px;
-}
-
 main.contact-form .section-content .inner .form table tr .select-wrap select::-webkit-input-placeholder,
 main.contact-form-conf .section-content .inner .form table tr .select-wrap select::-webkit-input-placeholder,
 main.contact-form-thx .section-content .inner .form table tr .select-wrap select::-webkit-input-placeholder {
@@ -5028,26 +4977,6 @@ main.entry-form-thx .section-content .inner .form table tr .select-wrap select {
   -moz-appearance: none;
        appearance: none;
   padding-right: 20px;
-}
-
-main.entry-form .section-content .inner .form table tr .select-wrap select.primary,
-main.entry-form-conf .section-content .inner .form table tr .select-wrap select.primary,
-main.entry-form-thx .section-content .inner .form table tr .select-wrap select.primary {
-  width: 45%;
-}
-
-main.entry-form .section-content .inner .form table tr .select-wrap select.secondary,
-main.entry-form-conf .section-content .inner .form table tr .select-wrap select.secondary,
-main.entry-form-thx .section-content .inner .form table tr .select-wrap select.secondary {
-  width: 45%;
-}
-
-main.entry-form .section-content .inner .form table tr .select-wrap select.code,
-main.entry-form-conf .section-content .inner .form table tr .select-wrap select.code,
-main.entry-form-thx .section-content .inner .form table tr .select-wrap select.code {
-  width: 119px;
-  margin-bottom: 14px;
-  margin-right: 15px;
 }
 
 main.entry-form .section-content .inner .form table tr .select-wrap select::-webkit-input-placeholder,
