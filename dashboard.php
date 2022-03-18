@@ -1,4 +1,4 @@
-<?php include 'header.php';?>
+<?php include 'header-mypage.php';?>
 <?php include 'breadcrumb.php';?>
 <div class="contents-wrap mypage">
   <div class="main-aside-wrap">
@@ -8,4 +8,4 @@
     <?php include 'components/aside-mypage.php';?>
   </div>
 </div>
-<?php include 'footer.php';?>
+<?php include 'footer-mypage.php';?>
