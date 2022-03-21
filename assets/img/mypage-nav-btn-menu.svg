@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="45" viewBox="0 0 34 45">
+  <g id="menu" transform="translate(-314 -23)">
+    <g id="メニューの無料アイコン5" transform="translate(316 7)">
+      <rect id="Rectangle_2915" data-name="Rectangle 2915" width="30" height="5.595" rx="2" transform="translate(0 16)" fill="#00a9c6"/>
+      <rect id="Rectangle_2916" data-name="Rectangle 2916" width="30" height="5.595" rx="2" transform="translate(0 26.203)" fill="#00a9c6"/>
+      <rect id="Rectangle_2917" data-name="Rectangle 2917" width="30" height="5.595" rx="2" transform="translate(0 36.405)" fill="#00a9c6"/>
+    </g>
+    <text id="menu-2" data-name="menu" transform="translate(331 65)" fill="#00a9c6" font-size="12" font-family="NotoSansJP-Regular, Noto Sans JP"><tspan x="-16.188" y="0">menu</tspan></text>
+  </g>
+</svg>

@@ -15,18 +15,212 @@
         .main {
             width: 100%;
             background-color: #fff;
+            border-radius: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
             @media screen and (min-width: $tablet) {
                 max-width: calc(100% - 320px);
             }
+
+            .main-header {
+                margin-top: 10px;
+                .main-header-title {
+                    font-size: 2.4rem;
+                    font-weight: 400;
+                }
+
+                &.main-header-flex {
+                    display: flex;
+    
+                    .side {
+                        margin-left: auto;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+
+            
+            .main-list-tour {
+                list-style: none;
+                margin-top: 15px;
+
+                >.main-list-tour-item {
+                    border-top: 1px solid #E4E4E4;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+                    &:last-child {
+                        border-bottom: 1px solid #E4E4E4;
+                    }
+
+                    >.content {
+                        
+                        .content-title {
+                            color: #00A9C6;
+                            font-size: 1.8rem;
+                        }
+
+                        .box-flex {
+                            display: flex;
+                            .box-flex-item {
+                                &:nth-child(n+2) {
+                                    margin-left: 60px;
+                                }
+                                span {
+                                    color: #9A9A9A;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+
+                        .box-list {
+                            list-style: none;
+
+                            .box-list-item {
+                                display: flex;
+                                .box-list-item-title {
+                                    color: #9A9A9A;
+                                    margin-right: 10px;
+                                    width: 100px;
+                                }
+                            }
+                        }
+                    }
+
+                    >.side {
+                        flex-shrink: 0;
+                        margin-left: auto;
+                    }
+
+                }
+
+            }
+
         }
+
+
         .aside {
             width: 100%;
-            background-color: #fff;
+
+            .aside-box {
+                border-radius: 10px;
+                background-color: #fff;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+
+                &:nth-child(n+2) {
+                    margin-top: 10px;
+                }
+                &.aside-box-no-bg {
+                    background-color: transparent;
+                    padding: 0;
+                }
+
+                .profile-portrait {
+                    text-align: center;
+                    border-radius: 100%;
+                    width: 130px;
+                    height: 130px;
+                    overflow: none;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    img {
+                        width: 100%;
+                    }
+                }
+                
+                .profile-deial {
+                    text-align: center;
+                    margin-top: 18px;
+                }
+
+                .aside-box-list {
+                    list-style: none;
+
+                    .aside-box-list-item {
+                        font-size: 1.6rem;
+                        &:nth-child(n+2) {
+                            margin-top: 10px;
+                        }
+
+                        a {
+                            color: #333;
+                            text-decoration: none;
+                            &:visited {
+                                color: #333;
+                            }
+                        }
+                        img {
+                            vertical-align: sub;
+                            margin-right: 10px;
+                        }
+                    }   
+                }
+
+                .banner {
+                    border-radius: 10px;
+                    border: 1px solid #4FE0B0;
+                    background-color: #4FE0B0;
+                    color: #fff;
+                    text-decoration: none;
+                    text-align: center;
+                    display: block;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+
+                    .banner-title {
+                        font-size: 1.8rem;
+                    }
+                    .banner-text {
+                        font-size: 1.4rem;
+                    }
+                }
+
+            }
+
             @media screen and (min-width: $tablet) {
                 max-width: 260px;
                 margin-left: 0;
                 margin-right: auto;
             }
+
         }
     }
+
+
+    .btn {
+        border: 1px solid #333;
+        color: #333;
+        background: #fff;
+        border-radius: 4px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 1.6rem;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .btn-blue-line {
+        border: 1px solid #3DCDE6;
+        color: #3DCDE6;
+    }
+    .btn-blue {
+        border: 1px solid #3DCDE6;
+        background-color: #3DCDE6;
+        color: #fff;
+    }
+
+
 }

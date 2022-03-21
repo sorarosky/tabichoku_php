@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="44.999" viewBox="0 0 30 44.999">
+  <g id="search" transform="translate(-251 -23.001)">
+    <g id="虫眼鏡アイコン11" transform="translate(251 23)">
+      <path id="Path_9266" data-name="Path 9266" d="M22.05,18.312a11.948,11.948,0,1,0-3.739,3.739L26.26,30,30,26.262Zm-4.675-.936a7.683,7.683,0,1,1,0-10.866A7.69,7.69,0,0,1,17.375,17.376Z" transform="translate(0 0)" fill="#0ac385"/>
+    </g>
+    <text id="検索" transform="translate(266 65)" fill="#0ac385" font-size="12" font-family="NotoSansJP-Regular, Noto Sans JP"><tspan x="-12" y="0">検索</tspan></text>
+  </g>
+</svg>

@@ -5821,15 +5821,152 @@ main.local-professionals-news-category .section-content.posts {
 .contents-wrap.mypage .main-aside-wrap .main {
   width: 100%;
   background-color: #fff;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media screen and (min-width: 768px) {
   .contents-wrap.mypage .main-aside-wrap .main {
     max-width: calc(100% - 320px);
   }
 }
+<<<<<<< Updated upstream
+=======
+.contents-wrap.mypage .main-aside-wrap .main .main-header {
+  margin-top: 10px;
+}
+.contents-wrap.mypage .main-aside-wrap .main .main-header .main-header-title {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.contents-wrap.mypage .main-aside-wrap .main .main-header.main-header-flex {
+  display: flex;
+}
+.contents-wrap.mypage .main-aside-wrap .main .main-header.main-header-flex .side {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.contents-wrap.mypage .main-aside-wrap .main .main-list-tour {
+  list-style: none;
+  margin-top: 15px;
+}
+.contents-wrap.mypage .main-aside-wrap .main .main-list-tour > .main-list-tour-item {
+  border-top: 1px solid #E4E4E4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.contents-wrap.mypage .main-aside-wrap .main .main-list-tour > .main-list-tour-item:last-child {
+  border-bottom: 1px solid #E4E4E4;
+}
+.contents-wrap.mypage .main-aside-wrap .main .main-list-tour > .main-list-tour-item > .content .content-title {
+  color: #00A9C6;
+  font-size: 1.8rem;
+}
+.contents-wrap.mypage .main-aside-wrap .main .main-list-tour > .main-list-tour-item > .content .box-flex {
+  display: flex;
+}
+.contents-wrap.mypage .main-aside-wrap .main .main-list-tour > .main-list-tour-item > .content .box-flex .box-flex-item:nth-child(n+2) {
+  margin-left: 60px;
+}
+.contents-wrap.mypage .main-aside-wrap .main .main-list-tour > .main-list-tour-item > .content .box-flex .box-flex-item span {
+  color: #9A9A9A;
+  margin-right: 10px;
+}
+.contents-wrap.mypage .main-aside-wrap .main .main-list-tour > .main-list-tour-item > .content .box-list {
+  list-style: none;
+}
+.contents-wrap.mypage .main-aside-wrap .main .main-list-tour > .main-list-tour-item > .content .box-list .box-list-item {
+  display: flex;
+}
+.contents-wrap.mypage .main-aside-wrap .main .main-list-tour > .main-list-tour-item > .content .box-list .box-list-item .box-list-item-title {
+  color: #9A9A9A;
+  margin-right: 10px;
+  width: 100px;
+}
+.contents-wrap.mypage .main-aside-wrap .main .main-list-tour > .main-list-tour-item > .side {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+>>>>>>> Stashed changes
 .contents-wrap.mypage .main-aside-wrap .aside {
   width: 100%;
+}
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box {
+  border-radius: 10px;
   background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box:nth-child(n+2) {
+  margin-top: 10px;
+}
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box.aside-box-no-bg {
+  background-color: transparent;
+  padding: 0;
+}
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box .profile-portrait {
+  text-align: center;
+  border-radius: 100%;
+  width: 130px;
+  height: 130px;
+  overflow: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box .profile-portrait img {
+  width: 100%;
+}
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box .profile-deial {
+  text-align: center;
+  margin-top: 18px;
+}
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box .aside-box-list {
+  list-style: none;
+}
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box .aside-box-list .aside-box-list-item {
+  font-size: 1.6rem;
+}
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box .aside-box-list .aside-box-list-item:nth-child(n+2) {
+  margin-top: 10px;
+}
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box .aside-box-list .aside-box-list-item a {
+  color: #333;
+  text-decoration: none;
+}
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box .aside-box-list .aside-box-list-item a:visited {
+  color: #333;
+}
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box .aside-box-list .aside-box-list-item img {
+  vertical-align: sub;
+  margin-right: 10px;
+}
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box .banner {
+  border-radius: 10px;
+  border: 1px solid #4FE0B0;
+  background-color: #4FE0B0;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box .banner .banner-title {
+  font-size: 1.8rem;
+}
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box .banner .banner-text {
+  font-size: 1.4rem;
 }
 @media screen and (min-width: 768px) {
   .contents-wrap.mypage .main-aside-wrap .aside {
@@ -5838,5 +5975,30 @@ main.local-professionals-news-category .section-content.posts {
     margin-right: auto;
   }
 }
+<<<<<<< Updated upstream
+=======
+.contents-wrap.mypage .btn {
+  border: 1px solid #333;
+  color: #333;
+  background: #fff;
+  border-radius: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.contents-wrap.mypage .btn-blue-line {
+  border: 1px solid #3DCDE6;
+  color: #3DCDE6;
+}
+.contents-wrap.mypage .btn-blue {
+  border: 1px solid #3DCDE6;
+  background-color: #3DCDE6;
+  color: #fff;
+}
+>>>>>>> Stashed changes
 
 /*# sourceMappingURL=style.css.map */
