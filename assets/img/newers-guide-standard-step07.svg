@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_3379" data-name="長方形 3379" width="120" height="120" transform="translate(220 2848)" fill="rgba(255,255,255,0)"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_5575" data-name="グループ 5575" transform="translate(-279 -6235)">
+    <rect id="長方形_3378" data-name="長方形 3378" width="200" height="200" transform="translate(279 6235)" fill="#e0f8f0"/>
+    <g id="hikouki" transform="translate(99 3427)" clip-path="url(#clip-path)">
+      <g id="hikouki-2" data-name="hikouki" transform="translate(233 2901.943) rotate(-20)">
+        <path id="パス_9414" data-name="パス 9414" d="M84.743,141.074c-1.189-1.307-3.334-1.637-8.586-1.637H18L7.222,124.894a2.094,2.094,0,0,0-1.456-.816H.888c-.467,0-.7.481-.516,1.071L4.8,139.437H1.946c-2.384,0-2.623,3.925-.478,5.556s21,9.154,23.623,9.154h13l-9.706,15.515c-.272.437-.115.794.346.794h6.32a2.713,2.713,0,0,0,1.516-.582l18.311-15.727H75.919c7.158,0,14.079-3.268,14.079-7.19C90,145,85.938,142.381,84.743,141.074Z" transform="translate(0.002 -124.078)" fill="#333"/>
+      </g>
+    </g>
+  </g>
+</svg>

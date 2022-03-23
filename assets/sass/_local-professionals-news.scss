@@ -78,85 +78,7 @@ main.local-professionals-news-map {
         &.latest {
             padding-bottom: 80px;
             .swiper-container-wrapper {
-                position: relative;
-                .swiper-slide {
-                    margin-top: 20px;
-                    a {
-                        text-decoration: none;
-                        color: $black;
-                        .img {
-                            position: relative;
-                            img {
-                                @include img;
-                            }
-                            .new {
-                                position: absolute;
-                                left: 0;
-                                top: 0;
-                                background-color: $red;
-                                color: #fff;
-                                padding: 0 10px;
-                            }
-                            .info {
-                                position: absolute;
-                                width: 100%;
-                                left: 0px;
-                                bottom: 0px;
-                                padding: 10px 20px;
-                                background: rgb(0, 0, 0);
-                                background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(224, 248, 240, 0) 100%);
-                                color: #fff;
-                                .num {
-                                    font-size: 1.4rem;
-                                }
-                                .country-name {
-                                    display: inline-block;
-                                    font-size: 1.2rem;
-                                    background-color: #fff;
-                                    padding: 0 5px;
-                                    color: $black;
-                                    line-height: 20px;
-                                }
-                            }
-                        }
-                        .title {
-                            font-size: 1.6rem;
-                        }
-                        .tags {
-                            @include flex;
-                            @include wrap;
-                            list-style-type: none;
-                            margin-top: 30px;
-                            li {
-                                margin-right: 10px;
-                                margin-top: 10px;
-                                padding: 0 10px;
-                                background-color: $gray;
-                                font-size: 1.2rem;
-                                line-height: 20px;
-                                a {
-                                    color: $black;
-                                    padding: 0 10px;
-                                    background-color: $gray;
-                                    text-decoration: none;
-                                }
-                            }
-                        }
-                    }
-                }
-                .pager {
-                    .swiper-button-prev,
-                    .swiper-button-next {
-                        width: 44px;
-                        background-image: none;
-                    }
-                    .swiper-button-prev {
-                        left: 0;
-                    }
-                    .swiper-button-next {
-                        right: 0;
-                    }
-                }
+                @include post-slide;
             }
             .button {
                 @include btn;
@@ -185,85 +107,10 @@ main.local-professionals-news-map {
         &.posts {
             padding-bottom: 100px;
             .post {
-                padding-top: 20px;
-                padding-bottom: 20px;
-                border-bottom: 2px solid $gray;
-                .img {
-                    display: block;
-                    width: 100%;
-                    max-width: 160px;
-                    min-height: 160px;
-                    background-color: $gray;
-                    float: left;
-                    margin-right: 20px;
-                    position: relative;
-                    img {
-                        @include img;
-                    }
-                    .new {
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        background-color: $red;
-                        color: #fff;
-                        padding: 0 10px;
-                    }
-                }
-                .info {
-                    .meta {
-                        @media screen and (min-width: $tablet_wide) {
-                            @include flex;
-                            @include wrap;
-                            line-height: 14px;
-                        }
-                        .date,
-                        .num {
-                            @media screen and (min-width: $tablet_wide) {
-                                padding-right: 10px;
-                                margin-right: 10px;
-                                border-right: 1px solid $black;
-                            }
-                        }
-                        .num {}
-                        .country-name {}
-                    }
-                    .title {
-                        font-size: 1.6rem;
-                        font-weight: bold;
-                        margin-top: 10px;
-                    }
-                    .company-name {
-                        margin-top: 40px;
-                    }
-                    .tags {
-                        @include flex;
-                        @include wrap;
-                        list-style-type: none;
-                        li {
-                            margin-right: 10px;
-                            margin-top: 10px;
-                            padding: 0 10px;
-                            background-color: $gray;
-                            a {
-                                color: $black;
-                                padding: 0 10px;
-                                background-color: $gray;
-                                text-decoration: none;
-                            }
-                        }
-                    }
-                }
+                @include post;
             }
             .pager {
-                @include flex;
-                @include center;
-                margin-top: 60px;
-                .navi {
-                    display: block;
-                    padding: 4px 15px;
-                    border: 1px solid #00A9C6;
-                    margin: 0 10px;
-                }
+                @include pager;
             }
         }
         &.categories {

@@ -107,30 +107,7 @@ main.chiebukuro {
             }
         }
         &.category-navi {
-            .col {
-                @include flex;
-                @include wrap;
-                padding-top: 100px;
-                padding-bottom: 100px;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
-                color: #fff;
-                &.travel-content {
-                    background-image: url(assets/img/category-navi01.jpg);
-                }
-                &.professionals-news {
-                    background-image: url(assets/img/category-navi02.jpg);
-                }
-                .text-wrap {
-                    text-align: center;
-                    font-size: 4rem;
-                    margin: auto;
-                    span {
-                        font-size: 1.6rem;
-                    }
-                }
-            }
+            @include category-navi;
         }
     }
 }
