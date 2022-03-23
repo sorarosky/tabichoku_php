@@ -12,8 +12,8 @@
                 </div>
             </div>
             <ul class="row search-navi">
-                <li class="col col-4"><a href=""><span>エリアから<br>さがす</span></a></li>
-                <li class="col col-4"><a href=""><span>テーマから<br>さがす</span></a></li>
+                <li class="col col-6"><a href=""><span>エリアから<br class="sp-pc sp">さがす</span></a></li>
+                <li class="col col-6"><a href=""><span>テーマから<br class="sp-pc sp">さがす</span></a></li>
             </ul>
         </div>
     </div>
