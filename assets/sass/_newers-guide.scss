@@ -1,0 +1,204 @@
+main.newers-guide {
+    .section-content {
+        .inner {
+            @include inner;
+            >.head {
+                font-size: 2.4rem;
+                color: $green;
+                font-weight: bold;
+                text-align: center;
+                @media screen and (min-width: $tablet) {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+        &.page-head {
+            background-image: url(assets/img/page-head-newers-guide.jpg);
+            .name {
+                line-height: 4rem;
+                span {
+                    font-size: 3rem;
+                }
+            }
+        }
+        &.navi {
+            padding-top: 70px;
+            .inner {
+                >.text {
+                    font-size: 2rem;
+                    max-width: 900px;
+                    margin: 0 auto;
+                    margin-top: 30px;
+                }
+                .links {
+                    max-width: 100%;
+                    margin-top: 60px;
+                    .link {
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            color: $black;
+                            text-align: center;
+                            .button {
+                                @include btn;
+                                padding: 5px 0 10px;
+                                background-color: $green;
+                                color: #fff;
+                                border: none;
+                                font-size: 2.4rem;
+                                span {
+                                    font-size: 1.6rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.basic,
+        &.standard,
+        &.full {
+            padding-top: 100px;
+            padding-bottom: 120px;
+            .inner {
+                >.head {
+                    background-color: $green;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 2.8rem;
+                    padding: 10px 0;
+                    span {
+                        font-size: 1.8rem;
+                    }
+                }
+                .row {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    margin-top: 100px;
+                    .col {
+                        padding: 0 15px;
+                        .img {
+                            position: relative;
+                            .step {
+                                position: absolute;
+                                color: $green;
+                                font-size: 8rem;
+                                line-height: 6rem;
+                                top: -60px;
+                                left: -50px;
+                                span {
+                                    font-size: 4rem;
+                                }
+                            }
+                            img {
+                                @include img;
+                            }
+                        }
+                        .head {
+                            font-size: 2.4rem;
+                        }
+                        .text {
+                            font-size: 1.6rem;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                .caption {
+                    text-align: center;
+                    font-size: 2.8rem;
+                    margin-top: 120px;
+                }
+                .button {
+                    @include btn;
+                    @include gradient;
+                    font-size: 2.4rem;
+                    border-radius: 45px;
+                    display: block;
+                    color: #fff;
+                    padding: 20px 0;
+                    margin-top: 20px;
+                    max-width: 600px;
+                    &::after {
+                        position: absolute;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: "\f105";
+                        right: 20px;
+                    }
+                }
+                .form {
+                    max-width: 700px;
+                    margin: 0 auto;
+                    .head {
+                        font-size: 4rem;
+                        font-weight: bold;
+                        text-align: center;
+                        color: $green02;
+                        margin-top: 100px;
+                    }
+                    >.text {
+                        text-align: center;
+                        font-size: 1.6rem;
+                        margin-top: 40px;
+                    }
+                    dl {
+                        margin-top: 20px;
+                        dt {
+                            margin-top: 20px;
+                            &.reqqired {}
+                            &:after {
+                                content: '必須';
+                                background-color: $red;
+                                color: #fff;
+                                padding: 0 5px;
+                            }
+                        }
+                        dd {}
+                    }
+                    input,
+                    textarea {
+                        @include form_input;
+                    }
+                    .links {
+                        @include flex;
+                        @include wrap;
+                        @include center;
+                        list-style-type: none;
+                        .link {
+                            padding: 0 10px;
+                        }
+                    }
+                    .privacy {
+                        text-align: center;
+                        .checkbox {
+                            transform: scale(150%);
+                            margin-right: 10px;
+                            width: initial;
+                        }
+                    }
+                    .button {
+                        @include btn;
+                        @include gradient;
+                        font-size: 2.4rem;
+                        border-radius: 45px;
+                        display: block;
+                        color: #fff;
+                        padding: 20px 0;
+                        margin-top: 20px;
+                        max-width: 600px;
+                        &::after {
+                            position: absolute;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            content: "\f105";
+                            right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        &.category-navi {
+            @include category-navi;
+        }
+    }
+}

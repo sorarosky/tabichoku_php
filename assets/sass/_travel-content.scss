@@ -1,0 +1,56 @@
+main.travel-content,
+main.travel-content-category {
+    .section-content {
+        .inner {
+            @include inner;
+            >.head {
+                font-size: 2.8rem;
+                color: $green;
+                padding-bottom: 15px;
+                border-bottom: 2px solid $gray;
+            }
+            >.sub-head {
+                color: $green;
+                font-size: 2.4rem;
+                margin-top: 20px;
+            }
+        }
+        &.popular,
+        &.latest,
+        &.ranking,
+        &.themes,
+        &.posts {
+            .swiper-container-wrapper {
+                @include post-slide;
+            }
+            .button {
+                @include btn;
+                @include gradient;
+                font-size: 2.4rem;
+                border-radius: 45px;
+                display: block;
+                color: #fff;
+                padding: 20px 0;
+                margin-top: 20px;
+                max-width: 600px;
+                margin-bottom: 80px;
+                &::after {
+                    position: absolute;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    content: "\f105";
+                    right: 20px;
+                }
+            }
+        }
+        &.posts {
+            padding-bottom: 100px;
+            .post {
+                @include post;
+            }
+            .pager {
+                @include pager;
+            }
+        }
+    }
+}

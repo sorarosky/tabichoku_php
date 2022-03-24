@@ -357,6 +357,128 @@ body>.header {
     }
 }
 
+.travel-content-kv {
+    position: relative;
+    .orverlay {
+        @include flex;
+        @include wrap;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-top: 70px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        min-height: 530px;
+        z-index: 9997;
+        .inner {
+            width: 100%;
+            margin: auto;
+            max-width: 335px;
+            @media screen and (min-width: $tablet) {
+                max-width: 800px;
+            }
+            .copy {
+                margin-top: auto;
+                text-align: center;
+                color: #fff;
+                font-size: 2.4rem;
+            }
+            >.text {
+                text-align: center;
+                color: #fff;
+                font-size: 1.4rem;
+                margin-top: 20px;
+                line-height: 2rem;
+                @media screen and (min-width: $tablet) {
+                    margin-top: 50px;
+                }
+            }
+            .form {
+                max-width: 800px;
+                .head {
+                    color: #fff;
+                    margin-top: 20px;
+                }
+                .submit-wrap {
+                    position: relative;
+                    width: 100%;
+                    .text {
+                        width: 100%;
+                        border-radius: 10px;
+                        padding: 20px;
+                        min-height: 50px;
+                        border: 1px solid $blue02;
+                        padding-right: 60px;
+                        &::placeholder {
+                            color: $gray;
+                        }
+                    }
+                    .submit {
+                        position: absolute;
+                        display: block;
+                        right: 10px;
+                        top: calc(50% - 16px);
+                        width: 60px;
+                        height: 32px;
+                        color: #fff;
+                        border: none;
+                        border-radius: 6px;
+                        background-color: $blue02;
+                    }
+                }
+            }
+            .search-navi {
+                margin: 0 auto;
+                margin-top: 20px;
+                max-width: 500px;
+                list-style-type: none;
+                .col {
+                    a {
+                        @include flex;
+                        @include wrap;
+                        background-color: $blue;
+                        color: #fff;
+                        font-size: 1.2rem;
+                        text-align: center;
+                        border-radius: 10px;
+                        line-height: 1.6rem;
+                        min-height: 40px;
+                        text-decoration: none;
+                        span {
+                            display: block;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .swiper-container-top-kv-wrapper {
+        width: 100%;
+        .swiper-slide {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            min-height: 530px;
+            &.top-kv01 {
+                background-image: url(assets/img/top-kv01.jpg);
+            }
+            &.top-kv02 {
+                background-image: url(assets/img/top-kv02.jpg);
+            }
+            &.top-kv03 {
+                background-image: url(assets/img/top-kv03.jpg);
+            }
+            &.top-kv04 {
+                background-image: url(assets/img/top-kv04.jpg);
+            }
+            &.top-kv05 {
+                background-image: url(assets/img/top-kv05.jpg);
+            }
+        }
+    }
+}
+
 .contents-wrap {
     width: 100%;
     overflow: hidden;
