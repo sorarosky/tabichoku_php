@@ -484,6 +484,38 @@
 
             }
 
+            .list-account {
+
+                .list-account-item {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 20px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+
+                    &:nth-child(n+2) {
+                        border-bottom: 1px dotted #E4E4E4;
+                    }
+
+                    .list-account-item-header {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 20px;
+
+                        .list-account-title {
+                            color: #9A9A9A;
+                            width: 100%;
+                            max-width: 148px;
+                            flex-shrink: 0;
+                        }
+                    }
+
+                    .list-account-item-btn {
+                        margin-left: auto;
+                    }
+                }
+            }
+
         }
 
 

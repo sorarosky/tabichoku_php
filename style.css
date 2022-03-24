@@ -7730,6 +7730,30 @@ main.local-professionals-agent-post .section-content.pickup .swiper-container-wr
   font-size: 1.6rem;
   width: 100%;
 }
+.contents-wrap.mypage .main-aside-wrap .main .list-account .list-account-item {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.contents-wrap.mypage .main-aside-wrap .main .list-account .list-account-item:nth-child(n+2) {
+  border-bottom: 1px dotted #E4E4E4;
+}
+.contents-wrap.mypage .main-aside-wrap .main .list-account .list-account-item .list-account-item-header {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.contents-wrap.mypage .main-aside-wrap .main .list-account .list-account-item .list-account-item-header .list-account-title {
+  color: #9A9A9A;
+  width: 100%;
+  max-width: 148px;
+  flex-shrink: 0;
+}
+.contents-wrap.mypage .main-aside-wrap .main .list-account .list-account-item .list-account-item-btn {
+  margin-left: auto;
+}
 .contents-wrap.mypage .main-aside-wrap .aside {
   width: 100%;
 }
