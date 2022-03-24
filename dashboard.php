@@ -10,9 +10,9 @@
         <div class=side><a href=""><button class="btn btn-blue-line">一覧を見る</button></a></div>
       </div>
 
-      <ul class="main-list-tour">
+      <ul class="list-tour">
         <?php for($i=0;$i<3;$i++) { ?>
-        <li class="main-list-tour-item">
+        <li class="list-tour-item">
           <div class="content">
             <div class="box-flex">
               <p class="box-flex-item"><span>受付日</span>0000/00/00</p>
