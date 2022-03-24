@@ -7623,6 +7623,31 @@ main.local-professionals-agent-post .section-content.pickup .swiper-container-wr
   font-size: 1.4rem;
   cursor: pointer;
 }
+.contents-wrap.mypage .main-aside-wrap .main .list-template {
+  margin-top: 20px;
+  border-top: 1px solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
+}
+.contents-wrap.mypage .main-aside-wrap .main .list-template .list-template-item {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.contents-wrap.mypage .main-aside-wrap .main .list-template .list-template-item:nth-child(n+2) {
+  border-top: 1px dotted #E4E4E4;
+}
+.contents-wrap.mypage .main-aside-wrap .main .list-template .list-template-item .list-template-item-header {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  width: 100%;
+}
+.contents-wrap.mypage .main-aside-wrap .main .list-template .list-template-item .list-template-item-btn {
+  margin-left: auto;
+  flex-shrink: 0;
+}
 .contents-wrap.mypage .main-aside-wrap .main .list-account.list-account-no-border .list-account-item {
   border-bottom: none;
   padding-top: 10px;

@@ -362,6 +362,37 @@
 
             }
 
+            .list-template {
+                margin-top: 20px;
+                border-top: 1px solid #E4E4E4;
+                border-bottom: 1px solid #E4E4E4;
+
+                .list-template-item {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+
+                    &:nth-child(n+2) {
+                        border-top: 1px dotted #E4E4E4;
+                    }
+
+                    .list-template-item-header {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 20px;
+                        width: 100%;
+                    }
+
+                    .list-template-item-btn {
+                        margin-left: auto;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+
+
             .list-account {
 
                 &.list-account-no-border {
@@ -412,6 +443,8 @@
                     font-size: 1.8rem;
                 }
             }
+
+            
 
             .account-password-edit {
 
