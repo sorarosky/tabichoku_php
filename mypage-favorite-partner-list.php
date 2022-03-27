@@ -10,8 +10,7 @@
 
       <div class="main-container">
         <div class="main-header">
-          <h2 class="main-header-title">あなたの旅行情報</h2>
-          <p class="main-header-sort">すべて</p>
+          <h2 class="main-header-title">お気に入り</h2>
         </div>
 
         <div class="favorite-nav">
