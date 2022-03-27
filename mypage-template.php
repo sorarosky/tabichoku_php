@@ -1,12 +1,11 @@
 <?php include 'header-mypage.php';?>
 <?php include 'breadcrumb.php';?>
 
-<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
-<script src="assets/js/mypage-profile.js" charset="UTF-8"></script>
-
 <div class="contents-wrap mypage">
 
   <div class="main-aside-wrap">
+
+    <?php include 'components/aside-mypage.php';?>
 
     <main class="main dashboard">
       <div class="main-header">
@@ -39,7 +38,6 @@
 
     </main>
 
-    <?php include 'components/aside-mypage.php';?>
   </div>
 
 </div>

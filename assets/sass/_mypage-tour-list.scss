@@ -1,0 +1,16 @@
+.contents-wrap.mypage-tour-list {
+
+    .aside {
+        display: none;
+        @media screen and (min-width: $tablet) {
+            display: block;
+        }
+    }
+
+    .main {
+        margin-top: 0px;
+        @media screen and (min-width: $tablet) {
+            margin-top: 40px;
+        }
+    }
+}
