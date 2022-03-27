@@ -269,21 +269,47 @@
 
             }
 
-            
-            .paragraph {
-                padding-top: 20px;
-                padding-bottom: 20px;
-                h3 {
-                    font-size: 1.8rem;
+            .favorite-nav {
+                @media screen and (min-width: $tablet) {
+                    margin-top:30px;
                 }
-                p {
-                    &:nth-child(2) {
+
+                .favorite-nav-list {
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    column-gap: 20px;
+
+                    .favorite-nav-list-item {
+                        width: 100%;
+                        text-align: center;
                         margin-top: 10px;
+
+                        @media screen and (min-width: $tablet) {
+                            width: calc(100%/3 - 14px);
+                            margin-top: 0px;
+                            font-size: 16px;
+                        }
+
+                        &.current {
+                            a {
+                                color: $green;
+                                background-color: #fff;
+                            }
+                        }
+
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            text-decoration: none;
+                            color: #fff;
+                            background-color: $green;
+                            border: 2px solid $green;
+                        }
                     }
-                    line-height: 2.5rem;
                 }
             }
-
             
             .list-tour {
                 list-style: none;
@@ -368,6 +394,191 @@
 
                 }
 
+            }
+
+            .list-favorite-tour {
+                list-style: none;
+                margin-top: 15px;
+
+                >.list-favorite-tour-item {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    align-items: center;
+                    column-gap: 10px;
+                    border-bottom: 1px solid #E4E4E4;
+                    @media screen and (min-width: $tablet) {
+                        display: flex;
+                    }
+
+                    >.content {
+                        &.content-pc {
+                            display: flex;
+                            column-gap: 10px;
+                            @media screen and (min-width: $tablet) {
+                                column-gap: 20px;
+                            }
+                        }
+                        &.content-sp {
+                            display: block;
+                            margin-top: 10px;
+                            @media screen and (min-width: $tablet) {
+                                display: none;
+                            }
+                        }
+
+                        .thumbnail {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            max-width: 168px;
+                            max-height: 168px;
+                            text-align: center;
+                            overflow: hidden;
+                            
+                            &.thumbnail-small-sp {
+                                max-width: 70px;
+                                max-height: 70px;
+                                @media screen and (min-width: $tablet) {
+                                    width: 100%;
+                                    height: 100%;
+                                    max-width: 168px;
+                                    max-height: 168px;
+                                }
+                            }
+
+                            .label-new {
+                                line-height: 2.5rem;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                background-color: #EF2E2E;
+                                font-family: 'Barlow Semi Condensed', sans-serif;
+                                font-weight: 500;
+                                color: #fff;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                &::after {
+                                    content: 'NEW';
+                                }
+                            }
+
+                            img {
+                                line-height: 0;
+                                width: 100%;
+                            }
+                        }
+
+                        .content-title {
+                            font-size: 1.6rem;
+                            line-height: 2.5rem;
+                            font-weight: 600;
+                            &.content-title-pc {
+                                display: none;
+                                @media screen and (min-width: $tablet) {
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        .box-flex {
+                            @media screen and (min-width: $tablet) {
+                                display: flex;
+                                column-gap: 10px;
+                            }
+                            
+                            .box-flex-item {
+                                font-size: 1.2rem;
+                                @media screen and (min-width: $tablet) {
+                                    font-size: 1.4rem;
+                                }
+
+                                &.box-flex-item-pc {
+                                    display: none;
+                                    @media screen and (min-width: $tablet) {
+                                        display: block;
+                                    }
+                                }
+                                &.box-flex-item-sp {
+                                    @media screen and (min-width: $tablet) {
+                                        display: none;
+                                    }
+                                }
+                                
+                                span {
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+
+                        .box-tag {
+                            font-size: 1.2rem;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow:hidden;
+
+                            &.box-tag-pc {
+                                display: none;
+                                @media screen and (min-width: $tablet) {
+                                    display: flex;
+                                    text-overflow: initial;
+                                    overflow: initial;
+                                    white-space: initial;
+                                }
+                            }
+                           
+                            a {
+                                color: initial;
+                                text-decoration: none;
+                                background-color: #E4E4E4;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                margin-right: 10px;
+                                white-space: nowrap;
+                            }
+                        }
+
+                        .box-text {
+                            &.box-text-pc {
+                                display: none;
+                                @media screen and (min-width: $tablet) {
+                                    display: block;
+                                }
+                            }
+
+                            .green {
+                                color: $green;
+                            }
+                            .blue {
+                                color: $blue02;
+                            }
+
+                            span {
+                                margin-right: 10px;
+                            }
+                        }
+
+                        
+                    }
+
+                    
+
+                }
+
+            }
+
+
+            .paragraph {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                h3 {
+                    font-size: 1.8rem;
+                }
+                p {
+                    &:nth-child(2) {
+                        margin-top: 10px;
+                    }
+                    line-height: 2.5rem;
+                }
             }
 
             .pagination-pc {
