@@ -310,7 +310,103 @@
                     }
                 }
             }
+
+            .tour-info-nav {
+                @media screen and (min-width: $tablet) {
+                    margin-top:30px;
+                }
+
+                .tour-info-nav-list {
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    column-gap: 20px;
+                    border-bottom: 2px solid $green;
+
+                    .tour-info-nav-list-item {
+                        width: 100%;
+                        text-align: center;
+                        margin-top: 10px;
+
+                        @media screen and (min-width: $tablet) {
+                            width: calc(100%/4 - 15px);
+                            margin-top: 0px;
+                            font-size: 16px;
+                        }
+
+                        &.current {
+                            a {
+                                color: $green;
+                                background-color: #fff;
+                            }
+                        }
+
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            text-decoration: none;
+                            color: #fff;
+                            background-color: $green;
+                            border: 2px solid $green;
+                            border-bottom: 0;
+                        }
+                    }
+                }
+            }
             
+            .box-latest-tour {                
+                padding-top: 20px;
+                padding-bottom: 0px;
+
+                >.content {
+                    
+                    .content-title {
+                        line-height: 2.5rem;
+                        padding-top: 6px;
+                        padding-bottom: 6px;
+                        @media screen and (min-width: $tablet) {
+                            font-size: 1.8rem;
+                        }
+                    }
+
+                    .box-flex {
+                        display: flex;
+                        .box-flex-item {
+                            font-size: 1.2rem;
+                            @media screen and (min-width: $tablet) {
+                                font-size: 1.4rem;
+                            }
+                            &:nth-child(n+2) {
+                                margin-left: 20px;
+                                @media screen and (min-width: $tablet) {
+                                    margin-left: 60px;
+                                }
+                            }
+                            span {
+                                color: #9A9A9A;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+
+                    .box-list {
+                        list-style: none;
+
+                        .box-list-item {
+                            display: flex;
+                            .box-list-item-title {
+                                flex-shrink: 0;
+                                color: #9A9A9A;
+                                margin-right: 10px;
+                                width: 100px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
             .list-tour {
                 list-style: none;
                 margin-top: 15px;
@@ -730,6 +826,68 @@
                 }
             }
 
+            .list-download {
+
+                &.list-download-no-border {
+                    .list-download-item {
+                        border-bottom: none;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }    
+                }
+
+                .list-download-item {
+                    display: flex;
+                    align-items: flex-start;
+                    column-gap: 20px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px dotted #E4E4E4;
+                    @media screen and (min-width: $tablet) {
+                        align-items: center;
+                    }
+
+                    .list-download-item-header {
+                        width: 100%;
+
+                        .list-download-title {
+                            width: 100%;
+                            flex-shrink: 0;
+                            margin-bottom: 10px;
+                            font-size: 1.6rem;
+                            @media screen and (min-width: $tablet) {
+                                max-width: 148px;
+                                margin-bottom: 0px;
+                            }
+                        }
+
+                        .list-download-content {
+                            width: 100%;
+                            font-size: 1.6rem;
+                            @media screen and (min-width: $tablet) {
+                                font-size: 1.4rem;
+                            }
+                            input {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+
+                    .list-download-item-btn {
+                        margin-left: auto;
+                        flex-shrink: 0;
+                    }
+                }
+
+                .list-download-btn {
+                    text-align: center;
+                    margin-top: 20px;
+                    @media screen and (min-width: $tablet) {
+                        text-align: right;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
 
             .list-account {
 
@@ -856,6 +1014,11 @@
     .btn-blue {
         border: 1px solid $blue02;
         background-color: $blue02;
+        color: #fff;
+    }
+    .btn-gray {
+        border: 1px solid #E4E4E4;
+        background-color: #E4E4E4;
         color: #fff;
     }
 
