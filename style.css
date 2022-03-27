@@ -8741,4 +8741,21 @@ main.local-professionals-agent-post .section-content.pickup .swiper-container-wr
   }
 }
 
+.contents-wrap.mypage-tour-info-download .aside {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contents-wrap.mypage-tour-info-download .aside {
+    display: block;
+  }
+}
+.contents-wrap.mypage-tour-info-download .main {
+  margin-top: 0px;
+}
+@media screen and (min-width: 768px) {
+  .contents-wrap.mypage-tour-info-download .main {
+    margin-top: 40px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
