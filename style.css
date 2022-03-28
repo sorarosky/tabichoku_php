@@ -227,12 +227,12 @@ a:hover {
 
 @media screen and (min-width: 768px) {
   .sp-pc.sp {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (max-width: 768px) {
   .sp-pc.pc {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -7330,6 +7330,98 @@ main.local-professionals-agent .section-content.pickup .swiper-container-wrapper
 main.local-professionals-agent-category .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next,
 main.local-professionals-agent-post .section-content.pickup .swiper-container-wrapper .pager .swiper-button-next {
   right: 0;
+}
+
+.g-navi.secondary {
+  max-width: initial !important;
+}
+.g-navi.secondary .user {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.g-navi.secondary .user[data-is-open=true] {
+  display: block;
+}
+.g-navi.secondary .user[data-is-open=true] .user-info {
+  background-image: url("../assets/img/mypage-header-user-info-arrow-up.svg");
+}
+.g-navi.secondary .user[data-is-open=true] .user-nav {
+  display: block;
+}
+.g-navi.secondary .user .user-info {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  background-image: url("../assets/img/mypage-header-user-info-arrow-down.svg");
+  background-position: center right 10px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.g-navi.secondary .user .user-info .user-img {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  text-align: center;
+  margin-right: 10px;
+}
+.g-navi.secondary .user .user-info .user-img img {
+  line-height: none;
+  width: 100%;
+}
+.g-navi.secondary .user .user-info .user-name span {
+  margin-right: 10px;
+}
+.g-navi.secondary .user .user-nav {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #fff;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 0px 10px 1px rgba(165, 165, 165, 0.46);
+  border-radius: 10px;
+  font-size: 1.6rem;
+  z-index: 10;
+  width: 100%;
+  max-width: 240px;
+}
+.g-navi.secondary .user .user-nav::before {
+  content: "";
+  display: block;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 20px;
+  top: -30px;
+  background-image: url("../assets/img/mypage-header-nav-triangle.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.g-navi.secondary .user .user-nav a {
+  color: initial;
+  text-decoration: none;
+}
+.g-navi.secondary .user .user-nav .list-user-nav {
+  list-style: none;
+}
+.g-navi.secondary .user .user-nav .list-user-nav .list-user-nav-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.g-navi.secondary .user .user-nav .list-user-nav .list-user-nav-item img {
+  vertical-align: sub;
+  margin-right: 10px;
+}
+.g-navi.secondary .user .user-nav .user-nav-block {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.g-navi.secondary .user .user-nav .user-nav-block:nth-child(n+2) {
+  border-top: 1px solid #B1B1B1;
 }
 
 .contents-wrap.mypage {

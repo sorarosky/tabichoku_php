@@ -55,9 +55,46 @@
                 </ul>
             </nav>
             <nav class="g-navi secondary sp-pc pc">
-                <ul class="links">
-                    
-                </ul>
+                
+                <div class="user" data-is-open="false">
+                    <div class="user-info js-user-nav-btn">
+                        <div class="user-notifi-badge"></div>
+                        <div class="user-img">
+                            <img src="assets/img/mypage-portrait-no-image.svg" alt="">
+                        </div>
+                        <p class="user-name"><span>ユーザー名が入るユーザー名が入る</span>さん</p>
+                    </div>
+
+                    <div class="user-nav js-user-nav">
+                        <ul class="user-nav-block list-user-nav">
+                            <li class="list-user-nav-item">
+                                <img src="assets/img/mypage-nav-icon-profile.svg" alt=""><a href="">会員情報</a>
+                            </li>
+                            <li class="list-user-nav-item">
+                                <img src="assets/img/mypage-nav-icon-favorite.svg" alt=""><a href="">お気に入り</a>
+                            </li>
+                            <li class="list-user-nav-item">
+                                <img src="assets/img/mypage-nav-icon-account.svg" alt=""><a href="">アカウント情報</a>
+                            </li>
+                        </ul>
+                        <ul class="user-nav-block list-user-nav">
+                            <li class="list-user-nav-item">
+                                <img src="assets/img/mypage-nav-icon-travel.svg" alt=""><a href="">あなたの旅行情報</a>
+                            </li>
+                            <li class="list-user-nav-item">
+                                <img src="assets/img/mypage-nav-icon-people.svg" alt=""><a href="">旅行者情報</a>
+                            </li>
+                            <li class="list-user-nav-item">
+                                <img src="assets/img/mypage-nav-icon-payment.svg" alt=""><a href="">お支払い情報</a>
+                            </li>
+                            <li class="list-user-nav-item">
+                                <img src="assets/img/mypage-nav-icon-template.svg" alt=""><a href="">テンプレート</a>
+                            </li>
+                        </ul>
+                        <p class="user-nav-block"><a href="">ログアウト</a></p>
+                    </div>
+
+                </div>
             </nav>
             <div class="search-toggle js-header-search-toggle">
                 <img class="search" src="/assets/img/search-header.svg" alt="">

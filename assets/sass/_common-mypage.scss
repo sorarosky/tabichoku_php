@@ -1,3 +1,116 @@
+.g-navi {
+    &.secondary {
+        max-width: initial !important;
+ 
+        .user {
+            position: relative;
+            margin-top: auto;
+            margin-bottom: auto;
+
+            &[data-is-open=true] {
+                display: block;
+
+                .user-info {
+                    background-image: url('../assets/img/mypage-header-user-info-arrow-up.svg');
+                }
+
+                .user-nav {
+                    display: block;
+                }
+            }
+            
+            .user-info {
+                display: flex;
+                align-items: center;
+                padding-right: 40px;
+                background-image: url('../assets/img/mypage-header-user-info-arrow-down.svg');
+                background-position: center right 10px;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                
+                .user-img {
+                    width: 40px;
+                    height: 40px;
+                    overflow: hidden;
+                    text-align: center;
+                    margin-right: 10px;
+
+                    img {
+                        line-height: none;
+                        width: 100%;
+                    }
+                }
+                .user-name {
+                    span {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .user-nav {
+                display: none;
+                position: absolute;
+                top: 50px;
+                right: 0;
+                background-color: #fff;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                box-shadow: 0px 0px 10px 1px rgba(165, 165, 165, 0.46);
+                border-radius: 10px;
+                font-size: 1.6rem;
+                z-index: 10;
+                width: 100%;
+                max-width: 240px;
+                
+                &::before {
+                    content: '';
+                    display: block;
+                    height: 50px;
+                    width: 50px;
+                    position: absolute;
+                    right: 20px;
+                    top: -30px;
+                    background-image: url('../assets/img/mypage-header-nav-triangle.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                a {
+                    color: initial;
+                    text-decoration: none;
+                }
+
+                
+                .list-user-nav {
+                    list-style: none;
+
+                    .list-user-nav-item {
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+
+                        img {
+                            vertical-align: sub;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .user-nav-block {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+
+                    &:nth-child(n+2) {
+                        border-top: 1px solid #B1B1B1;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
 .contents-wrap.mypage {
     background-color: #EFF7F8;
     

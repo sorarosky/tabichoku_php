@@ -9,6 +9,7 @@
 <!-- iScroll -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
 <script src="assets/js/functions.js"></script>
+<script src="assets/js/mypage-functions.js"></script>
 </body>
 
 </html>
