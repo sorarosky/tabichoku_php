@@ -20,7 +20,7 @@
     <li class="link"><a href="contact-form.php">お問い合わせ contact-form.php</a></li>
     <li class="link"><a href="contact-form-conf.php">お問い合わせ – 確認 contact-form-conf.php</a></li>
     <li class="link"><a href="contact-form-thx.php">お問い合わせ – 完了 contact-form-thx.php</a></li>
-    <li class="link"><a href="">日程・見積をきく</a></li>
+    <li class="link"><a href="plan-etimate.php">日程・見積をきく plan-etimate.php</a></li>
     <li class="link"><a href="travel-content.php">旅行コンテンツ(一覧) travel-content.php</a></li>
     <li class="link"><a href="travel-content-category">旅行コンテンツ – カテゴリ／検索トップ travel-content-category</a></li>
     <li class="link"><a href="">旅行コンテンツ – 詳細</a></li>

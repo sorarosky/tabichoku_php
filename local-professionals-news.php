@@ -131,7 +131,7 @@
           <div class="inner">
           <div class="head">新着</div>
             <div class="swiper-container-wrapper swiper-container-local-professionals-news-latest-wrapper">
-              <nav class="swiper-container swiper-container-local-professionals-news swiper-container-local-professionals-news-latest">
+              <nav class="swiper-container swiper-container-local-professionals-news-latest">
                 <ul class="swiper-wrapper">
                   <li class="swiper-slide slide01">
                   <a href="">

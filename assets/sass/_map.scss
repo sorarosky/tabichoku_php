@@ -1,3 +1,11 @@
+.map-top-map {
+    .map {
+        img {
+            @include img;
+        }
+    }
+}
+
 main.map {
     .section-content {
         .inner {

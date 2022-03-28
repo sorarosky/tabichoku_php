@@ -1,5 +1,6 @@
 jQuery(function($) {
     $(document).ready(function() {
+        // ドロワーナビ
         if ($('.drawer').length) {
             $('.drawer').drawer();
             // オーバーレイ作成
@@ -16,7 +17,8 @@ jQuery(function($) {
         $('.drawer-toggle').click(function() {
             $('.js-drawer-search').removeClass('shown');
         });
-        // #にダブルクォーテーションが必要
+
+        // ページ内リンク　#にダブルクォーテーションが必要
         $('a[href^="#"]').click(function() {
             var headerHight = 100; //ヘッダの高さ
             var speed = 800;
@@ -27,157 +29,173 @@ jQuery(function($) {
             return false;
         });
         //Swiper
-        var mySwiper_top_kv = new Swiper('.swiper-container-top-kv', {
-            //effect: 'fade',
-            // fadeEffect: {
-            //     crossFade: true
-            // },
-            autoplay: true,
-            autoplay: {
-                delay: 5000,
-            },
-            speed: 3000,
-        });
-        var mySwiper_top_recommended = new Swiper('.swiper-container-top-recommended', {
-            // autoplay: true,
-            // autoplay: {
-            //     delay: 5000,
-            // },
-            speed: 1000,
-            slidesPerView: 1.1,
-            allowTouchMove: true,
-            spaceBetween: 20,
-            breakpoints: {
-                // when window width is <= 768px
-                768: {
-                    slidesPerView: 5,
-                    spaceBetweenSlides: 30
+        if ($('.swiper-container-top-kv').length) {
+            var mySwiper_top_kv = new Swiper('.swiper-container-top-kv', {
+                //effect: 'fade',
+                // fadeEffect: {
+                //     crossFade: true
+                // },
+                autoplay: true,
+                autoplay: {
+                    delay: 5000,
                 },
-                // when window width is <= 999px
-                // 999: {
-                //     slidesPerView: 2,
-                //     spaceBetweenSlides: 40
-                // }
-            }
-        });
-        var mySwiper_local_professionals = new Swiper('.swiper-container-local-professionals', {
-            // autoplay: true,
-            // autoplay: {
-            //     delay: 5000,
-            // },
-            speed: 1000,
-            slidesPerView: 1.1,
-            spaceBetween: 20,
-            breakpoints: {
-                // when window width is <= 768px
-                768: {
-                    slidesPerView: 5,
-                    spaceBetweenSlides: 30
-                },
-                // when window width is <= 999px
-                // 999: {
-                //     slidesPerView: 2,
-                //     spaceBetweenSlides: 40
-                // }
-            }
-        });
-        var mySwiper_local_professionals_news = new Swiper('.swiper-container-local-professionals-news', {
-            // autoplay: true,
-            // autoplay: {
-            //     delay: 5000,
-            // },
-            speed: 1000,
-            slidesPerView: 1.1,
-            spaceBetween: 20,
-            breakpoints: {
-                // when window width is <= 768px
-                768: {
-                    slidesPerView: 5,
-                    spaceBetweenSlides: 30
-                },
-                // when window width is <= 999px
-                // 999: {
-                //     slidesPerView: 2,
-                //     spaceBetweenSlides: 40
-                // }
-            }
-        });
-        var mySwiper_search_navi_tab = new Swiper('.swiper-container-search-navi-tab', {
-            loop: false,
-            speed: 1000,
-            // autoplay: {
-            //     delay: 5000,
-            // },
-            //autoplay: true,
-            //allowTouchMove: true,
-            centeredSlides: false,
-            spaceBetween: 0,
-            slidesPerView: 'auto',
-            slideToClickedSlide: true,
-            breakpoints: {
-                // when window width is <= 768px
-                768: {
-                    slidesPerView: 5,
-                    spaceBetweenSlides: 30
-                },
-                // when window width is <= 999px
-                // 999: {
-                //     slidesPerView: 2,
-                //     spaceBetweenSlides: 40
-                // }
-            }
-        });
-        var mySwiper_search_navi_tab_contnets = new Swiper('.swiper-container-search-navi-tab-contents', {
-            loop: false,
-            speed: 1000,
-            // autoplay: {
-            //     delay: 5000,
-            // },
-            //autoplay: true,
-            allowTouchMove: false,
-            //centeredSlides: true,
-            spaceBetween: 0,
-            slidesPerView: 'auto',
-            slideToClickedSlide: true,
-        });
-        var mySwiper_search_navi_tab02 = new Swiper('.swiper-container-search-navi-tab02', {
-            loop: false,
-            speed: 1000,
-            // autoplay: {
-            //     delay: 5000,
-            // },
-            //autoplay: true,
-            //allowTouchMove: true,
-            centeredSlides: false,
-            spaceBetween: 0,
-            slidesPerView: 'auto',
-            slideToClickedSlide: true,
-            breakpoints: {
-                // when window width is <= 768px
-                768: {
-                    slidesPerView: 5,
-                    spaceBetweenSlides: 30
-                },
-                // when window width is <= 999px
-                // 999: {
-                //     slidesPerView: 2,
-                //     spaceBetweenSlides: 40
-                // }
-            }
-        });
-        var mySwiper_search_navi_tab_contnets02 = new Swiper('.swiper-container-search-navi-tab-contents02', {
-            loop: false,
-            speed: 1000,
-            // autoplay: {
-            //     delay: 5000,
-            // },
-            //autoplay: true,
-            allowTouchMove: false,
-            //centeredSlides: true,
-            spaceBetween: 0,
-            slidesPerView: 'auto',
-            slideToClickedSlide: true,
-        });
+                speed: 3000,
+            });
+        }
+        if ($('.swiper-container-top-recommended').length) {
+            var mySwiper_top_recommended = new Swiper('.swiper-container-top-recommended', {
+                // autoplay: true,
+                // autoplay: {
+                //     delay: 5000,
+                // },
+                speed: 1000,
+                slidesPerView: 1.1,
+                allowTouchMove: true,
+                spaceBetween: 20,
+                breakpoints: {
+                    // when window width is <= 768px
+                    768: {
+                        slidesPerView: 5,
+                        spaceBetweenSlides: 30
+                    },
+                    // when window width is <= 999px
+                    // 999: {
+                    //     slidesPerView: 2,
+                    //     spaceBetweenSlides: 40
+                    // }
+                }
+            });
+        }
+        if ($('.swiper-container-top-local-professionals').length) {
+            var mySwiper_local_professionals = new Swiper('.swiper-container-top-local-professionals', {
+                // autoplay: true,
+                // autoplay: {
+                //     delay: 5000,
+                // },
+                speed: 1000,
+                slidesPerView: 1.1,
+                spaceBetween: 20,
+                breakpoints: {
+                    // when window width is <= 768px
+                    768: {
+                        slidesPerView: 5,
+                        spaceBetweenSlides: 30
+                    },
+                    // when window width is <= 999px
+                    // 999: {
+                    //     slidesPerView: 2,
+                    //     spaceBetweenSlides: 40
+                    // }
+                }
+            });
+        }
+        if ($('.swiper-container-top-local-professionals-news').length) {
+            var mySwiper_local_professionals_news = new Swiper('.swiper-container-top-local-professionals-news', {
+                // autoplay: true,
+                // autoplay: {
+                //     delay: 5000,
+                // },
+                speed: 1000,
+                slidesPerView: 1.1,
+                spaceBetween: 20,
+                breakpoints: {
+                    // when window width is <= 768px
+                    768: {
+                        slidesPerView: 5,
+                        spaceBetweenSlides: 30
+                    },
+                    // when window width is <= 999px
+                    // 999: {
+                    //     slidesPerView: 2,
+                    //     spaceBetweenSlides: 40
+                    // }
+                }
+            });
+        }
+        if ($('.swiper-container-search-navi-tab').length) {
+            var mySwiper_search_navi_tab = new Swiper('.swiper-container-search-navi-tab', {
+                loop: false,
+                speed: 1000,
+                // autoplay: {
+                //     delay: 5000,
+                // },
+                //autoplay: true,
+                //allowTouchMove: true,
+                centeredSlides: false,
+                spaceBetween: 0,
+                slidesPerView: 'auto',
+                slideToClickedSlide: true,
+                breakpoints: {
+                    // when window width is <= 768px
+                    768: {
+                        slidesPerView: 5,
+                        spaceBetweenSlides: 30
+                    },
+                    // when window width is <= 999px
+                    // 999: {
+                    //     slidesPerView: 2,
+                    //     spaceBetweenSlides: 40
+                    // }
+                }
+            });
+        }
+        if ($('.swiper-container-top-local-professionals-news').length) {
+            var mySwiper_search_navi_tab_contnets = new Swiper('.swiper-container-search-navi-tab-contents', {
+                loop: false,
+                speed: 1000,
+                // autoplay: {
+                //     delay: 5000,
+                // },
+                //autoplay: true,
+                allowTouchMove: false,
+                //centeredSlides: true,
+                spaceBetween: 0,
+                slidesPerView: 'auto',
+                slideToClickedSlide: true,
+            });
+        }
+        if ($('.swiper-container-top-local-professionals-news').length) {
+            var mySwiper_search_navi_tab02 = new Swiper('.swiper-container-search-navi-tab02', {
+                loop: false,
+                speed: 1000,
+                // autoplay: {
+                //     delay: 5000,
+                // },
+                //autoplay: true,
+                //allowTouchMove: true,
+                centeredSlides: false,
+                spaceBetween: 0,
+                slidesPerView: 'auto',
+                slideToClickedSlide: true,
+                breakpoints: {
+                    // when window width is <= 768px
+                    768: {
+                        slidesPerView: 5,
+                        spaceBetweenSlides: 30
+                    },
+                    // when window width is <= 999px
+                    // 999: {
+                    //     slidesPerView: 2,
+                    //     spaceBetweenSlides: 40
+                    // }
+                }
+            });
+        }
+        if ($('.swiper-container-search-navi-tab-contents02').length) {
+            var mySwiper_search_navi_tab_contnets02 = new Swiper('.swiper-container-search-navi-tab-contents02', {
+                loop: false,
+                speed: 1000,
+                // autoplay: {
+                //     delay: 5000,
+                // },
+                //autoplay: true,
+                allowTouchMove: false,
+                //centeredSlides: true,
+                spaceBetween: 0,
+                slidesPerView: 'auto',
+                slideToClickedSlide: true,
+            });
+        }
         // slideToメソッドを実行する関数を定義
         if ($('.swiper-container-search-navi-tab-contents').length) {
             $('.swiper-container-search-navi-tab .swiper-slide.tab').on('click', function() {
@@ -185,98 +203,95 @@ jQuery(function($) {
                 mySwiper_search_navi_tab_contnets.slideTo(index); //指定のスライドを呼び出し
             });
         }
-        // if ($('.swiper-container-search-navi-tab-contents02').length) {
-        //     $('.swiper-container-search-navi-tab02 .swiper-slide.tab').on('click', function() {
-        //         var index = $(this).index(); //クリックした要素のインデックスを取得
-        //         mySwiper_search_navi_tab_contnets02.slideTo(index); //指定のスライドを呼び出し
-        //     });
-        // }
-        var mySwiper = new Swiper('.swiper-container-local-professionals-news-top-articles', {
-            loop: true,
-            speed: 1000,
-            autoplay: {
-                delay: 5000,
-            },
-            autoplay: true,
-            allowTouchMove: true,
-            //centeredSlides: true,
-            spaceBetween: 0,
-            slidesPerView: 1,
-            slideToClickedSlide: true,
-            breakpoints: {
-                // when window width is <= 768px
-                768: {
-                    slidesPerView: 3
+        if ($('.swiper-container-local-professionals-news-top-articles').length) {
+            var mySwiper = new Swiper('.swiper-container-local-professionals-news-top-articles', {
+                loop: true,
+                speed: 1000,
+                autoplay: {
+                    delay: 5000,
+                },
+                autoplay: true,
+                allowTouchMove: true,
+                //centeredSlides: true,
+                spaceBetween: 0,
+                slidesPerView: 1,
+                slideToClickedSlide: true,
+                breakpoints: {
+                    // when window width is <= 768px
+                    768: {
+                        slidesPerView: 3
+                    }
+                    // when window width is <= 999px
+                    // 999: {
+                    //     slidesPerView: 2,
+                    //     spaceBetweenSlides: 40
+                    // }
                 }
-                // when window width is <= 999px
-                // 999: {
-                //     slidesPerView: 2,
-                //     spaceBetweenSlides: 40
-                // }
-            }
-        });
-        var mySwiper = new Swiper('.swiper-container-local-professionals-news-pickup', {
-            loop: true,
-            speed: 1000,
-            autoplay: {
-                delay: 5000,
-            },
-            navigation: {
-                nextEl: '.swiper-container-local-professionals-news-pickup-wrapper .swiper-button-next',
-                prevEl: '.swiper-container-local-professionals-news-pickup-wrapper .swiper-button-prev',
-            },
-            autoplay: true,
-            allowTouchMove: true,
-            //centeredSlides: true,
-            spaceBetween: 16,
-            slidesPerView: 1.2,
-            slideToClickedSlide: true,
-            breakpoints: {
-                // when window width is <= 768px
-                768: {
-                    slidesPerView: 3
+            });
+        }
+
+        if ($('.swiper-container-local-professionals-news-pickup').length) {
+            var mySwiper = new Swiper('.swiper-container-local-professionals-news-pickup', {
+                loop: true,
+                speed: 1000,
+                autoplay: {
+                    delay: 5000,
+                },
+                navigation: {
+                    nextEl: '.swiper-container-local-professionals-news-pickup-wrapper .swiper-button-next',
+                    prevEl: '.swiper-container-local-professionals-news-pickup-wrapper .swiper-button-prev',
+                },
+                autoplay: true,
+                allowTouchMove: true,
+                //centeredSlides: true,
+                spaceBetween: 16,
+                slidesPerView: 1.2,
+                slideToClickedSlide: true,
+                breakpoints: {
+                    // when window width is <= 768px
+                    768: {
+                        slidesPerView: 3
+                    }
+                    // when window width is <= 999px
+                    // 999: {
+                    //     slidesPerView: 2,
+                    //     spaceBetweenSlides: 40
+                    // }
                 }
-                // when window width is <= 999px
-                // 999: {
-                //     slidesPerView: 2,
-                //     spaceBetweenSlides: 40
-                // }
-            }
-        });
-        var mySwiper = new Swiper('.swiper-container-local-professionals-news-latest', {
-            loop: false,
-            speed: 1000,
-            autoplay: {
-                delay: 5000,
-            },
-            autoplay: true,
-            allowTouchMove: true,
-            //centeredSlides: true,
-            spaceBetween: 16,
-            slidesPerView: 1.2,
-            slideToClickedSlide: true,
-            navigation: {
-                nextEl: '.swiper-container-local-professionals-news-latest-wrapper .swiper-button-next',
-                prevEl: '.swiper-container-local-professionals-news-latest-wrapper .swiper-button-prev',
-            },
-            breakpoints: {
-                // when window width is <= 768px
-                768: {
-                    slidesPerView: 3
+            });
+        }
+
+        if ($('.swiper-container-local-professionals-news-latest').length) {
+            var mySwiper = new Swiper('.swiper-container-local-professionals-news-latest', {
+                loop: false,
+                speed: 1000,
+                autoplay: {
+                    delay: 5000,
+                },
+                autoplay: true,
+                allowTouchMove: true,
+                //centeredSlides: true,
+                spaceBetween: 16,
+                slidesPerView: 1.2,
+                slideToClickedSlide: true,
+                navigation: {
+                    nextEl: '.swiper-container-local-professionals-news-latest-wrapper .swiper-button-next',
+                    prevEl: '.swiper-container-local-professionals-news-latest-wrapper .swiper-button-prev',
+                },
+                breakpoints: {
+                    // when window width is <= 768px
+                    768: {
+                        slidesPerView: 3
+                    }
+                    // when window width is <= 999px
+                    // 999: {
+                    //     slidesPerView: 2,
+                    //     spaceBetweenSlides: 40
+                    // }
                 }
-                // when window width is <= 999px
-                // 999: {
-                //     slidesPerView: 2,
-                //     spaceBetweenSlides: 40
-                // }
-            }
-        });
-        //BLOGサイドバー
-        $('.months .links').hide();
-        $('.months .toggle').click(function() {
-            $(this).next('.links').slideToggle();
-            $(this).toggleClass('shown');
-        });
+            });
+        }
+
         //アコーディオン
         if ($('.js-acordion-head').length) {
             $(".js-acordion-head").next().css('display', 'none');
@@ -313,6 +328,8 @@ jQuery(function($) {
                 }
             });
         }
+
+        //ページトップへ
         if ($('.page-top').length) {
             $(function() {
                 var topBtn = $('.page-top');
@@ -327,6 +344,8 @@ jQuery(function($) {
                 });
             });
         }
+
+        //
         if ($('.main.chiebukuro').length) {
             var orverlay = $('.orverlay');
             var inner = $('.orverlay .inner');

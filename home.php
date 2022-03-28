@@ -192,7 +192,7 @@
         <div class="sub-head">Local Professionals</div>
         <div class="text">世界中で活躍されている旅行会社、コーディネーターをご紹介！<br>直接メールで情報を聞くことができるのでご自身にあった「旅」の計画が実現できます！</div>
         <div class="swiper-container-local-professionals-wrapper">
-          <div class="swiper-container swiper-container-local-professionals">
+          <div class="swiper-container swiper-container-top-local-professionals">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="img">
@@ -577,7 +577,7 @@
         <div class="sub-head">Local Professionals News</div>
         <div class="text">現地パートナーによるおすすめエリアやスポット・ショップ・おいしいご飯をご紹介！</div>
         <div class="swiper-container-local-professionals-news-wrapper">
-          <div class="swiper-container swiper-container-local-professionals-news">
+          <div class="swiper-container swiper-container-top-local-professionals-news">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="img"><div class="country-name">フランス</div>
