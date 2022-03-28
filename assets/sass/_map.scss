@@ -1,0 +1,47 @@
+main.map {
+    .section-content {
+        .inner {
+            >.head {
+                font-size: 2.8rem;
+                color: $green;
+                padding-bottom: 15px;
+                border-bottom: 2px solid $gray;
+            }
+            >.sub-head {
+                color: $green;
+                font-size: 2.4rem;
+                margin-top: 20px;
+            }
+        }
+        &.popular,
+        &.latest,
+        &.ranking,
+        &.recommended-content,
+        &.map-checked {
+            padding-bottom: 100px;
+            .head {
+                margin-top: 80px;
+            }
+            .swiper-container-wrapper {
+                position: relative;
+                @include post-slide;
+                .pager {
+                    .swiper-button-prev,
+                    .swiper-button-next {
+                        width: 44px;
+                        background-image: none;
+                    }
+                    .swiper-button-prev {
+                        left: 0;
+                    }
+                    .swiper-button-next {
+                        right: 0;
+                    }
+                }
+            }
+            .button {
+                @include btn;
+            }
+        }
+    }
+}

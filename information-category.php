@@ -1,5 +1,5 @@
 <?php include 'header.php';?>
-<?php include 'breadclm.php';?>
+<?php include 'breadcrumb.php';?>
 <div class="contents-wrap">
   <main class="information">
     <section class="section-content">
