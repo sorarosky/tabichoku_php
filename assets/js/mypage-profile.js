@@ -36,4 +36,29 @@ window.onload = function () {
 		inputFile.value = '';
 		previewImgElmn.src = defaultNoImgSrc;
 	});
+
+	let birthDateInput = document.querySelector('.js-input-birthdate');
+	birthDateInput.addEventListener('change', function() {
+		let regex = new RegExp('(19|20)[0-9][0-9]\/[0-9][0-9]\/[0-9][0-9]$');
+		let regexResult = regex.exec(this.value);
+
+		if( regexResult ) {
+			let arrBirthDate = regexResult[0].split('/');
+			let birthYear = arrBirthDate[0];
+			let birthMonth = arrBirthDate[1];
+			let birthDay = arrBirthDate[2];
+
+			let today = new Date();
+			let currentYear = today.getFullYear();
+			let currentMonth = today.getMonth() + 1;
+			let currentDay = today.getDate();
+
+			let age = currentYear - birthYear;
+			age = (currentMonth < birthMonth && currentDay < birthDay) ? age - 1 : age;
+
+			document.querySelector('.js-age').innerHTML = age;
+		}
+	
+	});
+
 }

@@ -42,12 +42,12 @@ $blue03: #D8F5FA;
 @mixin sp-pc {
     &.sp {
         @media screen and (min-width: $tablet) {
-            display: none;
+            display: none !important;;
         }
     }
     &.pc {
         @media screen and (max-width: $tablet) {
-            display: none;
+            display: none !important;;
         }
     }
 }
