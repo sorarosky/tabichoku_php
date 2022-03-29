@@ -1,3 +1,4 @@
+// ヘッダー内、右側のナビ開閉制御
 let mypageUserNavBtn = document.querySelector('.js-user-nav-btn');
 mypageUserNavBtn.addEventListener('click', function() {
 	let userNavElmn = this.parentNode;
