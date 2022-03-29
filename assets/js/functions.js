@@ -28,6 +28,7 @@ jQuery(function($) {
             $('body,html').animate({ scrollTop: position }, speed, 'swing');
             return false;
         });
+        
         //Swiper
         if ($('.swiper-container-top-kv').length) {
             var mySwiper_top_kv = new Swiper('.swiper-container-top-kv', {
@@ -262,8 +263,9 @@ jQuery(function($) {
         }
 
         if ($('.swiper-container-local-professionals-news-latest').length) {
+            
             var mySwiper = new Swiper('.swiper-container-local-professionals-news-latest', {
-                loop: false,
+                loop: true,
                 speed: 1000,
                 autoplay: {
                     delay: 5000,
@@ -372,4 +374,99 @@ jQuery(function($) {
             });
         }
     });
+
+
+    /* SOF local-professionals-news-post.php */
+    //お気に入りボタン
+    var favoriteBtn = $('.local-professionals-news-post .like');
+    favoriteBtn.on('click', function() {
+        if($(this).hasClass('liked')) {
+            $(this).removeClass('liked');
+        } else {
+            $(this).addClass('liked');
+        }
+    });
+    /* EOF local-professionals-news-post.php */
+
+    /* SOF local-professionals-agent-post.php */
+    var favoriteBtn = $('.local-professionals-agent-post .like');
+    favoriteBtn.on('click', function() {
+        if($(this).hasClass('liked')) {
+            $(this).removeClass('liked');
+        } else {
+            $(this).addClass('liked');
+        }
+    });
+    /* EOF travel-content.php */
+
+
+    /* SOF 共通スワイパー */
+    //Swiper
+    //スワイパーリスト
+    var travelSwiperArr = [];
+    //共通となるステータスをオブジェクトで設定
+    var travelSwiperStatus = {
+        loop: true,
+        speed: 1000,
+        autoplay: {
+            delay: 5000,
+        },
+        autoplay: true,
+        allowTouchMove: true,
+        //centeredSlides: true,
+        spaceBetween: 16,
+        slidesPerView: 1.2,
+        slideToClickedSlide: true,
+        breakpoints: {
+            // when window width is <= 768px
+            768: {
+                slidesPerView: 3
+            }
+            // when window width is <= 999px
+            // 999: {
+            //     slidesPerView: 2,
+            //     spaceBetweenSlides: 40
+            // }
+        }
+    };
+    var travelContentSwiperClassName = [
+        '.swiper-container-travel-content-popular',
+        '.swiper-container-travel-content-latest',
+        '.swiper-container-travel-content-themes01',
+        '.swiper-container-travel-content-themes02',
+        '.swiper-container-travel-content-themes03',
+        '.swiper-container-travel-content-themes04',
+        '.swiper-container-travel-content-themes05',
+        '.swiper-container-travel-content-themes06',
+        '.swiper-container-travel-content-themes07',
+        '.swiper-container-travel-content-themes08',
+        '.swiper-container-travel-content-themes09',
+        '.swiper-container-travel-content-themes10',
+        '.swiper-container-travel-content-themes11',
+    ];
+    travelContentSwiperClassName.map(function(swipName, index) {
+        if ($(swipName).length) {
+            //共通設定を複製し、必要な設定を追加
+            var travelSwiperStatusDepend = travelSwiperStatus;
+            travelSwiperStatusDepend.navigation = { 
+                nextEl : swipName+'-wrapper .swiper-button-next',
+                prevEl : swipName+'-wrapper .swiper-button-prev'
+            }
+
+            // 特定のスワイパーにだけ設定する場合
+            if(swipName == '.swiper-container-travel-content-popular') {
+                // travelSwiperStatusDepend.slidesPerView = 1;
+            }
+
+            // スワイパーの実装とオブジェクトの格納
+            travelSwiperArr.push(
+                new Swiper(
+                    swipName,
+                    travelSwiperStatusDepend
+                )
+            );
+        }
+    });
+    /* EOF 共通スワイパー */
+
 });
