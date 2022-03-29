@@ -50,8 +50,8 @@
     <li class="link"><a href="mypage-profile.php">マイページ 会員情報 mypage-profile.php</a></li>
     <li class="link"><a href="mypage-template.php">マイページ テンプレート mypage-template.php</a></li>
     <li class="link"><a href="mypage-account.php">マイページ アカウント情報 mypage-account.php</a></li>
-    <li class="link"><a href="mypage-email-edit.php">マイページ メールアドレス変更 ダッシュボード mypage-email-edit.php</a></li>
-    <li class="link"><a href="mypage-passowrd-edit.php">マイページ パスワード変更 ダッシュボード mypage-passowrd-edit.php</a></li>
+    <li class="link"><a href="mypage-email-edit.php">マイページ メールアドレス変更 mypage-email-edit.php</a></li>
+    <li class="link"><a href="mypage-password-edit.php">マイページ パスワード変更 mypage-password-edit.php</a></li>
     <li class="link"><a href="mypage-favorite-tour-list.php">マイページ お気に入り 旅コンテンツ mypage-favorite-tour-list.php</a></li>
     <li class="link"><a href="mypage-favorite-news-list.php">マイページ お気に入り 現地通信 mypage-favorite-news-list.php</a></li>
     <li class="link"><a href="mypage-favorite-partner-list.php">マイページ お気に入り 現地パートナー mypage-favorite-partner-list.php</a></li>
