@@ -1,7 +1,8 @@
 <aside class="aside">
   <div class="aside-box aside-box-profile">
     <div class="profile-portrait">
-      <img src="assets/img/mypage-portrait-no-image.svg" alt="">
+      <!-- <img src="assets/img/mypage-portrait-no-image.svg" alt=""> -->
+      <img src="assets/img/mypage-portrait-dummy.png" alt="">
     </div>
     <div class="profile-deial">
       <p class="account-id">会員IDが入る</p>
@@ -55,6 +56,7 @@
     <ul class="aside-box-list">
         <li class="aside-box-list-item aside-box-list-item-pc">
           <a href=""><img src="assets/img/mypage-nav-icon-travel.svg" alt="">あなたの旅行情報</a>
+          <span class="notify-badge">21</span>
         </li>
         <li class="aside-box-list-item aside-box-list-item-pc">
           <a href=""><img src="assets/img/mypage-nav-icon-people.svg" alt="">旅行者情報</a>

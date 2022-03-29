@@ -8737,7 +8737,19 @@ main.map .section-content.popular .button:hover, main.map .section-content.lates
   background-repeat: no-repeat;
   cursor: pointer;
 }
+<<<<<<< Updated upstream
 
+=======
+.g-navi.secondary .user .user-info .user-notify-badge {
+  position: absolute;
+  top: 0px;
+  left: 36px;
+  width: 5px;
+  height: 5px;
+  background-color: #EA1010;
+  border-radius: 100%;
+}
+>>>>>>> Stashed changes
 .g-navi.secondary .user .user-info .user-img {
   width: 40px;
   height: 40px;
@@ -8997,6 +9009,7 @@ main.map .section-content.popular .button:hover, main.map .section-content.lates
 
 .contents-wrap.mypage .main-aside-wrap .aside .aside-box.aside-box-nav .aside-box-list .aside-box-list-item.aside-box-list-item-pc {
   display: none;
+  position: relative;
 }
 
 .contents-wrap.mypage .main-aside-wrap .aside .aside-box.aside-box-nav .aside-box-list .aside-box-list-item.aside-box-list-item-pc:nth-child(n+2) {
@@ -9007,7 +9020,23 @@ main.map .section-content.popular .button:hover, main.map .section-content.lates
   vertical-align: sub;
   margin-right: 10px;
 }
+<<<<<<< Updated upstream
 
+=======
+.contents-wrap.mypage .main-aside-wrap .aside .aside-box.aside-box-nav .aside-box-list .aside-box-list-item.aside-box-list-item-pc .notify-badge {
+  background-color: #EA1010;
+  color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  line-height: 2.2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-left: 5px;
+  vertical-align: top;
+}
+>>>>>>> Stashed changes
 @media screen and (min-width: 768px) {
   .contents-wrap.mypage .main-aside-wrap .aside .aside-box.aside-box-nav .aside-box-list .aside-box-list-item.aside-box-list-item-pc {
     display: block;

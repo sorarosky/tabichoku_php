@@ -58,9 +58,10 @@
                 
                 <div class="user" data-is-open="false">
                     <div class="user-info js-user-nav-btn">
-                        <div class="user-notifi-badge"></div>
+                        <div class="user-notify-badge"></div>
                         <div class="user-img">
-                            <img src="assets/img/mypage-portrait-no-image.svg" alt="">
+                            <!-- <img src="assets/img/mypage-portrait-no-image.svg" alt=""> -->
+                            <img src="assets/img/mypage-portrait-dummy.png" alt="">
                         </div>
                         <p class="user-name"><span>ユーザー名が入るユーザー名が入る</span>さん</p>
                     </div>
