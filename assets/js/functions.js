@@ -397,6 +397,25 @@ jQuery(function($) {
             $(this).addClass('liked');
         }
     });
+
+    if($('.js-button-float').length) {
+            
+        //スクロールが1000に達したらスライドダウン
+        $(window).scroll(function() {
+             
+            var targetBtn = $('.js-button-float-target')
+            var floatBtn = $('.js-button-float');
+            var scrollPosition = window.pageYOffset;
+            var hidePoint = targetBtn.position().top - $(window).height() + 260;
+            
+            if( scrollPosition >= hidePoint ) {
+                floatBtn.hide();
+            } else {
+                floatBtn.show();
+            }
+        });
+        
+    };
     /* EOF travel-content.php */
 
 

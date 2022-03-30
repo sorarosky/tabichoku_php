@@ -96,7 +96,8 @@
               </tr>
             </table>
           </div>
-          <a href="" class="button">見積・日程のご相談</a>
+          <a href="" class="button js-button-float-target">見積・日程のご相談</a>
+          <a href="" class="button button-float js-button-float">見積・日程のご相談</a>
         </div>
       </section>
       <section class="section-content pickup">
