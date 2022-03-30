@@ -1,7 +1,7 @@
 <?php include 'header.php';?>
 <?php include 'breadcrumb.php';?>
 <div class="contents-wrap">
-  <main class="main travel-content-contact-form-conf">
+  <main class="main travel-content-estimate-form-conf">
     <section class="section-content">
       <div class="inner">
         <nav class="states">

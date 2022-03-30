@@ -1,23 +1,62 @@
-main.entry-form,
-main.entry-form-conf,
-main.entry-form-thx {
+main.travel-content-estimate-form,
+main.travel-content-estimate-form-conf,
+main.travel-content-estimate-form-thx {
     .section-content {
         padding-top: 60px;
         padding-bottom: 100px;
         .inner {
             @include inner;
-            max-width: 940px;
-            >.head {
-                font-size: 3.2rem;
-                text-align: center;
-                color: $green;
-                font-weight: bold;
-            }
+            max-width: 800px;
             .states {
                 @include states;
             }
-            >.text {
+            >.head {
+                font-size: 2.8rem;
+                text-align: center;
+                margin-top: 60px;
+            }
+            ul {
+                margin-top: 30px;
+                padding-left: 24px;
+            }
+            .box {
+                border: 1px solid $gray;
+                padding: 20px;
                 margin-top: 40px;
+                .id {}
+                .title {
+                    font-size: 1.8rem;
+                    color: $blue02;
+                    font-weight: bold;
+                }
+                .date {
+                    margin-top: 40px;
+                }
+                .fas {
+                    color: $black;
+                    margin-right: 10px;
+                }
+                .ture-name {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    margin-top: 15px;
+                }
+                .theme-category {
+                    color: $blue02;
+                }
+                table {
+                    border-top: 2px solid $gray;
+                    width: 100%;
+                    margin-top: 20px;
+                    tr {
+                        th,
+                        td {
+                            text-align-last: left;
+                            padding: 10px 0;
+                        }
+                        td {}
+                    }
+                }
             }
             .form {
                 width: 100%;
@@ -120,8 +159,9 @@ main.entry-form-thx {
                     margin-top: 40px;
                     .fa-window-restore {}
                 }
-                .privacy {
+                .agreement {
                     text-align: center;
+                    margin-top: 30px;
                     input {
                         transform: scale(150%);
                         margin-right: 10px;
@@ -155,7 +195,7 @@ main.entry-form-thx {
     }
 }
 
-.main.entry-form-conf {
+.main.travel-content-estimate-form-conf {
     .form {
         text-align: center;
         .privacy {
@@ -176,51 +216,38 @@ main.entry-form-thx {
     }
 }
 
-main.entry-form-thx {
+main.travel-content-estimate-form-thx {
+    width: 100%;
     .section-content {
         padding-top: 60px;
         padding-bottom: 100px;
         .inner {
             @include inner;
             max-width: 640px;
-            >.text {
-                font-size: 2.8rem;
+            >.head {
+                font-size: 2.4rem;
+                line-height: 3.6rem;
                 text-align: center;
-                line-height: 3.7rem;
                 .fa-check-circle {
                     color: $green;
                     font-size: 4rem;
                 }
             }
-            ul {
-                margin-top: 30px;
-                font-size: 1.6rem;
+            .text {
+                text-align: center;
             }
-            .contact {
-                border: 2px solid $blue02;
-                border-radius: 10px;
-                padding: 20px 0 30px;
-                margin-top: 50px;
-                .logo {
-                    max-width: 200px;
-                    margin: 0 auto;
-                    img {
-                        @include img;
-                    }
-                }
-                .button {
-                    @include btn;
-                    max-width: 360px;
-                    padding: 20px 0;
-                    background-color: $blue02;
-                    border-radius: 40px;
-                    color: #fff;
-                    margin-top: 30px;
-                }
+            .button {
+                @include btn;
+                background-color: $blue02;
+                padding: 20px;
+                color: #fff;
+                border-radius: 40px;
+                font-size: 2rem;
+                margin-top: 40px;
             }
             .link {
                 text-align: center;
-                margin-top: 60px;
+                margin-top: 130px;
             }
         }
     }

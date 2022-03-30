@@ -11,29 +11,31 @@
         <div class="inner">
           <div class="sp-pc sp">
             <div class="row page-navi">
-              <div class="col col-4"><a href="">日本</a></div>
-              <div class="col col-4"><a href="">日本</a></div>
-              <div class="col col-4"><a href="">日本</a></div>
-              <div class="col col-4"><a href="">日本</a></div>
-              <div class="col col-4"><a href="">日本</a></div>
-              <div class="col col-4"><a href="">日本</a></div>
-              <div class="col col-4"><a href="">日本</a></div>
+              <div class="col col-4"><a href="#area01">日本</a></div>
+              <div class="col col-4"><a href="#area02">ハワイ</a></div>
+              <div class="col col-4"><a href="#area03">北米</a></div>
+              <div class="col col-4"><a href="#area04">中南米</a></div>
+              <div class="col col-4"><a href="#area05">アジア</a></div>
+              <div class="col col-4"><a href="#area06">大洋州</a></div>
+              <div class="col col-4"><a href="#area07">ヨーロッパ</a></div>
+              <div class="col col-4"><a href="#area08">中東</a></div>
+              <div class="col col-4"><a href="#area09">アフリカ</a></div>
             </div>
           </div>
-          <div class="head">日本</div>
+          <div id="area01" class="head">日本</div>
           <ul class="row countries-name">
             <li class="col col-6"><a href="">日本</a></li>
           </ul>
-          <div class="head">ハワイ</div>
+          <div id="area02" class="head">ハワイ</div>
           <ul class="row countries-name">
             <li class="col col-6"><a href="">ハワイ</a></li>
           </ul>
-          <div class="head">北米</div>
+          <div id="area03" class="head">北米</div>
           <ul class="row countries-name">
             <li class="col col-6"><a href="">アメリカ</a></li>
             <li class="col col-6"><a href="">カナダ</a></li>
           </ul>
-          <div class="head">中南米</div>
+          <div id="area04" class="head">中南米</div>
           <ul class="row countries-name">
             <li class="col col-6 col-md-4"><a href="">アルゼンチン</a></li>
             <li class="col col-6 col-md-4"><a href="">アンティグア・バーブーダ</a></li>
@@ -49,7 +51,7 @@
             <li class="col col-6 col-md-4"><a href="">ジャマイカ</a></li>
             <li class="col col-6 col-md-4"><a href="">ジャマイカ</a></li>
           </ul>
-          <div class="head">アジア</div>
+          <div id="area05" class="head">アジア</div>
           <ul class="row countries-name">
             <li class="col col-6 col-md-3"><a href="">項目</a></li>
             <li class="col col-6 col-md-3"><a href="">項目項目</a></li>
@@ -58,7 +60,7 @@
             <li class="col col-6 col-md-3"><a href="">項目項目</a></li>
             <li class="col col-6 col-md-3"><a href="">項目項目項目</a></li>
           </ul>
-          <div class="head">大洋州</div>
+          <div id="area06" class="head">大洋州</div>
           <ul class="row countries-name">
             <li class="col col-6 col-md-3"><a href="">項目</a></li>
             <li class="col col-6 col-md-3"><a href="">項目項目</a></li>
@@ -67,7 +69,7 @@
             <li class="col col-6 col-md-3"><a href="">項目項目</a></li>
             <li class="col col-6 col-md-3"><a href="">項目項目項目</a></li>
           </ul>
-          <div class="head">中東</div>
+          <div id="area07" class="head">ヨーロッパ</div>
           <ul class="row countries-name">
             <li class="col col-6 col-md-3"><a href="">項目</a></li>
             <li class="col col-6 col-md-3"><a href="">項目項目</a></li>
@@ -76,7 +78,16 @@
             <li class="col col-6 col-md-3"><a href="">項目項目</a></li>
             <li class="col col-6 col-md-3"><a href="">項目項目項目</a></li>
           </ul>
-          <div class="head">アフリカ</div>
+          <div id="area08" class="head">中東</div>
+          <ul class="row countries-name">
+            <li class="col col-6 col-md-3"><a href="">項目</a></li>
+            <li class="col col-6 col-md-3"><a href="">項目項目</a></li>
+            <li class="col col-6 col-md-3"><a href="">項目項目項目</a></li>
+            <li class="col col-6 col-md-3"><a href="">項目</a></li>
+            <li class="col col-6 col-md-3"><a href="">項目項目</a></li>
+            <li class="col col-6 col-md-3"><a href="">項目項目項目</a></li>
+          </ul>
+          <div id="area09" class="head">アフリカ</div>
           <ul class="row countries-name">
             <li class="col col-6 col-md-3"><a href="">項目</a></li>
             <li class="col col-6 col-md-3"><a href="">項目項目</a></li>

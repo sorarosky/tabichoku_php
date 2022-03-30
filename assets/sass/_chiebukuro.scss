@@ -6,6 +6,29 @@ main.chiebukuro {
         &.contents {
             padding-top: 60px;
             padding-bottom: 100px;
+            .orverlay {
+                display: none;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.6);
+                z-index: 9999;
+                &.show {
+                    @include flex;
+                    @include wrap;
+                }
+                .inner {
+                    display: none;
+                    margin: auto;
+                    overflow-x: scroll;
+                    img {
+                        @include img;
+                        min-width: 800px;
+                    }
+                }
+            }
             >.inner {
                 @include inner;
                 >.head {
@@ -55,29 +78,6 @@ main.chiebukuro {
                             span {
                                 color: $blue;
                             }
-                        }
-                    }
-                }
-                .orverlay {
-                    display: none;
-                    width: 100%;
-                    height: 100%;
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    background-color: rgba(0, 0, 0, 0.6);
-                    z-index: 9999;
-                    &.show {
-                        @include flex;
-                        @include wrap;
-                    }
-                    .inner {
-                        display: none;
-                        margin: auto;
-                        overflow-x: scroll;
-                        img {
-                            @include img;
-                            min-width: 800px;
                         }
                     }
                 }

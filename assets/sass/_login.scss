@@ -1,0 +1,154 @@
+main.login {
+    background-color: $blue03;
+    @include inner;
+    max-width: 100%;
+    .section-content {
+        padding-top: 160px;
+        padding-bottom: 80px;
+        .inner {
+            @include inner;
+            max-width: 700px;
+            background-color: #fff;
+            padding-top: 40px;
+            >.head {
+                text-align: center;
+                font-size: 4rem;
+                color: $blue;
+                font-weight: bold;
+            }
+            .form {
+                max-width: 520px;
+                margin: 0 auto;
+                >.head {
+                    margin-top: 40px;
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                }
+                .caption {
+                    font-size: 1.6rem;
+                    margin-top: 30px;
+                }
+                .links {
+                    list-style-type: none;
+                    .link {
+                        margin-top: 20px;
+                        &.google {
+                            a {
+                                border: 1px solid $black;
+                                color: $black;
+                            }
+                        }
+                        &.yahoo {
+                            a {
+                                background-color: #FC0E3A;
+                            }
+                        }
+                        &.fb {
+                            a {
+                                background-color: #237AEF;
+                            }
+                        }
+                        &.line {
+                            a {
+                                background-color: #1EC121;
+                            }
+                        }
+                        &.tw {
+                            a {
+                                background-color: #2AA3EF;
+                            }
+                        }
+                        a {
+                            display: block;
+                            padding: 10px;
+                            text-align: center;
+                            text-decoration: none;
+                            font-weight: bold;
+                            font-size: 1.8rem;
+                            color: #fff;
+                        }
+                    }
+                }
+                dl {
+                    dt {
+                        font-size: 1.6rem;
+                    }
+                    dd {
+                        input {
+                            @include form_input;
+                        }
+                    }
+                }
+                .btn-wrap {
+                    position: relative;
+                    max-width: 400px;
+                    margin: 0 auto;
+                    &::after {
+                        position: absolute;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: "\f105";
+                        right: 20px;
+                        top: calc(50% - 15px);
+                        color: #fff;
+                    }
+                    .button {
+                        @include btn;
+                        background-color: $blue02;
+                        padding: 20px;
+                        color: #fff;
+                        border-radius: 40px;
+                        font-size: 2rem;
+                        margin-top: 40px;
+                    }
+                }
+                .privacy {
+                    text-align: center;
+                    font-size: 1.6rem;
+                    margin-top: 30px;
+                    input {
+                        transform: scale(150%);
+                        margin-right: 10px;
+                    }
+                }
+                .link {
+                    text-align: center;
+                    margin-top: 50px;
+                    a {}
+                }
+                .sign-up {
+                    padding: 20px;
+                    margin-top: 60px;
+                    @media screen and (min-width: $tablet) {
+                        @include flex;
+                        @include wrap;
+                    }
+                    .head {
+                        font-size: 1.8rem;
+                        font-weight: bold;
+                        color: $blue;
+                        text-align: center;
+                        @media screen and (min-width: $tablet) {
+                            max-width: 50%;
+                            margin-top: auto;
+                            margin-bottom: auto;
+                        }
+                    }
+                    .btn-wrap {
+                        @media screen and (min-width: $tablet) {
+                            width: 100%;
+                            max-width: 50%;
+                            margin-top: auto;
+                            margin-bottom: auto;
+                        }
+                        .button {
+                            @include gradient;
+                            margin: 0;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -4,7 +4,6 @@
   <main class="main travel-content-estimate-form">
     <section class="section-content">
       <div class="inner">
-        <div class="head">お問い合わせ</div>
         <nav class="states">
           <ul class="points">
             <li class="point current">入力</li>
@@ -12,6 +11,7 @@
             <li class="point">送信完了</li>
           </ul>
         </nav>
+        <div class="head">情報入力</div>
         <ul>
           <li>この度は、たびチョクでのご旅行にご興味を賜り誠に有難うございます。</li>
           <li>お問い合わせ内容によってはご返答にお時間がかかる場合がございます。</li>
@@ -24,17 +24,24 @@
           <div class="title">タイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入る</div>
           <div class="date">受付日:0000/00/00</div>
           <div class="ture-name">One day Global citizenship Program</div>
-          <div class="area">ヨーロッパ(エリア) / イタリア(国) / ミラノ(地域)</div>
-          <div class="company-name">日本トラベルコーディネート株式会社</div>
-          <div class="theme-category">持続可能な社会を創る旅(テーマ) / すべての人に健康と福祉を(カテゴリー)</div>
-          <dl>
-            <dt>ツアー番号</dt>
-            <dt>00000A</dt>
-            <dt>メニュー</dt>
-            <dt>メニュー名が自動入力される</dt>
-            <dt>所要時間</dt>
-            <dt>50分</dt>
-          </dl>
+          <div class="area"><i class="fas fa-map-marker-alt"></i> ヨーロッパ(エリア) / イタリア(国) / ミラノ(地域)</div>
+          <div class="company-name"><i class="fas fa-user"></i> 日本トラベルコーディネート株式会社</div>
+          <div class="theme-category"><i class="fas fa-briefcase"></i> 持続可能な社会を創る旅(テーマ) / すべての人に健康と福祉を(カテゴリー)</div>
+          <div class="theme-category"><i class="fas fa-briefcase"></i> 持続可能な社会を創る旅(テーマ) / すべての人に健康と福祉を(カテゴリー)</div>
+          <table>
+            <tr>
+              <th>ツアー番号</th>
+              <td>00000A</td>
+            </tr>
+            <tr>
+              <th>メニュー</th>
+              <td>メニュー名が自動入力される</td>
+            </tr>
+            <tr>
+              <th>所要時間</th>
+              <td>50分</td>
+            </tr>
+          </table>
         </div>
         <div class="form">
           <div class="head">旅行に必要な追加情報を入力してください。</div>
@@ -171,12 +178,13 @@
             <tr>
               <th class="reqired">旅行目的</th>
               <td>
-                <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label>
+                <input type="checkbox" id="" name="" checked><label for="">レジャー</label>
               </td>
             </tr>
             <tr>
-              <th class="reqired">訪問の目的</th>
+              <th>訪問の目的</th>
               <td>
+              今回の旅の訪問目的を教えてください。
                 <textarea name="" id="" cols="30" rows="10"></textarea>
               </td>
             </tr>
@@ -188,8 +196,7 @@
             </tr>
           </table>
           <div class="text">
-          送信前に当社の<a href="">「プライバシーポリシー <i class="far fa-window-restore"></i>」</a>をご確認いただき、<br>
-          同意していただける場合は下の[プライバシーポリシーに同意します]をチェックし、確認にお進みください。
+          送信前に当社の<a htref="">「プライバシーポリシー」「旅行業約款・旅行条件書同意」「免責事項同意」</a>ご確認いただき、同意していただける場合は下の各項目の同意をチェックし、確認にお進みください。
           </div>
           <div class="agreement">
             <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label><br>
