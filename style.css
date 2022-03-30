@@ -7180,6 +7180,16 @@ main.local-professionals-agent-post .section-content.entry-content .button::afte
   content: "\f105";
   right: 20px;
 }
+main.local-professionals-agent .section-content.entry-content .button-float,
+main.local-professionals-agent-category .section-content.entry-content .button-float,
+main.local-professionals-agent-post .section-content.entry-content .button-float {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 100;
+  max-width: 340px;
+}
 main.local-professionals-agent .section-content.pickup,
 main.local-professionals-agent-category .section-content.pickup,
 main.local-professionals-agent-post .section-content.pickup {
