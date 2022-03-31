@@ -8,19 +8,19 @@
           <div class="head">会員の方はこちら</div>
           <div class="caption">次のサービスのアカウント情報でログインする</div>
           <ul class="links">
-            <li class="link">
+            <li class="link google">
               <a href="">Google</a>
             </li>
-            <li class="link">
+            <li class="link yahoo">
               <a href="">Yahoo!JAPAN</a>
             </li>
-            <li class="lin">
+            <li class="link fb">
               <a href="">Facebook</a>
             </li>
-            <li class="lin">
+            <li class="link line">
               <a href="">LINE</a>
             </li>
-            <li class="lin">
+            <li class="link tw">
               <a href="">Twitter</a>
             </li>
           </ul>
@@ -33,11 +33,11 @@
               <dd><input type=”password”/></dd>
             </dl>
             <div class="btn-wrap">
-              <input class="button" type="button"  value="入力内容の確認に進む">
+              <input class="button" type="button"  value="ログイン">
             </div>
           </form>
           <div class="privacy">
-            <input type="checkbox" id="" name="" checked><label for=""><a href="">ログイン情報を保存</a></label>
+            <input type="checkbox" id="" name="" checked><label for="">ログイン情報を保存</label>
           </div>
           <p class="link"><a href="">※パスワードを忘れた方はこちら</a></p>
           <div class="sign-up">
