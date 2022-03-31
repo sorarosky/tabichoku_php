@@ -2443,6 +2443,87 @@ main.home .section-content.travel-content > .inner .inner {
   max-width: 1000px;
   margin: 0 auto;
 }
+main.home .section-content.travel-content .area .search-region {
+  overflow-x: scroll;
+}
+main.home .section-content.travel-content .area .search-region .tabs {
+  list-style: none;
+  display: flex;
+  border-bottom: 2px solid #3DCDE6;
+}
+main.home .section-content.travel-content .area .search-region .tabs .tab {
+  flex-shrink: 0;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main.home .section-content.travel-content .area .search-region .tabs .tab[data-is-active=true] {
+  color: #fff;
+  background-color: #3DCDE6;
+}
+main.home .section-content.travel-content .area .search-country {
+  position: relative;
+}
+main.home .section-content.travel-content .area .search-country::before {
+  content: "";
+}
+@media screen and (min-width: 768px) {
+  main.home .section-content.travel-content .area .search-country::before {
+    display: block;
+    padding-bottom: 40.33%;
+  }
+}
+main.home .section-content.travel-content .area .search-country .search-country-wrap {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 20px;
+  padding-top: 40px;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  main.home .section-content.travel-content .area .search-country .search-country-wrap {
+    position: absolute;
+  }
+}
+main.home .section-content.travel-content .area .search-country .search-country-wrap[data-is-active=true] {
+  display: flex;
+}
+main.home .section-content.travel-content .area .search-country .search-country-wrap .country-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+  row-gap: 20px;
+  font-size: 1.2rem;
+  width: calc(50% - 20px);
+}
+@media screen and (min-width: 768px) {
+  main.home .section-content.travel-content .area .search-country .search-country-wrap .country-list {
+    font-size: 1.4rem;
+    width: auto;
+  }
+}
+main.home .section-content.travel-content .area .search-country .search-country-wrap .country-list:nth-child(n+3) {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  main.home .section-content.travel-content .area .search-country .search-country-wrap .country-list:nth-child(n+3) {
+    margin-top: 0px;
+  }
+}
+main.home .section-content.travel-content .area .search-country .search-country-wrap .country-list a {
+  color: initial;
+  text-decoration: none;
+}
 main.home .section-content.consultation {
   background: #3dcde6;
   background: linear-gradient(90deg, #3dcde6 0%, #68dcb6 100%);

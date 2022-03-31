@@ -236,6 +236,93 @@ main.home {
                     margin: 0 auto;
                 }
             }
+
+            .area {
+
+                .search-region {
+                    overflow-x: scroll;
+                    .tabs {
+                        list-style: none;
+                        display: flex;
+                        border-bottom: 2px solid $blue02;
+                        .tab {
+                            flex-shrink: 0;
+                            cursor: pointer;
+                            font-size: 1.6rem;
+                            font-weight: 600;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            &[data-is-active=true] {
+                                color: #fff;
+                                background-color: $blue02;
+                            } 
+                        }
+                    }
+                }
+
+                .search-country {
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        
+                        @media screen and (min-width: $tablet) {
+                            display: block;
+                            padding-bottom: 40.33%;
+                        }
+                    }
+                    
+                    .search-country-wrap {
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        display: none;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        column-gap: 20px;
+                        padding-top: 40px;
+                        background-color: #fff;
+                        @media screen and (min-width: $tablet) {
+                            position: absolute;
+                        }
+
+                        &[data-is-active=true] {
+                            display: flex;
+                        }
+
+                        .country-list {
+                            list-style: none;
+                            display: flex;
+                            flex-direction: column;
+                            column-gap: 20px;
+                            row-gap: 20px;
+                            font-size: 1.2rem;
+                            width: calc( 100% / 2 - 20px);
+                            @media screen and (min-width: $tablet) {
+                                font-size: 1.4rem;
+                                width: auto;
+                            }
+                            &:nth-child(n+3) {
+                                margin-top: 20px;
+                                @media screen and (min-width: $tablet) {
+                                    margin-top: 0px;
+                                }
+                            }
+    
+                            a {
+                                color: initial;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                    
+                    
+                }
+                
+            }
         }
         &.consultation {
             @include gradient;

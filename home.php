@@ -26,15 +26,11 @@
       <div class="swiper-container-top-kv-wrapper">
         <div class="swiper-container swiper-container-top-kv">
             <div class="swiper-wrapper">
-              <div class="swiper-slide top-kv01">
-              
-              </div>
-              <div class="swiper-slide top-kv02">
-              
-              </div>
-              <div class="swiper-slide top-kv03">
-              
-              </div>
+              <div class="swiper-slide top-kv01"></div>
+              <div class="swiper-slide top-kv02"></div>
+              <div class="swiper-slide top-kv03"></div>
+              <div class="swiper-slide top-kv04"></div>
+              <div class="swiper-slide top-kv05"></div>
             </div>
         </div>
       </div>
@@ -274,6 +270,7 @@
             </form>
           </div>
         </div>
+
         <div class="area">
             <div class="head inner">エリアから探す</div>
             <div class="map-wrap inner">
@@ -282,80 +279,23 @@
                 </div>
             </div>
 
-            <div class="swiper-container-search-navi-tab-wrapper inner">
-                <div class="swiper-container swiper-container-search-navi-tab swiper-container-search-navi-tab02">
-                    <div class="swiper-wrapper tabs">
-                        <a class="swiper-slide tab" href="javascript:void(0);">日本</a>
-                        <a class="swiper-slide tab" href="javascript:void(0);">ハワイ</a>
-                        <a class="swiper-slide tab" href="javascript:void(0);">北米</a>
-                        <a class="swiper-slide tab" href="javascript:void(0);">中南米</a>
-                        <a class="swiper-slide tab" href="javascript:void(0);">アジア</a>
-                        <a class="swiper-slide tab" href="javascript:void(0);">大洋州</a>
-                        <a class="swiper-slide tab" href="javascript:void(0);">ヨーロッパ</a>
-                        <a class="swiper-slide tab" href="javascript:void(0);">中東</a>
-                        <a class="swiper-slide tab" href="javascript:void(0);">アフリカ</a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-container-search-navi-tab-contents-wrapper inner">
-                <div class="swiper-container swiper-container-search-navi-tab-contents swiper-container-search-navi-tab-contents02">
-                    <div class="swiper-wrapper tab-contents">
-                        <li class="swiper-slide tab-content row">
-                            <div class="col col-6">日本</div>
-                            <div class="col col-6">日本</div>
-                            <div class="col col-6">日本</div>
-                            <div class="col col-6">日本</div>
-                        </li>
-                        <li class="swiper-slide tab-content row">
-                            <div class="col col-6">ハワイ</div>
-                            <div class="col col-6">ハワイ</div>
-                            <div class="col col-6">ハワイ</div>
-                            <div class="col col-6">ハワイ</div>
-                        </li>
-                        <li class="swiper-slide tab-content row">
-                            <div class="col col-6">北米</div>
-                            <div class="col col-6">北米</div>
-                            <div class="col col-6">北米</div>
-                            <div class="col col-6">北米</div>
-                        </li>
-                        <li class="swiper-slide tab-content row">
-                            <div class="col col-6">中南米</div>
-                            <div class="col col-6">中南米</div>
-                            <div class="col col-6">中南米</div>
-                            <div class="col col-6">中南米</div>
-                        </li>
-                        <li class="swiper-slide tab-content row">
-                            <div class="col col-6">アジア</div>
-                            <div class="col col-6">アジア</div>
-                            <div class="col col-6">アジア</div>
-                            <div class="col col-6">アジア</div>
-                        </li>
-                        <li class="swiper-slide tab-content row">
-                            <div class="col col-6">大洋州</div>
-                            <div class="col col-6">大洋州</div>
-                            <div class="col col-6">大洋州</div>
-                            <div class="col col-6">大洋州</div>
-                        </li>
-                        <li class="swiper-slide tab-content row">
-                            <div class="col col-6">ヨーロッパ</div>
-                            <div class="col col-6">ヨーロッパ</div>
-                            <div class="col col-6">ヨーロッパ</div>
-                            <div class="col col-6">ヨーロッパ</div>
-                        </li>
-                        <li class="swiper-slide tab-content row">
-                            <div class="col col-6">中東</div>
-                            <div class="col col-6">中東</div>
-                            <div class="col col-6">中東</div>
-                            <div class="col col-6">中東</div>
-                        </li>
-                        <li class="swiper-slide tab-content row">
-                            <div class="col col-6">アフリカ</div>
-                            <div class="col col-6">アフリカ</div>
-                            <div class="col col-6">アフリカ</div>
-                            <div class="col col-6">アフリカ</div>
-                        </li>
-                    </div>
-                </div>
+            <div class="inner">
+              <div class="search-region">
+                <ul class="tabs">
+                    <li class="tab" data-region-name="japan" data-is-active="false">日本</li>
+                    <li class="tab" data-region-name="hawai" data-is-active="false">ハワイ</li>
+                    <li class="tab" data-region-name="north-america" data-is-active="false">北米</li>
+                    <li class="tab" data-region-name="south-america" data-is-active="true">中南米</li>
+                    <li class="tab" data-region-name="asia" data-is-active="false">アジア</li>
+                    <li class="tab" data-region-name="oceania" data-is-active="false">大洋州</li>
+                    <li class="tab" data-region-name="europe" data-is-active="false">ヨーロッパ</li>
+                    <li class="tab" data-region-name="east-asia" data-is-active="false">中東</li>
+                    <li class="tab" data-region-name="africa" data-is-active="false">アフリカ</li>
+                </ul>
+              </div>
+              <div class="search-country">
+                <?php include('components/home-search-country-list.php'); ?>
+              </div>
             </div>
         </div>
         <div class="theme">
