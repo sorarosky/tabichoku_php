@@ -45,7 +45,7 @@
         </div>
         <div class="form">
           <div class="head">旅行に必要な追加情報を入力してください。</div>
-          <table>
+          <table class="form-table">
             <tr>
               <th>会員お名前</th>
               <td>
@@ -74,7 +74,7 @@
             </tr>
             <tr>
               <th class="reqired">利用開始日</th>
-              <td>
+              <td class="has-selecter">
                 <div class="select-wrap">
                   <select name="" id="">
                     <option>2022</optnion>
@@ -97,7 +97,7 @@
             </tr>
             <tr>
               <th class="reqired">利用開始時刻</th>
-              <td>
+              <td class="has-selecter">
                 <div class="select-wrap">
                   <select name="" id="">
                     <option>00</optnion>
@@ -128,7 +128,7 @@
             </tr>
             <tr>
               <th class="reqired">利用終了日</th>
-              <td>
+              <td class="has-selecter">
                 <div class="select-wrap">
                   <select name="" id="">
                     <option>2022</optnion>
@@ -151,7 +151,7 @@
             </tr>
             <tr>
               <th class="reqired">利用終了時刻</th>
-              <td>
+              <td class="has-selecter">
                 <div class="select-wrap">
                   <select name="" id="">
                     <option>00</optnion>
@@ -168,17 +168,34 @@
             </tr>
             <tr>
               <th class="reqired">人数</th>
-              <td>
-                大人（12歳以上）<input type="text">
-                小人（6-11歳）<input type="text">
-                幼児（0-5歳）<input type="text">
-                合計<span>0000</span>名
+              <td class="input-with-initial">
+                <table>
+                  <tr>
+                    <th>大人（12歳以上）</th>
+                    <td><input type="text"> 名</td>
+                  </tr>
+                  <tr>
+                    <th>小人（6-11歳）</th>
+                    <td><input type="text"> 名</td>
+                  </tr>
+                  <tr>
+                    <th>幼児（0-5歳）</th>
+                    <td><input type="text"> 名</td>
+                  </tr>
+                  <tr>
+                    <th>合計</th>
+                    <td><span>0000</span> 名</td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <tr>
               <th class="reqired">旅行目的</th>
-              <td>
-                <input type="checkbox" id="" name="" checked><label for="">レジャー</label>
+              <td class="input-with-initial checkboxs">
+                <div class="item"><input type="checkbox" id="" name="" checked><label for="">レジャー</label></div>
+                <div class="item"><input type="checkbox" id="" name="" checked><label for="">レジャー</label></div>
+                <div class="item"><input type="checkbox" id="" name="" checked><label for="">レジャー</label></div>
+                
               </td>
             </tr>
             <tr>

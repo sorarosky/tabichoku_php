@@ -1,7 +1,7 @@
 <?php include 'header.php';?>
 <?php include 'breadcrumb.php';?>
 <div class="contents-wrap">
-  <main class="main travel-content-contact-form-conf">
+  <main class="main local-professionals-agent-estimate-form-conf">
     <section class="section-content">
       <div class="inner">
         <nav class="states">
@@ -18,7 +18,7 @@
             <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label><br>
             <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label>
           </div>
-          <input class="button" type="button"  value="同意して送信する"><br>
+          <input class="button" type="button" value="同意して送信する"><br>
           <a href="">戻る</a>
         </div>
       </div>

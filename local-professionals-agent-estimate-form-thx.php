@@ -1,11 +1,13 @@
 <?php include 'header.php';?>
 <?php include 'breadcrumb.php';?>
 <div class="contents-wrap">
-  <main class="mainc travel-content-ontact-form-conf">
+  <main class="mainc local-professionals-agent-estimate-form-thx">
     <section class="section-content">
       <div class="inner">
         
-        <div class="head">送信が完了しました</div>
+        <div class="head">
+        <i class="fas fa-check-circle"></i><br><br>  
+        送信が完了しました</div>
         <div class="text">
           送信が完了しました。<br>情報・内容を確認したい場合は、マイページよりご確認ください。
         </div>

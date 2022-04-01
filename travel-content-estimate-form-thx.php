@@ -1,7 +1,7 @@
 <?php include 'header.php';?>
 <?php include 'breadcrumb.php';?>
 <div class="contents-wrap">
-  <main class="mainc travel-content-estimate-form-thx">
+  <main class="main local-professionals-agent-estimate-form-thx">
     <section class="section-content">
       <div class="inner">
         

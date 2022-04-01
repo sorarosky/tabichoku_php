@@ -1,6 +1,6 @@
-main.travel-content-estimate-form,
-main.travel-content-estimate-form-conf,
-main.travel-content-estimate-form-thx {
+main.local-professionals-agent-estimate-form,
+main.local-professionals-agent-estimate-form-conf,
+main.local-professionals-agent-estimate-form-thx {
     .section-content {
         padding-top: 60px;
         padding-bottom: 100px;
@@ -61,7 +61,7 @@ main.travel-content-estimate-form-thx {
             .form {
                 width: 100%;
                 margin-top: 60px;
-                .form-table {
+                table {
                     width: 100%;
                     border-top: 1px solid $gray;
                     tr {
@@ -250,7 +250,7 @@ main.travel-content-estimate-form-thx {
     }
 }
 
-.main.travel-content-estimate-form-conf {
+.main.local-professionals-agent-estimate-form-conf {
     .form {
         text-align: center;
         .privacy {
@@ -271,7 +271,7 @@ main.travel-content-estimate-form-thx {
     }
 }
 
-main.travel-content-estimate-form-thx {
+main.local-professionals-agent-estimate-form-thx {
     width: 100%;
     .section-content {
         padding-top: 60px;

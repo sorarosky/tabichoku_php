@@ -6326,16 +6326,16 @@ main.travel-content-estimate-form-thx .section-content .inner .form {
   margin-top: 60px;
 }
 
-main.travel-content-estimate-form .section-content .inner .form table,
-main.travel-content-estimate-form-conf .section-content .inner .form table,
-main.travel-content-estimate-form-thx .section-content .inner .form table {
+main.travel-content-estimate-form .section-content .inner .form .form-table,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table {
   width: 100%;
   border-top: 1px solid #E4E4E4;
 }
 
-main.travel-content-estimate-form .section-content .inner .form table tr,
-main.travel-content-estimate-form-conf .section-content .inner .form table tr,
-main.travel-content-estimate-form-thx .section-content .inner .form table tr {
+main.travel-content-estimate-form .section-content .inner .form .form-table tr,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr {
   display: -webkit-box;
   display: flex;
   display: -webkit-flex;
@@ -6349,9 +6349,9 @@ main.travel-content-estimate-form-thx .section-content .inner .form table tr {
   width: 100%;
 }
 
-main.travel-content-estimate-form .section-content .inner .form table tr th,
-main.travel-content-estimate-form-conf .section-content .inner .form table tr th,
-main.travel-content-estimate-form-thx .section-content .inner .form table tr th {
+main.travel-content-estimate-form .section-content .inner .form .form-table tr > th,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr > th,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr > th {
   width: 100%;
   text-align-last: left;
   padding: 20px 0;
@@ -6359,93 +6359,187 @@ main.travel-content-estimate-form-thx .section-content .inner .form table tr th 
   position: relative;
 }
 
-main.travel-content-estimate-form .section-content .inner .form table tr th::after,
-main.travel-content-estimate-form-conf .section-content .inner .form table tr th::after,
-main.travel-content-estimate-form-thx .section-content .inner .form table tr th::after {
-  content: "任意";
-  position: absolute;
-  padding: 0 4px;
-  background-color: #888888;
-  color: #fff;
-  top: 20px;
-  right: 0px;
-}
-
-@media screen and (min-width: 768px) {
-  main.travel-content-estimate-form .section-content .inner .form table tr th::after,
-  main.travel-content-estimate-form-conf .section-content .inner .form table tr th::after,
-  main.travel-content-estimate-form-thx .section-content .inner .form table tr th::after {
-    right: 20px;
-  }
-}
-
-main.travel-content-estimate-form .section-content .inner .form table tr th.reqired::after,
-main.travel-content-estimate-form-conf .section-content .inner .form table tr th.reqired::after,
-main.travel-content-estimate-form-thx .section-content .inner .form table tr th.reqired::after {
+main.travel-content-estimate-form .section-content .inner .form .form-table tr > th.reqired::after,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr > th.reqired::after,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr > th.reqired::after {
   content: "必須";
   padding: 0 2px;
+  position: absolute;
   background-color: #DC000C;
   color: #fff;
+  top: 20px;
+  right: 10px;
 }
 
 @media screen and (min-width: 768px) {
-  main.travel-content-estimate-form .section-content .inner .form table tr th,
-  main.travel-content-estimate-form-conf .section-content .inner .form table tr th,
-  main.travel-content-estimate-form-thx .section-content .inner .form table tr th {
+  main.travel-content-estimate-form .section-content .inner .form .form-table tr > th,
+  main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr > th,
+  main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr > th {
     width: 20%;
   }
 }
 
-main.travel-content-estimate-form .section-content .inner .form table tr td,
-main.travel-content-estimate-form-conf .section-content .inner .form table tr td,
-main.travel-content-estimate-form-thx .section-content .inner .form table tr td {
+main.travel-content-estimate-form .section-content .inner .form .form-table tr td,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr td,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr td {
   width: 100%;
   padding-top: 0px;
   padding-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  main.travel-content-estimate-form .section-content .inner .form table tr td,
-  main.travel-content-estimate-form-conf .section-content .inner .form table tr td,
-  main.travel-content-estimate-form-thx .section-content .inner .form table tr td {
+  main.travel-content-estimate-form .section-content .inner .form .form-table tr td,
+  main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr td,
+  main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr td {
     width: 80%;
     padding-top: 20px;
+    padding-left: 40px;
   }
 }
 
-main.travel-content-estimate-form .section-content .inner .form table tr input,
-main.travel-content-estimate-form .section-content .inner .form table tr textarea,
-main.travel-content-estimate-form-conf .section-content .inner .form table tr input,
-main.travel-content-estimate-form-conf .section-content .inner .form table tr textarea,
-main.travel-content-estimate-form-thx .section-content .inner .form table tr input,
-main.travel-content-estimate-form-thx .section-content .inner .form table tr textarea {
+main.travel-content-estimate-form .section-content .inner .form .form-table tr td.has-selecter,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr td.has-selecter,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr td.has-selecter {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*--- IE10用 ---*/
+  -webkit-flex-wrap: wrap;
+  /*--- safari（PC）用 ---*/
+  margin-left: -10px;
+}
+
+main.travel-content-estimate-form .section-content .inner .form .form-table tr td.has-selecter .select-wrap,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr td.has-selecter .select-wrap,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr td.has-selecter .select-wrap {
+  width: initial;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+main.travel-content-estimate-form .section-content .inner .form .form-table tr td.has-selecter .select-wrap select,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr td.has-selecter .select-wrap select,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr td.has-selecter .select-wrap select {
+  width: initial;
+}
+
+main.travel-content-estimate-form .section-content .inner .form .form-table tr td.input-with-initial input,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr td.input-with-initial input,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr td.input-with-initial input {
+  width: initial;
+}
+
+main.travel-content-estimate-form .section-content .inner .form .form-table tr td table,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr td table,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr td table {
+  width: 100%;
+}
+
+main.travel-content-estimate-form .section-content .inner .form .form-table tr td table tr,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr td table tr,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr td table tr {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*--- IE10用 ---*/
+  -webkit-flex-wrap: wrap;
+  /*--- safari（PC）用 ---*/
+}
+
+main.travel-content-estimate-form .section-content .inner .form .form-table tr td table th,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr td table th,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr td table th {
+  width: 30%;
+  padding-right: 0;
+  font-weight: normal;
+}
+
+main.travel-content-estimate-form .section-content .inner .form .form-table tr td table td,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr td table td,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr td table td {
+  width: 70%;
+  padding-left: 0;
+}
+
+main.travel-content-estimate-form .section-content .inner .form .form-table tr td table td input,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr td table td input,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr td table td input {
+  width: 40px !important;
+}
+
+main.travel-content-estimate-form .section-content .inner .form .form-table tr td table td span,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr td table td span,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr td table td span {
+  font-size: 2.4rem;
+}
+
+main.travel-content-estimate-form .section-content .inner .form .form-table tr td.checkboxs,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr td.checkboxs,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr td.checkboxs {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*--- IE10用 ---*/
+  -webkit-flex-wrap: wrap;
+  /*--- safari（PC）用 ---*/
+}
+
+main.travel-content-estimate-form .section-content .inner .form .form-table tr td.checkboxs .item,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr td.checkboxs .item,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr td.checkboxs .item {
+  margin-right: 20px;
+}
+
+main.travel-content-estimate-form .section-content .inner .form .form-table tr td.checkboxs input,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr td.checkboxs input,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr td.checkboxs input {
+  -webkit-transform: scale(150%);
+          transform: scale(150%);
+  margin-right: 10px;
+}
+
+main.travel-content-estimate-form .section-content .inner .form .form-table tr input,
+main.travel-content-estimate-form .section-content .inner .form .form-table tr textarea,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr input,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr textarea,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr input,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr textarea {
   width: 100%;
   padding: 10px;
   border-radius: 4px;
   border: 1px solid #E4E4E4;
 }
 
-main.travel-content-estimate-form .section-content .inner .form table tr input.country-num,
-main.travel-content-estimate-form .section-content .inner .form table tr textarea.country-num,
-main.travel-content-estimate-form-conf .section-content .inner .form table tr input.country-num,
-main.travel-content-estimate-form-conf .section-content .inner .form table tr textarea.country-num,
-main.travel-content-estimate-form-thx .section-content .inner .form table tr input.country-num,
-main.travel-content-estimate-form-thx .section-content .inner .form table tr textarea.country-num {
+main.travel-content-estimate-form .section-content .inner .form .form-table tr input.country-num,
+main.travel-content-estimate-form .section-content .inner .form .form-table tr textarea.country-num,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr input.country-num,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr textarea.country-num,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr input.country-num,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr textarea.country-num {
   width: 90%;
 }
 
-main.travel-content-estimate-form .section-content .inner .form table tr .select-wrap,
-main.travel-content-estimate-form-conf .section-content .inner .form table tr .select-wrap,
-main.travel-content-estimate-form-thx .section-content .inner .form table tr .select-wrap {
+main.travel-content-estimate-form .section-content .inner .form .form-table tr .select-wrap,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr .select-wrap,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr .select-wrap {
   position: relative;
   width: 100%;
   max-width: 480px;
   border-radius: 4px;
 }
 
-main.travel-content-estimate-form .section-content .inner .form table tr .select-wrap::after,
-main.travel-content-estimate-form-conf .section-content .inner .form table tr .select-wrap::after,
-main.travel-content-estimate-form-thx .section-content .inner .form table tr .select-wrap::after {
+main.travel-content-estimate-form .section-content .inner .form .form-table tr .select-wrap::after,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr .select-wrap::after,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr .select-wrap::after {
   font-size: 1rem;
   position: absolute;
   right: 10px;
@@ -6455,9 +6549,9 @@ main.travel-content-estimate-form-thx .section-content .inner .form table tr .se
   content: "\f078";
 }
 
-main.travel-content-estimate-form .section-content .inner .form table tr .select-wrap select,
-main.travel-content-estimate-form-conf .section-content .inner .form table tr .select-wrap select,
-main.travel-content-estimate-form-thx .section-content .inner .form table tr .select-wrap select {
+main.travel-content-estimate-form .section-content .inner .form .form-table tr .select-wrap select,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr .select-wrap select,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr .select-wrap select {
   width: 100%;
   font-size: 1.4rem;
   padding: 10px;
@@ -6476,15 +6570,15 @@ main.travel-content-estimate-form-thx .section-content .inner .form table tr .se
   padding-right: 20px;
 }
 
-main.travel-content-estimate-form .section-content .inner .form table tr .select-wrap select::-webkit-input-placeholder,
-main.travel-content-estimate-form-conf .section-content .inner .form table tr .select-wrap select::-webkit-input-placeholder,
-main.travel-content-estimate-form-thx .section-content .inner .form table tr .select-wrap select::-webkit-input-placeholder {
+main.travel-content-estimate-form .section-content .inner .form .form-table tr .select-wrap select::-webkit-input-placeholder,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr .select-wrap select::-webkit-input-placeholder,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr .select-wrap select::-webkit-input-placeholder {
   color: #BBB;
 }
 
-main.travel-content-estimate-form .section-content .inner .form table tr .select-wrap select:hover,
-main.travel-content-estimate-form-conf .section-content .inner .form table tr .select-wrap select:hover,
-main.travel-content-estimate-form-thx .section-content .inner .form table tr .select-wrap select:hover {
+main.travel-content-estimate-form .section-content .inner .form .form-table tr .select-wrap select:hover,
+main.travel-content-estimate-form-conf .section-content .inner .form .form-table tr .select-wrap select:hover,
+main.travel-content-estimate-form-thx .section-content .inner .form .form-table tr .select-wrap select:hover {
   cursor: pointer;
 }
 
@@ -6665,6 +6759,626 @@ main.travel-content-estimate-form-thx .section-content .inner .button:hover {
 }
 
 main.travel-content-estimate-form-thx .section-content .inner .link {
+  text-align: center;
+  margin-top: 130px;
+}
+
+main.local-professionals-agent-estimate-form .section-content,
+main.local-professionals-agent-estimate-form-conf .section-content,
+main.local-professionals-agent-estimate-form-thx .section-content {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner,
+main.local-professionals-agent-estimate-form-conf .section-content .inner,
+main.local-professionals-agent-estimate-form-thx .section-content .inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 800px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .states,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .states,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .states {
+  max-width: calc(190px * 3);
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .states .points,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .states .points,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .states .points {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-justify-content: space-between;
+  /* Safari */
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .states .points .point,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .states .points .point,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .states .points .point {
+  position: relative;
+  width: calc(100% / 3);
+  text-align: center;
+  padding-top: 24px;
+  color: #ccc;
+  font-weight: bold;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .states .points .point:before,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .states .points .point:before,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .states .points .point:before {
+  position: absolute;
+  display: block;
+  width: 14px;
+  height: 14px;
+  content: '';
+  left: calc(50% - 7px);
+  top: 0;
+  background-color: #ccc;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .states .points .point:after,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .states .points .point:after,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .states .points .point:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  content: '';
+  left: 50%;
+  top: 6px;
+  background-color: #ccc;
+  z-index: 1;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .states .points .point:last-child:after,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .states .points .point:last-child:after,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .states .points .point:last-child:after {
+  display: none;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .states .points .point.current,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .states .points .point.current,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .states .points .point.current {
+  color: #333;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .states .points .point.current:before,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .states .points .point.current:before,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .states .points .point.current:before {
+  background-color: #00A9C6;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner > .head,
+main.local-professionals-agent-estimate-form-conf .section-content .inner > .head,
+main.local-professionals-agent-estimate-form-thx .section-content .inner > .head {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-top: 60px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner ul,
+main.local-professionals-agent-estimate-form-conf .section-content .inner ul,
+main.local-professionals-agent-estimate-form-thx .section-content .inner ul {
+  margin-top: 30px;
+  padding-left: 24px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .box,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .box,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .box {
+  border: 1px solid #E4E4E4;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .box .title,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .box .title,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .box .title {
+  font-size: 1.8rem;
+  color: #3DCDE6;
+  font-weight: bold;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .box .date,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .box .date,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .box .date {
+  margin-top: 40px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .box .fas,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .box .fas,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .box .fas {
+  color: #333;
+  margin-right: 10px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .box .ture-name,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .box .ture-name,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .box .ture-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .box .theme-category,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .box .theme-category,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .box .theme-category {
+  color: #3DCDE6;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .box table,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .box table,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .box table {
+  border-top: 2px solid #E4E4E4;
+  width: 100%;
+  margin-top: 20px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .box table tr th,
+main.local-professionals-agent-estimate-form .section-content .inner .box table tr td,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .box table tr th,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .box table tr td,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .box table tr th,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .box table tr td {
+  text-align-last: left;
+  padding: 10px 0;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form {
+  width: 100%;
+  margin-top: 60px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table {
+  width: 100%;
+  border-top: 1px solid #E4E4E4;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*--- IE10用 ---*/
+  -webkit-flex-wrap: wrap;
+  /*--- safari（PC）用 ---*/
+  border-bottom: 1px solid #E4E4E4;
+  width: 100%;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr > th,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr > th,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr > th {
+  width: 100%;
+  text-align-last: left;
+  padding: 20px 0;
+  padding-right: 50px;
+  position: relative;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr > th.reqired::after,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr > th.reqired::after,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr > th.reqired::after {
+  content: "必須";
+  padding: 0 2px;
+  position: absolute;
+  background-color: #DC000C;
+  color: #fff;
+  top: 20px;
+  right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  main.local-professionals-agent-estimate-form .section-content .inner .form table tr > th,
+  main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr > th,
+  main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr > th {
+    width: 20%;
+  }
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td {
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  main.local-professionals-agent-estimate-form .section-content .inner .form table tr td,
+  main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td,
+  main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td {
+    width: 80%;
+    padding-top: 20px;
+    padding-left: 40px;
+  }
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td.has-selecter,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td.has-selecter,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td.has-selecter {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*--- IE10用 ---*/
+  -webkit-flex-wrap: wrap;
+  /*--- safari（PC）用 ---*/
+  margin-left: -10px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td.has-selecter .select-wrap,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td.has-selecter .select-wrap,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td.has-selecter .select-wrap {
+  width: initial;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td.has-selecter .select-wrap select,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td.has-selecter .select-wrap select,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td.has-selecter .select-wrap select {
+  width: initial;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td.input-with-initial input,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td.input-with-initial input,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td.input-with-initial input {
+  width: initial;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td table {
+  width: 100%;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table tr,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table tr,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td table tr {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*--- IE10用 ---*/
+  -webkit-flex-wrap: wrap;
+  /*--- safari（PC）用 ---*/
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table th,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table th,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td table th {
+  width: 30%;
+  padding-right: 0;
+  font-weight: normal;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table td,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table td,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td table td {
+  width: 70%;
+  padding-left: 0;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table td input,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table td input,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td table td input {
+  width: 40px !important;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table td span,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table td span,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td table td span {
+  font-size: 2.4rem;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td.checkboxs,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td.checkboxs,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td.checkboxs {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*--- IE10用 ---*/
+  -webkit-flex-wrap: wrap;
+  /*--- safari（PC）用 ---*/
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td.checkboxs .item,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td.checkboxs .item,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td.checkboxs .item {
+  margin-right: 20px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td.checkboxs input,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td.checkboxs input,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td.checkboxs input {
+  -webkit-transform: scale(150%);
+          transform: scale(150%);
+  margin-right: 10px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr input,
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr textarea,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr input,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr textarea,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr input,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #E4E4E4;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr input.country-num,
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr textarea.country-num,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr input.country-num,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr textarea.country-num,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr input.country-num,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr textarea.country-num {
+  width: 90%;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr .select-wrap,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr .select-wrap,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr .select-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 4px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr .select-wrap::after,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr .select-wrap::after,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr .select-wrap::after {
+  font-size: 1rem;
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 13px);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr .select-wrap select,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr .select-wrap select,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr .select-wrap select {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  background-color: #fff;
+  text-overflow: ellipsis;
+  outline: none;
+  background-image: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  padding-right: 20px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr .select-wrap select::-webkit-input-placeholder,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr .select-wrap select::-webkit-input-placeholder,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr .select-wrap select::-webkit-input-placeholder {
+  color: #BBB;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr .select-wrap select:hover,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr .select-wrap select:hover,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr .select-wrap select:hover {
+  cursor: pointer;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form .text,
+main.local-professionals-agent-estimate-form .section-content .inner .form .privacy,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form .text,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form .privacy,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form .text,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form .privacy {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form .text,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form .text,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form .text {
+  margin-top: 40px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form .agreement,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form .agreement,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form .agreement {
+  text-align: center;
+  margin-top: 30px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form .agreement input,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form .agreement input,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form .agreement input {
+  -webkit-transform: scale(150%);
+          transform: scale(150%);
+  margin-right: 10px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form .btn-wrap,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form .btn-wrap,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form .btn-wrap {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form .btn-wrap::after,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form .btn-wrap::after,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form .btn-wrap::after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  right: 20px;
+  top: calc(50% - 15px);
+  color: #fff;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form .btn-wrap .button,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form .btn-wrap .button,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form .btn-wrap .button {
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 5px 0;
+  font-size: 1.5rem;
+  border: 1px solid #333;
+  position: relative;
+  color: #3DCDE6;
+  border-radius: 10px;
+  border: 1px solid #3DCDE6;
+  background-color: #fff;
+  background-color: #3DCDE6;
+  padding: 20px;
+  color: #fff;
+  border-radius: 40px;
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+main.local-professionals-agent-estimate-form .section-content .inner .form .btn-wrap .button:hover,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form .btn-wrap .button:hover,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form .btn-wrap .button:hover {
+  cursor: pointer;
+}
+
+.main.local-professionals-agent-estimate-form-conf .form {
+  text-align: center;
+}
+
+.main.local-professionals-agent-estimate-form-conf .form .privacy .fa-check {
+  color: #4FE0B0;
+  font-size: 2rem;
+}
+
+.main.local-professionals-agent-estimate-form-conf .button {
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 5px 0;
+  font-size: 1.5rem;
+  border: 1px solid #333;
+  position: relative;
+  color: #3DCDE6;
+  border-radius: 10px;
+  border: 1px solid #3DCDE6;
+  background-color: #fff;
+  max-width: 360px;
+  padding: 20px 0;
+  background-color: #3DCDE6;
+  border-radius: 40px;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.main.local-professionals-agent-estimate-form-conf .button:hover {
+  cursor: pointer;
+}
+
+main.local-professionals-agent-estimate-form-thx {
+  width: 100%;
+}
+
+main.local-professionals-agent-estimate-form-thx .section-content {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+main.local-professionals-agent-estimate-form-thx .section-content .inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 640px;
+}
+
+main.local-professionals-agent-estimate-form-thx .section-content .inner > .head {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  text-align: center;
+}
+
+main.local-professionals-agent-estimate-form-thx .section-content .inner > .head .fa-check-circle {
+  color: #4FE0B0;
+  font-size: 4rem;
+}
+
+main.local-professionals-agent-estimate-form-thx .section-content .inner .text {
+  text-align: center;
+}
+
+main.local-professionals-agent-estimate-form-thx .section-content .inner .button {
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 5px 0;
+  font-size: 1.5rem;
+  border: 1px solid #333;
+  position: relative;
+  color: #3DCDE6;
+  border-radius: 10px;
+  border: 1px solid #3DCDE6;
+  background-color: #fff;
+  background-color: #3DCDE6;
+  padding: 20px;
+  color: #fff;
+  border-radius: 40px;
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+main.local-professionals-agent-estimate-form-thx .section-content .inner .button:hover {
+  cursor: pointer;
+}
+
+main.local-professionals-agent-estimate-form-thx .section-content .inner .link {
   text-align: center;
   margin-top: 130px;
 }
@@ -9504,52 +10218,108 @@ main.travel-content-category .section-content.posts .pager .navi {
   height: auto;
 }
 
-main.map .section-content .inner > .head {
+main.map .section-content .inner,
+main.map02 .section-content .inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+main.map .section-content .inner > .head,
+main.map02 .section-content .inner > .head {
   font-size: 2.8rem;
   color: #4FE0B0;
   padding-bottom: 15px;
   border-bottom: 2px solid #E4E4E4;
 }
 
-main.map .section-content .inner > .sub-head {
+main.map .section-content .inner > .head span,
+main.map02 .section-content .inner > .head span {
+  font-size: 1.2rem;
+}
+
+main.map .section-content .inner > .sub-head,
+main.map02 .section-content .inner > .sub-head {
   color: #4FE0B0;
   font-size: 2.4rem;
   margin-top: 20px;
 }
 
-main.map .section-content.popular, main.map .section-content.latest, main.map .section-content.ranking, main.map .section-content.recommended-content, main.map .section-content.map-checked {
+main.map .section-content.popular, main.map .section-content.latest, main.map .section-content.ranking, main.map .section-content.recommended-content, main.map .section-content.map-checked,
+main.map02 .section-content.popular,
+main.map02 .section-content.latest,
+main.map02 .section-content.ranking,
+main.map02 .section-content.recommended-content,
+main.map02 .section-content.map-checked {
   padding-bottom: 100px;
 }
 
-main.map .section-content.popular .head, main.map .section-content.latest .head, main.map .section-content.ranking .head, main.map .section-content.recommended-content .head, main.map .section-content.map-checked .head {
+main.map .section-content.popular .head, main.map .section-content.latest .head, main.map .section-content.ranking .head, main.map .section-content.recommended-content .head, main.map .section-content.map-checked .head,
+main.map02 .section-content.popular .head,
+main.map02 .section-content.latest .head,
+main.map02 .section-content.ranking .head,
+main.map02 .section-content.recommended-content .head,
+main.map02 .section-content.map-checked .head {
   margin-top: 80px;
 }
 
-main.map .section-content.popular .swiper-container-wrapper, main.map .section-content.latest .swiper-container-wrapper, main.map .section-content.ranking .swiper-container-wrapper, main.map .section-content.recommended-content .swiper-container-wrapper, main.map .section-content.map-checked .swiper-container-wrapper {
+main.map .section-content.popular .swiper-container-wrapper, main.map .section-content.latest .swiper-container-wrapper, main.map .section-content.ranking .swiper-container-wrapper, main.map .section-content.recommended-content .swiper-container-wrapper, main.map .section-content.map-checked .swiper-container-wrapper,
+main.map02 .section-content.popular .swiper-container-wrapper,
+main.map02 .section-content.latest .swiper-container-wrapper,
+main.map02 .section-content.ranking .swiper-container-wrapper,
+main.map02 .section-content.recommended-content .swiper-container-wrapper,
+main.map02 .section-content.map-checked .swiper-container-wrapper {
   position: relative;
   position: relative;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .swiper-slide, main.map .section-content.latest .swiper-container-wrapper .swiper-slide, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide {
+main.map .section-content.popular .swiper-container-wrapper .swiper-slide, main.map .section-content.latest .swiper-container-wrapper .swiper-slide, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide,
+main.map02 .section-content.popular .swiper-container-wrapper .swiper-slide,
+main.map02 .section-content.latest .swiper-container-wrapper .swiper-slide,
+main.map02 .section-content.ranking .swiper-container-wrapper .swiper-slide,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .swiper-slide,
+main.map02 .section-content.map-checked .swiper-container-wrapper .swiper-slide {
   margin-top: 20px;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .swiper-slide a, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a {
+main.map .section-content.popular .swiper-container-wrapper .swiper-slide a, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a,
+main.map02 .section-content.popular .swiper-container-wrapper .swiper-slide a,
+main.map02 .section-content.latest .swiper-container-wrapper .swiper-slide a,
+main.map02 .section-content.ranking .swiper-container-wrapper .swiper-slide a,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .swiper-slide a,
+main.map02 .section-content.map-checked .swiper-container-wrapper .swiper-slide a {
   text-decoration: none;
   color: #333;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .img, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .img, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .img, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img {
+main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .img, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .img, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .img, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img,
+main.map02 .section-content.popular .swiper-container-wrapper .swiper-slide a .img,
+main.map02 .section-content.latest .swiper-container-wrapper .swiper-slide a .img,
+main.map02 .section-content.ranking .swiper-container-wrapper .swiper-slide a .img,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img,
+main.map02 .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img {
   position: relative;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .img img, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .img img, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .img img, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img img, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img img {
+main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .img img, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .img img, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .img img, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img img, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img img,
+main.map02 .section-content.popular .swiper-container-wrapper .swiper-slide a .img img,
+main.map02 .section-content.latest .swiper-container-wrapper .swiper-slide a .img img,
+main.map02 .section-content.ranking .swiper-container-wrapper .swiper-slide a .img img,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img img,
+main.map02 .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .img .new, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .new, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .img .new, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img .new, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img .new {
+main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .img .new, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .new, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .img .new, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img .new, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img .new,
+main.map02 .section-content.popular .swiper-container-wrapper .swiper-slide a .img .new,
+main.map02 .section-content.latest .swiper-container-wrapper .swiper-slide a .img .new,
+main.map02 .section-content.ranking .swiper-container-wrapper .swiper-slide a .img .new,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img .new,
+main.map02 .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img .new {
   position: absolute;
   left: 0;
   top: 0;
@@ -9558,7 +10328,12 @@ main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .img
   padding: 0 10px;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .img .info, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .img .info, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img .info, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img .info {
+main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .img .info, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .img .info, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img .info, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img .info,
+main.map02 .section-content.popular .swiper-container-wrapper .swiper-slide a .img .info,
+main.map02 .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info,
+main.map02 .section-content.ranking .swiper-container-wrapper .swiper-slide a .img .info,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img .info,
+main.map02 .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img .info {
   position: absolute;
   width: 100%;
   left: 0px;
@@ -9571,11 +10346,21 @@ main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .img
   color: #fff;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .img .info .num, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .num, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .img .info .num, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img .info .num, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img .info .num {
+main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .img .info .num, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .num, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .img .info .num, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img .info .num, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img .info .num,
+main.map02 .section-content.popular .swiper-container-wrapper .swiper-slide a .img .info .num,
+main.map02 .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .num,
+main.map02 .section-content.ranking .swiper-container-wrapper .swiper-slide a .img .info .num,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img .info .num,
+main.map02 .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img .info .num {
   font-size: 1.4rem;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .img .info .country-name, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .country-name, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .img .info .country-name, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img .info .country-name, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img .info .country-name {
+main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .img .info .country-name, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .country-name, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .img .info .country-name, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img .info .country-name, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img .info .country-name,
+main.map02 .section-content.popular .swiper-container-wrapper .swiper-slide a .img .info .country-name,
+main.map02 .section-content.latest .swiper-container-wrapper .swiper-slide a .img .info .country-name,
+main.map02 .section-content.ranking .swiper-container-wrapper .swiper-slide a .img .info .country-name,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .img .info .country-name,
+main.map02 .section-content.map-checked .swiper-container-wrapper .swiper-slide a .img .info .country-name {
   display: inline-block;
   font-size: 1.2rem;
   background-color: #fff;
@@ -9584,11 +10369,21 @@ main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .img
   line-height: 20px;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .title, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .title, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .title, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .title, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .title {
+main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .title, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .title, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .title, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .title, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .title,
+main.map02 .section-content.popular .swiper-container-wrapper .swiper-slide a .title,
+main.map02 .section-content.latest .swiper-container-wrapper .swiper-slide a .title,
+main.map02 .section-content.ranking .swiper-container-wrapper .swiper-slide a .title,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .title,
+main.map02 .section-content.map-checked .swiper-container-wrapper .swiper-slide a .title {
   font-size: 1.6rem;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .tags, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .tags, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .tags, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .tags, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .tags {
+main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .tags, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .tags, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .tags, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .tags, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .tags,
+main.map02 .section-content.popular .swiper-container-wrapper .swiper-slide a .tags,
+main.map02 .section-content.latest .swiper-container-wrapper .swiper-slide a .tags,
+main.map02 .section-content.ranking .swiper-container-wrapper .swiper-slide a .tags,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .tags,
+main.map02 .section-content.map-checked .swiper-container-wrapper .swiper-slide a .tags {
   display: -webkit-box;
   display: flex;
   display: -webkit-flex;
@@ -9602,7 +10397,12 @@ main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .tag
   margin-top: 30px;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .tags li, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .tags li, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .tags li, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .tags li {
+main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .tags li, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .tags li, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .tags li, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .tags li,
+main.map02 .section-content.popular .swiper-container-wrapper .swiper-slide a .tags li,
+main.map02 .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li,
+main.map02 .section-content.ranking .swiper-container-wrapper .swiper-slide a .tags li,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .tags li,
+main.map02 .section-content.map-checked .swiper-container-wrapper .swiper-slide a .tags li {
   margin-right: 10px;
   margin-top: 10px;
   padding: 0 10px;
@@ -9611,7 +10411,12 @@ main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .tag
   line-height: 20px;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .tags li a, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li a, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .tags li a, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .tags li a, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .tags li a {
+main.map .section-content.popular .swiper-container-wrapper .swiper-slide a .tags li a, main.map .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li a, main.map .section-content.ranking .swiper-container-wrapper .swiper-slide a .tags li a, main.map .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .tags li a, main.map .section-content.map-checked .swiper-container-wrapper .swiper-slide a .tags li a,
+main.map02 .section-content.popular .swiper-container-wrapper .swiper-slide a .tags li a,
+main.map02 .section-content.latest .swiper-container-wrapper .swiper-slide a .tags li a,
+main.map02 .section-content.ranking .swiper-container-wrapper .swiper-slide a .tags li a,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .swiper-slide a .tags li a,
+main.map02 .section-content.map-checked .swiper-container-wrapper .swiper-slide a .tags li a {
   color: #333;
   padding: 0 10px;
   background-color: #E4E4E4;
@@ -9623,16 +10428,36 @@ main.map .section-content.popular .swiper-container-wrapper .pager .swiper-butto
 main.map .section-content.latest .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.ranking .swiper-container-wrapper .pager .swiper-button-prev,
 main.map .section-content.ranking .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-prev,
 main.map .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-prev,
-main.map .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-next {
+main.map .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.popular .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.popular .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.ranking .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.ranking .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-next {
   width: 44px;
   background-image: none;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.ranking .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-prev {
+main.map .section-content.popular .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.ranking .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.popular .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.ranking .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-prev {
   left: 0;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.latest .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.ranking .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-next {
+main.map .section-content.popular .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.latest .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.ranking .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.popular .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.ranking .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-next {
   right: 0;
 }
 
@@ -9641,20 +10466,45 @@ main.map .section-content.popular .swiper-container-wrapper .pager .swiper-butto
 main.map .section-content.latest .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.ranking .swiper-container-wrapper .pager .swiper-button-prev,
 main.map .section-content.ranking .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-prev,
 main.map .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-prev,
-main.map .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-next {
+main.map .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.popular .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.popular .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.ranking .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.ranking .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-next {
   width: 44px;
   background-image: none;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.ranking .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-prev {
+main.map .section-content.popular .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.ranking .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-prev, main.map .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.popular .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.latest .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.ranking .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-prev,
+main.map02 .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-prev {
   left: 0;
 }
 
-main.map .section-content.popular .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.latest .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.ranking .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-next {
+main.map .section-content.popular .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.latest .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.ranking .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-next, main.map .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.popular .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.latest .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.ranking .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.recommended-content .swiper-container-wrapper .pager .swiper-button-next,
+main.map02 .section-content.map-checked .swiper-container-wrapper .pager .swiper-button-next {
   right: 0;
 }
 
-main.map .section-content.popular .button, main.map .section-content.latest .button, main.map .section-content.ranking .button, main.map .section-content.recommended-content .button, main.map .section-content.map-checked .button {
+main.map .section-content.popular .button, main.map .section-content.latest .button, main.map .section-content.ranking .button, main.map .section-content.recommended-content .button, main.map .section-content.map-checked .button,
+main.map02 .section-content.popular .button,
+main.map02 .section-content.latest .button,
+main.map02 .section-content.ranking .button,
+main.map02 .section-content.recommended-content .button,
+main.map02 .section-content.map-checked .button {
   width: 100%;
   display: block;
   text-align: center;
@@ -9670,8 +10520,272 @@ main.map .section-content.popular .button, main.map .section-content.latest .but
   background-color: #fff;
 }
 
-main.map .section-content.popular .button:hover, main.map .section-content.latest .button:hover, main.map .section-content.ranking .button:hover, main.map .section-content.recommended-content .button:hover, main.map .section-content.map-checked .button:hover {
+main.map .section-content.popular .button:hover, main.map .section-content.latest .button:hover, main.map .section-content.ranking .button:hover, main.map .section-content.recommended-content .button:hover, main.map .section-content.map-checked .button:hover,
+main.map02 .section-content.popular .button:hover,
+main.map02 .section-content.latest .button:hover,
+main.map02 .section-content.ranking .button:hover,
+main.map02 .section-content.recommended-content .button:hover,
+main.map02 .section-content.map-checked .button:hover {
   cursor: pointer;
+}
+
+main.map .section-content.categories .hashtag_wrapper,
+main.map02 .section-content.categories .hashtag_wrapper {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+main.map .section-content.categories .text,
+main.map02 .section-content.categories .text {
+  height: 90px;
+  overflow: hidden;
+}
+
+main.map .section-content.categories .show_hashtag,
+main.map02 .section-content.categories .show_hashtag {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 30px;
+  padding-top: 60px;
+  text-align: center;
+  line-height: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(white));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, white 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, white 100%);
+  cursor: pointer;
+  -webkit-transition: bottom 0.2s;
+  transition: bottom 0.2s;
+}
+
+main.map .section-content.categories .show_hashtag span,
+main.map02 .section-content.categories .show_hashtag span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 5px 0;
+  font-size: 1.5rem;
+  border: 1px solid #333;
+  position: relative;
+  color: #3DCDE6;
+  border-radius: 10px;
+  border: 1px solid #3DCDE6;
+  background-color: #fff;
+  background-color: #00A9C6;
+  color: #fff;
+  margin-top: 20px;
+}
+
+main.map .section-content.categories .show_hashtag span:hover,
+main.map02 .section-content.categories .show_hashtag span:hover {
+  cursor: pointer;
+}
+
+main.map .section-content.categories .show_hashtag span.open::after,
+main.map02 .section-content.categories .show_hashtag span.open::after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  right: 20px;
+}
+
+main.map .section-content.categories .show_hashtag span.close::after,
+main.map02 .section-content.categories .show_hashtag span.close::after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f106";
+  right: 20px;
+}
+
+main.map .section-content.categories .tags,
+main.map02 .section-content.categories .tags {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*--- IE10用 ---*/
+  -webkit-flex-wrap: wrap;
+  /*--- safari（PC）用 ---*/
+  overflow: hidden;
+  list-style-type: none;
+}
+
+main.map .section-content.categories .tags li,
+main.map02 .section-content.categories .tags li {
+  margin-right: 10px;
+}
+
+main.map .section-content.posts,
+main.map02 .section-content.posts {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+main.map .section-content.posts .post,
+main.map02 .section-content.posts .post {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #E4E4E4;
+}
+
+main.map .section-content.posts .post .img,
+main.map02 .section-content.posts .post .img {
+  display: block;
+  width: 100%;
+  max-width: 160px;
+  min-height: 160px;
+  background-color: #E4E4E4;
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+
+main.map .section-content.posts .post .img img,
+main.map02 .section-content.posts .post .img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main.map .section-content.posts .post .img .new,
+main.map02 .section-content.posts .post .img .new {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #DC000C;
+  color: #fff;
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  main.map .section-content.posts .post .info .meta,
+  main.map02 .section-content.posts .post .info .meta {
+    display: -webkit-box;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    /*--- IE10用 ---*/
+    -webkit-flex-wrap: wrap;
+    /*--- safari（PC）用 ---*/
+    line-height: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main.map .section-content.posts .post .info .meta .date,
+  main.map .section-content.posts .post .info .meta .num,
+  main.map02 .section-content.posts .post .info .meta .date,
+  main.map02 .section-content.posts .post .info .meta .num {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #333;
+  }
+}
+
+main.map .section-content.posts .post .info .title,
+main.map02 .section-content.posts .post .info .title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+main.map .section-content.posts .post .info .company-name,
+main.map02 .section-content.posts .post .info .company-name {
+  margin-top: 40px;
+}
+
+main.map .section-content.posts .post .info .tags,
+main.map02 .section-content.posts .post .info .tags {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*--- IE10用 ---*/
+  -webkit-flex-wrap: wrap;
+  /*--- safari（PC）用 ---*/
+  list-style-type: none;
+}
+
+main.map .section-content.posts .post .info .tags li,
+main.map02 .section-content.posts .post .info .tags li {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 0 10px;
+  background-color: #E4E4E4;
+}
+
+main.map .section-content.posts .post .info .tags li a,
+main.map02 .section-content.posts .post .info .tags li a {
+  color: #333;
+  padding: 0 10px;
+  background-color: #E4E4E4;
+  text-decoration: none;
+}
+
+main.map .section-content.posts .post .countries,
+main.map .section-content.posts .post .skills,
+main.map02 .section-content.posts .post .countries,
+main.map02 .section-content.posts .post .skills {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*--- IE10用 ---*/
+  -webkit-flex-wrap: wrap;
+  /*--- safari（PC）用 ---*/
+  color: #4FE0B0;
+  list-style-type: none;
+}
+
+main.map .section-content.posts .post .countries li::after,
+main.map .section-content.posts .post .skills li::after,
+main.map02 .section-content.posts .post .countries li::after,
+main.map02 .section-content.posts .post .skills li::after {
+  content: ",";
+}
+
+main.map .section-content.posts .post .countries,
+main.map02 .section-content.posts .post .countries {
+  color: #4FE0B0;
+}
+
+main.map .section-content.posts .post .skills,
+main.map02 .section-content.posts .post .skills {
+  color: #00A9C6;
+}
+
+main.map .section-content.posts .pager,
+main.map02 .section-content.posts .pager {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin-top: 60px;
+}
+
+main.map .section-content.posts .pager .navi,
+main.map02 .section-content.posts .pager .navi {
+  display: block;
+  padding: 4px 15px;
+  border: 1px solid #00A9C6;
+  margin: 0 10px;
 }
 
 .g-navi.secondary {

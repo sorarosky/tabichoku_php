@@ -1,10 +1,10 @@
 <?php include 'header.php';?>
 <?php include 'breadcrumb.php';?>
 <div class="contents-wrap">
-  <main class="main travel-content-estimate-form">
+  <main class="main local-professionals-agent-estimate-form">
     <section class="section-content">
       <div class="inner">
-        <div class="head">お問い合わせ</div>
+        <div class="head">日程・見積相談フォーム</div>
         <nav class="states">
           <ul class="points">
             <li class="point current">入力</li>
@@ -47,8 +47,8 @@
             </tr>
             <tr>
               <th class="reqired">利用見込度</th>
-              <td>
-              <div class="select-wrap">
+              <td class="has-selecter">
+                <div class="select-wrap">
                   <select name="" id="">
                     <option>【A】必ず実施したい</optnion>
                     <option>【B】日程は確実だが、実施を迷っている</optnion>
@@ -67,7 +67,7 @@
             </tr>
             <tr>
               <th class="reqired">利用開始日</th>
-              <td>
+              <td class="has-selecter">
                 <div class="select-wrap">
                   <select name="" id="">
                     <option>2022</optnion>
@@ -90,7 +90,7 @@
             </tr>
             <tr>
               <th class="reqired">利用開始時刻</th>
-              <td>
+              <td class="has-selecter">
                 <div class="select-wrap">
                   <select name="" id="">
                     <option>00</optnion>
@@ -121,7 +121,7 @@
             </tr>
             <tr>
               <th class="reqired">利用終了日</th>
-              <td>
+              <td class="has-selecter">
                 <div class="select-wrap">
                   <select name="" id="">
                     <option>2022</optnion>
@@ -144,7 +144,7 @@
             </tr>
             <tr>
               <th class="reqired">利用終了時刻</th>
-              <td>
+              <td class="has-selecter">
                 <div class="select-wrap">
                   <select name="" id="">
                     <option>00</optnion>
@@ -161,17 +161,34 @@
             </tr>
             <tr>
               <th class="reqired">人数</th>
-              <td>
-                大人（12歳以上）<input type="text">
-                小人（6-11歳）<input type="text">
-                幼児（0-5歳）<input type="text">
-                合計<span>0000</span>名
+              <td class="input-with-initial">
+                <table>
+                    <tr>
+                      <th>大人（12歳以上）</th>
+                    <td><input type="text"> 名</td>
+                  </tr>
+                  <tr>
+                    <th>小人（6-11歳）</th>
+                    <td><input type="text"> 名</td>
+                  </tr>
+                  <tr>
+                    <th>幼児（0-5歳）</th>
+                    <td><input type="text"> 名</td>
+                  </tr>
+                  <tr>
+                    <th>合計</th>
+                    <td><span>0000</span> 名</td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <tr>
               <th class="reqired">旅行目的</th>
-              <td>
-                <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label>
+              <td class="input-with-initial checkboxs">
+                <div class="item"><input type="checkbox" id="" name="" checked><label for="">レジャー</label></div>
+                <div class="item"><input type="checkbox" id="" name="" checked><label for="">レジャー</label></div>
+                <div class="item"><input type="checkbox" id="" name="" checked><label for="">レジャー</label></div>
+                
               </td>
             </tr>
             <tr>
