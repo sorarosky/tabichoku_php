@@ -1,0 +1,312 @@
+main.signup-form,
+main.signup-form-conf,
+main.signup-form-thx {
+    .section-content {
+        padding-top: 60px;
+        padding-bottom: 100px;
+        .inner {
+            @include inner;
+            max-width: 800px;
+            .states {
+                @include states;
+            }
+            >.head {
+                font-size: 2.8rem;
+                text-align: center;
+                margin-top: 60px;
+            }
+            ul {
+                margin-top: 30px;
+                padding-left: 24px;
+            }
+            .box {
+                border: 1px solid $gray;
+                padding: 20px;
+                margin-top: 40px;
+                .id {}
+                .title {
+                    font-size: 1.8rem;
+                    color: $blue02;
+                    font-weight: bold;
+                }
+                .date {
+                    margin-top: 40px;
+                }
+                .fas {
+                    color: $black;
+                    margin-right: 10px;
+                }
+                .ture-name {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    margin-top: 15px;
+                }
+                .theme-category {
+                    color: $blue02;
+                }
+                table {
+                    border-top: 2px solid $gray;
+                    width: 100%;
+                    margin-top: 20px;
+                    tr {
+                        th,
+                        td {
+                            text-align-last: left;
+                            padding: 10px 0;
+                        }
+                        td {}
+                    }
+                }
+            }
+            .form {
+                width: 100%;
+                margin-top: 60px;
+                table {
+                    width: 100%;
+                    border-top: 1px solid $gray;
+                    tr {
+                        @include flex;
+                        @include wrap;
+                        border-bottom: 1px solid $gray;
+                        width: 100%;
+                        >th {
+                            width: 100%;
+                            text-align-last: left;
+                            padding: 20px 0;
+                            padding-right: 50px;
+                            position: relative;
+                            // &::after {
+                            //     content: "任意";
+                            //     position: absolute;
+                            //     padding: 0 4px;
+                            //     background-color: #888888;
+                            //     color: #fff;
+                            //     top: 20px;
+                            //     right: 0px;
+                            //     @media screen and (min-width: $tablet) {
+                            //         right: 20px;
+                            //     }
+                            // }
+                            &.reqired {
+                                &::after {
+                                    content: "必須";
+                                    padding: 0 2px;
+                                    position: absolute;
+                                    background-color: $red;
+                                    color: #fff;
+                                    top: 20px;
+                                    right: 10px;
+                                }
+                            }
+                            @media screen and (min-width: $tablet) {
+                                width: 20%;
+                            }
+                        }
+                        td {
+                            width: 100%;
+                            padding-top: 0px;
+                            padding-bottom: 20px;
+                            @media screen and (min-width: $tablet) {
+                                width: 80%;
+                                padding-top: 20px;
+                                padding-left: 40px;
+                            }
+                            &.has-selecter {
+                                @include flex;
+                                @include wrap;
+                                margin-left: -10px;
+                                .select-wrap {
+                                    width: initial;
+                                    margin-right: 10px;
+                                    margin-left: 10px;
+                                    select {
+                                        width: initial;
+                                    }
+                                }
+                            }
+                            &.input-with-initial {
+                                input {
+                                    width: initial;
+                                }
+                            }
+                            table {
+                                width: 100%;
+                                tr {
+                                    @include flex;
+                                    @include wrap;
+                                }
+                                th {
+                                    width: 30%;
+                                    padding-right: 0;
+                                    font-weight: normal;
+                                }
+                                td {
+                                    width: 70%;
+                                    padding-left: 0;
+                                    input {
+                                        width: 40px !important;
+                                    }
+                                    span {
+                                        font-size: 2.4rem;
+                                    }
+                                }
+                            }
+                            &.checkboxs {
+                                @include flex;
+                                @include wrap;
+                                .item {
+                                    margin-right: 20px;
+                                }
+                                input {
+                                    transform: scale(150%);
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                        input,
+                        textarea {
+                            width: 100%;
+                            padding: 10px;
+                            border-radius: 4px;
+                            border: 1px solid $gray;
+                            &.country-num {
+                                width: 90%;
+                            }
+                        }
+                        .select-wrap {
+                            position: relative;
+                            width: 100%;
+                            max-width: 480px;
+                            border-radius: 4px;
+                            &::after {
+                                font-size: 1rem;
+                                position: absolute;
+                                right: 10px;
+                                top: calc(50% - 13px);
+                                font-family: "Font Awesome 5 Free";
+                                font-weight: 900;
+                                content: "\f078";
+                            }
+                            select {
+                                @include form_input;
+                                background-color: #fff;
+                                text-overflow: ellipsis;
+                                outline: none;
+                                background-image: none;
+                                box-shadow: none;
+                                -webkit-appearance: none;
+                                appearance: none;
+                                padding-right: 20px;
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                .text,
+                .privacy {
+                    width: 100%;
+                    max-width: 800px;
+                    margin: 0 auto;
+                }
+                .text {
+                    margin-top: 40px;
+                    .fa-window-restore {}
+                }
+                .agreement {
+                    text-align: center;
+                    margin-top: 30px;
+                    input {
+                        transform: scale(150%);
+                        margin-right: 10px;
+                    }
+                }
+                .btn-wrap {
+                    position: relative;
+                    max-width: 400px;
+                    margin: 0 auto;
+                    &::after {
+                        position: absolute;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: "\f105";
+                        right: 20px;
+                        top: calc(50% - 15px);
+                        color: #fff;
+                    }
+                    .button {
+                        @include btn;
+                        background-color: $blue02;
+                        padding: 20px;
+                        color: #fff;
+                        border-radius: 40px;
+                        font-size: 2rem;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main.signup-form-conf {
+    .form {
+        text-align: center;
+        .privacy {
+            .fa-check {
+                color: $green;
+                font-size: 2rem;
+            }
+        }
+    }
+    .button {
+        @include btn;
+        max-width: 360px;
+        padding: 20px 0;
+        background-color: $blue02;
+        border-radius: 40px;
+        color: #fff;
+        margin-top: 30px;
+    }
+}
+
+main.signup-form-thx {
+    width: 100%;
+    .section-content {
+        padding-top: 60px;
+        padding-bottom: 100px;
+        .inner {
+            @include inner;
+            max-width: 640px;
+            >.head {
+                font-size: 3.2rem;
+                line-height: 3.6rem;
+                text-align: center;
+                .fa-check-circle {
+                    color: $green;
+                    font-size: 4rem;
+                }
+            }
+            .caption {
+                text-align: center;
+                font-size: 2.4rem;
+                margin-top: 40px;
+            }
+            .text {
+                text-align: center;
+                margin-top: 40px;
+            }
+            .button {
+                @include btn;
+                background-color: $blue02;
+                padding: 20px;
+                color: #fff;
+                border-radius: 40px;
+                font-size: 2rem;
+                margin-top: 40px;
+                max-width: 345px;
+            }
+        }
+    }
+}

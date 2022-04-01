@@ -7,7 +7,6 @@
         <div class="head">パスワードを忘れた方</div>
         <div class="sub-head">メールアドレスを入力してください。</div>
         <div class="text">入力されたメールアドレスにパスワード再設定メールを送信いたします。<br>メール内に記載されているURLにアクセスいただき、登録内容を変更してください。</div>
-        </div>
         <div class="form">
           <div class="head">メールアドレス</div>
           <form action="">

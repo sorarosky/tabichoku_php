@@ -228,4 +228,4 @@
   </div>
 </div>
 
-<?php include 'footer.php';?>
+<?php include 'footer-mypage.php';?>

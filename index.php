@@ -37,9 +37,9 @@
     <li class="link"><a href="local-professionals-agent-estimate-form-thx.php">旅行コンテンツ – 完了画面 local-professionals-agent-estimate-form-thx.php</a></li>
     <li class="link"><a href="map.php">地図から探す map.php</a></li>
     <li class="link"><a href="map02.php">地図から探す – 1 map02.php</a></li>
-    <li class="link"><a href="login.php">ログイン画面 login.ph</a></li>
+    <li class="link"><a href="login.php">ログイン画面 login.php</a></li>
     <li class="link"><a href="signup.php">新規作成 signup.php</a></li>
-    <li class="link"><a href="login.php">ログイン画面／新規作成 – メール承認 login.php</a></li>
+    <li class="link"><a href="mail-accept.php">ログイン画面／新規作成 – メール承認 login.php</a></li>
     <li class="link"><a href="signup-form.php">ログイン画面／新規作成 –入力 signup-form.php</a></li>
     <li class="link"><a href="signup-form-conf.php">ログイン画面／新規作成 –確認 signup-form-conf.php</a></li>
     <li class="link"><a href="password.php">ログイン画面／新規作成 –パスワードを忘れた方 password.php</a></li>

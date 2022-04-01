@@ -1,0 +1,52 @@
+main.mail-accept {
+    .section-content {
+        padding-top: 160px;
+        padding-bottom: 80px;
+        .inner {
+            @include inner;
+            background-color: #fff;
+            padding-top: 40px;
+            >.head {
+                text-align: center;
+                font-size: 3.2rem;
+            }
+            .form {
+                >.head {
+                    margin-top: 40px;
+                    font-size: 2.4rem;
+                    text-align: center;
+                }
+                .text {
+                    text-align: center;
+                    margin-top: 30px;
+                }
+                .link {
+                    text-align: center;
+                }
+                .btn-wrap {
+                    position: relative;
+                    max-width: 400px;
+                    margin: 0 auto;
+                    &::after {
+                        position: absolute;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: "\f105";
+                        right: 20px;
+                        top: calc(50% - 15px);
+                        color: #fff;
+                    }
+                    .button {
+                        @include btn;
+                        background-color: $blue02;
+                        padding: 20px;
+                        color: #fff;
+                        border-radius: 40px;
+                        font-size: 2rem;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,19 +1,20 @@
 <?php include 'header.php';?>
 <?php include 'breadcrumb.php';?>
 <div class="contents-wrap">
-  <main class="mainc signup-form-conf">
+  <main class="mainc signup-form-thx">
     <section class="section-content">
       <div class="inner">
-        
-        <div class="head">送信が完了しました</div>
+        <div class="head">
+        <i class="fas fa-check-circle"></i><br><br>  
+        会員登録完了</div>
+        <div class="caption">会員登録ありがとうございます。<br>無事、登録が完了いたしました。</div>
         <div class="text">
-          送信が完了しました。<br>情報・内容を確認したい場合は、マイページよりご確認ください。
+        この度は、「たびチョク」に会員登録いただき、誠にありがとうございます。<br>会員登録完了のお知らせメールを、ご登録いただいたメールアドレスに送信いたしましたのでご確認ください。
         </div>
-        <a href="" class="button">マイページで確認する</a>
-        <p class="link"><a href="">トップに戻る</a></p>
+        <a href="" class="button">TOPページにもどる</a>
       </div>
     </section>
   </main>
-</div>
+  </div>
 
-<?php include 'footer.php';?>
+<?php include 'footer-mypage.php';?>
