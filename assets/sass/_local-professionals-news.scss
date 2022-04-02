@@ -51,6 +51,90 @@
             @include img;
         }
     }
+
+    .map {
+        position: relative;
+        width: 100%;
+        max-width: 2000px;
+        min-width: 800px;
+        background-image: url('assets/img/map-worldmap.svg');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        &::before {
+            content: "";
+            display: block;
+            padding-bottom: 50.33%;
+        }
+
+        .map-reagion {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $blue02;
+            color: #fff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 15px;
+            border-top-left-radius: 0px;
+            text-align: center;
+            line-height: 1.7rem;
+            width: 100%;
+            max-width: 90px;
+            font-weight: 600;
+            font-size: 1.2rem;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+            @media screen and (min-width: $tablet) {
+                max-width: 110px;
+                font-size: 1.4rem;
+                padding-left: 20px;
+                padding-right: 20px;
+                line-height: 2rem;
+            }
+            &.europe {
+                top: 18%;
+                left: 9%;
+            }
+            &.africa {
+                top: 51%;
+                left: 7%;
+            }
+            &.east-asia {
+                top: 36%;
+                left: 21%;
+            }
+            &.asia {
+                top: 43%;
+                left: 34%;
+            }
+            &.japan {
+                top: 46%;
+                left: 46%;
+            }
+            &.oceania {
+                top: 71%;
+                left: 43%;
+            }
+            &.hawaii {
+                top: 46%;
+                left: 65%;
+            }
+            &.north-america {
+                top: 30%;
+                left: 76%;
+            }
+            &.south-america {
+                top: 66%;
+                left: 89%;
+            }
+        }
+    }
 }
 
 main.local-professionals-news,

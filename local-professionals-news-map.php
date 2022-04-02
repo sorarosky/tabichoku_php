@@ -3,7 +3,19 @@
 <div class="contents-wrap">
   <div class="section-content local-professionals-news-top-map">
     <div class="img sp-pc sp"><img src="/assets/img/local-professionals-news-map01-sp.svg" alt=""></div>
-    <div class="img sp-pc pc"><img src="/assets/img/local-professionals-news-map01.svg" alt=""></div>
+    <div class="map-wrap sp-pc pc">
+      <div class="map">
+          <div class="map-reagion europe"><a href="#area07">ヨーロッパ</a></div>
+          <div class="map-reagion africa"><a href="#area09">アフリカ</a></div>
+          <div class="map-reagion east-asia"><a href="#area08">中東</a></div>
+          <div class="map-reagion asia"><a href="#area05">アジア</a></div>
+          <div class="map-reagion japan"><a href="#area01">日本</a></div>
+          <div class="map-reagion oceania"><a href="#area06">大洋州</a></div>
+          <div class="map-reagion hawaii"><a href="#area02">ハワイ</a></div>
+          <div class="map-reagion north-america"><a href="#area03">北米</a></div>
+          <div class="map-reagion south-america"><a href="#area04">中南米</a></div>
+      </div>
+    </div>
   </div>
   <div class="main-aside-wrap">
     <main class="main local-professionals-news-map">
