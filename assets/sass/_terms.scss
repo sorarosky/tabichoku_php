@@ -1,0 +1,39 @@
+main.terms {
+    width: 100%;
+    .section-content {
+        padding-top: 60px;
+        padding-bottom: 100px;
+        .inner {
+            @include inner;
+            max-width: 900px;
+            >.head {
+                color: $green;
+                font-size: 3.2rem;
+                line-height: 3.6rem;
+                text-align: center;
+            }
+            .date {
+                margin-top: 40px;
+                text-align: right;
+            }
+            >.text {
+                font-size: 1.6rem;
+            }
+            .content {
+                .head {
+                    font-size: 2rem;
+                    margin-top: 60px;
+                    padding: 0 10px;
+                }
+                .text {
+                    margin-top: 20px;
+                }
+                ul,
+                ol {
+                    margin-top: 60px;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}

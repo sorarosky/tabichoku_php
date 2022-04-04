@@ -1,0 +1,52 @@
+main.condition {
+    width: 100%;
+    .section-content {
+        padding-top: 60px;
+        padding-bottom: 100px;
+        .inner {
+            @include inner;
+            >.head {
+                color: $green;
+                font-size: 3.2rem;
+                line-height: 3.6rem;
+                text-align: center;
+            }
+            >.text {
+                text-align: center;
+                margin-top: 40px;
+            }
+            .navi {
+                .buttonn {
+                    display: block;
+                    background-color: $blue02;
+                    color: #fff;
+                    text-align: center;
+                    position: relative;
+                    padding: 5px;
+                    border-radius: 4px;
+                    margin-top: 40px;
+                    &::after {
+                        position: absolute;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: "\f107";
+                        right: 20px;
+                    }
+                }
+            }
+            .content {
+                .head {
+                    font-size: 1.8rem;
+                    margin-top: 60px;
+                    padding: 0 10px;
+                    color: #fff;
+                    background-color: $blue02;
+                }
+                ol {
+                    padding-left: 20px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}

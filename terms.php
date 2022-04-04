@@ -5,7 +5,7 @@
     <section class="section-content">
       <div class="inner">
         <div class="head">利用規約</div>
-        <div class="date"></div>
+        <div class="date">最終更新日　2022年3月1日</div>
         <div class="text">
         日本トラベルコーディネート株式会社（以下、「当社」といいます）は、「たびチョク」（https://tabi-choku.com/）の管理・運営を行い、サービスのご利用に関して、以下の通り、たびチョク利用規約（以下、「本規約」といいます）を定めています。<br>
         <br>

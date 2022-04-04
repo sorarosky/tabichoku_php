@@ -1,7 +1,7 @@
 <?php include 'header.php';?>
 <?php include 'breadcrumb.php';?>
 <div class="contents-wrap">
-  <main class="main terms">
+  <main class="main privacy">
     <section class="section-content">
       <div class="inner">
         <div class="head">プライバシーポリシー(個人情報保護方針)</div>
