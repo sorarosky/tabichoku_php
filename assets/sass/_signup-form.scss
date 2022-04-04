@@ -15,59 +15,16 @@ main.signup-form-thx {
                 text-align: center;
                 margin-top: 60px;
             }
-            ul {
-                margin-top: 30px;
-                padding-left: 24px;
-            }
-            .box {
-                border: 1px solid $gray;
-                padding: 20px;
-                margin-top: 40px;
-                .id {}
-                .title {
-                    font-size: 1.8rem;
-                    color: $blue02;
-                    font-weight: bold;
-                }
-                .date {
-                    margin-top: 40px;
-                }
-                .fas {
-                    color: $black;
-                    margin-right: 10px;
-                }
-                .ture-name {
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                    margin-top: 15px;
-                }
-                .theme-category {
-                    color: $blue02;
-                }
-                table {
-                    border-top: 2px solid $gray;
-                    width: 100%;
-                    margin-top: 20px;
-                    tr {
-                        th,
-                        td {
-                            text-align-last: left;
-                            padding: 10px 0;
-                        }
-                        td {}
-                    }
-                }
-            }
             .form {
                 width: 100%;
                 margin-top: 60px;
+                .head {}
                 table {
                     width: 100%;
-                    border-top: 1px solid $gray;
+                    border-bottom: 1px solid $gray;
                     tr {
                         @include flex;
                         @include wrap;
-                        border-bottom: 1px solid $gray;
                         width: 100%;
                         >th {
                             width: 100%;
@@ -75,6 +32,8 @@ main.signup-form-thx {
                             padding: 20px 0;
                             padding-right: 50px;
                             position: relative;
+                            font-weight: normal;
+                            font-size: 1.6rem;
                             // &::after {
                             //     content: "任意";
                             //     position: absolute;
@@ -88,29 +47,23 @@ main.signup-form-thx {
                             //     }
                             // }
                             &.reqired {
-                                &::after {
-                                    content: "必須";
-                                    padding: 0 2px;
-                                    position: absolute;
-                                    background-color: $red;
-                                    color: #fff;
-                                    top: 20px;
-                                    right: 10px;
+                                span {
+                                    position: relative;
+                                    &::after {
+                                        content: "必須";
+                                        padding: 0 2px;
+                                        position: absolute;
+                                        background-color: $red;
+                                        color: #fff;
+                                        right: -70px;
+                                    }
                                 }
-                            }
-                            @media screen and (min-width: $tablet) {
-                                width: 20%;
                             }
                         }
                         td {
                             width: 100%;
                             padding-top: 0px;
                             padding-bottom: 20px;
-                            @media screen and (min-width: $tablet) {
-                                width: 80%;
-                                padding-top: 20px;
-                                padding-left: 40px;
-                            }
                             &.has-selecter {
                                 @include flex;
                                 @include wrap;
@@ -152,8 +105,6 @@ main.signup-form-thx {
                                 }
                             }
                             &.checkboxs {
-                                @include flex;
-                                @include wrap;
                                 .item {
                                     margin-right: 20px;
                                 }
@@ -204,15 +155,28 @@ main.signup-form-thx {
                         }
                     }
                 }
+                .condition {
+                    border-top: 1px solid $gray;
+                    .head {
+                        width: 100%;
+                        max-width: 600px;
+                        margin: 0 auto;
+                        margin-top: 50px;
+                    }
+                    .text-wrap {
+                        width: 100%;
+                        max-width: 600px;
+                        margin: 0 auto;
+                        max-height: 219px;
+                        overflow-y: scroll;
+                        margin-top: 50px;
+                    }
+                }
                 .text,
                 .privacy {
                     width: 100%;
                     max-width: 800px;
                     margin: 0 auto;
-                }
-                .text {
-                    margin-top: 40px;
-                    .fa-window-restore {}
                 }
                 .agreement {
                     text-align: center;
@@ -238,12 +202,16 @@ main.signup-form-thx {
                     .button {
                         @include btn;
                         background-color: $blue02;
-                        padding: 20px;
+                        padding: 10px;
                         color: #fff;
                         border-radius: 40px;
                         font-size: 2rem;
                         margin-top: 40px;
                     }
+                }
+                .link {
+                    text-align: center;
+                    margin-top: 80px;
                 }
             }
         }

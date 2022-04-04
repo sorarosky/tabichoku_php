@@ -12,7 +12,7 @@
           <form action="">
             <div class="btn-wrap"><input class="button" type="button"  value="マイページへログインする"></div>
           </form>
-          <div class="link"><a href="">トップページへ戻るキャンセル</a></div>
+          <div class="link"><a href="">トップページへ戻る</a></div>
         </div>
         
       </div>
