@@ -1,7 +1,117 @@
 .map-top-map {
+    overflow-y: scroll;
     .map {
-        img {
-            @include img;
+        position: relative;
+        width: 100%;
+        max-width: 2000px;
+        min-width: 800px;
+        background-image: url('assets/img/map-worldmap.svg');
+        background-position: top 60px center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        &::before {
+            content: "";
+            display: block;
+            padding-bottom: 50.33%;
+        }
+
+        .map-reagion {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $blue02;
+            color: #fff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 15px;
+            border-top-left-radius: 0px;
+            text-align: center;
+            line-height: 1.7rem;
+            width: 100%;
+            max-width: 90px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            @media screen and (min-width: $tablet) {
+                max-width: 110px;
+                font-size: 1.4rem;
+                padding-left: 20px;
+                padding-right: 20px;
+                line-height: 2rem;
+            }
+            &.europe {
+                top: 32%;
+                left: 9%;
+                @media screen and (min-width: $tablet) {
+                    top: 28%;
+                    left: 9%;
+                }
+            }
+            &.africa {
+                top: 66%;
+                left: 8%;
+                @media screen and (min-width: $tablet) {
+                    top: 61%;
+                    left: 7%;
+                }
+            }
+            &.east-asia {
+                top: 45%;
+                left: 23%;
+                @media screen and (min-width: $tablet) {
+                    top: 46%;
+                    left: 21%;
+                }
+            }
+            &.asia {
+                top: 57%;
+                left: 34%;
+                @media screen and (min-width: $tablet) {
+                    top: 53%;
+                    left: 34%;
+                }
+            }
+            &.japan {
+                top: 51%;
+                left: 47%;
+                @media screen and (min-width: $tablet) {
+                    top: 46%;
+                    left: 46%;
+                }
+            }
+            &.oceania {
+                top: 85%;
+                left: 49%;
+                @media screen and (min-width: $tablet) {
+                    top: 81%;
+                    left: 43%;
+                }
+            }
+            &.hawaii {
+                top: 63%;
+                left: 65%;
+                @media screen and (min-width: $tablet) {
+                    top: 56%;
+                    left: 65%;
+                }
+            }
+            &.north-america {
+                top: 47%;
+                left: 76%;
+                @media screen and (min-width: $tablet) {
+                    top: 40%;
+                    left: 76%;
+                }
+            }
+            &.south-america {
+                top: 76%;
+                left: 88%;
+                @media screen and (min-width: $tablet) {
+                    top: 76%;
+                    left: 89%;
+                }
+            }
         }
     }
 }
