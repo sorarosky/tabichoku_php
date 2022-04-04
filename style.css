@@ -6445,7 +6445,10 @@ main.signup-form-thx .section-content .inner > .head {
   text-align: center;
   margin-top: 60px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe846d369a18b8b025ba6bde1bc789764c57d7b
 main.signup-form .section-content .inner .form,
 main.signup-form-conf .section-content .inner .form,
 main.signup-form-thx .section-content .inner .form {
@@ -6486,13 +6489,15 @@ main.signup-form-thx .section-content .inner .form table tr > th {
   font-weight: normal;
   font-size: 1.6rem;
 }
-
 main.signup-form .section-content .inner .form table tr > th.reqired span,
 main.signup-form-conf .section-content .inner .form table tr > th.reqired span,
 main.signup-form-thx .section-content .inner .form table tr > th.reqired span {
   position: relative;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe846d369a18b8b025ba6bde1bc789764c57d7b
 main.signup-form .section-content .inner .form table tr > th.reqired span::after,
 main.signup-form-conf .section-content .inner .form table tr > th.reqired span::after,
 main.signup-form-thx .section-content .inner .form table tr > th.reqired span::after {
@@ -6511,7 +6516,10 @@ main.signup-form-thx .section-content .inner .form table tr td {
   padding-top: 0px;
   padding-bottom: 20px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe846d369a18b8b025ba6bde1bc789764c57d7b
 main.signup-form .section-content .inner .form table tr td.has-selecter,
 main.signup-form-conf .section-content .inner .form table tr td.has-selecter,
 main.signup-form-thx .section-content .inner .form table tr td.has-selecter {
@@ -6593,7 +6601,10 @@ main.signup-form-conf .section-content .inner .form table tr td table td span,
 main.signup-form-thx .section-content .inner .form table tr td table td span {
   font-size: 2.4rem;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe846d369a18b8b025ba6bde1bc789764c57d7b
 main.signup-form .section-content .inner .form table tr td.checkboxs .item,
 main.signup-form-conf .section-content .inner .form table tr td.checkboxs .item,
 main.signup-form-thx .section-content .inner .form table tr td.checkboxs .item {
@@ -6682,13 +6693,15 @@ main.signup-form-conf .section-content .inner .form table tr .select-wrap select
 main.signup-form-thx .section-content .inner .form table tr .select-wrap select:hover {
   cursor: pointer;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe846d369a18b8b025ba6bde1bc789764c57d7b
 main.signup-form .section-content .inner .form .condition,
 main.signup-form-conf .section-content .inner .form .condition,
 main.signup-form-thx .section-content .inner .form .condition {
   border-top: 1px solid #E4E4E4;
 }
-
 main.signup-form .section-content .inner .form .condition .head,
 main.signup-form-conf .section-content .inner .form .condition .head,
 main.signup-form-thx .section-content .inner .form .condition .head {
@@ -6697,7 +6710,6 @@ main.signup-form-thx .section-content .inner .form .condition .head {
   margin: 0 auto;
   margin-top: 50px;
 }
-
 main.signup-form .section-content .inner .form .condition .text-wrap,
 main.signup-form-conf .section-content .inner .form .condition .text-wrap,
 main.signup-form-thx .section-content .inner .form .condition .text-wrap {
@@ -6708,7 +6720,10 @@ main.signup-form-thx .section-content .inner .form .condition .text-wrap {
   overflow-y: scroll;
   margin-top: 50px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe846d369a18b8b025ba6bde1bc789764c57d7b
 main.signup-form .section-content .inner .form .text,
 main.signup-form .section-content .inner .form .privacy,
 main.signup-form-conf .section-content .inner .form .text,
@@ -6719,7 +6734,10 @@ main.signup-form-thx .section-content .inner .form .privacy {
   max-width: 800px;
   margin: 0 auto;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe846d369a18b8b025ba6bde1bc789764c57d7b
 main.signup-form .section-content .inner .form .agreement,
 main.signup-form-conf .section-content .inner .form .agreement,
 main.signup-form-thx .section-content .inner .form .agreement {
@@ -6784,7 +6802,6 @@ main.signup-form-conf .section-content .inner .form .btn-wrap .button:hover,
 main.signup-form-thx .section-content .inner .form .btn-wrap .button:hover {
   cursor: pointer;
 }
-
 main.signup-form .section-content .inner .form .link,
 main.signup-form-conf .section-content .inner .form .link,
 main.signup-form-thx .section-content .inner .form .link {
@@ -6900,7 +6917,10 @@ main.password-reset-form,
 main.password-reset {
   width: 100%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe846d369a18b8b025ba6bde1bc789764c57d7b
 main.password .section-content,
 main.password-mail .section-content,
 main.password-reset-form .section-content,
@@ -6908,7 +6928,6 @@ main.password-reset .section-content {
   padding-top: 60px;
   padding-bottom: 100px;
 }
-
 main.password .section-content .inner,
 main.password-mail .section-content .inner,
 main.password-reset-form .section-content .inner,
@@ -6920,7 +6939,10 @@ main.password-reset .section-content .inner {
   padding-right: 20px;
   max-width: 640px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe846d369a18b8b025ba6bde1bc789764c57d7b
 main.password .section-content .inner > .head,
 main.password-mail .section-content .inner > .head,
 main.password-reset-form .section-content .inner > .head,
@@ -6929,7 +6951,10 @@ main.password-reset .section-content .inner > .head {
   line-height: 3.6rem;
   text-align: center;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe846d369a18b8b025ba6bde1bc789764c57d7b
 main.password .section-content .inner > .head .fa-check-circle,
 main.password-mail .section-content .inner > .head .fa-check-circle,
 main.password-reset-form .section-content .inner > .head .fa-check-circle,
@@ -6937,7 +6962,6 @@ main.password-reset .section-content .inner > .head .fa-check-circle {
   color: #4FE0B0;
   font-size: 4rem;
 }
-
 main.password .section-content .inner .sub-head,
 main.password-mail .section-content .inner .sub-head,
 main.password-reset-form .section-content .inner .sub-head,
@@ -6946,7 +6970,10 @@ main.password-reset .section-content .inner .sub-head {
   font-size: 2.4rem;
   margin-top: 40px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe846d369a18b8b025ba6bde1bc789764c57d7b
 main.password .section-content .inner .text,
 main.password-mail .section-content .inner .text,
 main.password-reset-form .section-content .inner .text,
@@ -6954,7 +6981,6 @@ main.password-reset .section-content .inner .text {
   font-size: 1.6rem;
   margin-top: 40px;
 }
-
 main.password .section-content .inner .form,
 main.password-mail .section-content .inner .form,
 main.password-reset-form .section-content .inner .form,
@@ -6987,7 +7013,10 @@ main.password-reset .section-content .inner .form input.country-num,
 main.password-reset .section-content .inner .form textarea.country-num {
   width: 90%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe846d369a18b8b025ba6bde1bc789764c57d7b
 main.password .section-content .inner .form .btn-wrap,
 main.password-mail .section-content .inner .form .btn-wrap,
 main.password-reset-form .section-content .inner .form .btn-wrap,
@@ -6996,7 +7025,10 @@ main.password-reset .section-content .inner .form .btn-wrap {
   max-width: 400px;
   margin: 0 auto;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe846d369a18b8b025ba6bde1bc789764c57d7b
 main.password .section-content .inner .form .btn-wrap::after,
 main.password-mail .section-content .inner .form .btn-wrap::after,
 main.password-reset-form .section-content .inner .form .btn-wrap::after,
@@ -7009,7 +7041,10 @@ main.password-reset .section-content .inner .form .btn-wrap::after {
   top: calc(50% - 15px);
   color: #fff;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe846d369a18b8b025ba6bde1bc789764c57d7b
 main.password .section-content .inner .form .btn-wrap .button,
 main.password-mail .section-content .inner .form .btn-wrap .button,
 main.password-reset-form .section-content .inner .form .btn-wrap .button,
@@ -7034,14 +7069,16 @@ main.password-reset .section-content .inner .form .btn-wrap .button {
   font-size: 2rem;
   margin-top: 40px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe846d369a18b8b025ba6bde1bc789764c57d7b
 main.password .section-content .inner .form .btn-wrap .button:hover,
 main.password-mail .section-content .inner .form .btn-wrap .button:hover,
 main.password-reset-form .section-content .inner .form .btn-wrap .button:hover,
 main.password-reset .section-content .inner .form .btn-wrap .button:hover {
   cursor: pointer;
 }
-
 main.password .section-content .inner .form .link,
 main.password-mail .section-content .inner .form .link,
 main.password-reset-form .section-content .inner .form .link,
@@ -7049,7 +7086,6 @@ main.password-reset .section-content .inner .form .link {
   margin-top: 40px;
   text-align: center;
 }
-
 main.password .section-content .inner .contact,
 main.password-mail .section-content .inner .contact,
 main.password-reset-form .section-content .inner .contact,
@@ -7059,7 +7095,6 @@ main.password-reset .section-content .inner .contact {
   padding: 20px 0 30px;
   margin-top: 50px;
 }
-
 main.password .section-content .inner .contact .logo,
 main.password-mail .section-content .inner .contact .logo,
 main.password-reset-form .section-content .inner .contact .logo,
@@ -7067,7 +7102,6 @@ main.password-reset .section-content .inner .contact .logo {
   max-width: 200px;
   margin: 0 auto;
 }
-
 main.password .section-content .inner .contact .logo img,
 main.password-mail .section-content .inner .contact .logo img,
 main.password-reset-form .section-content .inner .contact .logo img,
@@ -7076,7 +7110,6 @@ main.password-reset .section-content .inner .contact .logo img {
   width: 100%;
   height: auto;
 }
-
 main.password .section-content .inner .contact .button,
 main.password-mail .section-content .inner .contact .button,
 main.password-reset-form .section-content .inner .contact .button,
@@ -7101,14 +7134,12 @@ main.password-reset .section-content .inner .contact .button {
   color: #fff;
   margin-top: 30px;
 }
-
 main.password .section-content .inner .contact .button:hover,
 main.password-mail .section-content .inner .contact .button:hover,
 main.password-reset-form .section-content .inner .contact .button:hover,
 main.password-reset .section-content .inner .contact .button:hover {
   cursor: pointer;
 }
-
 main.password .section-content .inner .link,
 main.password-mail .section-content .inner .link,
 main.password-reset-form .section-content .inner .link,
@@ -7121,13 +7152,11 @@ main.password-reset-form,
 main.password-reset {
   width: 100%;
 }
-
 main.password-reset-form .section-content,
 main.password-reset .section-content {
   padding-top: 60px;
   padding-bottom: 100px;
 }
-
 main.password-reset-form .section-content .inner,
 main.password-reset .section-content .inner {
   width: 100%;
@@ -7137,7 +7166,6 @@ main.password-reset .section-content .inner {
   padding-right: 20px;
   max-width: 640px;
 }
-
 main.password-reset-form .section-content .inner .text,
 main.password-reset .section-content .inner .text {
   text-align: center;
