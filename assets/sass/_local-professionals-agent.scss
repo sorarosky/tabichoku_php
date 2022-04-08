@@ -152,11 +152,26 @@ main.local-professionals-agent-post {
             .row {
                 margin-top: 80px;
                 .col {
+                    .swiper-container-local-professionals-news-post-wrapper {
+                        position: relative;
+                        overflow: hidden;
+                        .swiper-slide {
+                            img {
+                                @include img;
+                            }
+                        }
+                    }
                     .copy {
                         font-size: 2rem;
                     }
                     .text {
                         margin-top: 60px;
+                    }
+                    .swiper-button-prev,
+                    .swiper-button-next {
+                        &::after {
+                            content: '';
+                        }
                     }
                 }
             }
@@ -246,7 +261,6 @@ main.local-professionals-agent-post {
                 z-index: 100;
                 max-width: 340px;
             }
-            
         }
         &.pickup {
             padding-bottom: 100px;

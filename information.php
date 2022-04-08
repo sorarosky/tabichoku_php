@@ -1,7 +1,7 @@
 <?php include 'header.php';?>
 <?php include 'breadcrumb.php';?>
 <div class="contents-wrap">
-  <main class="information">
+  <main class="mian information">
     <section class="section-content">
       <div class="section-head">たびチョクからのお知らせ</div>
       <div class="inner">

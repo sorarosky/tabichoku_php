@@ -114,7 +114,43 @@ main.local-partner-recruit {
                                     }
                                 }
                             }
-                            @include form_input;
+                            input,
+                            textarea {
+                                @include form_input;
+                                &.country-num {
+                                    width: 90%;
+                                    margin-left: 5px;
+                                }
+                            }
+                            .select-wrap {
+                                position: relative;
+                                width: 100%;
+                                max-width: 480px;
+                                border-radius: 4px;
+                                &::after {
+                                    font-size: 1rem;
+                                    position: absolute;
+                                    right: 10px;
+                                    top: calc(50% - 13px);
+                                    font-family: "Font Awesome 5 Free";
+                                    font-weight: 900;
+                                    content: "\f078";
+                                }
+                                select {
+                                    @include form_input;
+                                    background-color: #fff;
+                                    text-overflow: ellipsis;
+                                    outline: none;
+                                    background-image: none;
+                                    box-shadow: none;
+                                    -webkit-appearance: none;
+                                    appearance: none;
+                                    padding-right: 20px;
+                                    &:hover {
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
                         }
                     }
                     .button {

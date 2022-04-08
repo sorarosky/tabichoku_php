@@ -1,8 +1,8 @@
 main.travel-content,
-main.travel-content-category {
+main.travel-content-category,
+main.travel-content-post {
     .section-content {
-        .inner {
-            @include inner;
+        >.inner {
             >.head {
                 font-size: 2.8rem;
                 color: $green;
@@ -20,6 +20,7 @@ main.travel-content-category {
         &.ranking,
         &.themes,
         &.posts {
+            padding-bottom: 100px;
             .swiper-container-wrapper {
                 @include post-slide;
             }
@@ -42,14 +43,279 @@ main.travel-content-category {
                     right: 20px;
                 }
             }
-        }
-        &.posts {
-            padding-bottom: 100px;
             .post {
                 @include post;
             }
             .pager {
                 @include pager;
+            }
+        }
+        &.entry-content {
+            position: relative;
+            padding-top: 60px;
+            >.inner {
+                padding: 0;
+                .post-info {
+                    .id {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    .like {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        border: 1px solid $gray;
+                        padding: 0 10px;
+                        border-radius: 4px;
+                        &.liked {
+                            .far {
+                                display: none;
+                            }
+                            .fas {
+                                display: inline-block;
+                            }
+                        }
+                        .far {
+                            display: inline-block;
+                            color: $red;
+                        }
+                        .fas {
+                            display: none;
+                            color: $red;
+                        }
+                    }
+                    .title {
+                        font-size: 2.4rem;
+                        font-weight: bold;
+                        color: $blue;
+                        margin-top: 15px;
+                        &.new {
+                            padding-left: 40px;
+                            position: relative;
+                            &:before {
+                                content: 'NEW';
+                                color: $red;
+                                font-size: 1.4rem;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                            }
+                        }
+                    }
+                    .sub-title {
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        margin-top: 10px;
+                    }
+                }
+                .box {
+                    .date {
+                        margin-top: 40px;
+                    }
+                    .fas {
+                        color: $black;
+                        margin-right: 10px;
+                    }
+                    .theme-category {
+                        color: $blue02;
+                    }
+                }
+                .tags {
+                    @include flex;
+                    @include wrap;
+                    list-style-type: none;
+                    li {
+                        margin-right: 10px;
+                        margin-top: 10px;
+                        a {
+                            color: $black;
+                            padding: 0 10px;
+                            background-color: $gray;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                >.row {
+                    margin-top: 30px;
+                    .col {
+                        .swiper-container-local-professionals-news-post-wrapper {
+                            position: relative;
+                            overflow: hidden;
+                            .swiper-slide {
+                                img {
+                                    @include img;
+                                }
+                            }
+                        }
+                        .copy {
+                            font-size: 2rem;
+                        }
+                        .text {
+                            margin-top: 60px;
+                        }
+                        .swiper-button-prev,
+                        .swiper-button-next {
+                            &::after {
+                                content: '';
+                            }
+                        }
+                    }
+                }
+                .content {
+                    padding-bottom: 60px;
+                    .row {
+                        margin-top: 70px;
+                        .col {
+                            a {
+                                display: block;
+                                background-color: $blue02;
+                                color: #fff;
+                                border-radius: 4px;
+                                text-align: center;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                    .head {
+                        font-size: 2.4rem;
+                        margin-top: 35px;
+                    }
+                    table {
+                        width: 100%;
+                        thead {
+                            tr {
+                                @include flex;
+                                @include sb;
+                                @include stretch;
+                                height: auto !important;
+                                th {
+                                    border-bottom: 1px solid $gray;
+                                    width: 100%;
+                                    padding: 15px 0;
+                                    color: #fff;
+                                    font-weight: bold;
+                                    display: table-cell;
+                                    text-align: center;
+                                    vertical-align: middle;
+                                    line-height: 2rem;
+                                    font-weight: normal;
+                                    border-right: 1px solid #fff;
+                                    height: auto !important;
+                                    &:last-child {
+                                        border-left: none;
+                                    }
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                @include flex;
+                                height: auto !important;
+                                th {
+                                    width: 100%;
+                                    display: block;
+                                    padding: 15px;
+                                    border-bottom: 1px solid $gray;
+                                    font-weight: bold;
+                                    text-align: left;
+                                    line-height: 2rem;
+                                    height: auto !important;
+                                }
+                                td {
+                                    width: 100%;
+                                    display: block;
+                                    padding: 15px;
+                                    border-bottom: 1px solid $gray;
+                                    background-color: #fff;
+                                    line-height: 3rem;
+                                    height: auto !important;
+                                }
+                            }
+                        }
+                    }
+                    .menu {
+                        .acordion-head {
+                            @include flex;
+                            @include wrap;
+                            padding: 30px 20px;
+                            margin-top: 20px;
+                            background-color: $blue03;
+                            padding-right: 60px;
+                            position: relative;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                            &::after {
+                                content: '+';
+                                position: absolute;
+                                right: 20px;
+                                font-size: 2rem;
+                                top: calc(50% - 15px);
+                            }
+                            &.shown {
+                                &::after {
+                                    content: '-';
+                                }
+                            }
+                            .checkbox,
+                            .title,
+                            .id {
+                                margin-top: auto;
+                                margin-bottom: auto;
+                                font-size: 2rem;
+                            }
+                            .title {
+                                margin-left: 30px;
+                            }
+                            .id {
+                                margin-left: auto;
+                            }
+                        }
+                    }
+                    .map {
+                        .text {
+                            font-size: 1.6rem;
+                            margin-top: 30px;
+                        }
+                        .map-wrap {
+                            margin-top: 30px;
+                        }
+                    }
+                    .target,
+                    .cancel {
+                        ul {
+                            margin-top: 30px;
+                            padding-left: 20px;
+                            li {
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.pickup {
+            padding-bottom: 100px;
+            .head {
+                margin-top: 80px;
+            }
+            .swiper-container-wrapper {
+                position: relative;
+                @include post-slide;
+                .pager {
+                    .swiper-button-prev,
+                    .swiper-button-next {
+                        width: 44px;
+                        background-image: none;
+                    }
+                    .swiper-button-prev {
+                        left: 0;
+                    }
+                    .swiper-button-next {
+                        right: 0;
+                    }
+                }
             }
         }
     }

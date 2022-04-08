@@ -1,4 +1,4 @@
-main.newers-guide {
+main.recruit {
     .section-content {
         .inner {
             @include inner;
@@ -15,6 +15,73 @@ main.newers-guide {
         &.page-head {
             background-image: url(assets/img/page-head-recruit.jpg);
         }
-        .contents {}
+        &.contents {
+            padding-bottom: 80px;
+            >.inner {
+                >.head {
+                    margin-top: 60px;
+                }
+                >.text {
+                    margin-top: 60px;
+                    text-align: center;
+                }
+                .row {
+                    margin-top: 100px;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                    @media screen and (min-width: $tablet) {}
+                    &.primary {
+                        margin-top: 10px;
+                    }
+                    &.secondary {
+                        @include reverce;
+                    }
+                    .col {
+                        margin-top: 20px;
+                        padding-right: 20px;
+                        padding-left: 20px;
+                        .img {
+                            img {
+                                @include img;
+                            }
+                        }
+                        .head {
+                            font-size: 1.8rem;
+                        }
+                        .text {
+                            font-size: 1.6rem;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                table {
+                    width: 100%;
+                    border-top: 1px solid $gray;
+                    margin-top: 40px;
+                    tr {
+                        border-bottom: 1px solid $gray;
+                        th {
+                            padding: 20px;
+                            font-size: 1.6rem;
+                            font-weight: normal;
+                            background-color: $blue03;
+                        }
+                        td {
+                            padding: 20px;
+                        }
+                    }
+                }
+                .button {
+                    @include btn;
+                    @include gradient;
+                    max-width: 340px;
+                    color: #fff;
+                    padding: 20px;
+                    border-radius: 50px;
+                    font-size: 1.8rem;
+                    margin-top: 40px;
+                }
+            }
+        }
     }
 }

@@ -27,6 +27,7 @@
           <div class="area">ヨーロッパ(エリア) / イタリア(国) / ミラノ(地域)</div>
           <div class="company-name">日本トラベルコーディネート株式会社</div>
           <div class="theme-category">持続可能な社会を創る旅(テーマ) / すべての人に健康と福祉を(カテゴリー)</div>
+          <div class="theme-category">テーマ名（最大2個） / カテゴリ名が入る、カテゴリ名が入る、カテゴリ名が入る</div>
           <dl>
             <dt>ツアー番号</dt>
             <dt>00000A</dt>

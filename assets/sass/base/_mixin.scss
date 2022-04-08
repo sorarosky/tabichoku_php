@@ -723,6 +723,7 @@ $blue03: #D8F5FA;
 }
 
 @mixin post-slide {
+    overflow: hidden;
     position: relative;
     .swiper-slide {
         margin-top: 20px;
@@ -794,6 +795,9 @@ $blue03: #D8F5FA;
         .swiper-button-next {
             width: 44px;
             background-image: none;
+            &::after {
+                content: '';
+            }
         }
         .swiper-button-prev {
             left: 0;

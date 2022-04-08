@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_2588" data-name="長方形 2588" width="120" height="120" transform="translate(220 2848)" fill="rgba(255,255,255,0)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3dcde6"/>
+      <stop offset="1" stop-color="#68dcb6"/>
+    </linearGradient>
+  </defs>
+  <g id="hikouki" transform="translate(-220 -2848)" clip-path="url(#clip-path)">
+    <g id="hikouki-2" data-name="hikouki" transform="translate(233 2901.943) rotate(-20)">
+      <path id="パス_9259" data-name="パス 9259" d="M79.682,140.059c-1.118-1.229-3.135-1.539-8.073-1.539H16.927L6.791,124.845a1.969,1.969,0,0,0-1.369-.767H.835c-.439,0-.658.452-.486,1.007l4.163,13.434H1.83c-2.242,0-2.466,3.69-.449,5.224s19.746,8.608,22.212,8.608H35.813L26.686,166.94c-.256.411-.108.746.325.746h5.942a2.551,2.551,0,0,0,1.426-.548L51.6,152.351H71.385c6.73,0,13.238-3.073,13.238-6.761C84.623,143.746,80.806,141.288,79.682,140.059Z" transform="translate(0.002 -124.078)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

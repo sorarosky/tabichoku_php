@@ -60,33 +60,35 @@
     </section>
     <section class="section-content merit">
       <div class="inner">
+        <div class="head">たびチョクで旅を計画するメリット</div>
+        <div class="sub-head">たびチョクで旅プランを立てるメリットは全部で3つ！</div>
         <div class="row">
-          <div class="col col-12">
+          <div class="col col-12 col-md-4">
             <div class="inner">
               <div class="head">POINT <span>01</span></div>
-              <div class="head">パック旅行ではできない<br>自己成長や事業成果の追求</div>
+              <div class="sub-head">パック旅行ではできない<br>自己成長や事業成果の追求</div>
               <div class="img">
-                <img src="/assets/img/aout-point01.svg" alt="">
+                <img src="/assets/img/about-point01.svg" alt="">
               </div>
               <div class="text">豊富な知見やノウハウ、高い手配力を持つグローバルパートナーとの協働によって、旅の理想形をリスクを最小限に抑えて実現できるネットワークがあります</div>
             </div>
           </div>
-          <div class="col col-12">
+          <div class="col col-12 col-md-4">
             <div class="inner">
               <div class="head">POINT <span>02</span></div>
-              <div class="head">新たな価値や魅力を発見できる<br>旅行素材のネット予約</div>
+              <div class="sub-head">新たな価値や魅力を発見できる<br>旅行素材のネット予約</div>
               <div class="img">
-                <img src="/assets/img/aout-point02.svg" alt="">
+                <img src="/assets/img/about-point02.svg" alt="">
               </div>
               <div class="text">専門性の高い現地のプロが持ち寄った産地直販プラットフォームならではの特別感があり、秀逸な素材を中間組織を介せずダイレクトにご購入いただけます。</div>
             </div>
           </div>
-          <div class="col col-12">
+          <div class="col col-12 col-md-4">
             <div class="inner">
               <div class="head">POINT <span>03</span></div>
-              <div class="head">メール通信による安心・確実な手配とコーディネート</div>
+              <div class="sub-head">メール通信による安心・確実な手配とコーディネート</div>
               <div class="img">
-                <img src="/assets/img/aout-point03.svg" alt="">
+                <img src="/assets/img/about-point03.svg" alt="">
               </div>
               <div class="text">専門性の高い現地のプロが持ち寄った産地直販プラットフォームならではの特別感があり、秀逸な素材を中間組織を介せずダイレクトにご購入いただけます。</div>
             </div>
@@ -98,7 +100,8 @@
       <div class="inner">
         <div class="head">はじめての方</div>
         <div class="img">
-          <img src="" alt="">
+          <img src="/assets/img/about03.jpg" alt="">
+          <div class="head"><span>代表</span>　松村 宏一</div>
         </div>
         <div class="text">
           大手旅行会社36年間の在職中、国内・海外旅行、インバウンド、MICE、SDGs等を企画し、在外支店で勤務した経験から、旅行業もデジタルとマニュアルの両輪を使えば閉ざされたドアが解放され、お客様が主導する新しい旅行スタイルが可能ではないかと思い、2021年に旅行業を開業し、2022年より「たびチョク」の運営をスタートしました。<br>
@@ -113,56 +116,56 @@
         <a href="" class="button">もっと見る</a>
       </div>
     </section>
-    <section class="section-content available">
+    <section class="section-content available bg-color">
       <div class="inner">
         <div class="head">たびチョクで出来ること</div>
-        <div class="img">
-          <img src="" alt="">
+        <div class="sub-head">
+        お客様が希望する旅をカスタムメイドできる魅力が満載！
         </div>
         <div class="row">
-          <div class="col col-12 col-6">
+          <div class="col col-12 col-md-6">
               <div class="inner products">
                 <div class="head">着地型商品</div>
                 <div class="text">旅行先の現地会社が企画・主催・販売する旅行商品やプログラム。現地集合、現地解散の市内観光や空港送迎などがある。他のお客様と相乗りする混乗ツアーと専用車を使った貸切ツアーに分かれる。</div>
               </div>
           </div>
-          <div class="col col-12 col-6">
+          <div class="col col-12 col-md-6">
               <div class="inner tour">
                 <div class="head">プライベートツアー</div>
                 <div class="text">他のお客様とは一緒に行動しないご自分だけの貸切ツアー。出発時刻や訪問個所などもご希望に沿って調整でき、自由度の高い旅行を楽しめる。ただし、混乗ツアーに比べて割高になる。</div>
               </div>
           </div>
-          <div class="col col-12 col-6">
+          <div class="col col-12 col-md-6">
               <div class="inner private">
-                <div class="head">プライベー法人旅行・MICEトツアー</div>
+                <div class="head">法人旅行・MICEトツアー</div>
                 <div class="text">MICEとは、Meeting、Incentive Travel、Convention、Exhibition/Eventの頭文字を取った法人の行うビジネスイベントを意味する。その他、法人旅行には社員旅行、視察旅行、教育旅行等が含まれる。</div>
               </div>
           </div>
-          <div class="col col-12 col-6">
+          <div class="col col-12 col-md-6">
               <div class="inner codinator">
                 <div class="head">現地コーディネーター</div>
                 <div class="text">お客様と現地との架け橋となって、訪問先のプラニングやアドバイス、アポイント取り、スケジュール作成を行うコーディネーター。自身で通訳やサポートを行うこともある。</div>
               </div>
           </div>
-          <div class="col col-12 col-6">
+          <div class="col col-12 col-md-6">
               <div class="inner support">
                 <div class="head">取材撮影サポート</div>
                 <div class="text">TV/雑誌などのメディアからの依頼で、スタッフと同行し、現地の取材をサポートしたり、通訳を行う。撮影許可を取ったり、カメラ撮影の補助を行い、撮影機材の運搬を手伝う。</div>
               </div>
           </div>
-          <div class="col col-12 col-6">
+          <div class="col col-12 col-md-6">
               <div class="inner wedding">
                 <div class="head">ウエディング</div>
                 <div class="text">挙式場、貸衣装、ブーケ&ブートニア、新婦ヘア&メイク、記念撮影、パーティー、送迎車など人生の晴れの舞台を華やかに演出する。プラニングからアテンドまでトータルでプロデュースする。</div>
               </div>
           </div>
-          <div class="col col-12 col-6">
+          <div class="col col-12 col-md-6">
               <div class="inner study">
                 <div class="head">留学・自己啓発</div>
                 <div class="text">高校生、大学生、社会人が現地校に通い、その宿舎やホームステイなどをアレンジする。長期滞在中でも生活に不安がないように学業以外でもサポートすることもある。査証のお手伝いも行う。</div>
               </div>
           </div>
-          <div class="col col-12 col-6">
+          <div class="col col-12 col-md-6">
               <div class="inner sdgs">
                 <div class="head">SDGs・視察</div>
                 <div class="text">国連が定めた17の持続可能な開発目標SDGsのテーマに沿って海外の事例を学んだり、実際に海外で実践や体験できることも多い。視察は相手先の受入条件との調整が難しい。調整には費用や時間がかかる。</div>

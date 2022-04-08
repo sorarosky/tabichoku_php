@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3dcde6"/>
+      <stop offset="1" stop-color="#68dcb6"/>
+    </linearGradient>
+  </defs>
+  <g id="camera" transform="translate(18 25)">
+    <path id="パス_9255" data-name="パス 9255" d="M14.429,70.25a13.534,13.534,0,1,0-9.573-3.964A13.513,13.513,0,0,0,14.429,70.25Zm-4.07-17.61a5.758,5.758,0,1,1-1.686,4.073A5.73,5.73,0,0,1,10.358,52.639Z" transform="translate(-0.744 -43.172)" fill="url(#linear-gradient)"/>
+    <rect id="長方形_3100" data-name="長方形 3100" width="120" height="120" transform="translate(-18 -25)" fill="rgba(255,255,255,0)"/>
+    <path id="パス_9256" data-name="パス 9256" d="M209.788,43.172a13.539,13.539,0,1,0,9.573,3.967A13.52,13.52,0,0,0,209.788,43.172Zm4.07,17.61a5.752,5.752,0,1,1,1.689-4.07A5.721,5.721,0,0,1,213.858,60.782Z" transform="translate(-163.814 -43.172)" fill="url(#linear-gradient)"/>
+    <path id="パス_9257" data-name="パス 9257" d="M51.741,228.156H7.6a7.6,7.6,0,0,0-7.6,7.6v24.588a7.592,7.592,0,0,0,7.6,7.6H51.741a7.592,7.592,0,0,0,7.6-7.6V235.751a7.6,7.6,0,0,0-7.6-7.6Z" transform="translate(0 -197.582)" fill="url(#linear-gradient)"/>
+    <path id="パス_9258" data-name="パス 9258" d="M401.664,235.918a6.124,6.124,0,0,0-6.069-.158l-12.19,6.5v23.054l12.19,6.5a6.155,6.155,0,0,0,9.065-5.436V241.2A6.147,6.147,0,0,0,401.664,235.918Z" transform="translate(-320.036 -203.321)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

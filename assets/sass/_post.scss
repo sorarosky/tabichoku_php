@@ -1,5 +1,6 @@
 main.information,
 main.information-single {
+    width: 100%;
     .section-content {
         padding-bottom: 100px;
         .section-head {
@@ -22,8 +23,37 @@ main.information-single {
                 @include flex;
                 @include wrap;
                 margin-top: 50px;
-                .category {
-                    margin-left: auto;
+                .head {
+                    margin-left: 10px;
+                }
+                .select-wrap {
+                    position: relative;
+                    max-width: 480px;
+                    border-radius: 4px;
+                    margin-left: 10px;
+                    &::after {
+                        font-size: 1rem;
+                        position: absolute;
+                        right: 10px;
+                        top: calc(50% - 13px);
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: "\f078";
+                    }
+                    select {
+                        @include form_input;
+                        background-color: #fff;
+                        text-overflow: ellipsis;
+                        outline: none;
+                        background-image: none;
+                        box-shadow: none;
+                        -webkit-appearance: none;
+                        appearance: none;
+                        padding-right: 20px;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
                 }
             }
             .posts {
@@ -42,10 +72,11 @@ main.information-single {
                     border: 1px solid $blue;
                     color: $blue;
                     padding: 0 40px;
-                    margin: 0 20px;
+                    margin: 4px 20px;
+                    line-height: 18px;
                 }
                 .title {
-                    font-size: 1.2rem;
+                    font-size: 1.6rem;
                     color: $blue02;
                 }
             }
@@ -66,9 +97,9 @@ main.information-single {
                         border: 1px solid $blue;
                         padding: 0 10px;
                         margin: 0 5px;
+                        text-decoration: none;
                     }
                     .active {
-                        border: none;
                         background-color: $blue;
                         color: #fff;
                     }

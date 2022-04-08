@@ -23,7 +23,7 @@
         <div class="row">
           <div class="col col-12 col-md-6">
             <div class="img">
-              <img src="" alt="">
+              <img src="assets/img/thumb.jpg" alt="">
             </div>
           </div>
           <div class="col col-12 col-md-6">
@@ -34,7 +34,7 @@
         <div class="row secondary">
           <div class="col col-12 col-md-6">
             <div class="img">
-              <img src="" alt="">
+            <img src="assets/img/thumb.jpg" alt="">
             </div>
           </div>
           <div class="col col-12 col-md-6">
