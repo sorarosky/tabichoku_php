@@ -14,6 +14,7 @@ main.home {
                 min-height: 530px;
                 z-index: 9997;
                 .inner {
+                    width: 100%;
                     margin: auto;
                     max-width: 335px;
                     @media screen and (min-width: $tablet) {
@@ -133,6 +134,18 @@ main.home {
                     top: 0;
                     left: 0;
                 }
+                .head {
+                    font-size: 2.4rem;
+                    span {
+                        font-size: 3.2rem;
+                    }
+                    @media screen and (min-width: $tablet) {
+                        font-size: 4rem;
+                        span {
+                            font-size: 4.8rem;
+                        }
+                    }
+                }
             }
         }
         &.recommended-content {
@@ -217,12 +230,17 @@ main.home {
                 .button {
                     @include gradient;
                     color: #fff;
+                    z-index: 9999;
                 }
             }
         }
         &.travel-content {
-            padding-top: 40px;
+            padding-top: 30px;
             padding-bottom: 60px;
+            @media screen and (min-width: $tablet) {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
             >.inner {
                 @include inner;
                 @include header-module;
@@ -230,15 +248,16 @@ main.home {
                 max-width: 1200px;
                 .form {
                     margin-top: 20px;
+                    @media screen and (min-width: $tablet) {
+                        margin-top: 40px;
+                    }
                 }
                 .inner {
                     max-width: 1000px;
                     margin: 0 auto;
                 }
             }
-
             .area {
-
                 .search-region {
                     overflow-x: scroll;
                     .tabs {
@@ -257,23 +276,19 @@ main.home {
                             &[data-is-active=true] {
                                 color: #fff;
                                 background-color: $blue02;
-                            } 
+                            }
                         }
                     }
                 }
-
                 .search-country {
                     position: relative;
-
                     &::before {
                         content: "";
-                        
                         @media screen and (min-width: $tablet) {
                             display: block;
                             padding-bottom: 40.33%;
                         }
                     }
-                    
                     .search-country-wrap {
                         top: 0;
                         left: 0;
@@ -288,11 +303,9 @@ main.home {
                         @media screen and (min-width: $tablet) {
                             position: absolute;
                         }
-
                         &[data-is-active=true] {
                             display: flex;
                         }
-
                         .country-list {
                             list-style: none;
                             display: flex;
@@ -311,23 +324,23 @@ main.home {
                                     margin-top: 0px;
                                 }
                             }
-    
                             a {
                                 color: initial;
                                 text-decoration: none;
                             }
                         }
                     }
-                    
-                    
                 }
-                
             }
         }
         &.consultation {
             @include gradient;
-            padding-top: 40px;
+            padding-top: 30px;
             padding-bottom: 60px;
+            @media screen and (min-width: $tablet) {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
             .inner {
                 @include inner;
                 @include header-module;
@@ -361,6 +374,20 @@ main.home {
                                 textarea {
                                     @include form_input;
                                 }
+                                input[type="email"] {
+                                    padding-left: 40px;
+                                    background-image: url(assets/img/mail.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: 20px;
+                                    background-position: left 10px center;
+                                }
+                                input[type="text"] {
+                                    padding-left: 40px;
+                                    background-image: url(assets/img/phone.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: 20px;
+                                    background-position: left 10px center;
+                                }
                             }
                         }
                     }
@@ -373,6 +400,9 @@ main.home {
                     max-width: 240px;
                     margin: 0 auto;
                     margin-top: 20px;
+                    @media screen and (min-width: $tablet) {
+                        max-width: 100%;
+                    }
                     a {
                         padding: 0 10px;
                         color: #fff;
@@ -381,6 +411,9 @@ main.home {
                 .privacy {
                     margin-top: 30px;
                     color: #fff;
+                    @media screen and (min-width: $tablet) {
+                        text-align: center;
+                    }
                     input {
                         transform: scale(1.5);
                         margin-right: 10px;
@@ -454,10 +487,15 @@ main.home {
         }
         &.who-we-are {
             padding-bottom: 13%;
+            @media screen and (min-width: $tablet) {
+                padding-top: 60px;
+            }
             .wrap {
                 @include inner;
+                padding: 0;
+                max-width: 1400px;
                 .img {
-                    @media screen and (min-width: $tablet) {
+                    @media screen and (min-width: $tablet_wide) {
                         position: absolute;
                         right: 0;
                         width: calc(700px + (50vw - 500px));
@@ -472,8 +510,11 @@ main.home {
                     padding-top: 40px;
                     margin-left: 0;
                     &.primary {
-                        @media screen and (min-width: $tablet) {
+                        @media screen and (min-width: $tablet_wide) {
                             width: 300px;
+                        }
+                        @media screen and (min-width: $pc) {
+                            width: 500px;
                         }
                     }
                     .navi {
@@ -484,6 +525,9 @@ main.home {
                                 a {
                                     @include btn;
                                     border-radius: 50px;
+                                    max-width: 360px;
+                                    margin: 0 auto;
+                                    padding: 10px 0;
                                 }
                                 &.primary {
                                     a {
@@ -602,15 +646,18 @@ main.home {
                 @include inner;
                 @include header-module;
                 .post {
+                    margin: 0 auto;
                     margin-top: 20px;
                     @media screen and (min-width: $tablet) {
                         @include flex;
                         @include wrap;
+                        width: 100%;
+                        max-width: 900px;
                     }
                     .info {
-                        width: 100%;
                         @include flex;
                         @include wrap;
+                        width: 100%;
                         @media screen and (min-width: $tablet) {
                             width: initial;
                             margin-right: 10px;

@@ -1,12 +1,12 @@
 <?php include 'header.php';?>
 
 <div class="contents-wrap">
-  <main class="home">
+  <main class="main home">
     <section class="section-content kv">
       <div class="orverlay">
         <div class="inner">
-          <div class="copy">旅で成長、世界を知ろう</div>
-          <div class="text">新しい海外旅行を実現「たびチョク」は現地コーディネーターとカスタムメイドの旅行を提案します。</div>
+          <div class="copy">新しい旅行スタイルの実現</div>
+          <div class="text">現地のプロが、あなたと一緒に全力で交渉し、提案します。</div>
           <div class="form">
             <div class="head">フリーワード検索</div>
             <div class="submit-wrap">
@@ -104,6 +104,14 @@
                 <div class="num"><i class="far fa-eye"></i> <span>00000</span></div>
               </div>
             </div>
+            <div class="pager">
+              <div class="swiper-button-prev">
+                <img src="/assets/img/arrow-left.svg" alt="">
+              </div>
+              <div class="swiper-button-next">
+                <img src="/assets/img/arrow-right.svg" alt="">
+              </div>
+            </div>
             <a href="" class="button">もっと見る</a>
           </div>
         </div>
@@ -175,6 +183,14 @@
                 <div class="title"> タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。</div>
                 <div class="agent"><i class="fas fa-user"></i> <span>エージェント名が入る。エージェント名が入る。</span></div>
                 <div class="num"><i class="far fa-eye"></i> <span>00000</span></div>
+              </div>
+            </div>
+            <div class="pager">
+              <div class="swiper-button-prev">
+                <img src="/assets/img/arrow-color-left.svg" alt="">
+              </div>
+              <div class="swiper-button-next">
+                <img src="/assets/img/arrow-color-right.svg" alt="">
               </div>
             </div>
             <a href="" class="button">もっと見る</a>
@@ -251,6 +267,14 @@
                 <div class="tags">列車・飛行機・船舶の貸切,美術館・観光施設の特別入場,日本語通訳ガイド,日本語アシスタント</div>
               </div>
             </div>
+            <div class="pager">
+              <div class="swiper-button-prev">
+                <img src="/assets/img/arrow-color-left.svg" alt="">
+              </div>
+              <div class="swiper-button-next">
+                <img src="/assets/img/arrow-color-right.svg" alt="">
+              </div>
+            </div>
             <a href="" class="button">もっと見る</a>
           </div>
         </div>
@@ -301,6 +325,62 @@
         <div class="theme">
           <div class="head inner">テーマから探す</div>
           <div class="acordion-head js-acordion-head inner">持続可能な社会を創る旅</div>
+          <ul class="row acordion-content inner">
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+          </ul>
+          <div class="acordion-head js-acordion-head inner">観光・送迎</div>
+          <ul class="row acordion-content inner">
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+          </ul>
+          <div class="acordion-head js-acordion-head inner">視察・見学</div>
+          <ul class="row acordion-content inner">
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+          </ul>
+          <div class="acordion-head js-acordion-head inner">趣味・教養</div>
+          <ul class="row acordion-content inner">
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+          </ul>
+          <div class="acordion-head js-acordion-head inner">教育・研修</div>
+          <ul class="row acordion-content inner">
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+          </ul>
+          <div class="acordion-head js-acordion-head inner">ホテル</div>
+          <ul class="row acordion-content inner">
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+          </ul>
+          <div class="acordion-head js-acordion-head inner">レストラン・バー</div>
+          <ul class="row acordion-content inner">
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+          </ul>
+          <div class="acordion-head js-acordion-head inner">交通・乗物</div>
+          <ul class="row acordion-content inner">
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+            <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
+          </ul>
+          <div class="acordion-head js-acordion-head inner">グローバルパートナー</div>
           <ul class="row acordion-content inner">
             <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
             <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
@@ -531,7 +611,7 @@
                   <li class="">タグ</li>
                   <li class="">ハッシュタグハッシュタグハッシュタグ</li>
                 </ul>
-                <div class="num">00000</div>
+                <div class="num"><i class="far fa-eye"></i>  00000</div>
               </div>
               <div class="swiper-slide">
                 <div class="img"><div class="country-name">フランス</div>
@@ -545,7 +625,7 @@
                   <li class="">タグ</li>
                   <li class="">ハッシュタグハッシュタグハッシュタグ</li>
                 </ul>
-                <div class="num">00000</div>
+                <div class="num"><i class="far fa-eye"></i>  00000</div>
               </div>
               <div class="swiper-slide">
                 <div class="img"><div class="country-name">フランス</div>
@@ -559,7 +639,7 @@
                   <li class="">タグ</li>
                   <li class="">ハッシュタグハッシュタグハッシュタグ</li>
                 </ul>
-                <div class="num">00000</div>
+                <div class="num"><i class="far fa-eye"></i>  00000</div>
               </div>
               <div class="swiper-slide">
                 <div class="img"><div class="country-name">フランス</div>
@@ -573,7 +653,7 @@
                   <li class="">タグ</li>
                   <li class="">ハッシュタグハッシュタグハッシュタグ</li>
                 </ul>
-                <div class="num">00000</div>
+                <div class="num"><i class="far fa-eye"></i>  00000</div>
               </div>
               <div class="swiper-slide">
                 <div class="img"><div class="country-name">フランス</div>
@@ -587,7 +667,7 @@
                   <li class="">タグ</li>
                   <li class="">ハッシュタグハッシュタグハッシュタグ</li>
                 </ul>
-                <div class="num">00000</div>
+                <div class="num"><i class="far fa-eye"></i>  00000</div>
               </div>
               <div class="swiper-slide">
                 <div class="img"><div class="country-name">フランス</div>
@@ -601,7 +681,15 @@
                   <li class="">タグ</li>
                   <li class="">ハッシュタグハッシュタグハッシュタグ</li>
                 </ul>
-                <div class="num">00000</div>
+                <div class="num"><i class="far fa-eye"></i>  00000</div>
+              </div>
+            </div>
+            <div class="pager">
+              <div class="swiper-button-prev">
+                <img src="/assets/img/arrow-color-left.svg" alt="">
+              </div>
+              <div class="swiper-button-next">
+                <img src="/assets/img/arrow-color-right.svg" alt="">
               </div>
             </div>
             <a href="" class="button">もっと見る</a>

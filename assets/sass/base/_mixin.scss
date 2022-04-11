@@ -159,12 +159,17 @@ $blue03: #D8F5FA;
 
 @mixin header-module {
     >.head {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
+        line-height: 2.8rem;
         text-align: center;
         color: $green;
         font-weight: bold;
         position: relative;
         z-index: 2;
+        @media screen and (min-width: $tablet) {
+            font-size: 4rem;
+            line-height: 4rem;
+        }
         span {
             font-size: 3.2rem;
         }
@@ -174,12 +179,16 @@ $blue03: #D8F5FA;
         font-size: 1.6rem;
         position: relative;
         z-index: 2;
+        margin-top: 10px;
     }
     >.text {
         margin-top: 20px;
         text-align: center;
         position: relative;
         z-index: 2;
+        @media screen and (min-width: $tablet) {
+            font-size: 1.6rem;
+        }
     }
 }
 
@@ -276,6 +285,9 @@ $blue03: #D8F5FA;
             border-radius: 10px;
             position: relative;
             margin-top: 20px;
+            &:hover {
+                cursor: pointer;
+            }
             &::after {
                 content: '+';
                 position: absolute;
@@ -354,6 +366,12 @@ $blue03: #D8F5FA;
             list-style-type: none;
             li {
                 margin-right: 10px;
+                a {
+                    padding: 0 2px;
+                    background-color: $gray;
+                    color: $black;
+                    text-decoration: none;
+                }
             }
         }
         .active {
@@ -381,8 +399,8 @@ $blue03: #D8F5FA;
 @mixin top-section {
     .inner {
         @include inner;
-        padding-top: 40px;
         padding-right: 0;
+        padding-top: 60px;
         padding-bottom: 60px;
         position: relative;
         z-index: 1;
@@ -436,6 +454,29 @@ $blue03: #D8F5FA;
                 i {
                     margin-right: 5px;
                 }
+            }
+        }
+        .pager {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 60px;
+            margin-bottom: -20px;
+            display: block;
+            position: relative;
+            .swiper-button-prev,
+            .swiper-button-next {
+                width: 44px;
+                background-image: none;
+                &::after {
+                    content: '';
+                }
+            }
+            .swiper-button-prev {
+                left: 0;
+            }
+            .swiper-button-next {
+                right: 0;
             }
         }
         .button {

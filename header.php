@@ -38,9 +38,6 @@
             <nav class="g-navi primary sp-pc pc">
                 <ul class="links">
                     <li class="link">
-                        <a href="">はじめての方</a>
-                    </li>
-                    <li class="link">
                         <a href="">旅を探す</a>
                     </li>
                     <li class="link">
