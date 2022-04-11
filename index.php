@@ -1,6 +1,6 @@
 <nav>
   <ul class="links">
-    <li class="link"><a href="home.php">*TOP home.php</a></li>
+    <li class="link"><a href="home.php">TOP home.php</a></li>
     <li class="link"><a href="information.php">お知らせ information.php</a></li>
     <li><a href="about.php">たびチョクについて about.php</a></li>
     <li class="link"><a href="information-category.php">お知らせ – カテゴリトップ information-category.php</a></li>
@@ -24,7 +24,7 @@
     <li class="link"><a href="plan-etimate.php">日程・見積をきく plan-etimate.php</a></li>
     <li class="link"><a href="travel-content.php">旅行コンテンツ(一覧) travel-content.php</a></li>
     <li class="link"><a href="travel-content-category.php">旅行コンテンツ – カテゴリ／検索トップ travel-content-category</a></li>
-    <li class="link"><a href="travel-content-post.php">旅行コンテンツ – 詳細 travel-content-post.php</a></li>
+    <li class="link"><a href="travel-content-post.php">旅行コンテンツ – 詳細 travel-content-post.php（サイドバー調整中）</a></li>
     <li class="link"><a href="travel-content-estimate-form.php">旅行コンテンツ – 空き状況・料金を聞く travel-content-estimate-form.php</a></li>
     <li class="link"><a href="travel-content-estimate-form-conf.php">旅行コンテンツ – 確認画面 travel-content-estimate-form-conf.php</a></li>
     <li class="link"><a href="travel-content-estimate-form-thx.php">旅行コンテンツ – 完了画面 travel-content-estimate-form-thx.php</a></li>
@@ -45,13 +45,10 @@
     <li class="link"><a href="password-mail.php">ログイン画面／新規作成 – パスワード再設定メール送信完了 password-mail.php</a></li>
     <li class="link"><a href="password-reset-form.php">ログイン画面／新規作成 – パスワード再設定 password-reset-form.php</a></li>
     <li class="link"><a href="password-reset.php">ログイン画面／新規作成 – パスワード再設定完了 password-reset.php</a></li>
-    
     <li class="link"><a href="condition.php">旅行業約款・条件書 condition.php</a></li>
     <li class="link"><a href="law.php">特定商取引に基づく表記 law.php</a></li>
     <li class="link"><a href="terms.php">利用規約 terms.php</a></li>
     <li class="link"><a href="privacy.php">プライバシーポリシー privacy.php</a></li>
-    
-    
     <li class="link"><a href="dashboard.php">マイページ ダッシュボード dashboard.php</a></li>
     <li class="link"><a href="mypage-tour-list.php">マイページ あなたの旅行情報  mypage-tour-list.php</a></li>
     <li class="link"><a href="mypage-profile.php">マイページ 会員情報 mypage-profile.php</a></li>
