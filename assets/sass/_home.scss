@@ -260,11 +260,16 @@ main.home {
             .area {
                 .search-region {
                     overflow-x: scroll;
+                    scrollbar-width: none;
+                    -ms-overflow-style: none;
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
                     .tabs {
                         list-style: none;
                         display: flex;
-                        border-bottom: 2px solid $blue02;
                         .tab {
+                            border-bottom: 2px solid $blue02;
                             flex-shrink: 0;
                             cursor: pointer;
                             font-size: 1.6rem;
