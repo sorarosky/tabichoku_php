@@ -51,7 +51,7 @@
 	</ul>
 </div>
 
-<div class="search-country-wrap" data-region-name="hawai" data-is-active="false">
+<div class="search-country-wrap" data-region-name="hawaii" data-is-active="false">
 	<ul class="country-list">
 		<li class="country-list-item"><a href="">ハワイ</a></li>
 		<li class="country-list-item"><a href="">ハワイ</a></li>
@@ -369,7 +369,7 @@
 	</ul>
 </div>
 
-<div class="search-country-wrap" data-region-name="east-asia" data-is-active="false">
+<div class="search-country-wrap" data-region-name="west-asia" data-is-active="false">
 	<ul class="country-list">
 		<li class="country-list-item"><a href="">中東</a></li>
 		<li class="country-list-item"><a href="">中東</a></li>

@@ -298,8 +298,16 @@
         <div class="area">
             <div class="head inner">エリアから探す</div>
             <div class="map-wrap inner">
-                <div class="map">
-                    <img src="assets/img/map.svg" alt="">
+                <div class="map" data-active-reagion="south-america">
+                  <div class="map-reagion europe" data-region-name="europe" data-is-active="false">ヨーロッパ</div>
+                  <div class="map-reagion africa" data-region-name="africa" data-is-active="false">アフリカ</div>
+                  <div class="map-reagion west-asia" data-region-name="west-asia" data-is-active="false">中東</div>
+                  <div class="map-reagion asia" data-region-name="asia" data-is-active="false">アジア</div>
+                  <div class="map-reagion japan" data-region-name="japan" data-is-active="false">日本</div>
+                  <div class="map-reagion oceania" data-region-name="oceania" data-is-active="false">大洋州</div>
+                  <div class="map-reagion hawaii" data-region-name="hawaii" data-is-active="false">ハワイ</div>
+                  <div class="map-reagion north-america" data-region-name="north-america" data-is-active="false">北米</div>
+                  <div class="map-reagion south-america" data-region-name="south-america" data-is-active="true">中南米</div>
                 </div>
             </div>
 
@@ -307,13 +315,13 @@
               <div class="search-region">
                 <ul class="tabs">
                     <li class="tab" data-region-name="japan" data-is-active="false">日本</li>
-                    <li class="tab" data-region-name="hawai" data-is-active="false">ハワイ</li>
+                    <li class="tab" data-region-name="hawaii" data-is-active="false">ハワイ</li>
                     <li class="tab" data-region-name="north-america" data-is-active="false">北米</li>
                     <li class="tab" data-region-name="south-america" data-is-active="true">中南米</li>
                     <li class="tab" data-region-name="asia" data-is-active="false">アジア</li>
                     <li class="tab" data-region-name="oceania" data-is-active="false">大洋州</li>
                     <li class="tab" data-region-name="europe" data-is-active="false">ヨーロッパ</li>
-                    <li class="tab" data-region-name="east-asia" data-is-active="false">中東</li>
+                    <li class="tab" data-region-name="west-asia" data-is-active="false">中東</li>
                     <li class="tab" data-region-name="africa" data-is-active="false">アフリカ</li>
                 </ul>
               </div>
