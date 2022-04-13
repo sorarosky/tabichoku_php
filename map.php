@@ -97,6 +97,7 @@
                   <a href="">
                     <div class="img">
                       <img src="/assets/img/thumb-square.jpg" alt="">
+                      <div class="new">NEW</div>
                       <div class="info">
                         <div class="num"><i class="far fa-eye"></i> 00000</div>
                         <div class="country-name">国名が入る、国名が入る</div>
@@ -147,6 +148,7 @@
                 <li class="swiper-slide slide0<?php echo $i; ?>">
                   <a href="">
                     <div class="img">
+                    <div class="new">NEW</div>
                       <img src="/assets/img/thumb-square.jpg" alt="">
                       <div class="info">
                         <div class="num"><i class="far fa-eye"></i> 00000</div>

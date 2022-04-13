@@ -17,9 +17,9 @@
             </div>
           </div>
           <ul class="row search-navi">
-            <li class="col col-4"><a href=""><span>エリアから<br>さがす</span></a></li>
-            <li class="col col-4"><a href=""><span>テーマから<br>さがす</span></a></li>
-            <li class="col col-4"><a href=""><span>ハッシュタグから<br>さがす</spa></a></li>
+            <li class="col col-4"><a href="#area"><span>エリアから<br>さがす</span></a></li>
+            <li class="col col-4"><a href="#theme"><span>テーマから<br>さがす</span></a></li>
+            <li class="col col-4"><a href="#hashtag"><span>ハッシュタグから<br>さがす</spa></a></li>
           </ul>
         </div>
       </div>
@@ -295,7 +295,7 @@
           </div>
         </div>
 
-        <div class="area">
+        <div id="area" class="area">
             <div class="head inner">エリアから探す</div>
             <div class="map-wrap inner">
                 <div class="map">
@@ -322,7 +322,7 @@
               </div>
             </div>
         </div>
-        <div class="theme">
+        <div id="theme" class="theme">
           <div class="head inner">テーマから探す</div>
           <div class="acordion-head js-acordion-head inner">持続可能な社会を創る旅</div>
           <ul class="row acordion-content inner">
@@ -388,7 +388,7 @@
             <li class="col col-6"><a href="">貧困をなくそう（000）</a></li>
           </ul>
         </div>
-        <div class="hashtag">
+        <div id="hashtag" class="hashtag">
             <div class="head inner">ハッシュタグから探す</div>
             <div class="hashtag_wrapper inner">
                 <ul class="tags hidden" style="height: 90px;">

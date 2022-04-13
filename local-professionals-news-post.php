@@ -54,7 +54,7 @@
       <section class="section-content pickup">
         <div class="inner">
           <div class="head">PICK UP!</div>
-          <div class="swiper-container-local-professionals-news-pickup-wrapper">
+          <div class="swiper-container-wrapper swiper-container-local-professionals-news-pickup-wrapper">
             <nav class="swiper-container swiper-container-local-professionals-news-pickup">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide slide01">

@@ -2,7 +2,7 @@
 <?php include 'breadcrumb.php';?>
 <div class="contents-wrap">
   <main class="mian information">
-    <section class="section-content">
+    <section class="section-content posts">
       <div class="section-head">たびチョクからのお知らせ</div>
       <div class="inner">
         <div class="head">ALL</div>

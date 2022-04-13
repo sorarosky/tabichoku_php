@@ -2,6 +2,7 @@
   <ul class="links">
     <li class="link"><a href="home.php">TOP home.php</a></li>
     <li class="link"><a href="information.php">お知らせ information.php</a></li>
+    <li class="link"><a href="information.php">お知らせ – 詳細 information-post.php</a></li>
     <li><a href="about.php">たびチョクについて about.php</a></li>
     <li class="link"><a href="information-category.php">お知らせ – カテゴリトップ information-category.php</a></li>
     <li class="link"><a href="information-post.php">お知らせ – 詳細 information-post.php</a></li>
