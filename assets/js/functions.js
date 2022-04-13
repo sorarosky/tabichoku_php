@@ -377,20 +377,51 @@ jQuery(function($) {
 
 
     /* SOF home.php */
-    if ($('.home .section-content .area .tabs .tab').length) {
-        var tabs = $('.home .section-content .area .tabs .tab');
+    if ($('.home .section-content .area .map-reagion').length) {
+        var mapReagions = $('.home .section-content .area .map-reagion');
+        mapReagions.on('click', function() {
+            var isActive = $(this).attr('data-is-active');
+            var regionName = $(this).attr('data-region-name');
+
+            if(isActive == 'false') {
+                var activeMapReagion = $('.home .section-content .area .map-reagion[data-is-active=true]');
+                var activeTab = $('.home .section-content .area .tab[data-is-active=true]');
+                var activeRegionContent = $('.search-country-wrap[data-region-name="'+activeTab.attr('data-region-name')+'"]');
+                var map = $('.home .section-content .area .map');
+                
+                activeTab.attr('data-is-active', 'false');
+                activeMapReagion.attr('data-is-active', 'false');
+                activeRegionContent.attr('data-is-active', 'false');
+                
+                map.attr('data-active-reagion', regionName);
+                $(this).attr('data-is-active', 'true');
+                $('.search-country-wrap[data-region-name="'+regionName+'"]').attr('data-is-active', 'true');
+                $('.home .section-content .area .tab[data-region-name="'+regionName+'"]').attr('data-is-active', 'true');
+            } 
+        });
+        
+    }
+    if ($('.home .section-content .area .tab').length) {
+        var tabs = $('.home .section-content .area .tab');
         tabs.on('click', function() {
             var isActive = $(this).attr('data-is-active');
             var regionName = $(this).attr('data-region-name');
-            if(isActive == 'false') {
 
-                var activeTab = $('.home .section-content .area .tabs .tab[data-is-active=true]');
-                var activeRegion = $('.search-country-wrap[data-region-name="'+activeTab.attr('data-region-name')+'"]');
+            if(isActive == 'false') {
+                var activeMapReagion = $('.home .section-content .area .map-reagion[data-is-active=true]');
+                var activeTab = $('.home .section-content .area .tab[data-is-active=true]');
+                var activeRegionContent = $('.search-country-wrap[data-region-name="'+activeTab.attr('data-region-name')+'"]');
+                var map = $('.home .section-content .area .map');
+
                 activeTab.attr('data-is-active', 'false');
-                activeRegion.attr('data-is-active', 'false');
+                activeMapReagion.attr('data-is-active', 'false');
+                activeRegionContent.attr('data-is-active', 'false');
                 
+                map.attr('data-active-reagion', regionName);
                 $(this).attr('data-is-active', 'true');
                 $('.search-country-wrap[data-region-name="'+regionName+'"]').attr('data-is-active', 'true');
+                $('.home .section-content .area .map-reagion[data-region-name="'+regionName+'"]').attr('data-is-active', 'true');
+
             }
         });
     }

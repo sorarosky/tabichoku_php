@@ -11,7 +11,7 @@
           <p>アフリカ</p>
           <p>3件</p>
         </div>
-        <div class="map-reagion east-asia">
+        <div class="map-reagion west-asia">
           <p>中東</p>
           <p>23件</p>
         </div>
