@@ -258,18 +258,195 @@ main.home {
                 }
             }
             .area {
+                .map {
+                    position: relative;
+                    width: 100%;
+                    max-width: 2000px;
+                    min-width: 800px;
+                    background-image: url('assets/img/map-worldmap-home-blank.svg');
+                    background-position: top 60px center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    &::after {
+                        display: block;
+                        content: "";
+                        background-position: top 60px center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    &.map[data-active-reagion=europe] {
+                        &::after {
+                            background-image: url('assets/img/map-worldmap-home-europe.svg');
+                        }
+                    }
+                    &.map[data-active-reagion=africa] {
+                        &::after {
+                            background-image: url('assets/img/map-worldmap-home-africa.svg');
+                        }
+                    }
+                    &.map[data-active-reagion=west-asia] {
+                        &::after {
+                            background-image: url('assets/img/map-worldmap-home-west-asia.svg');
+                        }
+                    }
+                    &.map[data-active-reagion=asia] {
+                        &::after {
+                            background-image: url('assets/img/map-worldmap-home-asia.svg');
+                        }
+                    }
+                    &.map[data-active-reagion=japan] {
+                        &::after {
+                            background-image: url('assets/img/map-worldmap-home-japan.svg');
+                        }
+                    }
+                    &.map[data-active-reagion=oceania] {
+                        &::after {
+                            background-image: url('assets/img/map-worldmap-home-oceania.svg');
+                        }
+                    }
+                    &.map[data-active-reagion=hawaii] {
+                        &::after {
+                            background-image: url('assets/img/map-worldmap-home-hawaii.svg');
+                        }
+                    }
+                    &.map[data-active-reagion=north-america] {
+                        &::after {
+                            background-image: url('assets/img/map-worldmap-home-north-america.svg');
+                        }
+                    }
+                    &.map[data-active-reagion=south-america] {
+                        &::after {
+                            background-image: url('assets/img/map-worldmap-home-south-america.svg');
+                        }
+                    }
+                    &::before {
+                        content: "";
+                        display: block;
+                        padding-bottom: 50.33%;
+                    }
+                    .map-reagion {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: $blue02;
+                        color: #fff;
+                        padding-top: 6px;
+                        padding-bottom: 6px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        border-radius: 15px;
+                        border-top-left-radius: 0px;
+                        text-align: center;
+                        line-height: 1.7rem;
+                        width: 100%;
+                        max-width: 90px;
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                        z-index: 10;
+                        border: 1px solid $blue02;
+                        cursor: pointer;
+                        &.map-reagion[data-is-active=true] {
+                            color: $blue02;
+                            background-color: #fff;
+                        }
+
+                        @media screen and (min-width: $tablet) {
+                            max-width: 110px;
+                            font-size: 1.4rem;
+                            line-height: 2rem;
+                        }
+                        &.europe {
+                            top: 32%;
+                            left: 9%;
+                            @media screen and (min-width: $tablet) {
+                                top: 28%;
+                                left: 9%;
+                            }
+                        }
+                        &.africa {
+                            top: 66%;
+                            left: 8%;
+                            @media screen and (min-width: $tablet) {
+                                top: 61%;
+                                left: 7%;
+                            }
+                        }
+                        &.west-asia {
+                            top: 45%;
+                            left: 23%;
+                            @media screen and (min-width: $tablet) {
+                                top: 46%;
+                                left: 21%;
+                            }
+                        }
+                        &.asia {
+                            top: 57%;
+                            left: 34%;
+                            @media screen and (min-width: $tablet) {
+                                top: 53%;
+                                left: 34%;
+                            }
+                        }
+                        &.japan {
+                            top: 51%;
+                            left: 47%;
+                            @media screen and (min-width: $tablet) {
+                                top: 46%;
+                                left: 46%;
+                            }
+                        }
+                        &.oceania {
+                            top: 85%;
+                            left: 49%;
+                            @media screen and (min-width: $tablet) {
+                                top: 81%;
+                                left: 43%;
+                            }
+                        }
+                        &.hawaii {
+                            top: 63%;
+                            left: 65%;
+                            @media screen and (min-width: $tablet) {
+                                top: 56%;
+                                left: 65%;
+                            }
+                        }
+                        &.north-america {
+                            top: 47%;
+                            left: 76%;
+                            @media screen and (min-width: $tablet) {
+                                top: 40%;
+                                left: 76%;
+                            }
+                        }
+                        &.south-america {
+                            top: 76%;
+                            left: 88%;
+                            @media screen and (min-width: $tablet) {
+                                top: 76%;
+                                left: 89%;
+                            }
+                        }
+                    }
+                }
                 .search-region {
+                    border-bottom: 2px solid $blue02;
                     overflow-x: scroll;
                     scrollbar-width: none;
                     -ms-overflow-style: none;
                     &::-webkit-scrollbar {
                         display: none;
                     }
+                    
                     .tabs {
                         list-style: none;
                         display: flex;
                         .tab {
-                            border-bottom: 2px solid $blue02;
                             flex-shrink: 0;
                             cursor: pointer;
                             font-size: 1.6rem;
@@ -287,27 +464,16 @@ main.home {
                 }
                 .search-country {
                     position: relative;
-                    &::before {
-                        content: "";
-                        @media screen and (min-width: $tablet) {
-                            display: block;
-                            padding-bottom: 40.33%;
-                        }
-                    }
+                    
                     .search-country-wrap {
-                        top: 0;
-                        left: 0;
                         width: 100%;
                         height: 100%;
                         display: none;
                         flex-wrap: wrap;
                         justify-content: space-between;
                         column-gap: 20px;
-                        padding-top: 40px;
+                        padding-top: 20px;
                         background-color: #fff;
-                        @media screen and (min-width: $tablet) {
-                            position: absolute;
-                        }
                         &[data-is-active=true] {
                             display: flex;
                         }

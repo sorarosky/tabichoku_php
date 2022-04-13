@@ -2612,7 +2612,185 @@ main.home .section-content.travel-content > .inner .inner {
   max-width: 1000px;
   margin: 0 auto;
 }
+main.home .section-content.travel-content .area .map {
+  position: relative;
+  width: 100%;
+  max-width: 2000px;
+  min-width: 800px;
+  background-image: url("assets/img/map-worldmap-home-blank.svg");
+  background-position: top 60px center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main.home .section-content.travel-content .area .map::after {
+  display: block;
+  content: "";
+  background-position: top 60px center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main.home .section-content.travel-content .area .map.map[data-active-reagion=europe]::after {
+  background-image: url("assets/img/map-worldmap-home-europe.svg");
+}
+main.home .section-content.travel-content .area .map.map[data-active-reagion=africa]::after {
+  background-image: url("assets/img/map-worldmap-home-africa.svg");
+}
+main.home .section-content.travel-content .area .map.map[data-active-reagion=west-asia]::after {
+  background-image: url("assets/img/map-worldmap-home-west-asia.svg");
+}
+main.home .section-content.travel-content .area .map.map[data-active-reagion=asia]::after {
+  background-image: url("assets/img/map-worldmap-home-asia.svg");
+}
+main.home .section-content.travel-content .area .map.map[data-active-reagion=japan]::after {
+  background-image: url("assets/img/map-worldmap-home-japan.svg");
+}
+main.home .section-content.travel-content .area .map.map[data-active-reagion=oceania]::after {
+  background-image: url("assets/img/map-worldmap-home-oceania.svg");
+}
+main.home .section-content.travel-content .area .map.map[data-active-reagion=hawaii]::after {
+  background-image: url("assets/img/map-worldmap-home-hawaii.svg");
+}
+main.home .section-content.travel-content .area .map.map[data-active-reagion=north-america]::after {
+  background-image: url("assets/img/map-worldmap-home-north-america.svg");
+}
+main.home .section-content.travel-content .area .map.map[data-active-reagion=south-america]::after {
+  background-image: url("assets/img/map-worldmap-home-south-america.svg");
+}
+main.home .section-content.travel-content .area .map::before {
+  content: "";
+  display: block;
+  padding-bottom: 50.33%;
+}
+main.home .section-content.travel-content .area .map .map-reagion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3DCDE6;
+  color: #fff;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  text-align: center;
+  line-height: 1.7rem;
+  width: 100%;
+  max-width: 90px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  z-index: 10;
+  border: 1px solid #3DCDE6;
+  cursor: pointer;
+}
+main.home .section-content.travel-content .area .map .map-reagion.map-reagion[data-is-active=true] {
+  color: #3DCDE6;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  main.home .section-content.travel-content .area .map .map-reagion {
+    max-width: 110px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+main.home .section-content.travel-content .area .map .map-reagion.europe {
+  top: 32%;
+  left: 9%;
+}
+@media screen and (min-width: 768px) {
+  main.home .section-content.travel-content .area .map .map-reagion.europe {
+    top: 28%;
+    left: 9%;
+  }
+}
+main.home .section-content.travel-content .area .map .map-reagion.africa {
+  top: 66%;
+  left: 8%;
+}
+@media screen and (min-width: 768px) {
+  main.home .section-content.travel-content .area .map .map-reagion.africa {
+    top: 61%;
+    left: 7%;
+  }
+}
+main.home .section-content.travel-content .area .map .map-reagion.west-asia {
+  top: 45%;
+  left: 23%;
+}
+@media screen and (min-width: 768px) {
+  main.home .section-content.travel-content .area .map .map-reagion.west-asia {
+    top: 46%;
+    left: 21%;
+  }
+}
+main.home .section-content.travel-content .area .map .map-reagion.asia {
+  top: 57%;
+  left: 34%;
+}
+@media screen and (min-width: 768px) {
+  main.home .section-content.travel-content .area .map .map-reagion.asia {
+    top: 53%;
+    left: 34%;
+  }
+}
+main.home .section-content.travel-content .area .map .map-reagion.japan {
+  top: 51%;
+  left: 47%;
+}
+@media screen and (min-width: 768px) {
+  main.home .section-content.travel-content .area .map .map-reagion.japan {
+    top: 46%;
+    left: 46%;
+  }
+}
+main.home .section-content.travel-content .area .map .map-reagion.oceania {
+  top: 85%;
+  left: 49%;
+}
+@media screen and (min-width: 768px) {
+  main.home .section-content.travel-content .area .map .map-reagion.oceania {
+    top: 81%;
+    left: 43%;
+  }
+}
+main.home .section-content.travel-content .area .map .map-reagion.hawaii {
+  top: 63%;
+  left: 65%;
+}
+@media screen and (min-width: 768px) {
+  main.home .section-content.travel-content .area .map .map-reagion.hawaii {
+    top: 56%;
+    left: 65%;
+  }
+}
+main.home .section-content.travel-content .area .map .map-reagion.north-america {
+  top: 47%;
+  left: 76%;
+}
+@media screen and (min-width: 768px) {
+  main.home .section-content.travel-content .area .map .map-reagion.north-america {
+    top: 40%;
+    left: 76%;
+  }
+}
+main.home .section-content.travel-content .area .map .map-reagion.south-america {
+  top: 76%;
+  left: 88%;
+}
+@media screen and (min-width: 768px) {
+  main.home .section-content.travel-content .area .map .map-reagion.south-america {
+    top: 76%;
+    left: 89%;
+  }
+}
 main.home .section-content.travel-content .area .search-region {
+  border-bottom: 2px solid #3DCDE6;
   overflow-x: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -2625,7 +2803,6 @@ main.home .section-content.travel-content .area .search-region .tabs {
   display: flex;
 }
 main.home .section-content.travel-content .area .search-region .tabs .tab {
-  border-bottom: 2px solid #3DCDE6;
   flex-shrink: 0;
   cursor: pointer;
   font-size: 1.6rem;
@@ -2642,31 +2819,15 @@ main.home .section-content.travel-content .area .search-region .tabs .tab[data-i
 main.home .section-content.travel-content .area .search-country {
   position: relative;
 }
-main.home .section-content.travel-content .area .search-country::before {
-  content: "";
-}
-@media screen and (min-width: 768px) {
-  main.home .section-content.travel-content .area .search-country::before {
-    display: block;
-    padding-bottom: 40.33%;
-  }
-}
 main.home .section-content.travel-content .area .search-country .search-country-wrap {
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   display: none;
   flex-wrap: wrap;
   justify-content: space-between;
   column-gap: 20px;
-  padding-top: 40px;
+  padding-top: 20px;
   background-color: #fff;
-}
-@media screen and (min-width: 768px) {
-  main.home .section-content.travel-content .area .search-country .search-country-wrap {
-    position: absolute;
-  }
 }
 main.home .section-content.travel-content .area .search-country .search-country-wrap[data-is-active=true] {
   display: flex;
@@ -8267,7 +8428,7 @@ main.information-single .section-content .navi ul li .active {
   top: 51%;
   left: 7%;
 }
-.local-professionals-news-top-map .map .map-reagion.east-asia {
+.local-professionals-news-top-map .map .map-reagion.west-asia {
   top: 36%;
   left: 21%;
 }
@@ -11513,12 +11674,12 @@ main.travel-content-post .section-content.pickup .swiper-container-wrapper .page
     left: 7%;
   }
 }
-.map-top-map .map .map-reagion.east-asia {
+.map-top-map .map .map-reagion.west-asia {
   top: 45%;
   left: 23%;
 }
 @media screen and (min-width: 768px) {
-  .map-top-map .map .map-reagion.east-asia {
+  .map-top-map .map .map-reagion.west-asia {
     top: 46%;
     left: 21%;
   }

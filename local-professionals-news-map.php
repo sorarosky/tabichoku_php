@@ -7,7 +7,7 @@
       <div class="map">
           <div class="map-reagion europe"><a href="#area07">ヨーロッパ</a></div>
           <div class="map-reagion africa"><a href="#area09">アフリカ</a></div>
-          <div class="map-reagion east-asia"><a href="#area08">中東</a></div>
+          <div class="map-reagion west-asia"><a href="#area08">中東</a></div>
           <div class="map-reagion asia"><a href="#area05">アジア</a></div>
           <div class="map-reagion japan"><a href="#area01">日本</a></div>
           <div class="map-reagion oceania"><a href="#area06">大洋州</a></div>
