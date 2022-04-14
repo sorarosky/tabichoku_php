@@ -35,7 +35,8 @@
               </ul>
             </div>
             <div class="side">
-              <a href=""><button class="btn btn-blue">詳細をみる</button></a>
+              <p><a href=""><button class="btn btn-blue">詳細をみる</button></a></p>
+              <p class="label label-red">入金済み</p>
             </div>
           </li>
 
@@ -58,7 +59,8 @@
               </ul>
             </div>
             <div class="side">
-              <a href=""><button class="btn btn-blue">詳細をみる</button></a>
+              <p><a href=""><button class="btn btn-blue">詳細をみる</button></a></p>
+              <p class="label label-gray">取消済み</p>
             </div>
           </li>
           <?php } ?>
