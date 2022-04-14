@@ -607,14 +607,31 @@
                         margin-left: auto;
                         text-align: center;
                         margin-top: 20px;
+                        .label {
+                            text-align: center;
+                            color: #fff;
+                            margin-top: 10px;
+                            width: 100%;
+                            max-width: 220px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            &.label-red {
+                                background-color: #ED4D54;
+                            }
+                            &.label-gray {
+                                background-color: #9A9A9A;
+                            }
+                        }
                         .btn {
                             width: 100%;
                             max-width: 220px;
                         }
+
                         @media screen and (min-width: $tablet) {
                             margin-top: 0px;
                             text-align: initial;
-                            .btn {
+                            .btn,
+                            .label {
                                 width: initial;
                                 max-width: initial;
                             }
