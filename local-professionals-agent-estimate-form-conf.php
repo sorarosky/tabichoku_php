@@ -11,13 +11,8 @@
             <li class="point">送信完了</li>
           </ul>
         </nav>
-        <div class="head">確認画面</div>
+        <div class="head">日程・見積相談フォーム</div>
         <div class="form">
-          <div class="agreement">
-            <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label><br>
-            <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label><br>
-            <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label>
-          </div>
           <input class="button" type="button" value="同意して送信する"><br>
           <a href="">戻る</a>
         </div>

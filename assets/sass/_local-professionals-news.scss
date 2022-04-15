@@ -266,6 +266,9 @@ main.local-professionals-news-map {
                 border: 1px solid $gray;
                 padding: 0 10px;
                 border-radius: 4px;
+                &:hover {
+                    cursor: pointer;
+                }
                 &.liked {
                     .far {
                         display: none;

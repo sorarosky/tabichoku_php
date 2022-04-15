@@ -87,12 +87,12 @@
       <section class="section-content ranking">
         <div class="inner">
           <div class="head">人気の国</div>
-          <div class="rank01">ハワイ</div>
-          <div class="rank02">セントビンセント・グレナディーン</div>
-          <div class="rank03">台湾</div>
-          <div class="rank04">アメリカ</div>
-          <div class="rank05">韓国</div>
-          <div class="rank06">フランス</div>
+          <a href="" class="rank rank01">ハワイ</a>
+          <a href="" class="rank rank02">セントビンセント・グレナディーン</a>
+          <a href="" class="rank rank03">台湾</a>
+          <a href="" class="rank rank04">アメリカ</a>
+          <a href="" class="rank rank05">韓国</a>
+          <a href="" class="rank rank06">フランス</a>
         </div>
       </section>
       <section class="section-content themes">

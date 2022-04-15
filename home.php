@@ -732,7 +732,7 @@
         <div class="sub-head">Merit</div>
         <div class="text">たびチョクで旅プランを立てるメリットは全部で3つ！</div>
         <div class="row">
-          <div class="col">
+          <div class="col col-12 col-md-4">
             <div class="box merit01">
               <div class="img primary"><img src="/assets/img/top-merit01.svg" alt=""></div>
               <div class="head">POINT <span>01</span></div>
@@ -741,7 +741,7 @@
               <div class="text">豊富な知見やノウハウ、高い手配力を持つグローバルパートナーとの協働によって、旅の理想形をリスクを最小限に抑えて実現できるネットワークがあります。</div>
             </div>
           </div>
-          <div class="col">
+          <div class="col col-12 col-md-4">
             <div class="box merit02">
               <div class="img primary"><img src="/assets/img/top-merit02.svg" alt=""></div>
               <div class="head">POINT <span>02</span></div>
@@ -750,7 +750,7 @@
               <div class="text">専門性の高い現地のプロが持ち寄った産地直販プラットフォームならではの特別感があり、秀逸な素材を中間組織を介せずダイレクトにご購入いただけます。</div>
             </div>
           </div>
-          <div class="col">
+          <div class="col col-12 col-md-4">
             <div class="box merit03">
               <div class="img primary"><img src="/assets/img/top-merit03.svg" alt=""></div>
               <div class="head">POINT <span>03</span></div>

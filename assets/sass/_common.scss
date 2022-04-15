@@ -357,7 +357,8 @@ body>.header {
     }
 }
 
-.travel-content-kv {
+.travel-content-kv,
+.local-agent-kv {
     position: relative;
     .orverlay {
         @include flex;
@@ -692,7 +693,11 @@ body>.header {
                         }
                     }
                 }
-                &.hushtags {
+                &.hushtags,
+                &.theme {
+                    .sub-head {
+                        color: $black;
+                    }
                     .tags {
                         @include flex;
                         @include wrap;

@@ -125,12 +125,166 @@
 
             <div id="menu" class="menu">
               <div class="head">メニュー</div>
-              <div class="acordion-head js-acordion-head">
+              
+              <div class="acordion-head js-acordion-head shown">
                 <div class="checkbox">
-                 <input type="checkbox" checked> Aメニュー
+                 <input type="checkbox"> Aメニュー
                 </div>
                 <div class="title">セダン送迎付き</div>
                 <div class="id">ID <span>00000A</span></div>
+              </div>
+              <div class="acordion-content ">
+                <table>
+                  <tr>
+                    <th>所要</th>
+                    <td>60分</td>
+                  </tr>
+                  <tr>
+                    <th>発着地</th>
+                    <td>ホテル〜ホテル</td>
+                  </tr>
+                  <tr>
+                    <th>人数</th>
+                    <td>1〜2名</td>
+                  </tr>
+                  <tr>
+                    <th>サンプルスケジュール<br>（現地時刻）</th>
+                    <td>
+                      <table>
+                        <tr>
+                          <th>0:00 - 1:15</th>
+                          <td>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</td>
+                        </tr>
+                        <tr>
+                          <th>0:00 - 1:15</th>
+                          <td>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>予算</th>
+                    <td>お問い合わせください</td>
+                  </tr>
+                  <tr>
+                    <th>見積もりに含む</th>
+                    <td>送迎、通訳、会場費、講師費用、テキスト代金、昼食</td>
+                  </tr>
+                  <tr>
+                    <th>見積に含まれない</th>
+                    <td>ガイド・ドライバーのチップ、食事中のドリンク代金、wi-fi通信料、リゾートフィー</td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="acordion-head js-acordion-head">
+                <div class="checkbox">
+                 <input type="checkbox"> Bメニュー
+                </div>
+                <div class="title">ワゴン送迎付き</div>
+                <div class="id">ID <span>00000B</span></div>
+              </div>
+              <div class="acordion-content ">
+                <table>
+                  <tr>
+                    <th>所要</th>
+                    <td>60分</td>
+                  </tr>
+                  <tr>
+                    <th>発着地</th>
+                    <td>ホテル〜ホテル</td>
+                  </tr>
+                  <tr>
+                    <th>人数</th>
+                    <td>1〜2名</td>
+                  </tr>
+                  <tr>
+                    <th>サンプルスケジュール<br>（現地時刻）</th>
+                    <td>
+                      <table>
+                        <tr>
+                          <th>0:00 - 1:15</th>
+                          <td>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</td>
+                        </tr>
+                        <tr>
+                          <th>0:00 - 1:15</th>
+                          <td>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>予算</th>
+                    <td>お問い合わせください</td>
+                  </tr>
+                  <tr>
+                    <th>見積もりに含む</th>
+                    <td>送迎、通訳、会場費、講師費用、テキスト代金、昼食</td>
+                  </tr>
+                  <tr>
+                    <th>見積に含まれない</th>
+                    <td>ガイド・ドライバーのチップ、食事中のドリンク代金、wi-fi通信料、リゾートフィー</td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="acordion-head js-acordion-head">
+                <div class="checkbox">
+                 <input type="checkbox"> Cメニュー
+                </div>
+                <div class="title">ワゴン送迎付き</div>
+                <div class="id">ID <span>00000C</span></div>
+              </div>
+              <div class="acordion-content ">
+                <table>
+                  <tr>
+                    <th>所要</th>
+                    <td>60分</td>
+                  </tr>
+                  <tr>
+                    <th>発着地</th>
+                    <td>ホテル〜ホテル</td>
+                  </tr>
+                  <tr>
+                    <th>人数</th>
+                    <td>1〜2名</td>
+                  </tr>
+                  <tr>
+                    <th>サンプルスケジュール<br>（現地時刻）</th>
+                    <td>
+                      <table>
+                        <tr>
+                          <th>0:00 - 1:15</th>
+                          <td>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</td>
+                        </tr>
+                        <tr>
+                          <th>0:00 - 1:15</th>
+                          <td>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>予算</th>
+                    <td>お問い合わせください</td>
+                  </tr>
+                  <tr>
+                    <th>見積もりに含む</th>
+                    <td>送迎、通訳、会場費、講師費用、テキスト代金、昼食</td>
+                  </tr>
+                  <tr>
+                    <th>見積に含まれない</th>
+                    <td>ガイド・ドライバーのチップ、食事中のドリンク代金、wi-fi通信料、リゾートフィー</td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="acordion-head js-acordion-head">
+                <div class="checkbox">
+                 <input type="checkbox"> Dメニュー
+                </div>
+                <div class="title">ワゴン送迎付き</div>
+                <div class="id">ID <span>00000D</span></div>
               </div>
               <div class="acordion-content ">
                 <table>
@@ -209,9 +363,9 @@
       </section>
       <section class="section-content pickup">
         <div class="inner">
-          <div class="head">おすすめのコラム</div>
-          <div class="swiper-container-wrapper swiper-container-local-professionals-news-pickup-wrapper">
-            <nav class="swiper-container swiper-container-local-professionals-news-pickup">
+          <div class="head">おすすめの旅コンテンツ</div>
+          <div class="swiper-container-wrapper swiper-container-travel-content-recommended-wrapper">
+            <nav class="swiper-container swiper-container-travel-content-recommended">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide slide01">
                   <a href="">
@@ -279,79 +433,9 @@
               </div>
           </div>
 
-          <div class="head">おすすめのコラム</div>
-          <div class="swiper-container-wrapper swiper-container-local-professionals-news-pickup-wrapper">
-            <nav class="swiper-container swiper-container-local-professionals-news-pickup">
-              <ul class="swiper-wrapper">
-                <li class="swiper-slide slide01">
-                  <a href="">
-                    <div class="img">
-                      <img src="/assets/img/thumb-square.jpg" alt="">
-                      <div class="info">
-                        <div class="num"><i class="far fa-eye"></i> 00000</div>
-                        <div class="country-name">国名が入る、国名が入る</div>
-                      </div>
-                    </div>
-                    <div class="title"> タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。</div>
-                    <ul class="tags">
-                      <li class="">ハッシュタグ</li>
-                      <li class="">ハッシュタグ</li>
-                      <li class="">タグ</li>
-                      <li class="">ハッシュタグハッシュタグハッシュタグ</li>
-                    </ul>
-                  </a>
-                </li>
-                <li class="swiper-slide slide02">
-                  <a href="">
-                    <div class="img">
-                      <img src="/assets/img/thumb-square.jpg" alt="">
-                      <div class="info">
-                        <div class="num"><i class="far fa-eye"></i> 00000</div>
-                        <div class="country-name">国名が入る、国名が入る</div>
-                      </div>
-                    </div>
-                    <div class="title"> タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。</div>
-                    <ul class="tags">
-                      <li class="">ハッシュタグ</li>
-                      <li class="">ハッシュタグ</li>
-                      <li class="">タグ</li>
-                      <li class="">ハッシュタグハッシュタグハッシュタグ</li>
-                    </ul>
-                  </a>
-                </li>
-                <li class="swiper-slide slide03">
-                  <a href="">
-                    <div class="img">
-                      <img src="/assets/img/thumb-square.jpg" alt="">
-                      <div class="info">
-                        <div class="num"><i class="far fa-eye"></i> 00000</div>
-                        <div class="country-name">国名が入る、国名が入る</div>
-                      </div>
-                    </div>
-                    <div class="title"> タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。</div>
-                    <ul class="tags">
-                      <li class="">ハッシュタグ</li>
-                      <li class="">ハッシュタグ</li>
-                      <li class="">タグ</li>
-                      <li class="">ハッシュタグハッシュタグハッシュタグ</li>
-                    </ul>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <div class="pager">
-                <div class="swiper-button-prev">
-                  <img src="/assets/img/arrow-left.svg" alt="">
-                </div>
-                <div class="swiper-button-next">
-                  <img src="/assets/img/arrow-right.svg" alt="">
-                </div>
-              </div>
-          </div>
-
-          <div class="head">おすすめのコラム</div>
-          <div class="swiper-container-wrapper swiper-container-local-professionals-news-pickup-wrapper">
-            <nav class="swiper-container swiper-container-local-professionals-news-pickup">
+          <div class="head">最近みた旅コンテンツ</div>
+          <div class="swiper-container-wrapper swiper-container-travel-content-latest-wrapper">
+            <nav class="swiper-container swiper-container-travel-content-latest">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide slide01">
                   <a href="">

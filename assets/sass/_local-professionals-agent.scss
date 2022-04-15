@@ -19,6 +19,23 @@ main.local-professionals-agent-post {
             .swiper-container-wrapper {
                 position: relative;
                 @include post-slide;
+                .title {
+                    font-weight: 500;
+                    margin-top: 10px;
+                }
+                .countries,
+                .skills {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .countries {
+                    color: $green03;
+                    margin-top: 40px;
+                }
+                .skills {
+                    color: $blue;
+                }
                 .pager {
                     .swiper-button-prev,
                     .swiper-button-next {
@@ -34,15 +51,8 @@ main.local-professionals-agent-post {
                 }
             }
             .button {
-                @include btn;
-                @include gradient;
-                font-size: 2.4rem;
-                border-radius: 45px;
-                display: block;
-                color: #fff;
-                padding: 20px 0;
-                margin-top: 20px;
-                max-width: 600px;
+                @include btn-color;
+                margin-top: 40px;
                 margin-bottom: 80px;
                 &::after {
                     position: absolute;
@@ -150,7 +160,7 @@ main.local-professionals-agent-post {
                 margin-top: 10px;
             }
             .row {
-                margin-top: 80px;
+                margin-top: 30px;
                 .col {
                     .swiper-container-local-professionals-news-post-wrapper {
                         position: relative;
@@ -165,7 +175,7 @@ main.local-professionals-agent-post {
                         font-size: 2rem;
                     }
                     .text {
-                        margin-top: 60px;
+                        margin-top: 50px;
                     }
                     .swiper-button-prev,
                     .swiper-button-next {
@@ -245,13 +255,13 @@ main.local-professionals-agent-post {
                 margin-top: 20px;
                 max-width: 450px;
                 background-color: $blue;
-                &::after {
-                    position: absolute;
-                    font-family: "Font Awesome 5 Free";
-                    font-weight: 900;
-                    content: "\f105";
-                    right: 20px;
-                }
+                // &::after {
+                //     position: absolute;
+                //     font-family: "Font Awesome 5 Free";
+                //     font-weight: 900;
+                //     content: "\f105";
+                //     right: 20px;
+                // }
             }
             .button-float {
                 position: fixed;

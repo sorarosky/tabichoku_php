@@ -26,7 +26,6 @@ main.travel-content-post {
             }
             .button {
                 @include btn-color;
-                margin-bottom: 80px;
             }
             .post {
                 @include post;
@@ -36,76 +35,7 @@ main.travel-content-post {
             }
         }
         &.ranking {
-            @include gradient;
-            padding: 30px 20px;
-            .head {
-                color: #fff;
-                font-size: 2.8rem;
-            }
-            .rank01,
-            .rank02,
-            .rank03 {
-                padding: 35px;
-                background-color: #fff;
-                border-radius: 10px;
-                margin-top: 20px;
-                font-size: 3.6rem;
-                line-height: 4rem;
-                font-weight: bold;
-                padding-left: 100px;
-                background-repeat: no-repeat;
-                background-size: 60px;
-                background-position: left 20px center;
-            }
-            .rank01 {
-                background-image: url(assets/img/rank01.svg);
-            }
-            .rank02 {
-                background-image: url(assets/img/rank02.svg);
-            }
-            .rank03 {
-                background-image: url(assets/img/rank03.svg);
-            }
-            .rank04,
-            .rank05,
-            .rank06 {
-                position: relative;
-                padding: 10px 20px 10px 80px;
-                background-color: #fff;
-                border-radius: 10px;
-                margin-top: 20px;
-                font-size: 3.6rem;
-                line-height: 4rem;
-                font-weight: bold;
-                &:before {
-                    display: block;
-                    position: absolute;
-                    left: 20px;
-                    width: 40px;
-                    height: 40px;
-                    color: #fff;
-                    background-color: $blue;
-                    border-radius: 50px;
-                    text-align: center;
-                    font-size: 1.5rem;
-                    content: '';
-                }
-            }
-            .rank04 {
-                &:before {
-                    content: '4';
-                }
-            }
-            .rank05 {
-                &:before {
-                    content: '5';
-                }
-            }
-            .rank06 {
-                &:before {
-                    content: '6';
-                }
-            }
+            @include ranking;
         }
         &.themes {
             .inner {
@@ -132,6 +62,9 @@ main.travel-content-post {
                         border: 1px solid $gray;
                         padding: 0 10px;
                         border-radius: 4px;
+                        &:hover {
+                            cursor: pointer;
+                        }
                         &.liked {
                             .far {
                                 display: none;
@@ -229,8 +162,9 @@ main.travel-content-post {
                 .content {
                     padding-bottom: 60px;
                     .row {
-                        margin-top: 70px;
+                        margin-top: 60px;
                         .col {
+                            margin-top: 10px;
                             a {
                                 display: block;
                                 background-color: $blue02;
@@ -304,9 +238,9 @@ main.travel-content-post {
                             @include wrap;
                             padding: 30px 20px;
                             margin-top: 20px;
-                            background-color: $blue03;
                             padding-right: 60px;
                             position: relative;
+                            border-bottom: 1px solid $gray;
                             &:hover {
                                 cursor: pointer;
                             }
@@ -318,6 +252,7 @@ main.travel-content-post {
                                 top: calc(50% - 15px);
                             }
                             &.shown {
+                                background-color: $blue03;
                                 &::after {
                                     content: '-';
                                 }
@@ -381,6 +316,74 @@ main.travel-content-post {
                     }
                 }
             }
+        }
+    }
+}
+
+.contents-wrap .main-aside-wrap .aside .box {
+    &.travel-content-post {
+        position: fixed;
+        z-index: 9997;
+        right: 0;
+        bottom: 0;
+        border: 1px solid $gray;
+        background-color: #fff;
+        margin-bottom: 0;
+        width: 100%;
+        padding: 10px 20px;
+        @media screen and (min-width: $tablet) {
+            border-radius: 10px;
+            right: 20px;
+            bottom: initial;
+            max-width: 340px;
+            padding: 30px 20px;
+        }
+        @media screen and (min-width: 1280px) {
+            right: calc(50vw - 640px);
+        }
+        .title {
+            display: none;
+            color: $blue;
+            padding-bottom: 35px;
+            border-bottom: 1px solid $gray;
+            @media screen and (min-width: $tablet) {
+                display: block;
+            }
+        }
+        dl {
+            border-bottom: 1px solid $gray;
+            padding-bottom: 10px;
+            margin-top: 0px;
+            @media screen and (min-width: $tablet) {
+                margin-top: 10px;
+            }
+            dt {
+                display: none;
+                @media screen and (min-width: $tablet) {
+                    display: block;
+                }
+            }
+            dd {
+                .error {
+                    color: $red;
+                }
+            }
+        }
+        table {
+            margin-top: 10px;
+            th {
+                text-align: left;
+                min-width: 110px;
+                color: $gray02;
+            }
+        }
+        .button {
+            @include btn;
+            margin-top: 20px;
+            border-radius: 40px;
+            padding: 10px;
+            background-color: $blue02;
+            color: #fff;
         }
     }
 }

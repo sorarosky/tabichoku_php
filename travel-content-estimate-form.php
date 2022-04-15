@@ -26,8 +26,8 @@
           <div class="ture-name">One day Global citizenship Program</div>
           <div class="area"><i class="fas fa-map-marker-alt"></i> ヨーロッパ(エリア) / イタリア(国) / ミラノ(地域)</div>
           <div class="company-name"><i class="fas fa-user"></i> 日本トラベルコーディネート株式会社</div>
-          <div class="theme-category"><i class="fas fa-briefcase"></i> 持続可能な社会を創る旅(テーマ) / すべての人に健康と福祉を(カテゴリー)</div>
-          <div class="theme-category"><i class="fas fa-briefcase"></i> 持続可能な社会を創る旅(テーマ) / すべての人に健康と福祉を(カテゴリー)</div>
+          <div class="theme-category">持続可能な社会を創る旅(テーマ) / すべての人に健康と福祉を(カテゴリー)</div>
+          <div class="theme-category">持続可能な社会を創る旅(テーマ) / すべての人に健康と福祉を(カテゴリー)</div>
           <table>
             <tr>
               <th>ツアー番号</th>
@@ -214,11 +214,6 @@
           </table>
           <div class="text">
           送信前に当社の<a htref="">「プライバシーポリシー」「旅行業約款・旅行条件書同意」「免責事項同意」</a>ご確認いただき、同意していただける場合は下の各項目の同意をチェックし、確認にお進みください。
-          </div>
-          <div class="agreement">
-            <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label><br>
-            <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label><br>
-            <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label>
           </div>
           <div class="btn-wrap"><input class="button" type="button"  value="内容を確認する"></div>
         </div>

@@ -22,7 +22,7 @@
       
     </div>
     <div class="box hushtags">
-      <div class="head">人気ハッシュタグ</div>
+      <div class="head">ハッシュタグから探す</div>
       <ul class="tags">
         <li class=""><a href="">ハッシュタグ</a></li>
         <li class=""><a href="">ハッシュタグ</a></li>
@@ -32,52 +32,32 @@
       <div class="link"><a href="">タグ一覧 →</a></div>
       
     </div>
-    <div class="box ranking">
-      <div class="head">ランキング</div>
-      <div class="post">
-        <div class="img">
-          <div class="num">1</div>
-        </div>
-        <div class="info">
-          <div class="country-name">国名が入る、国名が入る</div>
-          <div class="title">タイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入る</div>
-        </div>
-      </div>
-      <div class="post">
-        <div class="img">
-        <div class="num">2</div>
-        </div>
-        <div class="info">
-          <div class="country-name">国名が入る、国名が入る</div>
-          <div class="title">タイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入る</div>
-        </div>
-      </div>
-      <div class="post">
-        <div class="img">
-        <div class="num">3</div>
-        </div>
-        <div class="info">
-          <div class="country-name">国名が入る、国名が入る</div>
-          <div class="title">タイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入る</div>
-        </div>
-      </div>
-      <div class="post">
-        <div class="img">
-        <div class="num">4</div>
-        </div>
-        <div class="info">
-          <div class="country-name">国名が入る、国名が入る</div>
-          <div class="title">タイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入る</div>
-        </div>
-      </div>
-      <div class="post">
-        <div class="img">
-        <div class="num">5</div>
-        </div>
-        <div class="info">
-          <div class="country-name">国名が入る、国名が入る</div>
-          <div class="title">タイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入る</div>
-        </div>
-      </div>
+
+    <div class="box theme">
+      <div class="head">テーマから探す</div>
+      <a href="" class="sub-head">持続可能な社会を創る旅 ></a>
+      <ul class="tags">
+        <li class=""><a href="">テーマタイトル</a></li>
+        <li class=""><a href="">テーマタイトル</a></li>
+        <li class=""><a href="">テーマタイトル</a></li>
+        <li class=""><a href="">テーマタイトルが入るテーマタイトル、テーマタイ</a></li>
+      </ul>
+      
+      <a href="" class="sub-head">観光・送迎 ></a>
+      <ul class="tags">
+        <li class=""><a href="">テーマタイトル</a></li>
+        <li class=""><a href="">テーマタイトル</a></li>
+        <li class=""><a href="">テーマタイトル</a></li>
+        <li class=""><a href="">テーマタイトルが入るテーマタイトル、テーマタイ</a></li>
+      </ul>
+
+      <a href="" class="sub-head">視察・見学 ></a>
+      <ul class="tags">
+        <li class=""><a href="">テーマタイトル</a></li>
+        <li class=""><a href="">テーマタイトル</a></li>
+        <li class=""><a href="">テーマタイトル</a></li>
+        <li class=""><a href="">テーマタイトルが入るテーマタイトル、テーマタイ</a></li>
+      </ul>
+      <div class="link"><a href="">テーマ一覧 →</a></div>
     </div>
   </aside>

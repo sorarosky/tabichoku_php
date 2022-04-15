@@ -28,7 +28,7 @@ jQuery(function($) {
             $('body,html').animate({ scrollTop: position }, speed, 'swing');
             return false;
         });
-        
+
         //Swiper
         if ($('.swiper-container-top-kv').length) {
             var mySwiper_top_kv = new Swiper('.swiper-container-top-kv', {
@@ -263,7 +263,7 @@ jQuery(function($) {
         }
 
         if ($('.swiper-container-local-professionals-news-latest').length) {
-            
+
             var mySwiper = new Swiper('.swiper-container-local-professionals-news-latest', {
                 loop: true,
                 speed: 1000,
@@ -298,11 +298,23 @@ jQuery(function($) {
         if ($('.js-acordion-head').length) {
             $(".js-acordion-head").next().css('display', 'none');
             $(".js-acordion-head.shown").next().css('display', 'block');
+            if ($(".js-acordion-head").hasClass('shown')) {
+                $(".js-acordion-head.shown").find(":checkbox").prop("checked", true);
+            }
             $(".js-acordion-head").on("click", function() {
                 $(this).next().slideToggle();
-                $(this).toggleClass("shown"); //追加部分
+                $(this).toggleClass("shown");
+
+                //追加部分
+                if (!$(this).hasClass('shown')) {
+                    $(this).find(":checkbox").prop("checked", false);
+                } else if ($(this).hasClass('shown')) {
+                    $(this).find(":checkbox").prop("checked", true);
+                }
+
             });
         }
+
         if ($('.hashtag_wrapper').length) {
             $('.show_hashtag').click(function() {
                 var show_text = $(this).parent('.hashtag_wrapper').find('.tags');
@@ -330,6 +342,8 @@ jQuery(function($) {
                 }
             });
         }
+
+
 
         //ページトップへ
         if ($('.page-top').length) {
@@ -383,23 +397,23 @@ jQuery(function($) {
             var isActive = $(this).attr('data-is-active');
             var regionName = $(this).attr('data-region-name');
 
-            if(isActive == 'false') {
+            if (isActive == 'false') {
                 var activeMapReagion = $('.home .section-content .area .map-reagion[data-is-active=true]');
                 var activeTab = $('.home .section-content .area .tab[data-is-active=true]');
-                var activeRegionContent = $('.search-country-wrap[data-region-name="'+activeTab.attr('data-region-name')+'"]');
+                var activeRegionContent = $('.search-country-wrap[data-region-name="' + activeTab.attr('data-region-name') + '"]');
                 var map = $('.home .section-content .area .map');
-                
+
                 activeTab.attr('data-is-active', 'false');
                 activeMapReagion.attr('data-is-active', 'false');
                 activeRegionContent.attr('data-is-active', 'false');
-                
+
                 map.attr('data-active-reagion', regionName);
                 $(this).attr('data-is-active', 'true');
-                $('.search-country-wrap[data-region-name="'+regionName+'"]').attr('data-is-active', 'true');
-                $('.home .section-content .area .tab[data-region-name="'+regionName+'"]').attr('data-is-active', 'true');
-            } 
+                $('.search-country-wrap[data-region-name="' + regionName + '"]').attr('data-is-active', 'true');
+                $('.home .section-content .area .tab[data-region-name="' + regionName + '"]').attr('data-is-active', 'true');
+            }
         });
-        
+
     }
     if ($('.home .section-content .area .tab').length) {
         var tabs = $('.home .section-content .area .tab');
@@ -407,20 +421,20 @@ jQuery(function($) {
             var isActive = $(this).attr('data-is-active');
             var regionName = $(this).attr('data-region-name');
 
-            if(isActive == 'false') {
+            if (isActive == 'false') {
                 var activeMapReagion = $('.home .section-content .area .map-reagion[data-is-active=true]');
                 var activeTab = $('.home .section-content .area .tab[data-is-active=true]');
-                var activeRegionContent = $('.search-country-wrap[data-region-name="'+activeTab.attr('data-region-name')+'"]');
+                var activeRegionContent = $('.search-country-wrap[data-region-name="' + activeTab.attr('data-region-name') + '"]');
                 var map = $('.home .section-content .area .map');
 
                 activeTab.attr('data-is-active', 'false');
                 activeMapReagion.attr('data-is-active', 'false');
                 activeRegionContent.attr('data-is-active', 'false');
-                
+
                 map.attr('data-active-reagion', regionName);
                 $(this).attr('data-is-active', 'true');
-                $('.search-country-wrap[data-region-name="'+regionName+'"]').attr('data-is-active', 'true');
-                $('.home .section-content .area .map-reagion[data-region-name="'+regionName+'"]').attr('data-is-active', 'true');
+                $('.search-country-wrap[data-region-name="' + regionName + '"]').attr('data-is-active', 'true');
+                $('.home .section-content .area .map-reagion[data-region-name="' + regionName + '"]').attr('data-is-active', 'true');
 
             }
         });
@@ -433,7 +447,7 @@ jQuery(function($) {
     if ($('.local-professionals-news-post .like').length) {
         var favoriteBtn = $('.local-professionals-news-post .like');
         favoriteBtn.on('click', function() {
-            if($(this).hasClass('liked')) {
+            if ($(this).hasClass('liked')) {
                 $(this).removeClass('liked');
             } else {
                 $(this).addClass('liked');
@@ -442,11 +456,25 @@ jQuery(function($) {
     }
     /* EOF local-professionals-news-post.php */
 
+    /* SOF travel-content-post.php */
+    //お気に入りボタン
+    if ($('.travel-content-post .like').length) {
+        var favoriteBtn = $('.travel-content-post .like');
+        favoriteBtn.on('click', function() {
+            if ($(this).hasClass('liked')) {
+                $(this).removeClass('liked');
+            } else {
+                $(this).addClass('liked');
+            }
+        });
+    }
+    /* EOF travel-content-post.php */
+
     /* SOF local-professionals-agent-post.php */
     if ($('.local-professionals-agent-post .like').length) {
         var favoriteBtn = $('.local-professionals-agent-post .like');
         favoriteBtn.on('click', function() {
-            if($(this).hasClass('liked')) {
+            if ($(this).hasClass('liked')) {
                 $(this).removeClass('liked');
             } else {
                 $(this).addClass('liked');
@@ -454,23 +482,23 @@ jQuery(function($) {
         });
     }
 
-    if($('.js-button-float').length) {
-            
+    if ($('.js-button-float').length) {
+
         //スクロールが1000に達したらスライドダウン
         $(window).scroll(function() {
-             
+
             var targetBtn = $('.js-button-float-target')
             var floatBtn = $('.js-button-float');
             var scrollPosition = window.pageYOffset;
             var hidePoint = targetBtn.position().top - $(window).height() + 260;
-            
-            if( scrollPosition >= hidePoint ) {
+
+            if (scrollPosition >= hidePoint) {
                 floatBtn.hide();
             } else {
                 floatBtn.show();
             }
         });
-        
+
     };
     /* EOF travel-content.php */
 
@@ -506,6 +534,7 @@ jQuery(function($) {
     };
     var travelContentSwiperClassName = [
         '.swiper-container-travel-content-popular',
+        '.swiper-container-travel-content-recommended',
         '.swiper-container-travel-content-latest',
         '.swiper-container-travel-content-themes01',
         '.swiper-container-travel-content-themes02',
@@ -518,18 +547,29 @@ jQuery(function($) {
         '.swiper-container-travel-content-themes09',
         '.swiper-container-travel-content-themes10',
         '.swiper-container-travel-content-themes11',
+
+        '.swiper-container-local-professionals-agent-themes01',
+        '.swiper-container-local-professionals-agent-themes02',
+        '.swiper-container-local-professionals-agent-themes03',
+        '.swiper-container-local-professionals-agent-themes04',
+        '.swiper-container-local-professionals-agent-themes05',
+        '.swiper-container-local-professionals-agent-themes06',
+        '.swiper-container-local-professionals-agent-themes07',
+        '.swiper-container-local-professionals-agent-themes08',
+        '.swiper-container-local-professionals-agent-themes09',
+
     ];
     travelContentSwiperClassName.map(function(swipName, index) {
         if ($(swipName).length) {
             //共通設定を複製し、必要な設定を追加
             var travelSwiperStatusDepend = travelSwiperStatus;
-            travelSwiperStatusDepend.navigation = { 
-                nextEl : swipName+'-wrapper .swiper-button-next',
-                prevEl : swipName+'-wrapper .swiper-button-prev'
+            travelSwiperStatusDepend.navigation = {
+                nextEl: swipName + '-wrapper .swiper-button-next',
+                prevEl: swipName + '-wrapper .swiper-button-prev'
             }
 
             // 特定のスワイパーにだけ設定する場合
-            if(swipName == '.swiper-container-travel-content-popular') {
+            if (swipName == '.swiper-container-travel-content-popular') {
                 // travelSwiperStatusDepend.slidesPerView = 1;
             }
 

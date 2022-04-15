@@ -4,7 +4,6 @@
   <main class="main local-professionals-agent-estimate-form">
     <section class="section-content">
       <div class="inner">
-        <div class="head">日程・見積相談フォーム</div>
         <nav class="states">
           <ul class="points">
             <li class="point current">入力</li>
@@ -12,6 +11,7 @@
             <li class="point">送信完了</li>
           </ul>
         </nav>
+        <div class="head">日程・見積相談フォーム</div>
         <ul>
           <li>この度は、たびチョクでのご旅行にご興味を賜り誠に有難うございます。</li>
           <li>お問い合わせ内容によってはご返答にお時間がかかる場合がございます。</li>
@@ -20,9 +20,10 @@
           <li>当フォームは日程・見積の相談フォームですので、ご送信することによって予約を確定したり、ご請求が発生するものではありません。</li>
         </ul>
         <div class="box">
+          <div class="date">受付日:0000/00/00</div>
           <div class="id">ID:000000000</div>
           <div class="title">タイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入る</div>
-          <div class="date">受付日:0000/00/00</div>
+          
           <div class="ture-name">One day Global citizenship Program</div>
           <div class="area">ヨーロッパ(エリア) / イタリア(国) / ミラノ(地域)</div>
           <div class="company-name">日本トラベルコーディネート株式会社</div>
@@ -208,11 +209,6 @@
           <div class="text">
           送信前に当社の<a href="">「プライバシーポリシー <i class="far fa-window-restore"></i>」</a>をご確認いただき、<br>
           同意していただける場合は下の[プライバシーポリシーに同意します]をチェックし、確認にお進みください。
-          </div>
-          <div class="agreement">
-            <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label><br>
-            <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label><br>
-            <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label>
           </div>
           <div class="btn-wrap"><input class="button" type="button"  value="内容を確認する"></div>
         </div>

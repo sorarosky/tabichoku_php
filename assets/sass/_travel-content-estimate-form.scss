@@ -26,7 +26,7 @@ main.travel-content-estimate-form-thx {
                 .id {}
                 .title {
                     font-size: 1.8rem;
-                    color: $blue02;
+                    color: $blue;
                     font-weight: bold;
                 }
                 .date {
@@ -42,7 +42,12 @@ main.travel-content-estimate-form-thx {
                     margin-top: 15px;
                 }
                 .theme-category {
-                    color: $blue02;
+                    color: $blue;
+                    background-image: url(assets/img/suitcase.svg);
+                    background-repeat: no-repeat;
+                    background-size: 12px;
+                    background-position: left center;
+                    padding-left: 24px;
                 }
                 table {
                     border-top: 2px solid $gray;
@@ -52,7 +57,10 @@ main.travel-content-estimate-form-thx {
                         th,
                         td {
                             text-align-last: left;
-                            padding: 10px 0;
+                            padding: 5px 0;
+                        }
+                        th {
+                            color: $gray02;
                         }
                         td {}
                     }

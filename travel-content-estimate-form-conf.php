@@ -12,12 +12,9 @@
           </ul>
         </nav>
         <div class="head">日程・見積相談フォーム</div>
+        
         <div class="form">
-          <div class="agreement">
-            <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label><br>
-            <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label><br>
-            <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label>
-          </div>
+          <div class="text">以上の内容でお問合せ手続きを行います。<br>よろしければ「送信」ボタンを押してください。</div>
           <input class="button" type="button" value="同意して送信する"><br>
           <a href="">戻る</a>
         </div>
