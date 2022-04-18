@@ -301,6 +301,7 @@ jQuery(function($) {
             if ($(".js-acordion-head").hasClass('shown')) {
                 $(".js-acordion-head.shown").find(":checkbox").prop("checked", true);
             }
+
             $(".js-acordion-head").on("click", function() {
                 $(this).next().slideToggle();
                 $(this).toggleClass("shown");

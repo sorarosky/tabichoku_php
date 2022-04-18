@@ -25,8 +25,8 @@ main.local-professionals-agent-estimate-form-thx {
                 margin-top: 40px;
                 .id {}
                 .title {
-                    font-size: 1.8rem;
-                    color: $blue02;
+                    font-size: 2.4rem;
+                    color: $blue;
                     font-weight: bold;
                 }
                 .date {
@@ -52,7 +52,10 @@ main.local-professionals-agent-estimate-form-thx {
                         th,
                         td {
                             text-align-last: left;
-                            padding: 10px 0;
+                            padding: 5px 0;
+                        }
+                        th {
+                            color: $gray02;
                         }
                         td {}
                     }
@@ -115,6 +118,9 @@ main.local-professionals-agent-estimate-form-thx {
                                 @include flex;
                                 @include wrap;
                                 margin-left: -10px;
+                                .caption {
+                                    width: 100%;
+                                }
                                 .select-wrap {
                                     width: initial;
                                     margin-right: 10px;
@@ -129,25 +135,34 @@ main.local-professionals-agent-estimate-form-thx {
                                     width: initial;
                                 }
                             }
+                            &.input-with-initial {
+                                input {
+                                    width: initial;
+                                }
+                            }
                             table {
                                 width: 100%;
+                                border-top: none;
                                 tr {
                                     @include flex;
                                     @include wrap;
-                                }
-                                th {
-                                    width: 30%;
-                                    padding-right: 0;
-                                    font-weight: normal;
-                                }
-                                td {
-                                    width: 70%;
-                                    padding-left: 0;
-                                    input {
-                                        width: 40px !important;
+                                    border-bottom: none;
+                                    th {
+                                        width: 30%;
+                                        padding-right: 0;
+                                        font-weight: normal;
+                                        padding: 5px 0;
                                     }
-                                    span {
-                                        font-size: 2.4rem;
+                                    td {
+                                        width: 70%;
+                                        padding-left: 0;
+                                        padding: 5px 0;
+                                        input {
+                                            width: 40px !important;
+                                        }
+                                        span {
+                                            font-size: 2.4rem;
+                                        }
                                     }
                                 }
                             }

@@ -22,21 +22,23 @@
         <div class="box">
           <div class="date">受付日:0000/00/00</div>
           <div class="id">ID:000000000</div>
-          <div class="title">タイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入る</div>
+          <div class="title">シンガポールトラベル</div>
           
           <div class="ture-name">One day Global citizenship Program</div>
-          <div class="area">ヨーロッパ(エリア) / イタリア(国) / ミラノ(地域)</div>
-          <div class="company-name">日本トラベルコーディネート株式会社</div>
-          <div class="theme-category">持続可能な社会を創る旅(テーマ) / すべての人に健康と福祉を(カテゴリー)</div>
-          <div class="theme-category">テーマ名（最大2個） / カテゴリ名が入る、カテゴリ名が入る、カテゴリ名が入る</div>
-          <dl>
-            <dt>ツアー番号</dt>
-            <dt>00000A</dt>
-            <dt>メニュー</dt>
-            <dt>メニュー名が自動入力される</dt>
-            <dt>所要時間</dt>
-            <dt>50分</dt>
-          </dl>
+          <table>
+            <tr>
+              <th>ツアー番号</th>
+              <td>00000A</td>
+            </tr>
+            <tr>
+              <th>メニュー</th>
+              <td>メニュー名が自動入力される</td>
+            </tr>
+            <tr>
+              <th>所要時間</th>
+              <td>50分</td>
+            </tr>
+          </table>
         </div>
         <div class="form">
           <div class="head">旅行に必要な追加情報を入力してください。</div>
@@ -45,6 +47,13 @@
               <th>会員お名前</th>
               <td>
                   木村 たくや
+              </td>
+            </tr>
+            <tr>
+              <th class="reqired">ツアー名</th>
+              <td>
+                現地スタッフにもわかるように英文で、「旅行者名」「方面」「出発時期」などをご記入ください。
+                <input type="text" placeholder="Kimura Family Las Vegas Tour 2024/12/24">
               </td>
             </tr>
             <tr>
@@ -61,10 +70,51 @@
               </td>
             </tr>
             <tr>
-              <th class="reqired">ツアー名</th>
+              <th class="reqired">ご相談内容</th>
+              <td class="has-selecter">
+                <div class="select-wrap">
+                  <select name="" id="">
+                    <option>見積作成</optnion>
+                    <option>日程作成</optnion>
+                    <option>旅行相談</optnion>
+                    <option>業務相談</optnion>
+                    <option>取材撮影</optnion>
+                    <option>予約</optnion>
+                    <option>情報問合せ</optnion>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th class="reqired">エリア</th>
+              <td class="has-selecter">
+                <div class="select-wrap">
+                  <select name="" id="">
+                    <option>エリア名を選択</optnion>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th class="reqired">国名</th>
+              <td class="">
+                複数国を訪問する場合は、主要な国を1つ選んでください。<br>
+                <div class="select-wrap">
+                  <select name="" id="">
+                    <option>国名を選択</optnion>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th class="reqired">地名</th>
               <td>
-                現地スタッフにもわかるように英文で、「旅行者名」「方面」「出発時期」などをご記入ください。
-                <input type="text">
+              国名の選択にはとらわれず、訪れたいすべての観光地や宿泊地を自由にご記入ください。
+                <div class="select-wrap">
+                  <select name="" id="">
+                    <option>ご希望の地名</optnion>
+                  </select>
+                </div>
               </td>
             </tr>
             <tr>
@@ -91,38 +141,7 @@
               </td>
             </tr>
             <tr>
-              <th class="reqired">利用開始時刻</th>
-              <td class="has-selecter">
-                <div class="select-wrap">
-                  <select name="" id="">
-                    <option>00</optnion>
-                  </select>
-                </div>
-                時
-                <div class="select-wrap">
-                  <select name="" id="">
-                    <option>00</optnion>
-                  </select>
-                </div>
-                分
-              </td>
-            </tr>
-            <tr>
-              <th class="reqired">出発場所</th>
-              <td>
-                出発希望場所を入力してください（空港、ホテル、駅など）
-                <input type="text">
-              </td>
-            </tr>
-            <tr>
-              <th class="reqired">出発場所</th>
-              <td>
-                出発希望場所を入力してください（空港、ホテル、駅など）
-                <input type="text">
-              </td>
-            </tr>
-            <tr>
-              <th class="reqired">利用終了日</th>
+              <th>利用終了日</th>
               <td class="has-selecter">
                 <div class="select-wrap">
                   <select name="" id="">
@@ -145,37 +164,35 @@
               </td>
             </tr>
             <tr>
-              <th class="reqired">利用終了時刻</th>
-              <td class="has-selecter">
-                <div class="select-wrap">
-                  <select name="" id="">
-                    <option>00</optnion>
-                  </select>
-                </div>
-                時
-                <div class="select-wrap">
-                  <select name="" id="">
-                    <option>00</optnion>
-                  </select>
-                </div>
-                分
+              <th class="reqired">日数</th>
+              <td class="input-with-initial">
+                <input type="text" placeholder="00"> 日間
+              </td>
+            </tr>
+            <tr>
+              <th class="reqired">旅行目的</th>
+              <td class="input-with-initial checkboxs">
+                <div class="item"><input type="checkbox" id="" name="" checked><label for="">レジャー</label></div>
+                <div class="item"><input type="checkbox" id="" name="" checked><label for="">ビジネス</label></div>
+                <div class="item"><input type="checkbox" id="" name="" checked><label for="">スタディ</label></div>
+                <div class="item"><input type="checkbox" id="" name="" checked><label for="">ハネムーン</label></div>
               </td>
             </tr>
             <tr>
               <th class="reqired">人数</th>
               <td class="input-with-initial">
                 <table>
-                    <tr>
-                      <th>大人（12歳以上）</th>
-                    <td><input type="text"> 名</td>
+                  <tr>
+                    <th>大人（12歳以上）</th>
+                    <td><input type="text" placeholder="00"> 名</td>
                   </tr>
                   <tr>
                     <th>小人（6-11歳）</th>
-                    <td><input type="text"> 名</td>
+                    <td><input type="text" placeholder="00"> 名</td>
                   </tr>
                   <tr>
                     <th>幼児（0-5歳）</th>
-                    <td><input type="text"> 名</td>
+                    <td><input type="text" placeholder="00"> 名</td>
                   </tr>
                   <tr>
                     <th>合計</th>
@@ -185,30 +202,123 @@
               </td>
             </tr>
             <tr>
-              <th class="reqired">旅行目的</th>
-              <td class="input-with-initial checkboxs">
-                <div class="item"><input type="checkbox" id="" name="" checked><label for="">レジャー</label></div>
-                <div class="item"><input type="checkbox" id="" name="" checked><label for="">レジャー</label></div>
-                <div class="item"><input type="checkbox" id="" name="" checked><label for="">レジャー</label></div>
-                
+              <th class="reqired">ホテルグレード</th>
+              <td class="has-selecter">
+                <div class="select-wrap">
+                  <select name="" id="">
+                    <option>選択してください</optnion>
+                    <option>ラグジュアリーホテル★★★★★</optnion>
+                    <option>ラグジュアリーホテル★★★★★</option>
+                    <option>デラックスホテル★★★★</option>
+                    <option>スーペリアホテル★★★</option>
+                    <option>スタンダードホテル★★</option>
+                    <option>エコノミーホテル★</option>
+                    <option>温泉宿</option>
+                    <option>民宿・民泊</option>
+                    <option>おまかせ</option>
+                    <option>自己手配</option>
+                  </select>
+                </div>
               </td>
             </tr>
             <tr>
-              <th class="reqired">訪問の目的</th>
+              <th class="reqired">ホテル指定</th>
               <td>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <input type="text">
               </td>
+            </tr>
+            <tr>
+              <th class="reqired">ホテル</th>
+              <td>
+                <table>
+                  <tr>
+                    <th>室タイプ</th>
+                    <td class="has-selecter">
+                      <div class="select-wrap">
+                        <select name="" id="">
+                          <option>選択してください</optnion>
+                          <option>シングル</optnion>
+                          <option>ダブル</option>
+                          <option>トリプル</option>
+                          <option>4ベッド</option>
+                          <option>スイート</option>
+                          <option>エコノミーホテル★</option>
+                          <option>和室</option>
+                          <option>その他</option>
+                          <option>自己手配自己手配</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>室数</th>
+                    <td class="input-with-initial">
+                      <input type="text" placeholder="00"> 日間
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>室条件・指定</th>
+                    <td class="input-with-initial checkboxs">
+                      <div>
+                        <input type="radio" id="huey" name="drone" value=""
+                              checked>
+                        <label for="huey">指定する</label>
+                        <input type="radio" id="dewey" name="drone" value="">
+                        <label for="dewey">指定しない</label>
+                        <div class="item"><input type="checkbox" id="" name="" checked><label for="">エグゼクティブフロア</label></div>
+                        <div class="item"><input type="checkbox" id="" name="" checked><label for="">オーシャンビュー</label></div>
+                        <div class="item"><input type="checkbox" id="" name="" checked><label for="">オーシャンフロント</label></div>
+                        <div class="item"><input type="checkbox" id="" name="" checked><label for="">パーシャルオーシャンビュー</label></div>
+                        <div class="item"><input type="checkbox" id="" name="" checked><label for="">リバービュー</label></div>
+                        <div class="item"><input type="checkbox" id="" name="" checked><label for="">レイクビュー</label></div>
+                        <div class="item"><input type="checkbox" id="" name="" checked><label for="">高層階</label></div>
+                        <div class="item"><input type="checkbox" id="" name="" checked><label for="">ヴィラ</label></div>
+                        <div class="item"><input type="checkbox" id="" name="" checked><label for="">バス付き</label></div>
+                        <div class="item"><input type="checkbox" id="" name="" checked><label for="">バルコニー付き</label></div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <th class="reqired">食事条件</th>
+              <td class="has-selecter">
+                <div class="select-wrap">
+                  <select name="" id="">
+                    <option>選択してください</optnion> 
+                    <option>食事なし</option>
+                    <option>朝食のみ</option>
+                    <option>朝・夕食付き</option>
+                    <option>全食付き</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th class="reqired">お一人様の予算感</th>
+              <td class="has-selecter">
+                <p class="caption">現地までの航空券や個人的経費を含まないご予算をご記入ください。</p><br>
+                <div class="select-wrap">
+                  <select name="" id="">
+                    <option>0,000</option>
+                  </select>
+                </div> ~ 
+                <div class="select-wrap">  
+                  <select name="" id="">
+                    <option>0,000</option>
+                  </select>
+                </div> 円
             </tr>
             <tr>
               <th>本人希望記入欄</th>
-              <td>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <td class="input-with-initial">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
               </td>
             </tr>
           </table>
           <div class="text">
-          送信前に当社の<a href="">「プライバシーポリシー <i class="far fa-window-restore"></i>」</a>をご確認いただき、<br>
-          同意していただける場合は下の[プライバシーポリシーに同意します]をチェックし、確認にお進みください。
+          送信前に当社の<a href="">「プライバシーポリシー 」</a><a href="">「旅行業約款・旅行条件書同意 」</a><a href="">「免責事項同意」</a>ご確認いただき、<br>同意していただける場合は下の各項目の同意をチェックし、確認にお進みください。
           </div>
           <div class="btn-wrap"><input class="button" type="button"  value="内容を確認する"></div>
         </div>
