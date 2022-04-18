@@ -120,13 +120,6 @@
               </td>
             </tr>
             <tr>
-              <th class="reqired">出発場所</th>
-              <td>
-                出発希望場所を入力してください（空港、ホテル、駅など）
-                <input type="text">
-              </td>
-            </tr>
-            <tr>
               <th class="reqired">利用終了日</th>
               <td class="has-selecter">
                 <div class="select-wrap">
@@ -195,7 +188,7 @@
                 <div class="item"><input type="checkbox" id="" name="" checked><label for="">レジャー</label></div>
                 <div class="item"><input type="checkbox" id="" name="" checked><label for="">レジャー</label></div>
                 <div class="item"><input type="checkbox" id="" name="" checked><label for="">レジャー</label></div>
-                
+
               </td>
             </tr>
             <tr>

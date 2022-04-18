@@ -298,6 +298,8 @@ jQuery(function($) {
         if ($('.js-acordion-head').length) {
             $(".js-acordion-head").next().css('display', 'none');
             $(".js-acordion-head.shown").next().css('display', 'block');
+
+            //旅行コンテンツ – 詳細
             if ($(".js-acordion-head").hasClass('shown')) {
                 $(".js-acordion-head.shown").find(":checkbox").prop("checked", true);
             }
@@ -306,7 +308,7 @@ jQuery(function($) {
                 $(this).next().slideToggle();
                 $(this).toggleClass("shown");
 
-                //追加部分
+                //旅行コンテンツ – 詳細
                 if (!$(this).hasClass('shown')) {
                     $(this).find(":checkbox").prop("checked", false);
                 } else if ($(this).hasClass('shown')) {

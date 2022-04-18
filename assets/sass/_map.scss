@@ -219,8 +219,15 @@ main.map02 {
                 @include wrap;
                 overflow: hidden;
                 list-style-type: none;
+                margin-top: 20px;
                 li {
-                    margin-right: 10px;
+                    margin-right: 40px;
+                    a {
+                        font-size: 1.6rem;
+                        padding: 0 2px;
+                        color: $black;
+                        text-decoration: none;
+                    }
                 }
             }
         }
@@ -229,23 +236,26 @@ main.map02 {
             padding-bottom: 100px;
             .post {
                 @include post;
-                .countries,
-                .skills {
-                    @include flex;
-                    @include wrap;
-                    color: $green;
-                    list-style-type: none;
-                    li {
-                        &::after {
-                            content: ",";
+                .info {
+                    .meta {
+                        @include flex;
+                        @include wrap;
+                        margin-top: 40px;
+                        .country-name {
+                            padding-right: 10px;
+                        }
+                        .num {
+                            @media screen and (min-width: $tablet) {
+                                padding-left: 10px;
+                                border-left: 1px solid $black;
+                            }
                         }
                     }
-                }
-                .countries {
-                    color: $green;
-                }
-                .skills {
-                    color: $blue;
+                    .company-name {
+                        @media screen and (min-width: $tablet) {
+                            margin-top: 0;
+                        }
+                    }
                 }
             }
             .pager {

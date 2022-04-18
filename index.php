@@ -25,7 +25,7 @@
     <li class="link"><a href="plan-etimate.php">日程・見積をきく plan-etimate.php</a></li>
     <li class="link"><a href="travel-content.php">旅行コンテンツ(一覧) travel-content.php</a></li>
     <li class="link"><a href="travel-content-category.php">旅行コンテンツ – カテゴリ／検索トップ travel-content-category</a></li>
-    <li class="link"><a href="travel-content-post.php">旅行コンテンツ – 詳細 travel-content-post.php（サイドバー調整中）</a></li>
+    <li class="link"><a href="travel-content-post.php">旅行コンテンツ – 詳細 travel-content-post.php</a></li>
     <li class="link"><a href="travel-content-estimate-form.php">旅行コンテンツ – 空き状況・料金を聞く travel-content-estimate-form.php</a></li>
     <li class="link"><a href="travel-content-estimate-form-conf.php">旅行コンテンツ – 確認画面 travel-content-estimate-form-conf.php</a></li>
     <li class="link"><a href="travel-content-estimate-form-thx.php">旅行コンテンツ – 完了画面 travel-content-estimate-form-thx.php</a></li>

@@ -837,9 +837,10 @@ main.home {
                         }
                         .category {
                             border: 1px solid $green;
-                            color: $blue;
+                            color: $green;
                             padding: 0 20px;
                             margin-left: 10px;
+                            border-radius: 2px;
                         }
                     }
                     .title {
