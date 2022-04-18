@@ -1,0 +1,200 @@
+.contents-wrap.mypage-form-cancel {
+    background-color: initial !important;
+
+    .main {
+        margin-top: 0px;
+        @media screen and (min-width: $tablet) {
+            margin-top: 40px;
+        }
+
+        .inner {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-top: 20px;
+            padding-bottom: 80px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .complete-title {
+                text-align: center;
+                font-size: 3.2rem;
+                p:nth-child(n+2) {
+                    margin-top: 60px;
+                }
+            }
+
+            .complete-message {
+                text-align: center;
+                margin-top: 60px;
+            }
+
+            .complete-exit {
+                text-align: center;
+                margin-top: 60px;
+                p:nth-child(n+2) {
+                    margin-top: 40px;
+                }
+            }
+
+            .cancel-form {
+
+                .cancel-form-title {
+                    font-size: 3.2rem;
+                    text-align: center;
+                    font-weight: 400;
+                }
+
+                .tour-info {
+                    border: 1px solid #E4E4E4;
+                    border-radius: 10px;
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    margin-top: 40px;
+
+                    .tour-info-user-name {
+                        span {
+                            margin-right: 10px;
+                            font-weight: 600;
+                            font-size: 1.8rem;
+                        }
+                    }
+
+                    .tour-info-user-name-detail {
+                        span {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .tour-number {
+                        margin-top: 20px;
+                        span {
+                            margin-right: 10px;
+                            color: #9A9A9A;
+                        }
+                    }
+
+                    .tour-info-tour-title {
+                        font-weight: 600;
+                    }
+
+                }
+                
+            }
+
+            .form-item {
+                margin-top: 60px;
+
+                .form-item-title {
+                    font-weight: 600;
+                }
+
+                .form-item-content {
+                    padding-left: 20px;
+                    padding-right: 20px;
+
+                    .form-item-content-item {
+                        margin-top: 30px;
+                    }
+
+                    .form-item-input-flex {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        column-gap: 20px;
+                        margin-top: 10px;
+
+                        .form-item-input-flex-item {
+                            &:nth-child(n+2) {
+                                @media screen and (min-width: $tablet) {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    .form-item-input-textarea {
+                        position: relative;
+                        width: 100%;
+
+                        &::before {
+                            content: "";
+                            display: block;
+                            padding-bottom: 36.33%;
+                            @media screen and (min-width: $tablet) {
+                                padding-bottom: 10.33%;
+                            }
+                        }
+
+                        textarea {
+                            // resize: none;
+                            padding: 16px;
+                            border: 1px solid #B1B1B1;
+                            border-radius: 4px;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+
+                    .form-item-input {
+
+                        .form-item-input-item {
+                            position: relative;
+                        }
+                    }
+
+                    .list-cancel-agreement {
+                        padding-top: 20px;
+                        padding-bottom: 40px;
+                        list-style-position: inside;
+                    }
+                    
+                }
+
+
+                .text-bold {
+                    font-weight: 600;
+                }
+
+            }
+
+            .form-item-center {
+                margin-top: 60px;
+                text-align: center;
+
+                p:nth-child(n+2) {
+                    margin-top: 20px;
+                }
+            }
+            
+        }
+        
+        .btn-form {
+            text-align: center;
+            font-size: 2rem;
+            border-radius: 38px;
+            max-width: 380px;
+            width: 100%;
+            padding-top: 16px;
+            padding-bottom: 16px;
+
+            &.btn-form-blue-line {
+                border: 1px solid $blue02;
+                background-color: #fff;
+                color: $blue02;
+            }
+            &.btn-form-blue {
+                border: 1px solid $blue02;
+                background-color: $blue02;
+                color: #fff;
+            }
+        }
+        
+    }
+
+}

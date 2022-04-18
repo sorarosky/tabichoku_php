@@ -1,0 +1,418 @@
+.contents-wrap.mypage-suggestion {
+    background-color: initial !important;
+
+    .main {
+        margin-top: 0px;
+        @media screen and (min-width: $tablet) {
+            margin-top: 40px;
+        }
+
+        .inner {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-top: 20px;
+            padding-bottom: 80px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .suggestion-title {
+                text-align: center;
+                font-size: 3.2rem;
+            }
+
+            .suggestion-warning {
+                color: #EA1010;
+                text-align: center;
+                font-size: 1.8rem;
+                margin-top: 40px;
+            }
+
+            .suggestion-message {
+                text-align: center;
+                margin-top: 40px;
+            }
+
+            .suggestion-info {
+                margin-top: 40px;
+
+                .created-date {
+                    text-align: right;
+                    span {
+                        color: #9A9A9A;
+                        margin-right: 10px;
+                    }
+                }
+
+                .suggestion-info-block-flex {
+                    display: flex;
+                    column-gap: 20px;
+
+                    .suggestion-info-block-flex-item {
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        border: 1px solid #E4E4E4;
+                        border-radius: 10px;
+
+                        &.user {
+                            flex-basis: calc(55% - 10px);
+                            .user-name {
+                                span {
+                                    margin-right: 10px;
+                                    font-weight: 600;
+                                    font-size: 1.8rem;
+                                }
+                            }
+
+                            .user-name-detail {
+                                span {
+                                    margin-right: 10px;
+                                }
+                            }
+
+                            .tour-number {
+                                margin-top: 20px;
+                                span {
+                                    margin-right: 10px;
+                                    color: #9A9A9A;
+                                }
+                            }
+
+                            .tour-title {
+                                font-weight: 600;
+                                font-size: 1.8rem;
+                            }
+
+                            .tour-area {
+                                margin-top: 20px;
+                                img {
+                                    margin-right: 10px;
+                                    vertical-align: sub;
+                                }
+                            }
+                        }
+
+                        &.company {
+                            flex-basis: calc(45% - 10px);
+
+                            .company-license {
+                                span {
+                                    color: #9A9A9A;
+                                }
+                            }
+
+                            .company-name {
+                                font-size: 1.8rem;
+                            }
+
+                            .company-adoress {
+                            }
+
+                            .company-local-partner {
+                                margin-top: 20px;
+
+                                span {
+                                    color: #9A9A9A;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .suggestion-info-block {
+                    margin-top: 20px;
+                    flex-basis: calc(50% - 20px);
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    border: 1px solid #E4E4E4;
+                    border-radius: 10px;
+
+                    .plan-id {
+                    }
+
+                    .plan-title,
+                    .plan-menu {
+                        font-size: 2.4rem;
+                        font-weight: 600;
+                    }
+
+                    .plan-detail {
+                        margin-top: 10px;
+                        display: flex;
+                        align-items: center;
+                        column-gap: 20px;
+
+                        .plan-index {
+                            flex-basis: 70%;
+                            .plan-index-flex {
+                                display: flex;
+                                column-gap: 20px;
+
+                                &.datetime {
+                                    .plan-index-flex-item:nth-child(even) {
+                                        font-size: 1.6rem;
+                                    }
+                                }
+
+                                .plan-index-flex-item {
+                                    margin-top: 10px;
+                                    &:first-child {
+                                        flex-shrink: 0;
+                                        width: 100%;
+                                        max-width: 74px;
+                                    }   
+                                    &:nth-child(odd) {
+                                        color: #9A9A9A;
+                                    }
+                                }
+                            }
+                        }
+
+                        .plan-estimate {
+                            flex-basis: 30%;
+                            border-left: 1px solid #E4E4E4;
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            
+                            .plan-estimate-block-flex {
+                                display: flex;
+                                justify-content: space-between;
+                                margin-top: 10px;
+
+                                &.total {
+                                    span {
+                                        font-size: 2.4rem;
+                                        font-weight: 600;
+                                    }    
+                                }
+                                span {
+                                    font-size: 2rem;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .suggestion-block {
+                    margin-top: 60px;
+
+                    .suggestion-block-title {
+                        font-weight: 600;
+                        font-size: 1.8rem;
+                    }
+
+                    .suggestion-block-content {
+
+                    }
+
+                    &.suggestion-service {
+                        table {
+                            width: 100%;
+                            border-collapse: collapse;
+                            border: 1px solid #E4E4E4;
+                            margin-top: 20px;
+
+                            th, td {
+                                border: 1px solid #E4E4E4;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                vertical-align: middle;
+                            }
+            
+                            th {
+                                text-align: center;
+                                background-color: #F5F5F5;
+
+                                &.order{
+                                    width: 10%;
+                                }
+
+                                &.date{
+                                    width: 20%;
+                                }
+
+                                &.content{
+                                    width: 50%;
+                                }
+                                
+                                &.result{
+                                    width: 20%;
+                                }
+
+                            }
+            
+                            td {
+                                text-align: center;
+                                &.content {
+                                    text-align: left;
+                                }
+                            }
+
+                        }
+                    }
+
+                    &.suggestion-estimate {
+
+                        .estimate-total {
+                            font-size: 1.8rem;
+                            font-weight: 600;
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            background-color: #F5F5F5;
+                            border: 1px solid #E4E4E4;
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 20px;
+                            span {
+                                font-size: 2.7rem;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        .estimate-document {
+                            margin-top: 60px;
+
+                            .estimate-document-title {
+                                font-weight: 600;
+                                font-size: 1.8rem;
+
+                            }
+                            .estimate-document-dl-link {
+                                border-top: 1px solid #E4E4E4;
+                                border-bottom: 1px solid #E4E4E4;
+                                padding-top: 30px;
+                                padding-bottom: 30px;
+                                margin-top: 20px;
+
+                                p {
+                                    font-size: 1.8rem;
+                                    &:nth-child(n+2) {
+                                        margin-top: 30px;
+                                    }
+                                    >span {
+                                        margin-right: 40px;
+                                    }
+                                }
+
+                                .btn-blue {
+                                    border-radius: 24px;
+                                    span {
+                                        margin-right: 10px;
+                                    }
+                                    img {
+                                        vertical-align: center;
+                                    }
+                                }
+                                
+                            }
+                            
+                        }
+
+                    }
+
+                    &.suggestion-memo {
+                        .memo-content{
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            border: 1px solid #E4E4E4;
+                            margin-top: 20px;
+
+                            ul {
+                                list-style-position: inside;
+                            }
+                        }
+                    }
+
+                    &.suggestion-blue-line {
+                        border: 2px solid #3DCDE6;
+                        padding-top: 40px;
+                        padding-bottom: 40px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+
+                        .text {
+                            color: #ED4D54;
+                            text-align: center;
+                            font-size: 1.8rem;
+                        }
+
+                        .btns-flex {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 490px;
+                            margin-top: 30px;
+                            .btn {
+                                width: 100%;
+                                max-width: 220px;
+                                border-radius: 25px;
+
+                                &.btn-gray {
+                                    background-color: #9A9A9A;
+                                    border: 1px solid #9A9A9A;
+                                }
+
+                                &.btn-gray-line {
+                                    border: 1px solid #9A9A9A;
+                                    color: #9A9A9A;
+                                }
+                            }
+                        }
+
+                        .link {
+                            text-align: center;
+                            margin-top: 20px;
+                            font-size: 1.2rem;
+
+                            a {
+                                color: #ED4D54;
+                            }
+                        }
+
+                    }
+
+                }
+
+
+            }
+            
+        }
+        
+        .btn-form {
+            text-align: center;
+            font-size: 2rem;
+            border-radius: 38px;
+            max-width: 380px;
+            width: 100%;
+            padding-top: 16px;
+            padding-bottom: 16px;
+
+            &.btn-form-blue-line {
+                border: 1px solid $blue02;
+                background-color: #fff;
+                color: $blue02;
+            }
+            &.btn-form-blue {
+                border: 1px solid $blue02;
+                background-color: $blue02;
+                color: #fff;
+            }
+        }
+        
+    }
+
+}
