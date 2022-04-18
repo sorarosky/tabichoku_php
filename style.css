@@ -13547,12 +13547,14 @@ main.map02 .section-content.posts .pager .navi {
   width: 100%;
   text-align: center;
   margin-top: 10px;
+  border-bottom: 3px solid #4FE0B0;
 }
 @media screen and (min-width: 768px) {
   .contents-wrap.mypage .main-aside-wrap .main .tour-info-nav .tour-info-nav-list .tour-info-nav-list-item {
     width: calc(25% - 15px);
     margin-top: 0px;
     font-size: 16px;
+    border-bottom: none;
   }
 }
 .contents-wrap.mypage .main-aside-wrap .main .tour-info-nav .tour-info-nav-list .tour-info-nav-list-item.current a {
@@ -13568,6 +13570,31 @@ main.map02 .section-content.posts .pager .navi {
   background-color: #4FE0B0;
   border: 2px solid #4FE0B0;
   border-bottom: 0;
+}
+.contents-wrap.mypage .main-aside-wrap .main .tour-info-status {
+  display: flex;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contents-wrap.mypage .main-aside-wrap .main .tour-info-status {
+    display: none;
+  }
+}
+.contents-wrap.mypage .main-aside-wrap .main .tour-info-status .tour-info-status-label {
+  text-align: center;
+  color: #fff;
+  max-width: 120px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  background-color: #ED4D54;
+  margin-right: 20px;
+}
+.contents-wrap.mypage .main-aside-wrap .main .tour-info-status .tour-info-status-link {
+  font-size: 1.2rem;
+}
+.contents-wrap.mypage .main-aside-wrap .main .tour-info-status .tour-info-status-link a {
+  color: #ED4D54;
 }
 .contents-wrap.mypage .main-aside-wrap .main .box-latest-tour {
   padding-top: 20px;
@@ -13937,20 +13964,64 @@ main.map02 .section-content.posts .pager .navi {
 }
 .contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item {
   display: flex;
-  align-items: center;
 }
 .contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item:nth-child(n+2) {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item {
+    align-items: center;
+  }
+  .contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item:nth-child(n+2) {
+    margin-top: 10px;
+  }
 }
 .contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item .application-list-content-item-date {
   flex-basis: 20%;
+  display: none;
+}
+.contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item .application-list-content-item-date.pc {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item .application-list-content-item-date.pc {
+    display: block;
+  }
+}
+.contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item .application-list-content-item-date.sp {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item .application-list-content-item-date.sp {
+    display: none;
+  }
 }
 .contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item .application-list-content-item-title {
-  flex-basis: 60%;
+  flex-basis: 70%;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item .application-list-content-item-title .title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media screen and (min-width: 768px) {
+  .contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item .application-list-content-item-title {
+    flex-basis: 60%;
+    width: 70%;
+  }
 }
 .contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item .application-list-content-item-status {
-  flex-basis: 20%;
+  flex-basis: 30%;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item .application-list-content-item-status {
+    flex-basis: 20%;
+  }
 }
 .contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item .application-list-content-item-status .label {
   padding-left: 10px;
@@ -13983,6 +14054,14 @@ main.map02 .section-content.posts .pager .navi {
 }
 .contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item .application-list-content-item-status .text {
   font-size: 1.2rem;
+  line-height: 1.5em;
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item .application-list-content-item-status .text {
+    margin-top: 3px;
+    line-height: initial;
+  }
 }
 .contents-wrap.mypage .main-aside-wrap .main .block.tour-application-status-block .application-list .application-list-content .application-list-content-item .application-list-content-item-status .text.text-red {
   color: #ED4D54;
@@ -14030,9 +14109,6 @@ main.map02 .section-content.posts .pager .navi {
   padding-left: 20px;
   padding-right: 20px;
 }
-.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message {
-  display: flex;
-}
 .contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message:nth-child(n+2) {
   margin-top: 20px;
 }
@@ -14061,20 +14137,79 @@ main.map02 .section-content.posts .pager .navi {
 .contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message .message-wrap .bubble p:last-child {
   margin-bottom: 0;
 }
-.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .company-portrait {
+.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .campany-flex {
+  display: flex;
+}
+.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .campany-flex .company-portrait {
   margin-right: 20px;
   width: 60px;
   height: 60px;
   border-radius: 100%;
   border: 1px solid #707070;
   overflow: hidden;
+  flex-shrink: 0;
 }
-.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .company-portrait img {
+.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .campany-flex .company-portrait img {
   width: 100%;
 }
-.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .message-wrap .bubble {
+.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .campany-flex .message-wrap .info.pc {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .campany-flex .message-wrap .info.pc {
+    display: block;
+  }
+}
+.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .campany-flex .message-wrap .info.sp {
+  display: block;
+}
+.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .campany-flex .message-wrap .info.sp span {
+  margin-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .campany-flex .message-wrap .info.sp {
+    display: none;
+  }
+}
+.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .campany-flex .message-wrap .bubble {
   background-color: #fff;
   border: 1px solid #E4E4E4;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .campany-flex .message-wrap .bubble {
+    display: block;
+  }
+}
+.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .bubble.sp {
+  background-color: #fff;
+  border: 1px solid #E4E4E4;
+  display: block;
+  max-width: 636px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .bubble.sp {
+    display: none;
+  }
+}
+.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .bubble.sp .attached-file img {
+  vertical-align: sub;
+  margin-right: 10px;
+}
+.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .bubble.sp p {
+  margin-bottom: 10px;
+}
+.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-company .bubble.sp p:last-child {
+  margin-bottom: 0;
+}
+.contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-user {
+  display: flex;
 }
 .contents-wrap.mypage .main-aside-wrap .main .block.tour-message-block .message-window .message-window-wrap .box-message.box-message-user .message-wrap {
   margin-left: auto;
