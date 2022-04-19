@@ -310,9 +310,9 @@ jQuery(function($) {
 
                 //旅行コンテンツ – 詳細
                 if (!$(this).hasClass('shown')) {
-                    $(this).find(":checkbox").prop("checked", false);
+                    $(this).find(":radio").prop("checked", false);
                 } else if ($(this).hasClass('shown')) {
-                    $(this).find(":checkbox").prop("checked", true);
+                    $(this).find(":radio").prop("checked", true);
                 }
 
             });

@@ -3752,9 +3752,10 @@ main.home .section-content.information .inner .post .info .date {
 }
 main.home .section-content.information .inner .post .info .category {
   border: 1px solid #4FE0B0;
-  color: #00A9C6;
+  color: #4FE0B0;
   padding: 0 20px;
   margin-left: 10px;
+  border-radius: 2px;
 }
 main.home .section-content.information .inner .post .title {
   text-decoration: none;
@@ -7715,6 +7716,7 @@ main.travel-content-estimate-form-thx .section-content .inner .button {
   border-radius: 40px;
   font-size: 2rem;
   margin-top: 40px;
+  max-width: 400px;
 }
 main.travel-content-estimate-form-thx .section-content .inner .button:hover {
   cursor: pointer;
@@ -7834,8 +7836,8 @@ main.local-professionals-agent-estimate-form-thx .section-content .inner .box {
 main.local-professionals-agent-estimate-form .section-content .inner .box .title,
 main.local-professionals-agent-estimate-form-conf .section-content .inner .box .title,
 main.local-professionals-agent-estimate-form-thx .section-content .inner .box .title {
-  font-size: 1.8rem;
-  color: #3DCDE6;
+  font-size: 2.4rem;
+  color: #00A9C6;
   font-weight: bold;
 }
 main.local-professionals-agent-estimate-form .section-content .inner .box .date,
@@ -7875,7 +7877,12 @@ main.local-professionals-agent-estimate-form-conf .section-content .inner .box t
 main.local-professionals-agent-estimate-form-thx .section-content .inner .box table tr th,
 main.local-professionals-agent-estimate-form-thx .section-content .inner .box table tr td {
   text-align-last: left;
-  padding: 10px 0;
+  padding: 5px 0;
+}
+main.local-professionals-agent-estimate-form .section-content .inner .box table tr th,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .box table tr th,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .box table tr th {
+  color: #9A9A9A;
 }
 main.local-professionals-agent-estimate-form .section-content .inner .form,
 main.local-professionals-agent-estimate-form-conf .section-content .inner .form,
@@ -7959,6 +7966,11 @@ main.local-professionals-agent-estimate-form-thx .section-content .inner .form t
   /*--- safari（PC）用 ---*/
   margin-left: -10px;
 }
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td.has-selecter .caption,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td.has-selecter .caption,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td.has-selecter .caption {
+  width: 100%;
+}
 main.local-professionals-agent-estimate-form .section-content .inner .form table tr td.has-selecter .select-wrap,
 main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td.has-selecter .select-wrap,
 main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td.has-selecter .select-wrap {
@@ -7976,10 +7988,16 @@ main.local-professionals-agent-estimate-form-conf .section-content .inner .form 
 main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td.input-with-initial input {
   width: initial;
 }
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td.input-with-initial input,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td.input-with-initial input,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td.input-with-initial input {
+  width: initial;
+}
 main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table,
 main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table,
 main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td table {
   width: 100%;
+  border-top: none;
 }
 main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table tr,
 main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table tr,
@@ -7992,28 +8010,31 @@ main.local-professionals-agent-estimate-form-thx .section-content .inner .form t
   /*--- IE10用 ---*/
   -webkit-flex-wrap: wrap;
   /*--- safari（PC）用 ---*/
+  border-bottom: none;
 }
-main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table th,
-main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table th,
-main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td table th {
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table tr th,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table tr th,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td table tr th {
   width: 30%;
   padding-right: 0;
   font-weight: normal;
+  padding: 5px 0;
 }
-main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table td,
-main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table td,
-main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td table td {
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table tr td,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table tr td,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td table tr td {
   width: 70%;
   padding-left: 0;
+  padding: 5px 0;
 }
-main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table td input,
-main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table td input,
-main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td table td input {
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table tr td input,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table tr td input,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td table tr td input {
   width: 40px !important;
 }
-main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table td span,
-main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table td span,
-main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td table td span {
+main.local-professionals-agent-estimate-form .section-content .inner .form table tr td table tr td span,
+main.local-professionals-agent-estimate-form-conf .section-content .inner .form table tr td table tr td span,
+main.local-professionals-agent-estimate-form-thx .section-content .inner .form table tr td table tr td span {
   font-size: 2.4rem;
 }
 main.local-professionals-agent-estimate-form .section-content .inner .form table tr td.checkboxs,
@@ -8258,6 +8279,7 @@ main.local-professionals-agent-estimate-form-thx .section-content .inner .button
   border-radius: 40px;
   font-size: 2rem;
   margin-top: 40px;
+  max-width: 400px;
 }
 main.local-professionals-agent-estimate-form-thx .section-content .inner .button:hover {
   cursor: pointer;
@@ -12956,10 +12978,18 @@ main.map02 .section-content.categories .tags {
   /*--- safari（PC）用 ---*/
   overflow: hidden;
   list-style-type: none;
+  margin-top: 20px;
 }
 main.map .section-content.categories .tags li,
 main.map02 .section-content.categories .tags li {
-  margin-right: 10px;
+  margin-right: 40px;
+}
+main.map .section-content.categories .tags li a,
+main.map02 .section-content.categories .tags li a {
+  font-size: 1.6rem;
+  padding: 0 2px;
+  color: #333;
+  text-decoration: none;
 }
 main.map .section-content.posts,
 main.map02 .section-content.posts {
@@ -13058,10 +13088,8 @@ main.map02 .section-content.posts .post .info .tags li a {
   background-color: #E4E4E4;
   text-decoration: none;
 }
-main.map .section-content.posts .post .countries,
-main.map .section-content.posts .post .skills,
-main.map02 .section-content.posts .post .countries,
-main.map02 .section-content.posts .post .skills {
+main.map .section-content.posts .post .info .meta,
+main.map02 .section-content.posts .post .info .meta {
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13070,22 +13098,24 @@ main.map02 .section-content.posts .post .skills {
   /*--- IE10用 ---*/
   -webkit-flex-wrap: wrap;
   /*--- safari（PC）用 ---*/
-  color: #4FE0B0;
-  list-style-type: none;
+  margin-top: 40px;
 }
-main.map .section-content.posts .post .countries li::after,
-main.map .section-content.posts .post .skills li::after,
-main.map02 .section-content.posts .post .countries li::after,
-main.map02 .section-content.posts .post .skills li::after {
-  content: ",";
+main.map .section-content.posts .post .info .meta .country-name,
+main.map02 .section-content.posts .post .info .meta .country-name {
+  padding-right: 10px;
 }
-main.map .section-content.posts .post .countries,
-main.map02 .section-content.posts .post .countries {
-  color: #4FE0B0;
+@media screen and (min-width: 768px) {
+  main.map .section-content.posts .post .info .meta .num,
+main.map02 .section-content.posts .post .info .meta .num {
+    padding-left: 10px;
+    border-left: 1px solid #333;
+  }
 }
-main.map .section-content.posts .post .skills,
-main.map02 .section-content.posts .post .skills {
-  color: #00A9C6;
+@media screen and (min-width: 768px) {
+  main.map .section-content.posts .post .info .company-name,
+main.map02 .section-content.posts .post .info .company-name {
+    margin-top: 0;
+  }
 }
 main.map .section-content.posts .pager,
 main.map02 .section-content.posts .pager {
