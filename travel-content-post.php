@@ -128,7 +128,7 @@
               
               <div class="acordion-head js-acordion-head shown">
                 <div class="checkbox">
-                 <input type="checkbox"> Aメニュー
+                 <input type="radio" name="menu" checked> Aメニュー
                 </div>
                 <div class="title">セダン送迎付き</div>
                 <div class="id">ID <span>00000A</span></div>
@@ -179,7 +179,7 @@
 
               <div class="acordion-head js-acordion-head">
                 <div class="checkbox">
-                 <input type="checkbox"> Bメニュー
+                 <input type="radio" name="menu"> Bメニュー
                 </div>
                 <div class="title">ワゴン送迎付き</div>
                 <div class="id">ID <span>00000B</span></div>
@@ -230,7 +230,7 @@
 
               <div class="acordion-head js-acordion-head">
                 <div class="checkbox">
-                 <input type="checkbox"> Cメニュー
+                 <input type="radio" name="menu"> Cメニュー
                 </div>
                 <div class="title">ワゴン送迎付き</div>
                 <div class="id">ID <span>00000C</span></div>
@@ -281,7 +281,7 @@
 
               <div class="acordion-head js-acordion-head">
                 <div class="checkbox">
-                 <input type="checkbox"> Dメニュー
+                 <input type="radio" name="menu"> Dメニュー
                 </div>
                 <div class="title">ワゴン送迎付き</div>
                 <div class="id">ID <span>00000D</span></div>
