@@ -305,14 +305,17 @@ jQuery(function($) {
             }
 
             $(".js-acordion-head").on("click", function() {
-                $(this).next().slideToggle();
-                $(this).toggleClass("shown");
+                
 
                 //旅行コンテンツ – 詳細
                 if (!$(this).hasClass('shown')) {
-                    $(this).find(":radio").prop("checked", false);
-                } else if ($(this).hasClass('shown')) {
+                    $(".js-acordion-head.shown").next().slideToggle();
+                    $(".js-acordion-head.shown :radio").prop("checked", false);
+                    $(".js-acordion-head.shown").removeClass("shown");
+                    
+                    $(this).toggleClass("shown");
                     $(this).find(":radio").prop("checked", true);
+                    $(this).next().slideToggle();
                 }
 
             });

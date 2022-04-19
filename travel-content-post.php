@@ -128,7 +128,7 @@
               
               <div class="acordion-head js-acordion-head shown">
                 <div class="checkbox">
-                 <input type="radio" name="menu"> Aメニュー
+                 <input type="radio" name="menu" checked> Aメニュー
                 </div>
                 <div class="title">セダン送迎付き</div>
                 <div class="id">ID <span>00000A</span></div>
