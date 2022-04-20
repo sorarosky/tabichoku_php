@@ -12403,6 +12403,14 @@ main.travel-content-post .section-content.pickup .swiper-container-wrapper .page
     line-height: 2rem;
   }
 }
+.map-top-map .map .map-reagion a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
 .map-top-map .map .map-reagion.europe {
   top: 32%;
   left: 9%;
