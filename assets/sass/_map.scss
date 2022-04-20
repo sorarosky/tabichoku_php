@@ -39,6 +39,15 @@
                 padding-right: 20px;
                 line-height: 2rem;
             }
+
+            a {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
             &.europe {
                 top: 32%;
                 left: 9%;

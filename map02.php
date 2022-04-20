@@ -5,38 +5,47 @@
         <div class="map-reagion europe">
           <p>ヨーロッパ</p>
           <p>39件</p>
+          <a href=""></a>
         </div>
         <div class="map-reagion africa">
           <p>アフリカ</p>
           <p>3件</p>
+          <a href=""></a>
         </div>
         <div class="map-reagion west-asia">
           <p>中東</p>
           <p>23件</p>
+          <a href=""></a>
         </div>
         <div class="map-reagion asia">
           <p>アジア</p>
           <p>6件</p>
+          <a href=""></a>
         </div>
         <div class="map-reagion japan">
           <p>日本</p>
           <p>3件</p>
+          <a href=""></a>
         </div>
         <div class="map-reagion oceania">
           <p>大洋州</p>
           <p>1件</p>
+          <a href=""></a>
         </div>
         <div class="map-reagion hawaii">
           <p>ハワイ</p>
           <p>7件</p>
+          <a href=""></a>
         </div>
         <div class="map-reagion north-america">
           <p>北米</p>
           <p>24件</p>
+          <a href=""></a>
         </div>
         <div class="map-reagion south-america">
           <p>中南米</p>
           <p>3件</p>
+          <a href=""></a>
         </div>
       </div>
   </div>
