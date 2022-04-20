@@ -61,6 +61,22 @@
     <li class="link"><a href="mypage-favorite-news-list.php">マイページ お気に入り 現地通信 mypage-favorite-news-list.php</a></li>
     <li class="link"><a href="mypage-favorite-partner-list.php">マイページ お気に入り 現地パートナー mypage-favorite-partner-list.php</a></li>
     <li class="link"><a href="mypage-tour-info-download.php">マイページ 旅行情報 重要書類 mypage-tour-info-download.php</a></li>
+    <li class="link"><a href="mypage-tour-info-message.php">マイページ 旅行情報 メッセージ mypage-tour-info-message.php</a></li>
+    <li class="link"><a href="mypage-form-cancel.php">マイページ 取消フォーム mypage-form-cancel.php</a></li>
+    <li class="link"><a href="mypage-form-cancel-confirm.php">マイページ 取消フォーム 内容確認 mypage-form-cancel-confirm.php</a></li>
+    <li class="link"><a href="mypage-form-cancel-complete.php">マイページ 取消フォーム 完了 mypage-form-cancel-complete.php</a></li>
+    <li class="link"><a href="mypage-suggestion.php">マイページ ご旅行提案書 mypage-suggestion.php</a>
+      <ul>
+        <li><a href="mypage-suggestion.php?mode=expired">マイページ ご旅行提案書 ボタン差異「有効期限が切れた時」</a></li>
+        <li><a href="mypage-suggestion.php?mode=applied">マイページ ご旅行提案書 ボタン差異「手配申込完了したとき」</a></li>
+      </ul>  
+    </li>
+    <li class="link"><a href="mypage-invoice.php">マイページ 予約確定書兼ご請求書 mypage-invoice.php</a>
+      <ul>
+        <li><a href="mypage-invoice.php?mode=expired">マイページ 予約確定書兼ご請求書 ボタン差異「有効期限が切れた時」</a></li>
+        <li><a href="mypage-invoice.php?mode=applied">マイページ 予約確定書兼ご請求書 ボタン差異「手配申込完了したとき」</a></li>
+      </ul>  
+    </li>
 
   </ul>
 </nav>
