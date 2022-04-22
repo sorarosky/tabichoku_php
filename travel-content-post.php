@@ -25,8 +25,8 @@
           </ul>
           <div class="row">
             <div class="col col-12 col-md-6">
-              <div class="swiper-container swiper-container-local-professionals-news-post-wrapper">
-                <nav class="swiper-container swiper-container-local-professionals-news-post">
+              <div class="swiper-container swiper-container-travel-content-post-wrapper">
+                <nav class="swiper-container swiper-container-travel-content-post">
                   <ul class="swiper-wrapper">
                     <li class="swiper-slide slide01">
                       <img src="/assets/img/thumb.jpg" alt="">
