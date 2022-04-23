@@ -28,7 +28,7 @@
 
               <div class="content">
                 <div class="thumbnail">
-                  <img src="assets/img/mypage-favorite-tour-dummy.png" alt="">
+                  <img src="assets/img/mypage-favorite-tour-dummy02.jpg" alt="">
                 </div>
 
                 <div class="side">

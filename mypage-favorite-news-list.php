@@ -30,7 +30,7 @@
                   <?php if( $i < 3 ) { ?>
                   <div class="label-new"></div>
                   <?php } ?>
-                  <img src="assets/img/mypage-favorite-news-dummy.png" alt="">
+                  <img src="assets/img/mypage-favorite-news-dummy02.jpg" alt="">
                 </div>
 
                 <div class="side">
