@@ -26,7 +26,7 @@
           <?php for($i=0;$i<5;$i++) { ?>
             <li class="list-favorite-tour-item">
 
-              <div class="content content-pc">
+              <div class="content">
                 <div class="thumbnail">
                   <img src="assets/img/mypage-favorite-tour-dummy.png" alt="">
                 </div>
@@ -36,19 +36,17 @@
                     <p class="box-flex-item">
                       <span><img src="assets/img/mypage-favorite-list-view.svg" alt=""></span>00000
                     </p>
-                    <p class="box-flex-item box-flex-item-pc">|</p>
-                    <p class="box-flex-item box-flex-item-pc">イタリア(国) / ミラノ(地域)</p>
-                    <p class="box-flex-item box-flex-item-sp">イタリア(国)</p>
-                    <p class="box-flex-item box-flex-item-sp">ミラノ(地域)</p>
+                    <p class="box-flex-item">|</p>
+                    <p class="box-flex-item">イタリア(国) / ミラノ(地域)</p>
                   </div>
-                  <div class="content-title content-title-pc">
-                    タイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入る
-                  </div>
-                  <div class="box-text box-text-pc">
+                  <p class="content-theme">持続可能な社会を創る旅(テーマ) / すべての人に健康と福祉を(カテゴリー)</p>
+                  <p class="content-theme">テーマ名（最大2個） / カテゴリ名が入る、カテゴリ名が入る、カテゴリ名が入る</p>
+                  <div class="content-title">タイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入る</div>
+                  <div class="box-text box-text">
                     <span><img src="assets/img/mypage-favorite-list-company.svg" alt=""></span>（仮）日本トラベルコーディネート株式会社
                   </div>
 
-                  <div class="box-tag box-tag-pc">
+                  <div class="box-tag box-tag">
                     <a href="">#ハッシュタグ</a>
                     <a href="">#ハッシュタグ</a>
                     <a href="">#タグ</a>
@@ -60,27 +58,6 @@
                 </div>
               </div>
 
-              <div class="content content-sp">
-                <div class="box-text">
-                  <p class="blue">持続可能な社会を創る旅(テーマ) / すべての人に健康と福祉を(カテゴリー)</p>
-                  <p class="blue">テーマ名（最大2個） / カテゴリ名が入る、カテゴリ名が入る、カテゴリ名が入る</p>
-                </div>
-
-                <div class="content-title">
-                  タイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入る
-                </div>
-                <div class="box-text">
-                  <span><img src="assets/img/mypage-favorite-list-company.svg" alt=""></span>（仮）日本トラベルコーディネート株式会社
-                </div>
-                <div class="box-tag">
-                  <a href="">#ハッシュタグ</a>
-                  <a href="">#ハッシュタグ</a>
-                  <a href="">#タグ</a>
-                  <a href="">#ハッシュタグハッシュタグハッシュタグ</a>
-                  <a href="">#タグタグタグ</a>
-                  <a href="">#タグ</a>
-                </div>
-              </div>
           </li>
 
           <?php } ?>
