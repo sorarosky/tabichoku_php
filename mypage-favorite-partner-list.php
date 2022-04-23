@@ -27,7 +27,7 @@
 
               <div class="content">
                 <div class="thumbnail">
-                  <img src="assets/img/mypage-favorite-news-dummy.png" alt="">
+                  <img src="assets/img/mypage-favorite-news-dummy02.jpg" alt="">
                 </div>
 
                 <div class="side">
