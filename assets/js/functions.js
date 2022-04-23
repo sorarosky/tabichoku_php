@@ -294,6 +294,48 @@ jQuery(function($) {
             });
         }
 
+        if ($('.swiper-container-travel-content-post').length) {
+
+            var mySwiper = new Swiper('.swiper-container-travel-content-post', {
+                loop: true,
+                speed: 1000,
+                autoplay: {
+                    delay: 5000,
+                },
+                autoplay: true,
+                allowTouchMove: true,
+                //centeredSlides: true,
+                spaceBetween: 0,
+                slidesPerView: 1,
+                slideToClickedSlide: true,
+                navigation: {
+                    nextEl: '.swiper-container-travel-content-post-wrapper .swiper-button-next',
+                    prevEl: '.swiper-container-travel-content-post-wrapper .swiper-button-prev',
+                },
+            });
+        }
+
+        if ($('.swiper-container-local-professionals-agent-post').length) {
+
+            var mySwiper = new Swiper('.swiper-container-local-professionals-agent-post', {
+                loop: true,
+                speed: 1000,
+                autoplay: {
+                    delay: 5000,
+                },
+                autoplay: true,
+                allowTouchMove: true,
+                //centeredSlides: true,
+                spaceBetween: 0,
+                slidesPerView: 1,
+                slideToClickedSlide: true,
+                navigation: {
+                    nextEl: '.swiper-container-local-professionals-agent-post-wrapper .swiper-button-next',
+                    prevEl: '.swiper-container-local-professionals-agent-post-wrapper .swiper-button-prev',
+                },
+            });
+        }
+
         //アコーディオン
         if ($('.js-acordion-head').length) {
             $(".js-acordion-head").next().css('display', 'none');
@@ -305,14 +347,14 @@ jQuery(function($) {
             }
 
             $(".js-acordion-head").on("click", function() {
-                
+
 
                 //旅行コンテンツ – 詳細
                 if (!$(this).hasClass('shown')) {
                     $(".js-acordion-head.shown").next().slideToggle();
                     $(".js-acordion-head.shown :radio").prop("checked", false);
                     $(".js-acordion-head.shown").removeClass("shown");
-                    
+
                     $(this).toggleClass("shown");
                     $(this).find(":radio").prop("checked", true);
                     $(this).next().slideToggle();
