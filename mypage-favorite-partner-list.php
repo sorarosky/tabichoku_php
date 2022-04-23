@@ -25,14 +25,14 @@
           <?php for($i=0;$i<5;$i++) { ?>
             <li class="list-favorite-tour-item">
 
-              <div class="content content-pc">
-                <div class="thumbnail thumbnail-small-sp">
+              <div class="content">
+                <div class="thumbnail">
                   <img src="assets/img/mypage-favorite-news-dummy.png" alt="">
                 </div>
 
                 <div class="side">
                   <div class="content-title">エージェント名が入る、エージェント名が入る</div>
-                  <div class="box-text box-text-pc">
+                  <div class="box-text">
                     <p>キャッチコピー（44文字）この文章はダミーです。文字の大きさ、量、字間、行間等12345</p>
                     <p>イタリア</p>
                     <p class="green">取り扱い国名が入る,取り扱い国名が入る,取り扱い国名が入る</p>
@@ -42,13 +42,6 @@
                 
               </div>
 
-              <div class="content content-sp">
-                <div class="box-text">
-                  <p>キャッチコピー（44文字）この文章はダミーです。文字の大きさ、量、字間、行間等12345</p>
-                  <p>イタリア</p>
-                  <p class="green">取り扱い国名が入る,取り扱い国名が入る,取り扱い国名が入る</p>
-                  <p class="blue">得意分野が入る,得意分野が入る,得意分野が入る,得意分野が入る</p>
-                </div>
           </li>
 
           <?php } ?>

@@ -674,6 +674,9 @@
                         margin-left: auto;
                         text-align: center;
                         margin-top: 20px;
+                        @media screen and (min-width: $tablet) {
+                            margin-top: 0px;
+                        }
                         .label {
                             text-align: center;
                             color: #fff;
@@ -724,39 +727,23 @@
                     }
 
                     >.content {
-                        &.content-pc {
+                        width: 100%;
+                        @media screen and (min-width: $tablet) {
                             display: flex;
-                            column-gap: 10px;
-                            @media screen and (min-width: $tablet) {
-                                column-gap: 20px;
-                            }
-                        }
-                        &.content-sp {
-                            display: block;
-                            margin-top: 10px;
-                            @media screen and (min-width: $tablet) {
-                                display: none;
-                            }
+                            column-gap: 20px;
                         }
 
                         .thumbnail {
                             position: relative;
                             width: 100%;
                             height: 100%;
-                            max-width: 168px;
-                            max-height: 168px;
+                            max-height: 180px;
                             text-align: center;
                             overflow: hidden;
                             
-                            &.thumbnail-small-sp {
-                                max-width: 70px;
-                                max-height: 70px;
-                                @media screen and (min-width: $tablet) {
-                                    width: 100%;
-                                    height: 100%;
-                                    max-width: 168px;
-                                    max-height: 168px;
-                                }
+                            @media screen and (min-width: $tablet) {
+                                max-width: 168px;
+                                max-height: 168px;
                             }
 
                             .label-new {
@@ -778,43 +765,37 @@
                             img {
                                 line-height: 0;
                                 width: 100%;
+                                transform: translate(0px, -25%);
+                                @media screen and (min-width: $tablet) {
+                                    transform: translate(0px, 0px);
+                                }
                             }
+                        }
+
+                        .content-theme {
+                            color: $blue02;
+                            display: block;
+                            font-size: 1.2rem;
+                            @media screen and (min-width: $tablet) {
+                                display: none;
+                            }
+                            
                         }
 
                         .content-title {
                             font-size: 1.6rem;
                             line-height: 2.5rem;
                             font-weight: 600;
-                            &.content-title-pc {
-                                display: none;
-                                @media screen and (min-width: $tablet) {
-                                    display: block;
-                                }
-                            }
                         }
 
                         .box-flex {
-                            @media screen and (min-width: $tablet) {
-                                display: flex;
-                                column-gap: 10px;
-                            }
-                            
+                            display: flex;
+                            column-gap: 10px;
+              
                             .box-flex-item {
                                 font-size: 1.2rem;
                                 @media screen and (min-width: $tablet) {
                                     font-size: 1.4rem;
-                                }
-
-                                &.box-flex-item-pc {
-                                    display: none;
-                                    @media screen and (min-width: $tablet) {
-                                        display: block;
-                                    }
-                                }
-                                &.box-flex-item-sp {
-                                    @media screen and (min-width: $tablet) {
-                                        display: none;
-                                    }
                                 }
                                 
                                 span {
@@ -828,17 +809,13 @@
                             text-overflow: ellipsis;
                             white-space: nowrap;
                             overflow:hidden;
+                            display: flex;
+                            flex-wrap: wrap;
+                            row-gap: 10px;
+                            text-overflow: initial;
+                            overflow: initial;
+                            white-space: initial;
 
-                            &.box-tag-pc {
-                                display: none;
-                                @media screen and (min-width: $tablet) {
-                                    display: flex;
-                                    text-overflow: initial;
-                                    overflow: initial;
-                                    white-space: initial;
-                                }
-                            }
-                           
                             a {
                                 color: initial;
                                 text-decoration: none;
@@ -851,13 +828,6 @@
                         }
 
                         .box-text {
-                            &.box-text-pc {
-                                display: none;
-                                @media screen and (min-width: $tablet) {
-                                    display: block;
-                                }
-                            }
-
                             .green {
                                 color: $green;
                             }
@@ -869,11 +839,15 @@
                                 margin-right: 10px;
                             }
                         }
-
                         
                     }
 
-                    
+                    .side {
+                        margin-top: 10px;
+                        @media screen and (min-width: $tablet) {
+                            margin-top: 0px;
+                        }
+                    }
 
                 }
 
@@ -1255,121 +1229,11 @@
             }
 
             .pagination-pc {
-                width: 100%;
-				margin-top: 40px;
-                margin-bottom: 30px;
-				margin-left: auto;
-				margin-right: auto;
-                display: none;
-                @media screen and (min-width: $tablet) {
-                    display: block;
-                }
-
-                .pagination-list {
-                    list-style: none;
-					display: flex;
-                    column-gap: 20px;
-					justify-content: center;
-
-                    .pagination-list-item {
-                        display: flex;
-						align-items: center;
-						justify-content: center;
-						height: 34px;
-						width: 34px;
-						text-align: center;
-
-                        &.pagination-list-item-omit {
-                            color: #E4E4E4;
-                            width: auto;
-                            padding-top: 10px;
-                        }
-                        &.current {
-                            .pagination-list-item-text {
-                                background: $blue02;
-                                border: 1px solid $blue02;
-                                color: #fff;
-                            }
-                        }
-
-                        .pagination-list-item-text {
-                            display: block;
-							height: 100%;
-							width: 100%;
-                        }
-
-                        .pagination-list-item-link {
-                            text-decoration: none;
-							display: block;
-							background: #fff;
-							border: 1px solid $blue02;
-                            color: $blue02;
-							height: 100%;
-							width: 100%;
-                        }
-
-
-                    }
-
-                    .pagination-list-item-prev,
-                    .pagination-list-item-next {
-                        width: auto;
-                        
-                        .pagination-list-item-link {
-                            background: #fff;
-                            border: 1px solid $blue02;
-                            color: $blue02;
-                            padding-left: 20px;
-                            padding-right: 20px;
-                        }
-
-                    }
-                    
-                }
-
-
+                @include pagination-pc;
             }
 
             .pagination-sp {
-                width: 100%;
-				margin-top: 40px;
-                margin-bottom: 30px;
-                display: flex;
-                border: 1px solid $blue02;
-                align-items: center;
-                justify-content: center;
-                @media screen and (min-width: $tablet) {
-                    display: none;
-                }
-
-                .pagination-list-item-page {
-                    width: 100%;
-                    
-                    select {
-                        -moz-appearance:none; /* Firefox */
-                        -webkit-appearance:none; /* Safari and Chrome */
-                        border: none;
-                        border-left: 1px solid $blue02;
-                        border-right: 1px solid $blue02;
-                        padding-left: 30px;
-                        color: $blue02;
-                        text-align: center;
-                        background: rgb(255,255,255) url('assets/img/mypage-pagination-arrow.svg');
-                        background-position: right 6px center;
-                        background-repeat: no-repeat;
-                        cursor: pointer;
-                    }
-                }
-
-                .pagination-list-item-prev,
-                .pagination-list-item-next {
-                    flex-shrink: 0;
-                    width: 80px;
-                    text-align: center;
-                }
-                a {
-                    text-decoration: none;
-                }
+                @include pagination-sp;
             }
 
 
