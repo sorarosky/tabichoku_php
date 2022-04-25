@@ -217,6 +217,7 @@
             </div>
           </div>
         </div>
+        <?php include 'components/pager.php';?>
       </section>
     </main>
     <?php include 'components/aside.php';?>

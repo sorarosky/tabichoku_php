@@ -41,21 +41,7 @@
             <div class="title">マウスオーバーで下線表示、フォントサイズ16px</div>
           </div>
         </div>
-        <navi class="navi">
-          <ul>
-            <li><a href="">前へ</a></li>
-            <li><a href="">1</a></li>
-            <li><span class="active">2</span></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">4</a></li>
-            <li><a href="">5</a></li>
-            <li><a href="">5</a></li>
-            <li><span class="dots">...</span></li>
-            <li><a href="">次へ</a></li>
-          </ul>
-          
-        </navi>
+        <?php include 'components/pager.php';?>
       </div>
     </section>
   </main>

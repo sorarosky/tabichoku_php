@@ -156,7 +156,8 @@ main.local-professionals-news-map {
             }
         }
         &.pickup,
-        &.latest {
+        &.latest,
+        &.posts {
             padding-bottom: 80px;
             .swiper-container-wrapper {
                 @include post-slide;
@@ -190,8 +191,11 @@ main.local-professionals-news-map {
             .post {
                 @include post;
             }
-            .pager {
-                @include pager;
+            .pagination-pc {
+                @include pagination-pc;
+            }
+            .pagination-sp {
+                @include pagination-sp;
             }
         }
         &.categories {

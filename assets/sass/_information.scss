@@ -1,4 +1,5 @@
 main.information,
+main.information-category,
 main.information-post {
     width: 100%;
     .section-content {
@@ -10,6 +11,7 @@ main.information-post {
                 font-weight: bold;
                 text-align: center;
                 margin-top: 50px;
+                line-height: 4rem;
             }
             .inner {
                 @include inner;
@@ -26,6 +28,7 @@ main.information-post {
                     margin-top: 50px;
                     .head {
                         margin-left: 10px;
+                        line-height: 4rem;
                     }
                     .select-wrap {
                         position: relative;
@@ -82,30 +85,11 @@ main.information-post {
                     }
                 }
             }
-            .navi {
-                @include flex;
-                @include wrap;
-                @include center;
-                margin: 0 auto;
-                margin-top: 60px;
-                ul {
-                    list-style-type: none;
-                    @include flex;
-                    li {
-                        a,
-                        span {
-                            display: block;
-                            border: 1px solid $blue;
-                            padding: 0 10px;
-                            margin: 0 5px;
-                            text-decoration: none;
-                        }
-                        .active {
-                            background-color: $blue;
-                            color: #fff;
-                        }
-                    }
-                }
+            .pagination-pc {
+                @include pagination-pc;
+            }
+            .pagination-sp {
+                @include pagination-sp;
             }
         }
         &.entry-content {

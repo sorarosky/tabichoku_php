@@ -30,8 +30,11 @@ main.travel-content-post {
             .post {
                 @include post;
             }
-            .pager {
-                @include pager;
+            .pagination-pc {
+                @include pagination-pc;
+            }
+            .pagination-sp {
+                @include pagination-sp;
             }
         }
         &.ranking {

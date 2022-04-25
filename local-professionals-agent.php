@@ -309,14 +309,7 @@
                 <?php } ?>
               </ul>
             </nav>
-            <div class="pager">
-              <div class="swiper-button-prev">
-                <img src="/assets/img/arrow-left.svg" alt="">
-              </div>
-              <div class="swiper-button-next">
-                <img src="/assets/img/arrow-right.svg" alt="">
-              </div>
-            </div>
+            <?php include 'components/pager.php';?>
           </div>
           <a href="" class="button">もっと見る</a>
         </div>
