@@ -60,8 +60,14 @@
     <li class="link"><a href="mypage-favorite-tour-list.php">マイページ お気に入り 旅コンテンツ mypage-favorite-tour-list.php</a></li>
     <li class="link"><a href="mypage-favorite-news-list.php">マイページ お気に入り 現地通信 mypage-favorite-news-list.php</a></li>
     <li class="link"><a href="mypage-favorite-partner-list.php">マイページ お気に入り 現地パートナー mypage-favorite-partner-list.php</a></li>
-    <li class="link"><a href="mypage-tour-info-download.php">マイページ 旅行情報 重要書類 mypage-tour-info-download.php</a></li>
-    <li class="link"><a href="mypage-tour-info-message.php">マイページ 旅行情報 メッセージ mypage-tour-info-message.php</a></li>
+    <li class="link"><a href="mypage-tour-info-plan.php">マイページ 旅行情報 申込内容 mypage-tour-info-plan.php</a></li>
+    <li class="link"><a href="mypage-tour-info-travel.php">マイページ 旅行情報 渡航情報 mypage-tour-info-travel.php</a></li>
+    <!-- <li class="link"><a href="mypage-tour-info-download.php">マイページ 旅行情報 重要書類 mypage-tour-info-download.php</a></li> -->
+    <li class="link"><a href="mypage-tour-info-message.php">マイページ 旅行情報 メッセージ mypage-tour-info-message.php</a>
+      <ul>
+        <li class="link"><a href="mypage-tour-info-message.php?is_apply=1">マイページ 旅行情報 メッセージ 表示差異 申し込みがある時</a>
+      </ul>
+    </li>
     <li class="link"><a href="mypage-form-cancel.php">マイページ 取消フォーム mypage-form-cancel.php</a></li>
     <li class="link"><a href="mypage-form-cancel-confirm.php">マイページ 取消フォーム 内容確認 mypage-form-cancel-confirm.php</a></li>
     <li class="link"><a href="mypage-form-cancel-complete.php">マイページ 取消フォーム 完了 mypage-form-cancel-complete.php</a></li>

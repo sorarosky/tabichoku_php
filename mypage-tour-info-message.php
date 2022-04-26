@@ -44,7 +44,6 @@
             <li class="tour-info-nav-list-item current"><a href="">メッセージ</a></li>
             <li class="tour-info-nav-list-item"><a href="">申し込み内容</a></li>
             <li class="tour-info-nav-list-item"><a href="">渡航情報</a></li>
-            <li class="tour-info-nav-list-item"><a href="">ダウンロード書類</a></li>
           </ul>
         </div>
 
@@ -53,7 +52,7 @@
           <p class="tour-info-status-link"><a href="">ご旅行の取り消しについてはこちら</a></p>
         </div>
 
-        <?php if( $_GET['apply_zero'] ) { ?>
+        <?php if( $_GET['is_apply'] ) { ?>
         <div class="block tour-application-status-block">
           <h3 class="block-title">申込状況</h3>
 

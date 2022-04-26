@@ -470,7 +470,7 @@
                         border-bottom: 3px solid $green;
 
                         @media screen and (min-width: $tablet) {
-                            width: calc(100%/4 - 15px);
+                            flex-basis: calc(100%/3 - 13.5px);
                             margin-top: 0px;
                             font-size: 16px;
                             border-bottom: none;
@@ -850,6 +850,65 @@
                         }
                     }
 
+                }
+
+            }
+
+            .plan-content {
+                padding-top: 20px;
+
+                .plan-header {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .date {
+                        font-size: 1.2rem;
+                        span {
+                            color: #9A9A9A;
+                        }
+                    }
+
+                    .btn {
+                        padding-top: 4px;
+                        padding-bottom: 4px;
+                    }
+                }
+
+                .plan-list {
+
+                    .plan-list-item {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        @media screen and (min-width: $tablet) {
+                            display: flex;
+                        }
+
+                        &:nth-child(n+2) {
+                            background-image: url('assets/img/border-dotted.svg');
+                            background-position: top left;
+                            background-repeat: repeat-x;
+                        }
+
+                        .name {
+                            color: #9A9A9A;
+                            flex-basis: 25%;
+                            flex-shrink: 0;
+                        }
+
+                        .detail {
+                            span {
+                                margin-left: 20px;
+                            }
+                            a {
+                                text-decoration: none;
+                            }
+                            @media screen and (min-width: $tablet) {
+                                font-size: 1.6rem;
+                            }
+                        }
+
+                    }
                 }
 
             }
