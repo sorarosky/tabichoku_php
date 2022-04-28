@@ -1,0 +1,66 @@
+.contents-wrap.mypage-template {
+
+    .aside {
+        display: none;
+        @media screen and (min-width: $tablet) {
+            display: block;
+        }
+    }
+
+    .main {
+        margin-top: 0px;
+        @media screen and (min-width: $tablet) {
+            margin-top: 40px;
+        }
+
+
+        .list-template {
+            margin-top: 20px;
+            border-top: 1px solid #E4E4E4;
+            border-bottom: 1px solid #E4E4E4;
+
+            .list-template-item {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                @media screen and (min-width: $tablet) {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 20px;
+                }
+
+                &:nth-child(n+2) {
+                    background-image: url('assets/img/border-dotted.svg');
+                    background-position: top left;
+                    background-repeat: repeat-x;
+                }
+
+
+                .list-template-item-header {
+                    font-size: 1.4rem;
+                    @media screen and (min-width: $tablet) {
+                        font-size: 1.6rem;
+                    }
+                }
+
+                .list-template-item-btn {
+                    text-align: right;
+                    @media screen and (min-width: $tablet) {
+                        text-align: initial;
+                        margin-left: auto;
+                        flex-shrink: 0;
+                    }
+
+                    .btn {
+                        padding-top: 4px;
+                        padding-bottom: 4px;
+                        font-size: 1.2rem;
+                        @media screen and (min-width: $tablet) {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
