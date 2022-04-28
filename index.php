@@ -61,7 +61,12 @@
     <li class="link"><a href="mypage-favorite-news-list.php">マイページ お気に入り 現地通信 mypage-favorite-news-list.php</a></li>
     <li class="link"><a href="mypage-favorite-partner-list.php">マイページ お気に入り 現地パートナー mypage-favorite-partner-list.php</a></li>
     <li class="link"><a href="mypage-tour-info-plan.php">マイページ 旅行情報 申込内容 mypage-tour-info-plan.php</a></li>
-    <li class="link"><a href="mypage-tour-info-travel.php">マイページ 旅行情報 渡航情報 mypage-tour-info-travel.php</a></li>
+    <li class="link"><a href="mypage-tour-info-travel.php">マイページ 旅行情報 渡航情報 mypage-tour-info-travel.php</a>
+      <ul>
+        <li class="link"><a href="mypage-tour-info-travel.php?mode=add">マイページ 旅行情報 渡航情報 表示差異 入力</a>
+        <li class="link"><a href="mypage-tour-info-travel.php?mode=view">マイページ 旅行情報 渡航情報 表示差異 入力済み</a>
+      </ul>
+    </li>
     <!-- <li class="link"><a href="mypage-tour-info-download.php">マイページ 旅行情報 重要書類 mypage-tour-info-download.php</a></li> -->
     <li class="link"><a href="mypage-tour-info-message.php">マイページ 旅行情報 メッセージ mypage-tour-info-message.php</a>
       <ul>

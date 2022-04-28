@@ -1,6 +1,9 @@
 <?php include 'header-mypage.php';?>
 <?php include 'breadcrumb.php';?>
-<div class="contents-wrap mypage mypage-tour-info-download">
+
+<script src="assets/js/mypage-tour-info.js" charset="UTF-8"></script>
+
+<div class="contents-wrap mypage mypage-tour-info">
 
   <div class="main-aside-wrap">
 
@@ -43,13 +46,20 @@
           </ul>
         </div>
 
-        <div>
-          aaa
-        </div>
+          
+        <?php if($_GET['mode'] == 'view') { ?>
+          <?php include('components/mypage-tour-info-travel-mode-view.php'); ?>
+        <?php } else if($_GET['mode'] == 'add') { ?>
+          <?php include('components/mypage-tour-info-travel-mode-add.php'); ?>
+        <?php } else { ?>
+          <?php include('components/mypage-tour-info-travel-mode-empty.php'); ?>
+        <?php } ?>
 
     </main>
 
   </div>
+
+  <?php include('components/mypage-tour-info-travel-modal.php'); ?>
 
 </div>
 <?php include 'footer-mypage.php';?>

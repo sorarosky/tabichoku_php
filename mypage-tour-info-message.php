@@ -1,6 +1,6 @@
 <?php include 'header-mypage.php';?>
 <?php include 'breadcrumb.php';?>
-<div class="contents-wrap mypage mypage-tour-info-download">
+<div class="contents-wrap mypage mypage-tour-info">
 
   <div class="main-aside-wrap">
 
