@@ -73,6 +73,12 @@
         <li class="link"><a href="mypage-tour-info-message.php?is_apply=1">マイページ 旅行情報 メッセージ 表示差異 申し込みがある時</a>
       </ul>
     </li>
+    <li class="link"><a href="mypage-payment.php">マイページ お支払い情報 mypage-payment.php</a>
+      <ul>
+        <li class="link"><a href="mypage-payment.php?is_payment_exist=1">マイページ お支払い情報 表示差異 登録後</a>
+        <li class="link"><a href="mypage-payment.php?mode=edit">マイページ お支払い情報 表示差異 編集</a>
+      </ul>
+    </li>
     <li class="link"><a href="mypage-form-cancel.php">マイページ 取消フォーム mypage-form-cancel.php</a></li>
     <li class="link"><a href="mypage-form-cancel-confirm.php">マイページ 取消フォーム 内容確認 mypage-form-cancel-confirm.php</a></li>
     <li class="link"><a href="mypage-form-cancel-complete.php">マイページ 取消フォーム 完了 mypage-form-cancel-complete.php</a></li>

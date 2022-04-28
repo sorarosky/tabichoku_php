@@ -1,0 +1,164 @@
+.contents-wrap.mypage-payment {
+
+    .aside {
+        display: none;
+        @media screen and (min-width: $tablet) {
+            display: block;
+        }
+    }
+
+    .main {
+        margin-top: 0px;
+        @media screen and (min-width: $tablet) {
+            margin-top: 40px;
+        }
+
+
+
+        .payment-content-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #E4E4E4;
+
+            .title {
+                font-weight: 500;
+                font-size: 1.6rem;
+                @media screen and (min-width: $tablet) {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .button {
+                .btn {
+                    font-size: 1.2rem;
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                    @media screen and (min-width: $tablet) {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            
+        }
+
+        .payment-content {
+            margin-top: 20px;
+
+            .list-payment {
+                
+                .list-payment-item {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .content {
+                        width: 100%;
+                        @media screen and (min-width: $tablet) {
+                            display: flex;
+                            justify-content: space-between;    
+                        }
+                        
+                        .card-type {
+                            flex-basis: 30%;
+                        }
+                        .card-number {
+                            flex-basis: 30%;
+                        }
+                        .card-expire {
+                            flex-basis: 20%;
+                        }
+                        .card-name {
+                            flex-basis: 20%;
+                        }
+                    }
+
+                    .button {
+                        flex-shrink: 0;
+                        .btn {
+                            padding-top: 6px;
+                            padding-bottom: 6px;
+                        }
+                    }
+                    
+                }
+
+            }
+        }
+
+        .payment-form-content {
+
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+
+            .box-input {
+
+                &:nth-child(n+2) {
+                    margin-top: 20px;
+                }
+
+                .box-input-name {
+                    font-size: 1.6rem;    
+                }
+                
+                .box-input-content {
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+
+                    &.expiredate {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+    
+                        .expiredate-item:nth-child(n+2) {
+                            margin-left: 10px;
+                        }
+
+                        .expiredate-year {
+                            min-width: 150px;
+                        }
+                    }
+
+                    .input-short {
+                        width: 100px;
+                    }
+
+                    input {
+                        border: 1px solid #E4E4E4;
+                    }
+                    input::placeholder {
+                        color: #898989;
+                    }
+                    select {
+                        border: 1px solid #E4E4E4;
+                    }
+                }
+
+                .box-input-note {}
+
+                a {
+                    text-decoration: none;
+                }
+
+                &.box-input-right {
+                    display: flex;
+                    justify-content: center;
+                    column-gap: 10px;
+                    @media screen and (min-width: $tablet) {
+                        justify-content: flex-end;
+                    }
+
+                    .btn {
+                        min-width: 180px;
+                    }
+                }
+
+            }
+
+        }
+        
+        
+    }
+}
