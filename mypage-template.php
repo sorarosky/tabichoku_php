@@ -1,7 +1,7 @@
 <?php include 'header-mypage.php';?>
 <?php include 'breadcrumb.php';?>
 
-<div class="contents-wrap mypage">
+<div class="contents-wrap mypage mypage-template">
 
   <div class="main-aside-wrap">
 
@@ -15,27 +15,15 @@
         </div>
 
         <div class="list-template">
+          <?php include('php-data/mypage-template-data.php'); ?>
 
+          <?php foreach($arr_template_file as $template_file) { ?>
           <div class="list-template-item">
-            <div class="list-template-item-header">ヒアリングシート</div>
-            <div class="list-template-item-btn"><a href=""><button class="btn btn-blue">テンプレート</button></a></div>
+            <div class="list-template-item-header"><?php echo $template_file['file_name'];?></div>
+            <div class="list-template-item-btn"><a href=""><button class="btn btn-blue"><?php echo $template_file['btn_name'];?></button></a></div>
           </div>
+          <?php } ?>         
 
-          <div class="list-template-item">
-            <div class="list-template-item-header">日程表ひな形</div>
-            <div class="list-template-item-btn"><a href=""><button class="btn btn-blue">ダウンロード</button></a></div>
-          </div>
-
-          <div class="list-template-item">
-            <div class="list-template-item-header">未成年申込同意書</div>
-            <div class="list-template-item-btn"><a href=""><button class="btn btn-blue">ダウンロード</button></a></div>
-          </div>
-
-          <div class="list-template-item">
-            <div class="list-template-item-header">旅行者名簿ひな形</div>
-            <div class="list-template-item-btn"><a href=""><button class="btn btn-blue">ダウンロード</button></a></div>
-          </div>
-        
         </div>
       </div>
 
