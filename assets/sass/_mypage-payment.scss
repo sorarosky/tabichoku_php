@@ -53,6 +53,10 @@
                     display: flex;
                     justify-content: space-between;
 
+                    &:nth-child(n+2) {
+                        margin-top: 20px;
+                    }
+
                     .content {
                         width: 100%;
                         @media screen and (min-width: $tablet) {
