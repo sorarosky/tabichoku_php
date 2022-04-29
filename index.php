@@ -42,6 +42,7 @@
     <li class="link"><a href="mail-accept.php">ログイン画面／新規作成 – メール承認 login.php</a></li>
     <li class="link"><a href="signup-form.php">ログイン画面／新規作成 –入力 signup-form.php</a></li>
     <li class="link"><a href="signup-form-conf.php">ログイン画面／新規作成 –確認 signup-form-conf.php</a></li>
+    <li class="link"><a href="signup-form-thx.php">ログイン画面／新規作成 -完了 signup-form-thx.php</a></li>
     <li class="link"><a href="password.php">ログイン画面／新規作成 –パスワードを忘れた方 password.php</a></li>
     <li class="link"><a href="password-mail.php">ログイン画面／新規作成 – パスワード再設定メール送信完了 password-mail.php</a></li>
     <li class="link"><a href="password-reset-form.php">ログイン画面／新規作成 – パスワード再設定 password-reset-form.php</a></li>

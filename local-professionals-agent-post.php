@@ -24,15 +24,12 @@
               <div class="swiper-container swiper-container-local-professionals-agent-post-wrapper">
                 <nav class="swiper-container swiper-container-local-professionals-agent-post">
                   <ul class="swiper-wrapper">
-                    <li class="swiper-slide slide01">
-                      <img src="/assets/img/thumb.jpg" alt="">
-                    </li>
-                    <li class="swiper-slide slide02">
-                      <img src="/assets/img/thumb.jpg" alt="">
-                    </li>
-                    <li class="swiper-slide slide03">
-                      <img src="/assets/img/thumb.jpg" alt="">
-                    </li>
+                    <?php for( $i=0;$i<10;$i++ ) { ?>
+                      <li class="swiper-slide slide0<?php echo $i; ?>">
+                        <img src="/assets/img/thumb.jpg" alt="">
+                        <div class="caption">©︎クレジット名が入る、©︎は必ず入るデフォルト、クレジット名が入る。</div>
+                      </li>
+                    <?php } ?>
                   </ul>
                 </nav>
                 <div class="pager">
@@ -43,7 +40,7 @@
                     <img src="/assets/img/arrow-right.svg" alt="">
                   </div>
                 </div>
-                <div class="swiper-pagination swiper-pagination-local-professionals-news-post"></div>
+                <div class="swiper-pagination swiper-pagination-local-professionals-agent-post"></div>
               </div>
             </div>
             <div class="col col-12 col-md-6">

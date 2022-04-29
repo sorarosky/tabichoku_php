@@ -1,9 +1,12 @@
-<?php include 'header.php';?>
+<?php include 'header-only-logo.php';?>
 <div class="contents-wrap">
   <main class="main mail-accept">
     <section class="section-content">
       <div class="inner">
         <div class="head">メールアドレスのご確認</div>
+        <div class="img">
+          <img src="/assets/img/mail.svg" alt="">
+        </div>
         <div class="form">
           <div class="head">メールアドレスの確認メールを送信いたしました。<br>（会員登録はまだ完了しておりません）</div>
           <div class="text">ご入力いただいたメールアドレス宛に確認メールを送信いたしました。<br>メールに記載されたURLをクリックして新規会員登録を完了させてください。</div>
@@ -17,4 +20,4 @@
     </section>
   </main>
 </div>
-<?php include 'footer.php';?>
+<?php include 'footer-mypage.php';?>

@@ -1,275 +1,294 @@
-.map-top-map {
-    overflow-y: scroll;
-    .map {
-        position: relative;
-        width: 100%;
-        max-width: 2000px;
-        min-width: 800px;
-        background-image: url('assets/img/map-worldmap.svg');
-        background-position: top 60px center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        &::before {
-            content: "";
-            display: block;
-            padding-bottom: 50.33%;
-        }
-        .map-reagion {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: $blue02;
-            color: #fff;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-            border-radius: 15px;
-            border-top-left-radius: 0px;
-            text-align: center;
-            line-height: 1.7rem;
+    .map-top-map {
+        overflow-y: scroll;
+        .map {
+            position: relative;
             width: 100%;
-            max-width: 90px;
-            font-weight: 600;
-            font-size: 1.2rem;
-            @media screen and (min-width: $tablet) {
-                max-width: 110px;
-                font-size: 1.4rem;
-                padding-left: 20px;
-                padding-right: 20px;
-                line-height: 2rem;
-            }
-
-            a {
+            max-width: 2000px;
+            min-width: 800px;
+            background-image: url('assets/img/map-worldmap.svg');
+            background-position: top 60px center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            &::before {
+                content: "";
                 display: block;
+                padding-bottom: 50.33%;
+            }
+            .map-reagion {
                 position: absolute;
                 top: 0;
                 left: 0;
-                height: 100%;
+                background-color: $blue02;
+                color: #fff;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 15px;
+                border-top-left-radius: 0px;
+                text-align: center;
+                line-height: 1.7rem;
                 width: 100%;
-            }
-            &.europe {
-                top: 32%;
-                left: 9%;
+                max-width: 90px;
+                font-weight: 600;
+                font-size: 1.2rem;
                 @media screen and (min-width: $tablet) {
-                    top: 28%;
+                    max-width: 110px;
+                    font-size: 1.4rem;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    line-height: 2rem;
+                }
+                a {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+                &.europe {
+                    top: 32%;
                     left: 9%;
+                    @media screen and (min-width: $tablet) {
+                        top: 28%;
+                        left: 9%;
+                    }
                 }
-            }
-            &.africa {
-                top: 66%;
-                left: 8%;
-                @media screen and (min-width: $tablet) {
-                    top: 61%;
-                    left: 7%;
+                &.africa {
+                    top: 66%;
+                    left: 8%;
+                    @media screen and (min-width: $tablet) {
+                        top: 61%;
+                        left: 7%;
+                    }
                 }
-            }
-            &.west-asia {
-                top: 45%;
-                left: 23%;
-                @media screen and (min-width: $tablet) {
-                    top: 46%;
-                    left: 21%;
+                &.west-asia {
+                    top: 45%;
+                    left: 23%;
+                    @media screen and (min-width: $tablet) {
+                        top: 46%;
+                        left: 21%;
+                    }
                 }
-            }
-            &.asia {
-                top: 57%;
-                left: 34%;
-                @media screen and (min-width: $tablet) {
-                    top: 53%;
+                &.asia {
+                    top: 57%;
                     left: 34%;
+                    @media screen and (min-width: $tablet) {
+                        top: 53%;
+                        left: 34%;
+                    }
                 }
-            }
-            &.japan {
-                top: 51%;
-                left: 47%;
-                @media screen and (min-width: $tablet) {
-                    top: 46%;
-                    left: 46%;
+                &.japan {
+                    top: 51%;
+                    left: 47%;
+                    @media screen and (min-width: $tablet) {
+                        top: 46%;
+                        left: 46%;
+                    }
                 }
-            }
-            &.oceania {
-                top: 85%;
-                left: 49%;
-                @media screen and (min-width: $tablet) {
-                    top: 81%;
-                    left: 43%;
+                &.oceania {
+                    top: 85%;
+                    left: 49%;
+                    @media screen and (min-width: $tablet) {
+                        top: 81%;
+                        left: 43%;
+                    }
                 }
-            }
-            &.hawaii {
-                top: 63%;
-                left: 65%;
-                @media screen and (min-width: $tablet) {
-                    top: 56%;
+                &.hawaii {
+                    top: 63%;
                     left: 65%;
+                    @media screen and (min-width: $tablet) {
+                        top: 56%;
+                        left: 65%;
+                    }
                 }
-            }
-            &.north-america {
-                top: 47%;
-                left: 76%;
-                @media screen and (min-width: $tablet) {
-                    top: 40%;
+                &.north-america {
+                    top: 47%;
                     left: 76%;
+                    @media screen and (min-width: $tablet) {
+                        top: 40%;
+                        left: 76%;
+                    }
                 }
-            }
-            &.south-america {
-                top: 76%;
-                left: 88%;
-                @media screen and (min-width: $tablet) {
+                &.south-america {
                     top: 76%;
-                    left: 89%;
+                    left: 88%;
+                    @media screen and (min-width: $tablet) {
+                        top: 76%;
+                        left: 89%;
+                    }
                 }
             }
         }
     }
-}
-
-main.map,
-main.map02 {
-    .section-content {
-        .inner {
-            @include inner;
-            >.head {
-                font-size: 2.8rem;
-                color: $green;
-                padding-bottom: 15px;
-                border-bottom: 2px solid $gray;
-                span {
-                    font-size: 1.2rem;
-                }
-            }
-            >.sub-head {
-                color: $green;
-                font-size: 2.4rem;
-                margin-top: 20px;
-            }
-        }
-        &.popular,
-        &.latest,
-        &.ranking,
-        &.recommended-content,
-        &.map-checked {
-            padding-bottom: 100px;
-            .swiper-container-wrapper {
-                position: relative;
-                @include post-slide;
-                .pager {
-                    .swiper-button-prev,
-                    .swiper-button-next {
-                        width: 44px;
-                        background-image: none;
-                    }
-                    .swiper-button-prev {
-                        left: 0;
-                    }
-                    .swiper-button-next {
-                        right: 0;
-                    }
-                }
-            }
-            .button {
-                @include btn-color;
-                margin-top: 40px;
-            }
-        }
-        &.ranking {
+    
+    main.map,
+    main.map02 {
+        .section-content {
             .inner {
-                @include ranking;
-            }
-        }
-        &.categories {
-            .hashtag_wrapper {
-                position: relative;
-                margin-bottom: 45px;
-            }
-            .text {
-                height: 90px;
-                overflow: hidden;
-            }
-            .show_hashtag {
-                position: absolute;
-                bottom: 0px;
-                left: 0px;
-                width: 100%;
-                height: 30px;
-                padding-top: 60px;
-                text-align: center;
-                line-height: 30px;
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 100%);
-                cursor: pointer;
-                transition: bottom 0.2s;
-                span {
-                    @include btn;
-                    background-color: $blue;
-                    color: #fff;
+                @include inner;
+                >.head {
+                    font-size: 2.8rem;
+                    color: $green;
+                    padding-bottom: 15px;
+                    border-bottom: 2px solid $gray;
+                    span {
+                        font-size: 1.2rem;
+                    }
+                }
+                >.sub-head {
+                    color: $green;
+                    font-size: 2.4rem;
                     margin-top: 20px;
-                    &.open {
-                        &::after {
-                            position: absolute;
-                            font-family: "Font Awesome 5 Free";
-                            font-weight: 900;
-                            content: "\f107";
-                            right: 20px;
+                }
+            }
+            &.popular,
+            &.latest,
+            &.ranking,
+            &.recommended-content,
+            &.recentry-checked {
+                padding-bottom: 100px;
+                .swiper-container-wrapper {
+                    position: relative;
+                    @include post-slide;
+                    .pager {
+                        .swiper-button-prev,
+                        .swiper-button-next {
+                            width: 44px;
+                            background-image: none;
                         }
-                    }
-                    &.close {
-                        &::after {
-                            position: absolute;
-                            font-family: "Font Awesome 5 Free";
-                            font-weight: 900;
-                            content: "\f106";
-                            right: 20px;
+                        .swiper-button-prev {
+                            left: 0;
+                        }
+                        .swiper-button-next {
+                            right: 0;
                         }
                     }
                 }
-            }
-            .tags {
-                @include flex;
-                @include wrap;
-                overflow: hidden;
-                list-style-type: none;
-                margin-top: 20px;
-                li {
-                    margin-right: 40px;
-                    a {
-                        font-size: 1.6rem;
-                        padding: 0 2px;
-                        color: $black;
-                        text-decoration: none;
-                    }
+                .button {
+                    @include btn-color;
+                    margin-top: 40px;
+                    padding: 10px;
+                    max-width: 400px;
+                    font-size: 2rem;
                 }
             }
-        }
-        &.posts {
-            padding-top: 80px;
-            padding-bottom: 100px;
-            .post {
-                @include post;
-                .info {
-                    .meta {
-                        @include flex;
-                        @include wrap;
-                        margin-top: 40px;
-                        .country-name {
-                            padding-right: 10px;
-                        }
-                        .num {
-                            @media screen and (min-width: $tablet) {
-                                padding-left: 10px;
-                                border-left: 1px solid $black;
+            &.ranking {
+                .inner {
+                    @include ranking;
+                }
+            }
+            &.recentry-checked {
+                .swiper-container-wrapper {
+                    @include post-slide;
+                    .swiper-slide {
+                        a {
+                            .country-name {
+                                border: 1px solid $black;
+                                display: inline-block;
+                                padding: 0 10px;
+                            }
+                            .title {
+                                font-weight: normal;
                             }
                         }
                     }
-                    .company-name {
-                        @media screen and (min-width: $tablet) {
-                            margin-top: 0;
+                }
+            }
+            &.categories {
+                .hashtag_wrapper {
+                    position: relative;
+                    margin-bottom: 45px;
+                }
+                .text {
+                    height: 90px;
+                    overflow: hidden;
+                }
+                .show_hashtag {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 30px;
+                    padding-top: 60px;
+                    text-align: center;
+                    line-height: 30px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 100%);
+                    cursor: pointer;
+                    transition: bottom 0.2s;
+                    span {
+                        @include btn;
+                        background-color: $blue;
+                        color: #fff;
+                        margin-top: 20px;
+                        &.open {
+                            &::after {
+                                position: absolute;
+                                font-family: "Font Awesome 5 Free";
+                                font-weight: 900;
+                                content: "\f107";
+                                right: 20px;
+                            }
+                        }
+                        &.close {
+                            &::after {
+                                position: absolute;
+                                font-family: "Font Awesome 5 Free";
+                                font-weight: 900;
+                                content: "\f106";
+                                right: 20px;
+                            }
+                        }
+                    }
+                }
+                .tags {
+                    @include flex;
+                    @include wrap;
+                    overflow: hidden;
+                    list-style-type: none;
+                    margin-top: 20px;
+                    li {
+                        margin-right: 40px;
+                        a {
+                            font-size: 1.6rem;
+                            padding: 0 2px;
+                            color: $black;
+                            text-decoration: none;
                         }
                     }
                 }
             }
-            .pager {
-                @include pager;
+            &.posts {
+                padding-top: 80px;
+                padding-bottom: 100px;
+                .post {
+                    @include post;
+                    .info {
+                        .meta {
+                            @include flex;
+                            @include wrap;
+                            margin-top: 40px;
+                            .country-name {
+                                padding-right: 10px;
+                            }
+                            .num {
+                                @media screen and (min-width: $tablet) {
+                                    padding-left: 10px;
+                                    border-left: 1px solid $black;
+                                }
+                            }
+                        }
+                        .company-name {
+                            @media screen and (min-width: $tablet) {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+                .pager {
+                    @include pager;
+                }
             }
         }
     }
-}

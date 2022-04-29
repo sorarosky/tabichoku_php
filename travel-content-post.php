@@ -12,8 +12,8 @@
             <div class="sub-title">Singapore Travel Service</div>
           </div>
           <div class="box">
-            <div class="theme-category"><i class="fas fa-briefcase"></i> 持続可能な社会を創る旅(テーマ) / すべての人に健康と福祉を(カテゴリー)</div>
-            <div class="theme-category"><i class="fas fa-briefcase"></i> 持続可能な社会を創る旅(テーマ) / すべての人に健康と福祉を(カテゴリー)</div>
+            <div class="theme-category"> 持続可能な社会を創る旅(テーマ) / すべての人に健康と福祉を(カテゴリー)</div>
+            <div class="theme-category"> 持続可能な社会を創る旅(テーマ) / すべての人に健康と福祉を(カテゴリー)</div>
             <div class="area"><i class="fas fa-map-marker-alt"></i>  ヨーロッパ(エリア) / イタリア(国) / ミラノ(地域)</div>
             <div class="company-name"><i class="fas fa-user"></i>  日本トラベルコーディネート株式会社</div>
           </div>
@@ -28,16 +28,12 @@
               <div class="swiper-container swiper-container-travel-content-post-wrapper">
                 <nav class="swiper-container swiper-container-travel-content-post">
                   <ul class="swiper-wrapper">
-                    <li class="swiper-slide slide01">
-                      <img src="/assets/img/thumb.jpg" alt="">
-                    </li>
-                    <li class="swiper-slide slide02">
-                      <img src="/assets/img/thumb.jpg" alt="">
-                    </li>
-                    <li class="swiper-slide slide03">
-                      <img src="/assets/img/thumb.jpg" alt="">
-                    </li>
-                  </ul>
+                    <?php for( $i=0;$i<10;$i++ ) { ?>
+                      <li class="swiper-slide slide0<?php echo $i; ?>">
+                        <img src="/assets/img/thumb.jpg" alt="">
+                        <div class="caption">©︎クレジット名が入る、©︎は必ず入るデフォルト、クレジット名が入る。</div>
+                      </li>
+                    <?php } ?>
                 </nav>
                 <div class="pager">
                   <div class="swiper-button-prev">
@@ -47,7 +43,7 @@
                     <img src="/assets/img/arrow-right.svg" alt="">
                   </div>
                 </div>
-                <div class="swiper-pagination swiper-pagination-local-professionals-news-post"></div>
+                <div class="swiper-pagination swiper-pagination-travel-content-post"></div>
               </div>
             </div>
             <div class="col col-12 col-md-6">
@@ -354,6 +350,16 @@
             </div>
             <div id="partner" class="partner">
               <div class="head">現地パートナー</div>
+              <div class="row">
+                <div class="col col-4">
+                  <img src="/assets/img/thumb-square.jpg" alt="">
+                </div>
+                <div class="col col-8">
+                  この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。<br>
+                  この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。<br>
+                  この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。      
+                </div>
+              </div>
             </div>
             
           </div>

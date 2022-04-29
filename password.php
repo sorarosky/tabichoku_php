@@ -11,7 +11,7 @@
           <div class="head">メールアドレス</div>
           <form action="">
             <input type="text">
-            <div class="btn-wrap"><input class="button" type="button"  value="内容を確認する"></div>
+            <div class="btn-wrap"><input class="button" type="button"  value="送信する"></div>
           </form>
           <div class="link"><a href="">キャンセル</a></div>
         </div>

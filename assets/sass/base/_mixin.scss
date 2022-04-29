@@ -920,8 +920,11 @@ $blue03: #D8F5FA;
                     border-right: 1px solid $black;
                 }
             }
-            .num {}
-            .country-name {}
+            .theme-category {
+                color: $blue02;
+                margin-top: 10px;
+                line-height: 2rem;
+            }
         }
         .title {
             font-size: 1.6rem;
@@ -1032,6 +1035,8 @@ $blue03: #D8F5FA;
     .rank01,
     .rank02,
     .rank03 {
+        display: block;
+        text-decoration: none;
         padding: 35px;
         background-color: #fff;
         border-radius: 10px;
@@ -1095,9 +1100,7 @@ $blue03: #D8F5FA;
     }
 }
 
-
 @mixin pagination-pc {
-    
     width: 100%;
     margin-top: 40px;
     margin-bottom: 30px;
@@ -1107,13 +1110,11 @@ $blue03: #D8F5FA;
     @media screen and (min-width: $tablet) {
         display: block;
     }
-
     .pagination-list {
         list-style: none;
         display: flex;
         column-gap: 20px;
         justify-content: center;
-
         .pagination-list-item {
             display: flex;
             align-items: center;
@@ -1121,7 +1122,6 @@ $blue03: #D8F5FA;
             height: 34px;
             width: 34px;
             text-align: center;
-
             &.pagination-list-item-omit {
                 color: #E4E4E4;
                 width: auto;
@@ -1134,13 +1134,11 @@ $blue03: #D8F5FA;
                     color: #fff;
                 }
             }
-
             .pagination-list-item-text {
                 display: block;
                 height: 100%;
                 width: 100%;
             }
-
             .pagination-list-item-link {
                 text-decoration: none;
                 display: block;
@@ -1150,14 +1148,10 @@ $blue03: #D8F5FA;
                 height: 100%;
                 width: 100%;
             }
-
-
         }
-
         .pagination-list-item-prev,
         .pagination-list-item-next {
             width: auto;
-            
             .pagination-list-item-link {
                 background: #fff;
                 border: 1px solid $blue02;
@@ -1165,14 +1159,11 @@ $blue03: #D8F5FA;
                 padding-left: 20px;
                 padding-right: 20px;
             }
-
         }
-        
     }
 }
 
 @mixin pagination-sp {
-
     width: 100%;
     margin-top: 40px;
     margin-bottom: 30px;
@@ -1183,13 +1174,13 @@ $blue03: #D8F5FA;
     @media screen and (min-width: $tablet) {
         display: none;
     }
-
     .pagination-list-item-page {
         width: 100%;
-        
         select {
-            -moz-appearance:none; /* Firefox */
-            -webkit-appearance:none; /* Safari and Chrome */
+            -moz-appearance: none;
+            /* Firefox */
+            -webkit-appearance: none;
+            /* Safari and Chrome */
             border: none;
             border-left: 1px solid $blue02;
             border-right: 1px solid $blue02;
@@ -1197,13 +1188,12 @@ $blue03: #D8F5FA;
             padding-left: 30px;
             color: $blue02;
             text-align: center;
-            background: rgb(255,255,255) url('assets/img/mypage-pagination-arrow.svg');
+            background: rgb(255, 255, 255) url('assets/img/mypage-pagination-arrow.svg');
             background-position: right 6px center;
             background-repeat: no-repeat;
             cursor: pointer;
         }
     }
-
     .pagination-list-item-prev,
     .pagination-list-item-next {
         flex-shrink: 0;
@@ -1213,5 +1203,4 @@ $blue03: #D8F5FA;
     a {
         text-decoration: none;
     }
-
 }

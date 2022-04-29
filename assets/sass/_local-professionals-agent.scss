@@ -168,9 +168,22 @@ main.local-professionals-agent-post {
                     .swiper-container-local-professionals-agent-post-wrapper {
                         position: relative;
                         overflow: hidden;
+                        padding-bottom: 40px;
                         .swiper-slide {
+                            position: relative;
                             img {
                                 @include img;
+                            }
+                            .caption {
+                                position: absolute;
+                                bottom: 0;
+                                background-color: rgba(0, 0, 0, 0.7);
+                                color: #fff;
+                                font-size: 1.2rem;
+                                padding: 0 5px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
                             }
                         }
                     }
@@ -184,6 +197,15 @@ main.local-professionals-agent-post {
                     .swiper-button-next {
                         &::after {
                             content: '';
+                        }
+                    }
+                    .swiper-pagination-local-professionals-agent-post {
+                        .swiper-pagination-bullet {
+                            background-color: #fff;
+                            border: 1px solid $black;
+                            &.swiper-pagination-bullet-active {
+                                background-color: #707070;
+                            }
                         }
                     }
                 }

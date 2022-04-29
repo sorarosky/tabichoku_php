@@ -130,12 +130,12 @@
       <section class="section-content ranking">
         <div class="inner">
           <div class="head">人気の国</div>
-          <a href="" class="rank01">ハワイ</a>
-          <a href="" class="rank02">セントビンセント・グレナディーン</a>
-          <a href="" class="rank03">台湾</a>
-          <a href="" class="rank04">アメリカ</a>
-          <a href="" class="rank05">韓国</a>
-          <a href="" class="rank06">フランス</a>
+          <a href="" class="rank rank01">ハワイ</a>
+          <a href="" class="rank rank02">セントビンセント・グレナディーン</a>
+          <a href="" class="rank rank03">台湾</a>
+          <a href="" class="rank rank04">アメリカ</a>
+          <a href="" class="rank rank05">韓国</a>
+          <a href="" class="rank rank06">フランス</a>
         </div>
       </section>
       <section class="section-content recommended-content">
@@ -178,73 +178,25 @@
           </div>
         </div>
       </section>
-      <section class="section-content map-checked">
+      <section class="section-content recentry-checked">
         <div class="inner">
           <div class="head">最近みた旅コンテンツ</div>
-          <div class="swiper-container-wrapper swiper-container-map-checked-wrapper">
-            <div class="swiper-container swiper-container-map-checked">
+          <div class="swiper-container-wrapper swiper-container-recentry-checked-wrapper">
+            <div class="swiper-container swiper-container-recentry-checked">
               <div class="swiper-wrapper">
+              <?php for($i=0;$i<4;$i++) { ?>
                 <div class="swiper-slide">
-                  <div class="img"><div class="country-name">国名が入る、国名が入る</div>
-                    <img src="/assets/img/thumb.jpg" alt="">
-                  </div>
-                  <div class="theme">持続可能な社会を創る旅</div>
-                  <div class="category">カテゴリーが入る、カテゴリ名が入る</div>
-                  <div class="title"> タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。</div>
-                  <div class="agent"><i class="fas fa-user"></i> <span>エージェント名が入る。エージェント名が入る。</span></div>
-                  <div class="num"><i class="far fa-eye"></i> <span>00000</span></div>
+                  <a href="">
+                    <div class="img">
+                      <img src="/assets/img/thumb.jpg" alt="">
+                    </div>
+                    <div class="num"><i class="far fa-eye"></i> 00000</div>
+                    <div class="country-name">国名が入る、国名が入る</div>
+                    <div class="title"> タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。</div>
+                  </a>
                 </div>
-                <div class="swiper-slide">
-                  <div class="img"><div class="country-name">国名が入る、国名が入る</div>
-                    <img src="/assets/img/thumb.jpg" alt="">
-                  </div>
-                  <div class="theme">持続可能な社会を創る旅</div>
-                  <div class="category">カテゴリーが入る、カテゴリ名が入る</div>
-                  <div class="title"> タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。</div>
-                  <div class="agent"><i class="fas fa-user"></i> <span>エージェント名が入る。エージェント名が入る。</span></div>
-                  <div class="num"><i class="far fa-eye"></i> <span>00000</span></div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="img"><div class="country-name">国名が入る、国名が入る</div>
-                    <img src="/assets/img/thumb.jpg" alt="">
-                  </div>
-                  <div class="theme">持続可能な社会を創る旅</div>
-                  <div class="category">カテゴリーが入る、カテゴリ名が入る</div>
-                  <div class="title"> タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。</div>
-                  <div class="agent"><i class="fas fa-user"></i> <span>エージェント名が入る。エージェント名が入る。</span></div>
-                  <div class="num"><i class="far fa-eye"></i> <span>00000</span></div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="img"><div class="country-name">国名が入る、国名が入る</div>
-                    <img src="/assets/img/thumb.jpg" alt="">
-                  </div>
-                  <div class="theme">持続可能な社会を創る旅</div>
-                  <div class="category">カテゴリーが入る、カテゴリ名が入る</div>
-                  <div class="title"> タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。</div>
-                  <div class="agent"><i class="fas fa-user"></i> <span>エージェント名が入る。エージェント名が入る。</span></div>
-                  <div class="num"><i class="far fa-eye"></i> <span>00000</span></div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="img"><div class="country-name">国名が入る、国名が入る</div>
-                    <img src="/assets/img/thumb.jpg" alt="">
-                  </div>
-                  <div class="theme">持続可能な社会を創る旅</div>
-                  <div class="category">カテゴリーが入る、カテゴリ名が入る</div>
-                  <div class="title"> タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。</div>
-                  <div class="agent"><i class="fas fa-user"></i> <span>エージェント名が入る。エージェント名が入る。</span></div>
-                  <div class="num"><i class="far fa-eye"></i> <span>00000</span></div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="img"><div class="country-name">国名が入る、国名が入る</div>
-                    <img src="/assets/img/thumb.jpg" alt="">
-                  </div>
-                  <div class="theme">持続可能な社会を創る旅</div>
-                  <div class="category">カテゴリーが入る、カテゴリ名が入る</div>
-                  <div class="title"> タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。タイトルが入る。</div>
-                  <div class="agent"><i class="fas fa-user"></i> <span>エージェント名が入る。エージェント名が入る。</span></div>
-                  <div class="num"><i class="far fa-eye"></i> <span>00000</span></div>
-                </div>
-              </div>
+              <?php } ?>
+              </div>              
               <a href="" class="button">もっと見る</a>
             </div>
           </div>

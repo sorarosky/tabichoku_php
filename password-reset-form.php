@@ -1,5 +1,4 @@
-<?php include 'header.php';?>
-<?php include 'breadcrumb.php';?>
+<?php include 'header-only-logo.php';?>
 <div class="contents-wrap">
   <main class="main password-reset-form">
     <section class="section-content">
@@ -26,4 +25,4 @@
   </main>
 </div>
 
-<?php include 'footer.php';?>
+<?php include 'footer-mypage.php';?>

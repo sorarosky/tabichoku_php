@@ -25,7 +25,7 @@ main.travel-content-estimate-form-thx {
                 margin-top: 40px;
                 .id {}
                 .title {
-                    font-size: 1.8rem;
+                    font-size: 2.4rem;
                     color: $blue;
                     font-weight: bold;
                 }
@@ -42,12 +42,7 @@ main.travel-content-estimate-form-thx {
                     margin-top: 15px;
                 }
                 .theme-category {
-                    color: $blue;
-                    background-image: url(assets/img/suitcase.svg);
-                    background-repeat: no-repeat;
-                    background-size: 12px;
-                    background-position: left center;
-                    padding-left: 24px;
+                    color: $blue02;
                 }
                 table {
                     border-top: 2px solid $gray;
@@ -69,7 +64,7 @@ main.travel-content-estimate-form-thx {
             .form {
                 width: 100%;
                 margin-top: 60px;
-                .form-table {
+                table {
                     width: 100%;
                     border-top: 1px solid $gray;
                     tr {
@@ -114,6 +109,7 @@ main.travel-content-estimate-form-thx {
                             width: 100%;
                             padding-top: 0px;
                             padding-bottom: 20px;
+                            text-align: left;
                             @media screen and (min-width: $tablet) {
                                 width: 80%;
                                 padding-top: 20px;
@@ -123,6 +119,9 @@ main.travel-content-estimate-form-thx {
                                 @include flex;
                                 @include wrap;
                                 margin-left: -10px;
+                                .caption {
+                                    width: 100%;
+                                }
                                 .select-wrap {
                                     width: initial;
                                     margin-right: 10px;
@@ -137,25 +136,34 @@ main.travel-content-estimate-form-thx {
                                     width: initial;
                                 }
                             }
+                            &.input-with-initial {
+                                input {
+                                    width: initial;
+                                }
+                            }
                             table {
                                 width: 100%;
+                                border-top: none;
                                 tr {
                                     @include flex;
                                     @include wrap;
-                                }
-                                th {
-                                    width: 30%;
-                                    padding-right: 0;
-                                    font-weight: normal;
-                                }
-                                td {
-                                    width: 70%;
-                                    padding-left: 0;
-                                    input {
-                                        width: 40px !important;
+                                    border-bottom: none;
+                                    th {
+                                        width: 30%;
+                                        padding-right: 0;
+                                        font-weight: normal;
+                                        padding: 5px 0;
                                     }
-                                    span {
-                                        font-size: 2.4rem;
+                                    td {
+                                        width: 70%;
+                                        padding-left: 0;
+                                        padding: 5px 0;
+                                        input {
+                                            width: 40px !important;
+                                        }
+                                        span {
+                                            font-size: 2.4rem;
+                                        }
                                     }
                                 }
                             }

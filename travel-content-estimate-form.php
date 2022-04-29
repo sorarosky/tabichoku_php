@@ -1,5 +1,4 @@
-<?php include 'header.php';?>
-<?php include 'breadcrumb.php';?>
+<?php include 'header-only-logo.php';?>
 <div class="contents-wrap">
   <main class="main travel-content-estimate-form">
     <section class="section-content">
@@ -113,14 +112,14 @@
               </td>
             </tr>
             <tr>
-              <th class="reqired">出発場所</th>
+              <th>出発場所</th>
               <td>
                 出発希望場所を入力してください（空港、ホテル、駅など）
                 <input type="text">
               </td>
             </tr>
             <tr>
-              <th class="reqired">利用終了日</th>
+              <th>利用終了日</th>
               <td class="has-selecter">
                 <div class="select-wrap">
                   <select name="" id="">
@@ -143,7 +142,7 @@
               </td>
             </tr>
             <tr>
-              <th class="reqired">利用終了時刻</th>
+              <th>利用終了時刻</th>
               <td class="has-selecter">
                 <div class="select-wrap">
                   <select name="" id="">
@@ -157,6 +156,13 @@
                   </select>
                 </div>
                 分
+              </td>
+            </tr>
+            <tr>
+              <th>到着場所</th>
+              <td class="">
+              出発希望場所を入力してください（空港、ホテル、駅など）
+                <input type="text">
               </td>
             </tr>
             <tr>
@@ -205,9 +211,6 @@
               </td>
             </tr>
           </table>
-          <div class="text">
-          送信前に当社の<a htref="">「プライバシーポリシー」「旅行業約款・旅行条件書同意」「免責事項同意」</a>ご確認いただき、同意していただける場合は下の各項目の同意をチェックし、確認にお進みください。
-          </div>
           <div class="btn-wrap"><input class="button" type="button"  value="内容を確認する"></div>
         </div>
       </div>
@@ -215,4 +218,4 @@
   </main>
 </div>
 
-<?php include 'footer.php';?>
+<?php include 'footer-mypage.php';?>

@@ -26,6 +26,9 @@ main.travel-content-post {
             }
             .button {
                 @include btn-color;
+                padding: 10px 0;
+                font-size: 2rem;
+                margin-top: 40px;
             }
             .post {
                 @include post;
@@ -119,6 +122,11 @@ main.travel-content-post {
                     }
                     .theme-category {
                         color: $blue02;
+                        background-image: url(assets/img/suitcase.svg);
+                        background-repeat: no-repeat;
+                        background-size: 12px;
+                        background-position: left center;
+                        padding-left: 24px;
                     }
                 }
                 .tags {
@@ -142,9 +150,22 @@ main.travel-content-post {
                         .swiper-container-travel-content-post-wrapper {
                             position: relative;
                             overflow: hidden;
+                            padding-bottom: 40px;
                             .swiper-slide {
+                                position: relative;
                                 img {
                                     @include img;
+                                }
+                                .caption {
+                                    position: absolute;
+                                    bottom: 0;
+                                    background-color: rgba(0, 0, 0, 0.7);
+                                    color: #fff;
+                                    font-size: 1.2rem;
+                                    padding: 0 5px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
                                 }
                             }
                         }
@@ -158,6 +179,15 @@ main.travel-content-post {
                         .swiper-button-next {
                             &::after {
                                 content: '';
+                            }
+                        }
+                        .swiper-pagination-travel-content-post {
+                            .swiper-pagination-bullet {
+                                background-color: #fff;
+                                border: 1px solid $black;
+                                &.swiper-pagination-bullet-active {
+                                    background-color: #707070;
+                                }
                             }
                         }
                     }
@@ -193,6 +223,7 @@ main.travel-content-post {
                                 th {
                                     border-bottom: 1px solid $gray;
                                     width: 100%;
+                                    max-width: 250px;
                                     padding: 15px 0;
                                     color: #fff;
                                     font-weight: bold;
@@ -215,6 +246,7 @@ main.travel-content-post {
                                 height: auto !important;
                                 th {
                                     width: 100%;
+                                    max-width: 250px;
                                     display: block;
                                     padding: 15px;
                                     border-bottom: 1px solid $gray;
@@ -282,6 +314,9 @@ main.travel-content-post {
                         }
                         .map-wrap {
                             margin-top: 30px;
+                            iframe {
+                                width: 100%;
+                            }
                         }
                     }
                     .target,
@@ -291,6 +326,13 @@ main.travel-content-post {
                             padding-left: 20px;
                             li {
                                 font-size: 1.6rem;
+                            }
+                        }
+                    }
+                    .partner {
+                        .col {
+                            img {
+                                @include img;
                             }
                         }
                     }

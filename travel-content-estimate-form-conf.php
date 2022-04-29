@@ -1,7 +1,6 @@
-<?php include 'header.php';?>
-<?php include 'breadcrumb.php';?>
+<?php include 'header-only-logo.php';?>
 <div class="contents-wrap">
-  <main class="main local-professionals-agent-estimate-form-conf">
+  <main class="main travel-content-estimate-form-conf">
     <section class="section-content">
       <div class="inner">
         <nav class="states">
@@ -132,13 +131,6 @@
               </td>
             </tr>
           </table>
-          <div class="text">
-            <div class="check">
-              <span>プライバシーポリシーに同意します</span>
-              <span>旅行業約款・条件書に同意します</span>
-              <span>免責事項に同意します</span>
-            </div>
-          </div>
 
           <input class="button" type="button" value="同意して送信する"><br>
           <a class="back_link" href="">戻る</a>
@@ -149,4 +141,4 @@
   </main>
 </div>
 
-<?php include 'footer.php';?>
+<?php include 'footer-mypage.php';?>

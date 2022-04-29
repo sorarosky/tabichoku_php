@@ -312,6 +312,10 @@ jQuery(function($) {
                     nextEl: '.swiper-container-travel-content-post-wrapper .swiper-button-next',
                     prevEl: '.swiper-container-travel-content-post-wrapper .swiper-button-prev',
                 },
+                pagination: {
+                    el: ".swiper-pagination-travel-content-post",
+                    clickable: true,
+                },
             });
         }
 
@@ -332,6 +336,10 @@ jQuery(function($) {
                 navigation: {
                     nextEl: '.swiper-container-local-professionals-agent-post-wrapper .swiper-button-next',
                     prevEl: '.swiper-container-local-professionals-agent-post-wrapper .swiper-button-prev',
+                },
+                pagination: {
+                    el: ".swiper-pagination-local-professionals-agent-post",
+                    clickable: true,
                 },
             });
         }
@@ -635,6 +643,7 @@ jQuery(function($) {
         }
     };
     var travelContentSwiperClassName = [
+        '.swiper-container-recentry-checked',
         '.swiper-container-travel-content-popular',
         '.swiper-container-travel-content-recommended',
         '.swiper-container-travel-content-latest',
@@ -671,8 +680,8 @@ jQuery(function($) {
             }
 
             // 特定のスワイパーにだけ設定する場合
-            if (swipName == '.swiper-container-travel-content-popular') {
-                // travelSwiperStatusDepend.slidesPerView = 1;
+            if (swipName == '.swiper-container-recentry-checked') {
+                travelSwiperStatusDepend.slidesPerView = 4;
             }
 
             // スワイパーの実装とオブジェクトの格納

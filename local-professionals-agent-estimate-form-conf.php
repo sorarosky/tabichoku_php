@@ -1,5 +1,4 @@
-<?php include 'header.php';?>
-<?php include 'breadcrumb.php';?>
+<?php include 'header-only-logo.php';?>
 <div class="contents-wrap">
   <main class="main local-professionals-agent-estimate-form-conf">
     <section class="section-content">
@@ -200,5 +199,4 @@
     </section>
   </main>
 </div>
-
-<?php include 'footer.php';?>
+<?php include 'footer-mypage.php';?>

@@ -1,5 +1,4 @@
-<?php include 'header.php';?>
-<?php include 'breadcrumb.php';?>
+<?php include 'header-only-logo.php';?>
 <div class="contents-wrap">
   <main class="main signup-form">
     <section class="section-content">
@@ -43,7 +42,7 @@
               <td>
                <div class="row">
                  <div class="col col-6"><input type="text" placeholder="Family(Surname)"></div>
-                 <div class="col col-6"><input type="text" placeholder="First（Given Name）s"></div>
+                 <div class="col col-6"><input type="text" placeholder="First（Given Name）"></div>
                </div>
               </td>
             </tr>
@@ -56,7 +55,30 @@
             <tr>
               <th class="reqired"><span>生年月日</span></th>
               <td class="input-with-initial">
-              <input type="date">年齢：<span>00</span>歳
+              <input type="date"> 年齢：<span>00</span>歳
+              </td>
+            </tr>
+            <tr>
+            <th class="reqired"><span>国籍</span></th>
+              <td>
+               <div class="row">
+                  <div class="col col-6">
+                    <div class="select-wrap">
+                      <select name="" id="">
+                        <option>日本</optnion>
+                      </select>
+                    </div>
+                    <span>※エリアを選択してください</span>  
+                  </div>
+                  <div class="col col-6">
+                    <div class="select-wrap">
+                      <select name="" id="">
+                        <option>日本</optnion>
+                      </select>
+                    </div>
+                    <span>※国名を選択してください</span>   
+                  </div>
+               </div>
               </td>
             </tr>
             <tr>
@@ -68,19 +90,25 @@
             </tr>
             <tr>
               <th class="reqired"><span>住所</span></th>
-              <td class="input-with-initial">
-                〒<input type="text"><input class="button" type="button" value="自動入力">
-                <div class="select-wrap">
-                  <select name="" id="">
-                    <option>0000</optnion>
-                  </select>
+              <td class="input-with-initial address">
+                〒 <input type="text"> <input class="button" type="button" value="自動入力">
+                <div class="row">
+                 <div class="col col-2">
+                   <div class="select-wrap">
+                      <select name="" id="">
+                        <option>都道府県</optnion>
+                      </select>
+                    </div>
+                  </div>
+                 <div class="col col-10">
+                   <input type="text"　placeholder="市区町村">
+                 </div>
                 </div>
-                <input type="text"　placeholder="市区町村">
-                <input type="text">
+                <input class="street" type="text">
               </td>
             </tr>
             <tr>
-              <th>マイテーマ<br><span>好きなテーマをチェックしてください（複数選択可能）</span></th>
+              <th class="mine">マイテーマ<br><span>好きなテーマをチェックしてください（複数選択可能）</span></th>
               <td class="checkboxs input-with-initial">
                 <input type="checkbox" id="" name="" checked><label for="">持続可能な社会を創る旅</label>
                 <input type="checkbox" id="" name=""><label for="">観光・送迎</label>
@@ -93,7 +121,7 @@
               </td>
             </tr>
             <tr>
-              <th>マイエリア<br><span>行きたいエリアをチェックしてください（複数選択可能）</span></th>
+              <th class="mine">マイエリア<br><span>行きたいエリアをチェックしてください（複数選択可能）</span></th>
               <td class="checkboxs input-with-initial">
                 <input type="checkbox" id="" name="" checked><label for="">ヨーロッパ</label>
                 <input type="checkbox" id="" name=""><label for="">北米</label>
@@ -107,7 +135,7 @@
             <tr>
               <th class="reqired">メルマガ</th>
               <td class="checkboxs input-with-initial">
-                <input type="checkbox" id="" name="" checked><label for="">無料購読する</label>
+                <input type="checkbox" id="" name="" checked><label for="">無料購読する</label><br>
                 現地の最新情報やお得なモニター旅行などを配信します
               </td>
             </tr>
@@ -124,11 +152,11 @@
             </div>
           </div>
           <div class="text">
-          送信前に当社の<a href="">「プライバシーポリシー <i class="far fa-window-restore"></i>」</a>をご確認いただき、<br>
-          同意していただける場合は下の[プライバシーポリシーに同意します]をチェックし、確認にお進みください。
+            当社の<a href="">「利用規約」</a>と<a href="">「プライバシーポリシー　<i class="far fa-window-restore"></i>」</a>をご確認いただき、<br>同意していただける場合は下の[プライバシーポリシーに同意します]をチェックし、確認にお進みください。
           </div>
           <div class="agreement">
-            <input type="checkbox" id="" name="" checked><label for=""><a href="">プライバシーポリシー</a>に同意します</label><br>
+            <input type="checkbox" id="" name="" checked><label for="">
+            <a href="">「プライバシーポリシー」</a>/<a href="">「利用規約」</a>に同意します </label>
           </div>
           <div class="btn-wrap"><input class="button" type="button"  value="入力内容の確認に進む"></div>
           <div class="link"><a href="">戻る</a></div>

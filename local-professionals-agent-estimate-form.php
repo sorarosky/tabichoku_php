@@ -1,5 +1,4 @@
-<?php include 'header.php';?>
-<?php include 'breadcrumb.php';?>
+<?php include 'header-only-logo.php';?>
 <div class="contents-wrap">
   <main class="main local-professionals-agent-estimate-form">
     <section class="section-content">
@@ -107,7 +106,7 @@
               </td>
             </tr>
             <tr>
-              <th class="reqired">地名</th>
+              <th>地名</th>
               <td>
               国名の選択にはとらわれず、訪れたいすべての観光地や宿泊地を自由にご記入ください。
                 <div class="select-wrap">
@@ -164,7 +163,7 @@
               </td>
             </tr>
             <tr>
-              <th class="reqired">日数</th>
+              <th>日数</th>
               <td class="input-with-initial">
                 <input type="text" placeholder="00"> 日間
               </td>
@@ -222,7 +221,7 @@
               </td>
             </tr>
             <tr>
-              <th class="reqired">ホテル指定</th>
+              <th>ホテル指定</th>
               <td>
                 <input type="text">
               </td>
@@ -327,4 +326,4 @@
   </main>
 </div>
 
-<?php include 'footer.php';?>
+<?php include 'footer-mypage.php';?>

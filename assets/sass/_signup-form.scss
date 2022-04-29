@@ -6,7 +6,7 @@ main.signup-form-thx {
         padding-bottom: 100px;
         .inner {
             @include inner;
-            max-width: 800px;
+            max-width: 600px;
             .states {
                 @include states;
             }
@@ -56,7 +56,13 @@ main.signup-form-thx {
                                         background-color: $red;
                                         color: #fff;
                                         right: -70px;
+                                        font-size: 1.4rem;
                                     }
+                                }
+                            }
+                            &.mine {
+                                span {
+                                    font-size: 1.4rem;
                                 }
                             }
                         }
@@ -111,6 +117,31 @@ main.signup-form-thx {
                                 input {
                                     transform: scale(150%);
                                     margin-right: 10px;
+                                }
+                            }
+                            &.address {
+                                .button {
+                                    background-color: $blue;
+                                    color: #fff;
+                                    margin-left: 10px;
+                                }
+                                .row {
+                                    margin-top: 20px;
+                                    input {
+                                        width: 100%;
+                                    }
+                                    .col {
+                                        .select-wrap {
+                                            width: 100%;
+                                            max-width: 130px;
+                                        }
+                                    }
+                                }
+                                &.input-with-initial {
+                                    .street {
+                                        width: 100%;
+                                        margin-top: 20px;
+                                    }
                                 }
                             }
                         }
@@ -219,23 +250,83 @@ main.signup-form-thx {
 }
 
 .main.signup-form-conf {
-    .form {
-        text-align: center;
-        .privacy {
-            .fa-check {
-                color: $green;
-                font-size: 2rem;
+    .section-content {
+        .inner {
+            .form {
+                width: 100%;
+                margin-top: 60px;
+                text-align: center;
+                table {
+                    width: 100%;
+                    border-bottom: 1px solid $gray;
+                    tr {
+                        @include flex;
+                        @include wrap;
+                        width: 100%;
+                        >th {
+                            width: 100%;
+                            text-align-last: left;
+                            padding: 20px 0;
+                            padding-right: 50px;
+                            position: relative;
+                            font-weight: normal;
+                            font-size: 1.6rem;
+                            // &::after {
+                            //     content: "任意";
+                            //     position: absolute;
+                            //     padding: 0 4px;
+                            //     background-color: #888888;
+                            //     color: #fff;
+                            //     top: 20px;
+                            //     right: 0px;
+                            //     @media screen and (min-width: $tablet) {
+                            //         right: 20px;
+                            //     }
+                            // }
+                            &.reqired {
+                                span {
+                                    position: relative;
+                                    &::after {
+                                        content: "必須";
+                                        padding: 0 2px;
+                                        position: absolute;
+                                        background-color: $red;
+                                        color: #fff;
+                                        right: -70px;
+                                        font-size: 1.4rem;
+                                    }
+                                }
+                            }
+                            &.mine {
+                                span {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                        td {
+                            width: 100%;
+                            padding-top: 0px;
+                            padding-bottom: 20px;
+                            text-align: left;
+                        }
+                    }
+                }
+                .agreement {
+                    .fa-check {
+                        color: $blue;
+                    }
+                }
+            }
+            .button {
+                @include btn;
+                max-width: 360px;
+                padding: 20px 0;
+                background-color: $blue02;
+                border-radius: 40px;
+                color: #fff;
+                margin-top: 30px;
             }
         }
-    }
-    .button {
-        @include btn;
-        max-width: 360px;
-        padding: 20px 0;
-        background-color: $blue02;
-        border-radius: 40px;
-        color: #fff;
-        margin-top: 30px;
     }
 }
 
@@ -246,13 +337,13 @@ main.signup-form-thx {
         padding-bottom: 100px;
         .inner {
             @include inner;
-            max-width: 640px;
+            max-width: 800px;
             >.head {
                 font-size: 3.2rem;
                 line-height: 3.6rem;
                 text-align: center;
                 .fa-check-circle {
-                    color: $green;
+                    color: $blue02;
                     font-size: 4rem;
                 }
             }
@@ -268,10 +359,10 @@ main.signup-form-thx {
             .button {
                 @include btn;
                 background-color: $blue02;
-                padding: 20px;
+                padding: 10px;
                 color: #fff;
                 border-radius: 40px;
-                font-size: 2rem;
+                font-size: 2.2rem;
                 margin-top: 40px;
                 max-width: 345px;
             }

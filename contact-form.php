@@ -46,7 +46,7 @@
               </td>
             </tr>
             <tr>
-            <th class="reqired">会社名</th>
+            <th>会社名</th>
               <td>
                 <input type="text">
               </td>

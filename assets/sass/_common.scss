@@ -180,10 +180,7 @@ body>.header {
         transition: bottom 0.3s ease-in-out;
     }
     @include search-module;
-
-
     .area {
-
         .map {
             position: relative;
             width: 100%;
@@ -425,10 +422,7 @@ body>.header {
                 }
             }
         }
-
     }
-
-
 }
 
 .drawer-nav {
@@ -615,11 +609,11 @@ body>.header {
         position: absolute;
         left: 0;
         top: 0;
-        padding-top: 70px;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.5);
-        min-height: 530px;
+        min-height: 400px;
         z-index: 9997;
+        padding-top: 70px;
         .inner {
             width: 100%;
             margin: auto;
@@ -709,7 +703,7 @@ body>.header {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
-            min-height: 530px;
+            min-height: 400px;
             &.top-kv01 {
                 background-image: url(assets/img/top-kv01.jpg);
             }

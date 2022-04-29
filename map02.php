@@ -219,7 +219,7 @@
                   <li><a href="">新着案件</a></li>
                   <li><a href="">新着案件</a></li>
               </ul>
-              <div class="toggle show_hashtag"><span class="open">ハッシュタグをもっと見る</span></div>
+              <div class="toggle show_hashtag"><span class="open">もっと見る</span></div>
           </div>
         </div>
       </section>
