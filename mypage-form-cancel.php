@@ -18,13 +18,13 @@
   <link rel="shortcut icon" href="">
 </head>
 
-<body class="mypage-form-cancel">
+<body>
 
   <header class="header-no-nav">
     <div class="logo"><a href=""><img src="assets/img/logo-large.svg" alt=""></a></div>
   </header>
 
-  <div class="contents-wrap mypage">
+  <div class="contents-wrap mypage mypage-form-cancel">
 
     <main class="main">
       
