@@ -79,6 +79,13 @@
         <li class="link"><a href="mypage-payment.php?mode=edit">マイページ お支払い情報 表示差異 編集</a>
       </ul>
     </li>
+    <li class="link"><a href="mypage-traveler-info.php">マイページ 旅行者情報 mypage-traveler-info.php</a>
+      <ul>
+        <li class="link"><a href="mypage-traveler-info.php?is_traveler_exist=1">マイページ 旅行者情報 表示差異 登録後</a>
+        <li class="link"><a href="mypage-traveler-info.php?mode=add">マイページ 旅行者情報 表示差異 追加</a>
+        <li class="link"><a href="mypage-traveler-info.php?mode=edit">マイページ 旅行者情報 表示差異 編集</a>
+      </ul>
+    </li>
     <li class="link"><a href="mypage-form-cancel.php">マイページ 取消フォーム mypage-form-cancel.php</a></li>
     <li class="link"><a href="mypage-form-cancel-confirm.php">マイページ 取消フォーム 内容確認 mypage-form-cancel-confirm.php</a></li>
     <li class="link"><a href="mypage-form-cancel-complete.php">マイページ 取消フォーム 完了 mypage-form-cancel-complete.php</a></li>
