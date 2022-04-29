@@ -61,8 +61,32 @@
     <li class="link"><a href="mypage-favorite-tour-list.php">マイページ お気に入り 旅コンテンツ mypage-favorite-tour-list.php</a></li>
     <li class="link"><a href="mypage-favorite-news-list.php">マイページ お気に入り 現地通信 mypage-favorite-news-list.php</a></li>
     <li class="link"><a href="mypage-favorite-partner-list.php">マイページ お気に入り 現地パートナー mypage-favorite-partner-list.php</a></li>
-    <li class="link"><a href="mypage-tour-info-download.php">マイページ 旅行情報 重要書類 mypage-tour-info-download.php</a></li>
-    <li class="link"><a href="mypage-tour-info-message.php">マイページ 旅行情報 メッセージ mypage-tour-info-message.php</a></li>
+    <li class="link"><a href="mypage-tour-info-plan.php">マイページ 旅行情報 申込内容 mypage-tour-info-plan.php</a></li>
+    <li class="link"><a href="mypage-tour-info-travel.php">マイページ 旅行情報 渡航情報 mypage-tour-info-travel.php</a>
+      <ul>
+        <li class="link"><a href="mypage-tour-info-travel.php?mode=add">マイページ 旅行情報 渡航情報 表示差異 入力</a>
+        <li class="link"><a href="mypage-tour-info-travel.php?mode=view">マイページ 旅行情報 渡航情報 表示差異 入力済み</a>
+      </ul>
+    </li>
+    <!-- <li class="link"><a href="mypage-tour-info-download.php">マイページ 旅行情報 重要書類 mypage-tour-info-download.php</a></li> -->
+    <li class="link"><a href="mypage-tour-info-message.php">マイページ 旅行情報 メッセージ mypage-tour-info-message.php</a>
+      <ul>
+        <li class="link"><a href="mypage-tour-info-message.php?is_apply=1">マイページ 旅行情報 メッセージ 表示差異 申し込みがある時</a>
+      </ul>
+    </li>
+    <li class="link"><a href="mypage-payment.php">マイページ お支払い情報 mypage-payment.php</a>
+      <ul>
+        <li class="link"><a href="mypage-payment.php?is_payment_exist=1">マイページ お支払い情報 表示差異 登録後</a>
+        <li class="link"><a href="mypage-payment.php?mode=edit">マイページ お支払い情報 表示差異 編集</a>
+      </ul>
+    </li>
+    <li class="link"><a href="mypage-traveler-info.php">マイページ 旅行者情報 mypage-traveler-info.php</a>
+      <ul>
+        <li class="link"><a href="mypage-traveler-info.php?is_traveler_exist=1">マイページ 旅行者情報 表示差異 登録後</a>
+        <li class="link"><a href="mypage-traveler-info.php?mode=add">マイページ 旅行者情報 表示差異 追加</a>
+        <li class="link"><a href="mypage-traveler-info.php?mode=edit">マイページ 旅行者情報 表示差異 編集</a>
+      </ul>
+    </li>
     <li class="link"><a href="mypage-form-cancel.php">マイページ 取消フォーム mypage-form-cancel.php</a></li>
     <li class="link"><a href="mypage-form-cancel-confirm.php">マイページ 取消フォーム 内容確認 mypage-form-cancel-confirm.php</a></li>
     <li class="link"><a href="mypage-form-cancel-complete.php">マイページ 取消フォーム 完了 mypage-form-cancel-complete.php</a></li>
@@ -78,6 +102,7 @@
         <li><a href="mypage-invoice.php?mode=applied">マイページ 予約確定書兼ご請求書 ボタン差異「手配申込完了したとき」</a></li>
       </ul>  
     </li>
+    <li class="link"><a href="mypage-contact.php">マイページ たびチョクに相談 mypage-contact.php</a></li>
 
   </ul>
 </nav>

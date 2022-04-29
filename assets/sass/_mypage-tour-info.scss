@@ -1,0 +1,1288 @@
+.contents-wrap.mypage-tour-info {
+
+    .aside {
+        display: none;
+        @media screen and (min-width: $tablet) {
+            display: block;
+        }
+    }
+
+    .main {
+        margin-top: 0px;
+        @media screen and (min-width: $tablet) {
+            margin-top: 40px;
+        }
+
+
+        .tour-info-nav {
+            @media screen and (min-width: $tablet) {
+                margin-top:30px;
+            }
+
+            .tour-info-nav-list {
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 20px;
+                border-bottom: 2px solid $green;
+
+                .tour-info-nav-list-item {
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 10px;
+                    @media screen and (min-width: $tablet) {
+                        flex-basis: calc(100%/3 - 13.5px);
+                        margin-top: 0px;
+                        font-size: 16px;
+
+                    }
+
+                    &.current {
+                        a {
+                            color: $green;
+                            background-color: #fff;
+                        }
+                    }
+
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        text-decoration: none;
+                        color: #fff;
+                        background-color: $green;
+                        border: 2px solid $green;
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .tour-info-status {
+            display: flex;
+            margin-top: 20px;
+            @media screen and (min-width: $tablet) {
+                display: none;
+            }
+
+            .tour-info-status-label {
+                text-align: center;
+                color: #fff;
+                max-width: 120px;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-right: 10px;
+                background-color: #ED4D54;
+                margin-right: 20px;
+            }
+
+            .tour-info-status-link {
+                font-size: 1.2rem;
+                a {
+                    color: #ED4D54;
+                }
+            }
+        }
+        
+        .box-latest-tour {   
+            padding-top: 20px;
+            padding-bottom: 0px;
+
+            >.content {
+                
+                .content-title {
+                    line-height: 2.5rem;
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                    @media screen and (min-width: $tablet) {
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .box-flex {
+                    display: flex;
+                    .box-flex-item {
+                        font-size: 1.2rem;
+                        @media screen and (min-width: $tablet) {
+                            font-size: 1.4rem;
+                        }
+                        &:nth-child(n+2) {
+                            margin-left: 20px;
+                            @media screen and (min-width: $tablet) {
+                                margin-left: 60px;
+                            }
+                        }
+                        span {
+                            color: #9A9A9A;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .box-list {
+                    list-style: none;
+
+                    .box-list-item {
+                        display: flex;
+                        
+                        &.box-list-item-status {
+                            display: none;
+                            margin-top: 20px;
+                            @media screen and (min-width: $tablet) {
+                                display: flex;
+                            }
+                        }
+
+                        .box-list-item-title {
+                            flex-shrink: 0;
+                            color: #9A9A9A;
+                            margin-right: 10px;
+                            width: 100px;
+                        }
+
+                        .box-list-item-text {
+                            a {
+                                color: #ED4D54;
+                                font-size: 1.2rem;
+                            }
+                        }
+
+                        .label {
+                            text-align: center;
+                            color: #fff;
+                            max-width: 120px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            margin-right: 10px;
+                            
+                            &.label-red {
+                                background-color: #ED4D54;
+                            }
+                            &.label-gray {
+                                background-color: #9A9A9A;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .plan-content {
+            padding-top: 20px;
+
+            .plan-header {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .date {
+                    font-size: 1.2rem;
+                    span {
+                        color: #9A9A9A;
+                    }
+                }
+
+                .btn {
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                }
+            }
+
+
+            .plan-list {
+
+                .plan-list-item {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    @media screen and (min-width: $tablet) {
+                        display: flex;
+                    }
+
+                    &:nth-child(n+2) {
+                        background-image: url('assets/img/border-dotted.svg');
+                        background-position: top left;
+                        background-repeat: repeat-x;
+                    }
+
+                    .name {
+                        color: #9A9A9A;
+                        flex-basis: 25%;
+                        flex-shrink: 0;
+                    }
+
+                    .detail {
+                        span {
+                            margin-left: 20px;
+                        }
+                        a {
+                            text-decoration: none;
+                        }
+                        @media screen and (min-width: $tablet) {
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+
+        .travel-content-empty {
+
+            .travel-description {
+                padding-top: 25px;
+                padding-bottom: 15px;
+                @media screen and (min-width: $tablet) {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .travel-list {
+                
+                .travel-list-item {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    @media screen and (min-width: $tablet) {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    
+                    .name {
+                        @media screen and (min-width: $tablet) {
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .detail {
+                        text-align: center;
+                        @media screen and (min-width: $tablet) {
+                            text-align: initial;
+                        }
+
+                        .btn {
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            min-width: 220px;
+                            font-size: 1.4rem;
+                            @media screen and (min-width: $tablet) {
+                                min-width: 138px;
+                                padding-top: 4px;
+                                padding-bottom: 4px;
+                            }
+
+                        }
+                        
+                    }
+                }
+
+            }
+        }
+
+        .travel-content-add {
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .travel-form {
+
+                .travel-form-item {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+    
+                    &:nth-child(n+2) {
+                        background-image: url('assets/img/border-dotted.svg');
+                        background-position: top left;
+                        background-repeat: repeat-x;
+                    }
+                    @media screen and (min-width: $tablet) {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    
+                    &.travel-form-right {
+                        .detail {
+                            flex-basis: auto;
+                            margin-left: auto;
+                            text-align: center;
+                            @media screen and (min-width: $tablet) {
+                                text-align: right;
+                            }
+
+                            .btn {
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                // display: block;
+                                min-width: initial;
+                                max-width: initial;
+                                width: 100%;
+                                &:nth-child(n+2) {
+                                    margin-top: 20px;
+                                }
+
+                                @media screen and (min-width: $tablet) {
+                                    min-width: 180px;
+                                    display: initial;
+                                    width: auto;
+                                    
+                                    &:nth-child(n+2) {
+                                        margin-top: 0px;
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    
+                    .name {
+                        flex-basis: 15%;
+                        flex-shrink: 0;
+                        color: #9A9A9A;
+
+                        &.name-flex {
+                            display: flex;
+                            justify-content: space-between;
+                            @media screen and (min-width: $tablet) {
+                                display: block;
+                                
+                            }
+                        }
+                    }
+
+                    .detail {
+                        flex-basis: 85%;
+
+                        .button-list {
+                            
+                            &:nth-child(n+2) {
+                                margin-top: 20px;
+                                @media screen and (min-width: $tablet) {
+                                    margin-top: 10px;
+                                }
+                            }
+                            @media screen and (min-width: $tablet) {
+                                display: flex;
+                                justify-content: space-between;
+                            }
+
+                            .message {
+                                
+                            }
+                            .button {
+                                text-align: center;
+                                margin-top: 10px;
+                                @media screen and (min-width: $tablet) {
+                                    text-align: initial;
+                                    margin-top: 0px;
+                                }
+                                .btn {
+                                    padding-top: 10px;
+                                    padding-bottom: 10px;
+                                    padding-left: 10px;
+                                    padding-right: 10px;
+                                    min-width: 220px;
+                                    font-size: 1.4rem;
+                                    @media screen and (min-width: $tablet) {
+                                        min-width: 138px;
+                                        padding-top: 4px;
+                                        padding-bottom: 4px;
+                                    }
+                                }
+                            }
+
+                        }
+
+
+                        .box-input {
+
+                            &:nth-child(n+2) {
+                                margin-top: 20px;
+                                @media screen and (min-width: $tablet) {
+                                    margin-top: 10px;
+                                }
+                            }
+
+                            @media screen and (min-width: $tablet) {
+                                display: flex;
+                                align-items: center;
+                            }
+
+                            &.box-input-no-margin {
+                                margin-top: 0px;
+                            }
+
+                            .box-input-name {
+                                flex-basis: 25%;
+                            }
+
+                            .box-input-content {
+                                flex-basis: 75%;
+
+                                &:nth-child(n+2) {
+                                    margin-top: 10px;
+                                }
+
+                                &.box-input-content-datetime {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+
+                                    .datetime {
+                                        select {
+                                            width: 100%;
+                                        }
+
+                                        &.datetime-year {
+                                            margin-right: 10px;
+                                            select {
+                                                width: calc(100% - 24px);
+                                            }
+                                            &::after {
+                                                content: '年';
+                                                margin-left: 6px;
+                                            }
+                                        }
+                                        &.datetime-month {
+                                            margin-right: 10px;
+                                            select {
+                                                width: calc(100% - 24px);
+                                            }
+                                            &::after {
+                                                content: '月';
+                                                margin-left: 6px;
+                                            }
+                                        }
+                                        &.datetime-day {
+                                            select {
+                                                width: calc(100% - 24px);
+                                            }
+                                            &::after {
+                                                content: '日';
+                                                margin-left: 6px;
+                                            }
+                                        }
+
+                                        &.datetime-hour {
+                                            margin-right: 10px;
+                                            select {
+                                                width: calc(100% - 24px);
+                                            }
+                                            &::after {
+                                                content: '時';
+                                                margin-left: 6px;
+                                            }
+                                        }
+
+                                        &.datetime-min {
+                                            select {
+                                                width: calc(100% - 24px);
+                                            }
+                                            &::after {
+                                                content: '分';
+                                                margin-left: 6px;
+                                            }
+                                        }
+
+                                    }
+
+                                }
+                                
+                            }
+
+                            input {
+                                border: 1px solid #E4E4E4;
+                            }
+                            select {
+                                border: 1px solid #E4E4E4;
+                            }
+
+                        }
+
+                        .box-textarea {
+                            position: relative;
+                            // width: 100%;
+                            
+                            &::before {
+                                content: "";
+                                display: block;
+                                padding-bottom: 20.33%;
+                            }
+
+                            textarea {
+                                padding: 16px;
+                                border: 1px solid #E4E4E4;
+                                border-radius: 4px;
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+
+
+            .travel-form-view {
+
+                .travel-form-item {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+    
+                    &:nth-child(n+2) {
+                        background-image: url('assets/img/border-dotted.svg');
+                        background-position: top left;
+                        background-repeat: repeat-x;
+                    }
+                    @media screen and (min-width: $tablet) {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    &.travel-form-item-no-border {
+                        background-image: initial;
+                    }
+
+                    &.travel-form-item-btn-none {
+                        .edit {
+                            display: none;
+                            @media screen and (min-width: $tablet) {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .name {
+                        flex-basis: 15%;
+                        flex-shrink: 0;
+                        color: #9A9A9A;
+
+                        &.name-flex {
+                            display: flex;
+                            justify-content: space-between;
+                            p:first-child {
+                                margin-right: auto;
+                            }
+                            p:nth-child(n+2) {
+                                margin-left: 10px;
+                            }
+                            
+                            @media screen and (min-width: $tablet) {
+                                display: block;
+                                p:nth-child(n+2) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .detail {
+                        flex-basis: 75%;
+                        @media screen and (min-width: $tablet) {
+                            font-size: 1.6rem;
+                        }
+
+                        .box-text {
+                            
+                            &:nth-child(n+2) {
+                                // margin-top: 20px;
+                                @media screen and (min-width: $tablet) {
+                                    margin-top: 10px;
+                                }
+                            }
+
+                            &.box-text-margin-wide {
+                                margin-top: 20px;
+                                @media screen and (min-width: $tablet) {
+                                    margin-top: 0px;
+                                }
+                            }
+
+                            &.box-text-no-margin {
+                                margin-top: 0px;
+                            }
+                            &.box-text-file {
+                                @media screen and (min-width: $tablet) {
+                                    display: flex;
+                                    justify-content: space-between;
+                                }
+
+                                a {
+                                    color: #333333;
+                                }
+
+                                p:nth-child(2) {
+                                    padding-right: 40px;
+                                }
+                            }
+
+                            span {
+                                margin-left: 20px;
+                            }
+                        }
+
+                    }
+
+                    .edit {
+                        flex-basis: 10%;
+                        flex-shrink: 0;
+                        align-self: center;
+                        text-align: center;
+                        margin-top: 20px;
+                        @media screen and (min-width: $tablet) {
+                            text-align: initial;
+                            margin-top: 0px;
+                        }
+                        .btn {
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            min-width: 220px;
+                            font-size: 1.4rem;
+                            @media screen and (min-width: $tablet) {
+                                min-width: 138px;
+                                padding-top: 4px;
+                                padding-bottom: 4px;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+
+        .block {
+
+            .block-title {
+                margin-top: 20px;
+                font-size: 1.6rem;
+            }
+
+            &.tour-application-status-block {
+
+                .application-list {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    border: 1px solid #E4E4E4;
+                    border-radius: 10px;
+
+                    .application-list-header {
+                        display: flex;
+                        border-bottom: 2px solid #E4E4E4;
+                        color: #9A9A9A;
+
+                        .header-date {
+                            flex-basis: 20%;
+                            text-align: center;
+                        }
+
+                        .header-title {
+                            flex-basis: 60%;
+                        }
+
+                        .header-status {
+                            flex-basis: 20%;
+                            text-align: center;
+                        }
+
+                    }
+
+                    .application-list-content {
+                        margin-top : 20px;
+
+                        .application-list-content-item {
+                            display: flex;
+                            &:nth-child(n+2) {
+                                margin-top: 20px;
+                            }
+
+                            @media screen and (min-width: $tablet) {
+                                align-items: center;
+                                &:nth-child(n+2) {
+                                    margin-top: 10px;
+                                }
+                            }
+
+
+                            .application-list-content-item-date {
+                                flex-basis: 20%;
+                                display: none;
+
+                                &.pc {
+                                    display: none;
+                                    @media screen and (min-width: $tablet) {
+                                        display: block;
+                                    }
+                                }
+
+                                &.sp {
+                                    display: block;
+                                    @media screen and (min-width: $tablet) {
+                                        display: none;
+                                    }
+                                }
+
+                                
+                            }
+
+                            .application-list-content-item-title {
+                                flex-basis: 70%;
+                                width: 70%;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+
+                                .title {
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                                
+                                @media screen and (min-width: $tablet) {
+                                    flex-basis: 60%;
+                                    width: 70%;
+                                }
+                            }
+
+                            .application-list-content-item-status {
+                                flex-basis: 30%;
+                                text-align: center;
+                                @media screen and (min-width: $tablet) {
+                                    flex-basis: 20%;
+                                }
+
+                                .label {
+                                    padding-left: 10px;
+                                    padding-right: 10px;
+                                    color: #fff;
+                                    border: 1px solid #9A9A9A;
+
+                                    &.label-red {
+                                        background-color: #ED4D54;
+                                        border: 1px solid #ED4D54;
+                                    }
+                                    &.label-red-line {
+                                        color: #ED4D54;
+                                        background-color: #fff;
+                                        border: 1px solid #ED4D54;
+                                    }
+                                    &.label-blue {
+                                        background-color: $blue02;
+                                        border: 1px solid $blue02;
+                                    }
+                                    &.label-blue-line {
+                                        color: $blue02;
+                                        background-color: #fff;
+                                        border: 1px solid $blue02;
+                                    }
+                                    &.label-gray {
+                                        color: #fff;
+                                        background-color: #9A9A9A;
+                                        border: 1px solid #9A9A9A;
+                                    }
+                                }
+
+                                .text {
+                                    font-size: 1.2rem;
+                                    line-height: 1.5em;
+                                    margin-top: 10px;
+                                    @media screen and (min-width: $tablet) {
+                                        margin-top: 3px;
+                                        line-height: initial;
+                                    }
+                                    
+                                    &.text-red {
+                                        color: #ED4D54;
+                                    }
+                                    &.text-blue {
+                                        color: $blue02;
+                                    }
+                                    &.text-gray {
+                                        color: #9A9A9A;
+                                    }
+                                }
+
+                            }
+                        }
+
+                    }
+
+
+                }
+            }
+
+            &.tour-message-block {
+
+                .textarea-wrap {
+                    textarea {
+                        width: 100%;
+                        height: 80px;
+                        border: 1px solid #E4E4E4;
+                        border-radius: 10px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+
+                .message-controll {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .label-file-text-icon {
+                    font-size: 1.6rem;
+                    color: $blue02;
+                    cursor: pointer;
+                    img {
+                        vertical-align: sub;
+                        margin-right: 10px;
+                    }
+                }
+
+                .message-window {
+                    margin-top: 20px;
+                    border: 1px solid #E4E4E4;
+                    border-radius: 10px;
+                    overflow-y: scroll;
+                    height: 500px;
+
+
+                    .message-window-wrap {
+                        padding-top:20px;
+                        padding-bottom:20px;
+                        padding-left:20px;
+                        padding-right:20px;
+
+                        .box-message {
+
+                            &:nth-child(n+2) {
+                                margin-top: 20px;
+                            } 
+
+                            .message-wrap {
+                                .info {
+                                    font-size: 1.2rem;
+
+                                    span:nth-child(n+2) {
+                                        margin-left: 10px;
+                                    }
+                                }
+
+                                .bubble {
+                                    max-width: 636px;
+                                    padding-top: 20px;
+                                    padding-bottom: 20px;
+                                    padding-left: 20px;
+                                    padding-right: 20px;
+                                    border-radius: 4px;
+                                    margin-top: 10px;
+
+                                    .attached-file {
+                                        img {
+                                            vertical-align: sub;
+                                            margin-right: 10px;
+                                        }
+                                    }
+
+                                    p {
+                                        margin-bottom: 10px;
+                                        &:last-child {
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.box-message-company {
+
+                                .campany-flex {
+                                    display: flex;
+
+                                    .company-portrait {
+                                        margin-right: 20px;
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 100%;
+                                        border: 1px solid #707070;
+                                        overflow: hidden;
+                                        flex-shrink: 0;
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                    
+                                    .message-wrap {
+
+                                        .info {
+                                            &.pc {
+                                                display: none;
+                                                @media screen and (min-width: $tablet) {
+                                                    display: block;
+                                                }
+                                            }
+
+                                            &.sp {
+                                                display: block;
+                                                span {
+                                                    margin-left: 0;
+                                                }
+
+                                                @media screen and (min-width: $tablet) {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+
+                                        .bubble {
+                                            background-color: #fff;
+                                            border: 1px solid #E4E4E4;
+                                            display: none;
+                                            @media screen and (min-width: $tablet) {
+                                                display: block;
+                                            }
+                                        }
+                                    }   
+                                }
+
+                                .bubble.sp {
+                                    background-color: #fff;
+                                    border: 1px solid #E4E4E4;
+                                    display: block;
+                                    max-width: 636px;
+                                    padding-top: 20px;
+                                    padding-bottom: 20px;
+                                    padding-left: 20px;
+                                    padding-right: 20px;
+                                    border-radius: 4px;
+                                    margin-top: 10px;
+                                    @media screen and (min-width: $tablet) {
+                                        display: none;
+                                    }
+
+                                    .attached-file {
+                                        img {
+                                            vertical-align: sub;
+                                            margin-right: 10px;
+                                        }
+                                    }
+
+                                    p {
+                                        margin-bottom: 10px;
+                                        &:last-child {
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                    
+                                }
+                                
+                            }
+
+                            &.box-message-user {
+                                display: flex;
+
+                                .message-wrap {
+                                    margin-left: auto;
+
+                                    .info {
+                                        text-align: right;
+                                    }
+
+                                    .bubble {
+                                        background-color: #E5F8FC;
+                                        border: 1px solid #E5F8FC;
+                                    }
+                                }
+
+                                
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+        .paragraph {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            h3 {
+                font-size: 1.8rem;
+            }
+            p {
+                &:nth-child(2) {
+                    margin-top: 10px;
+                }
+                line-height: 2.5rem;
+            }
+        }
+
+    }
+
+
+    .modal-passenger  {
+        box-sizing: border-box;
+        display: none;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        @media screen and (min-width: $tablet) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+ 
+        &.modal-passenger[data-is-open=true] {
+            display: block;
+        }
+
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            width: 100%; 
+            max-width: 1000px;
+            height: 100%;
+            padding-top: 22px;
+            padding-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+
+            .close {
+                width: 100%;
+                text-align: right;
+                cursor: pointer;
+            }
+
+            .list-wrap {
+                margin-top: 20px;
+                overflow-y: scroll;
+                border: 1px solid #E4E4E4;
+                position: relative;
+                height: 100%;
+                height: 100%;
+                max-height: 65%;
+                @media screen and (min-width: $tablet) {              
+                    max-height: 70%;
+                }
+
+                .list-passenger {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+
+                    .list-passenger-header {
+                        display: none;
+                        color: $blue02;
+                        font-weight: 600;
+                        @media screen and (min-width: $tablet) {
+                            display: flex;
+                            column-gap: 20px;
+                        }
+
+                        .name {
+                            flex-basis: 50%;
+                        }
+                        .birthdate {
+                            flex-basis: 10%;
+                            text-align: center;
+                        }
+                        .sex {
+                            flex-basis: 5%;
+                            text-align: center;
+                        }
+                        .passport {
+                            flex-basis: 10%;
+                            text-align: center;
+                        }
+                        .spacer {
+                            flex-basis: 15%;
+                        }
+                    }
+
+                    .list-passenger-item {
+                        display: flex;
+                        column-gap: 20px;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+
+                        &:nth-child(n+3) {
+                            border-top: 1px solid #E4E4E4;
+                        }
+
+                        .list-passenger-item-header {
+                            color: $blue02;
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                            .name {
+                                p {
+                                    line-height: 2em;
+                                }
+                            }
+                            @media screen and (min-width: $tablet) {
+                                display: none;
+                                font-size: 1.4rem;
+                            }
+                        }
+
+                        .list-passenger-item-content {
+                            font-size: 1.2rem;
+                            @media screen and (min-width: $tablet) {
+                                display: flex;
+                                align-items: center;
+                                column-gap: 20px;
+                                width: 100%;
+                                font-size: 1.4rem;
+                            }
+
+                            .name {
+                                font-weight: 600;
+                                .kanji {
+                                    @media screen and (min-width: $tablet) {
+                                        font-size: 1.8rem;
+                                    }
+                                }
+                                p {
+                                    line-height: 2em;
+                                }
+                                span {
+                                    margin-left: 20px;
+                                }
+                                @media screen and (min-width: $tablet) {
+                                    flex-basis: 50%;
+                                }
+                            }
+
+                            .birthdate {
+                                @media screen and (min-width: $tablet) {
+                                    text-align: center;
+                                    flex-basis: 10%;
+                                }
+                            }
+                            .sex {
+                                @media screen and (min-width: $tablet) {
+                                    text-align: center;
+                                    flex-basis: 5%;
+                                }
+                            }
+                            .passport {
+                                @media screen and (min-width: $tablet) {
+                                    text-align: center;
+                                    flex-basis: 10%;
+                                }
+                            }
+                            .status {
+                                .btn {
+                                    width: 100%;
+                                    min-width: 120px;
+                                }
+                                @media screen and (min-width: $tablet) {
+                                    flex-basis: 15%;
+                                    .btn {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }                        
+
+                        .list-passenger-item-status {
+                            display: none;
+                        }
+
+                    }
+
+                    
+                }
+            }
+
+            .panel {
+                .total {
+                    display: flex;
+                    column-gap: 20px;
+                    font-size: 1.6rem;
+                    justify-content: center;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    flex-wrap: wrap;
+                    @media screen and (min-width: $tablet) {
+                        flex-wrap: nowrap;
+                    }
+
+                    span {
+                        font-size: 2rem;
+                    }
+
+                }
+            }
+
+            .submit {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                flex-wrap: wrap;
+                row-gap: 10px;
+                text-align: center;
+                @media screen and (min-width: $tablet) {
+                    column-gap: 20px;
+                    row-gap: 0px;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    text-align: initial;
+                }
+
+                p {
+                    width: 100%;
+                    @media screen and (min-width: $tablet) {
+                        width: initial;
+                    }
+                }
+
+                .btn {
+                    width: 100%;
+                    max-width: 268px;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                    @media screen and (min-width: $tablet) {
+                        padding-top: 6px;
+                        padding-bottom: 6px;
+                        width: initial;
+                        min-width: 268px;
+                    }
+                }
+            }
+
+
+
+        }
+        
+    }
+    
+}
