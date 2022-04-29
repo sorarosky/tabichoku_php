@@ -101,6 +101,7 @@
         <li><a href="mypage-invoice.php?mode=applied">マイページ 予約確定書兼ご請求書 ボタン差異「手配申込完了したとき」</a></li>
       </ul>  
     </li>
+    <li class="link"><a href="mypage-contact.php">マイページ たびチョクに相談 mypage-contact.php</a></li>
 
   </ul>
 </nav>
