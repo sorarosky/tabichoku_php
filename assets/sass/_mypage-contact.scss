@@ -1,0 +1,408 @@
+.contents-wrap.mypage-contact {
+
+    .aside {
+        display: none;
+        @media screen and (min-width: $tablet) {
+            display: block;
+        }
+    }
+
+    .main {
+        margin-top: 0px;
+        @media screen and (min-width: $tablet) {
+            margin-top: 40px;
+        }
+
+        .contact-note {
+            margin-top: 20px;
+            padding-bottom: 40px;
+            @media screen and (min-width: $tablet) {
+                font-size: 1.6rem;
+                line-height: 2em;
+            }
+            
+            .note-list-square {
+                list-style: none;
+            }
+
+            .note-list-sub {
+                padding-left: 40px;
+            }
+
+        }
+
+        .block {
+
+            .block-title {
+                margin-top: 20px;
+                font-size: 1.6rem;
+            }
+
+            &.tour-application-status-block {
+
+                .application-list {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    border: 1px solid #E4E4E4;
+                    border-radius: 10px;
+
+                    .application-list-header {
+                        display: flex;
+                        border-bottom: 2px solid #E4E4E4;
+                        color: #9A9A9A;
+
+                        .header-date {
+                            flex-basis: 20%;
+                            text-align: center;
+                        }
+
+                        .header-title {
+                            flex-basis: 60%;
+                        }
+
+                        .header-status {
+                            flex-basis: 20%;
+                            text-align: center;
+                        }
+
+                    }
+
+                    .application-list-content {
+                        margin-top : 20px;
+
+                        .application-list-content-item {
+                            display: flex;
+                            &:nth-child(n+2) {
+                                margin-top: 20px;
+                            }
+
+                            @media screen and (min-width: $tablet) {
+                                align-items: center;
+                                &:nth-child(n+2) {
+                                    margin-top: 10px;
+                                }
+                            }
+
+
+                            .application-list-content-item-date {
+                                flex-basis: 20%;
+                                display: none;
+
+                                &.pc {
+                                    display: none;
+                                    @media screen and (min-width: $tablet) {
+                                        display: block;
+                                    }
+                                }
+
+                                &.sp {
+                                    display: block;
+                                    @media screen and (min-width: $tablet) {
+                                        display: none;
+                                    }
+                                }
+
+                                
+                            }
+
+                            .application-list-content-item-title {
+                                flex-basis: 70%;
+                                width: 70%;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+
+                                .title {
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                                
+                                @media screen and (min-width: $tablet) {
+                                    flex-basis: 60%;
+                                    width: 70%;
+                                }
+                            }
+
+                            .application-list-content-item-status {
+                                flex-basis: 30%;
+                                text-align: center;
+                                @media screen and (min-width: $tablet) {
+                                    flex-basis: 20%;
+                                }
+
+                                .label {
+                                    padding-left: 10px;
+                                    padding-right: 10px;
+                                    color: #fff;
+                                    border: 1px solid #9A9A9A;
+
+                                    &.label-red {
+                                        background-color: #ED4D54;
+                                        border: 1px solid #ED4D54;
+                                    }
+                                    &.label-red-line {
+                                        color: #ED4D54;
+                                        background-color: #fff;
+                                        border: 1px solid #ED4D54;
+                                    }
+                                    &.label-blue {
+                                        background-color: $blue02;
+                                        border: 1px solid $blue02;
+                                    }
+                                    &.label-blue-line {
+                                        color: $blue02;
+                                        background-color: #fff;
+                                        border: 1px solid $blue02;
+                                    }
+                                    &.label-gray {
+                                        color: #fff;
+                                        background-color: #9A9A9A;
+                                        border: 1px solid #9A9A9A;
+                                    }
+                                }
+
+                                .text {
+                                    font-size: 1.2rem;
+                                    line-height: 1.5em;
+                                    margin-top: 10px;
+                                    @media screen and (min-width: $tablet) {
+                                        margin-top: 3px;
+                                        line-height: initial;
+                                    }
+                                    
+                                    &.text-red {
+                                        color: #ED4D54;
+                                    }
+                                    &.text-blue {
+                                        color: $blue02;
+                                    }
+                                    &.text-gray {
+                                        color: #9A9A9A;
+                                    }
+                                }
+
+                            }
+                        }
+
+                    }
+
+
+                }
+            }
+
+            &.tour-message-block {
+
+                .textarea-wrap {
+                    textarea {
+                        width: 100%;
+                        height: 80px;
+                        border: 1px solid #E4E4E4;
+                        border-radius: 10px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+
+                .message-controll {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .label-file-text-icon {
+                    font-size: 1.6rem;
+                    color: $blue02;
+                    cursor: pointer;
+                    img {
+                        vertical-align: sub;
+                        margin-right: 10px;
+                    }
+                }
+
+                .message-window {
+                    margin-top: 20px;
+                    border: 1px solid #E4E4E4;
+                    border-radius: 10px;
+                    overflow-y: scroll;
+                    height: 500px;
+
+
+                    .message-window-wrap {
+                        padding-top:20px;
+                        padding-bottom:20px;
+                        padding-left:20px;
+                        padding-right:20px;
+
+                        .box-message {
+
+                            &:nth-child(n+2) {
+                                margin-top: 20px;
+                            } 
+
+                            .message-wrap {
+                                .info {
+                                    font-size: 1.2rem;
+
+                                    span:nth-child(n+2) {
+                                        margin-left: 10px;
+                                    }
+                                }
+
+                                .bubble {
+                                    max-width: 636px;
+                                    padding-top: 20px;
+                                    padding-bottom: 20px;
+                                    padding-left: 20px;
+                                    padding-right: 20px;
+                                    border-radius: 4px;
+                                    margin-top: 10px;
+
+                                    .attached-file {
+                                        img {
+                                            vertical-align: sub;
+                                            margin-right: 10px;
+                                        }
+                                    }
+
+                                    p {
+                                        margin-bottom: 10px;
+                                        &:last-child {
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.box-message-company {
+
+                                .campany-flex {
+                                    display: flex;
+
+                                    .company-portrait {
+                                        margin-right: 20px;
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 100%;
+                                        border: 1px solid #707070;
+                                        overflow: hidden;
+                                        flex-shrink: 0;
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                    
+                                    .message-wrap {
+
+                                        .info {
+                                            &.pc {
+                                                display: none;
+                                                @media screen and (min-width: $tablet) {
+                                                    display: block;
+                                                }
+                                            }
+
+                                            &.sp {
+                                                display: block;
+                                                span {
+                                                    margin-left: 0;
+                                                }
+
+                                                @media screen and (min-width: $tablet) {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+
+                                        .bubble {
+                                            background-color: #fff;
+                                            border: 1px solid #E4E4E4;
+                                            display: none;
+                                            @media screen and (min-width: $tablet) {
+                                                display: block;
+                                            }
+                                        }
+                                    }   
+                                }
+
+                                .bubble.sp {
+                                    background-color: #fff;
+                                    border: 1px solid #E4E4E4;
+                                    display: block;
+                                    max-width: 636px;
+                                    padding-top: 20px;
+                                    padding-bottom: 20px;
+                                    padding-left: 20px;
+                                    padding-right: 20px;
+                                    border-radius: 4px;
+                                    margin-top: 10px;
+                                    @media screen and (min-width: $tablet) {
+                                        display: none;
+                                    }
+
+                                    .attached-file {
+                                        img {
+                                            vertical-align: sub;
+                                            margin-right: 10px;
+                                        }
+                                    }
+
+                                    p {
+                                        margin-bottom: 10px;
+                                        &:last-child {
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                    
+                                }
+                                
+                            }
+
+                            &.box-message-user {
+                                display: flex;
+
+                                .message-wrap {
+                                    margin-left: auto;
+
+                                    .info {
+                                        text-align: right;
+
+                                        &.pc {
+                                            display: none;
+                                            @media screen and (min-width: $tablet) {
+                                                display: block;
+                                            }
+                                        }
+                                        &.sp {
+                                            display: block;
+                                            @media screen and (min-width: $tablet) {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+
+                                    .bubble {
+                                        background-color: #E5F8FC;
+                                        border: 1px solid #E5F8FC;
+                                    }
+                                }
+
+                                
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+    
+        
+    }
+}
