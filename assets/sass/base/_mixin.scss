@@ -1177,6 +1177,9 @@ $blue03: #D8F5FA;
     .pagination-list-item-page {
         width: 100%;
         select {
+            height: 40px;
+            padding-right: 40px;
+            font-size: 1.6rem;
             -moz-appearance: none;
             /* Firefox */
             -webkit-appearance: none;
@@ -1192,6 +1195,7 @@ $blue03: #D8F5FA;
             background-position: right 6px center;
             background-repeat: no-repeat;
             cursor: pointer;
+            width: 100%;
         }
     }
     .pagination-list-item-prev,
