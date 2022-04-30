@@ -1,7 +1,8 @@
 <?php include 'header.php';?>
+
 <section class="section-content map-top-map">
   <div class="map-wrap inner">
-  <div class="map">
+      <div class="map">
         <div class="map-reagion europe">
           <p>ヨーロッパ</p>
           <p>39件</p>
