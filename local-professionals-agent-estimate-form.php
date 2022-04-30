@@ -1,4 +1,7 @@
 <?php include 'header-only-logo.php';?>
+
+
+
 <div class="contents-wrap">
   <main class="main local-professionals-agent-estimate-form">
     <section class="section-content">
@@ -257,13 +260,14 @@
                   </tr>
                   <tr>
                     <th>室条件・指定</th>
-                    <td class="input-with-initial checkboxs">
+                    <td class="input-with-initial checkboxs js-switch-disabled">
                       <div>
-                        <input type="radio" id="huey" name="drone" value=""
+                        <input type="radio" id="huey" class="js-switch-disabled-radio" name="drone" value=""
                               checked>
                         <label for="huey">指定する</label>
-                        <input type="radio" id="dewey" name="drone" value="">
+                        <input type="radio" id="dewey" class="js-switch-disabled-radio" name="drone" value="">
                         <label for="dewey">指定しない</label>
+                        
                         <div class="item"><input type="checkbox" id="" name="" checked><label for="">エグゼクティブフロア</label></div>
                         <div class="item"><input type="checkbox" id="" name="" checked><label for="">オーシャンビュー</label></div>
                         <div class="item"><input type="checkbox" id="" name="" checked><label for="">オーシャンフロント</label></div>
@@ -327,3 +331,4 @@
 </div>
 
 <?php include 'footer-mypage.php';?>
+<script src="assets/js/local-professionals-agent-estimate-form.js"></script>
