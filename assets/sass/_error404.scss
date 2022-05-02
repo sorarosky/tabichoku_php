@@ -1,0 +1,31 @@
+main.error404 {
+    width: 100%;
+    .section-content {
+        padding-top: 60px;
+        padding-bottom: 100px;
+        .inner {
+            @include inner;
+            max-width: 640px;
+            >.head {
+                font-size: 2.4rem;
+                line-height: 3.6rem;
+                text-align: center;
+            }
+            .text {
+                font-size: 2.4rem;
+                line-height: 3.6rem;
+                text-align: center;
+                margin-top: 40px;
+            }
+            ul {
+                text-align: center;
+                margin-top: 30px;
+                list-style-position: inside;
+            }
+            .link {
+                text-align: center;
+                margin-top: 60px;
+            }
+        }
+    }
+}

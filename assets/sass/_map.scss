@@ -286,8 +286,11 @@
                         }
                     }
                 }
-                .pager {
-                    @include pager;
+                .pagination-pc {
+                    @include pagination-pc;
+                }
+                .pagination-sp {
+                    @include pagination-sp;
                 }
             }
         }

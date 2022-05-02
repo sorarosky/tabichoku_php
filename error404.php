@@ -3,6 +3,7 @@
 <div class="contents-wrap">
   <main class="error404">
     <section class="section-content">
+      <div class="inner">
         <div class="head">404Not Found</div>
         <div class="text">お探しのページは見つかりません。<br>
         削除されたか、URLが変更されています。</div>
@@ -11,6 +12,7 @@
           <li>「トップに戻る」を押してお戻りください。</li>
         </ul>
         <p class="link"><a href="">トップページへ戻る</a></p>
+        </div>
     </section>
   </main>
 </div>
