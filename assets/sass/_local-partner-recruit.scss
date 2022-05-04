@@ -83,10 +83,22 @@ main.local-partner-recruit {
                     margin: 0 auto;
                     margin-top: 30px;
                 }
+                .step {
+                    max-width: 320px;
+                    margin: 0 auto;
+                    margin-top: 40px;
+                    @media screen and (min-width: $tablet) {
+                        max-width: 100%;
+                    }
+                    img {
+                        @include img;
+                    }
+                }
                 .form {
                     border: 1px solid $green;
                     max-width: 900px;
                     margin: 0 auto;
+                    margin-top: 40px;
                     padding: 50px 0;
                     .head {
                         font-size: 3.2rem;
@@ -111,6 +123,7 @@ main.local-partner-recruit {
                                         background-color: $red;
                                         color: #fff;
                                         margin-left: 10px;
+                                        font-size: 1.4rem;
                                     }
                                 }
                             }

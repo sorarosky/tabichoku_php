@@ -64,33 +64,30 @@
         <div class="sub-head">たびチョクで旅プランを立てるメリットは全部で3つ！</div>
         <div class="row">
           <div class="col col-12 col-md-4">
-            <div class="inner">
+            <div class="box merit01">
+              <div class="img primary"><img src="/assets/img/top-merit01.svg" alt=""></div>
               <div class="head">POINT <span>01</span></div>
               <div class="sub-head">パック旅行ではできない<br>自己成長や事業成果の追求</div>
-              <div class="img">
-                <img src="/assets/img/about-point01.svg" alt="">
-              </div>
-              <div class="text">豊富な知見やノウハウ、高い手配力を持つグローバルパートナーとの協働によって、旅の理想形をリスクを最小限に抑えて実現できるネットワークがあります</div>
+              <div class="img secondary"><img src="/assets/img/top-merit01.svg" alt=""></div>
+              <div class="text">豊富な知見やノウハウ、高い手配力を持つグローバルパートナーとの協働によって、旅の理想形をリスクを最小限に抑えて実現できるネットワークがあります。</div>
             </div>
           </div>
           <div class="col col-12 col-md-4">
-            <div class="inner">
+            <div class="box merit02">
+              <div class="img primary"><img src="/assets/img/top-merit02.svg" alt=""></div>
               <div class="head">POINT <span>02</span></div>
-              <div class="sub-head">新たな価値や魅力を発見できる<br>旅行素材のネット予約</div>
-              <div class="img">
-                <img src="/assets/img/about-point02.svg" alt="">
-              </div>
+              <div class="sub-head">新たな価値や魅力を<br class="sp-pc sp">発見できる旅行素材の<br class="sp-pc sp">ネット予約</div>
+              <div class="img secondary"><img src="/assets/img/top-merit02.svg" alt=""></div>
               <div class="text">専門性の高い現地のプロが持ち寄った産地直販プラットフォームならではの特別感があり、秀逸な素材を中間組織を介せずダイレクトにご購入いただけます。</div>
             </div>
           </div>
           <div class="col col-12 col-md-4">
-            <div class="inner">
+            <div class="box merit03">
+              <div class="img primary"><img src="/assets/img/top-merit03.svg" alt=""></div>
               <div class="head">POINT <span>03</span></div>
-              <div class="sub-head">メール通信による安心・確実な手配とコーディネート</div>
-              <div class="img">
-                <img src="/assets/img/about-point03.svg" alt="">
-              </div>
-              <div class="text">専門性の高い現地のプロが持ち寄った産地直販プラットフォームならではの特別感があり、秀逸な素材を中間組織を介せずダイレクトにご購入いただけます。</div>
+              <div class="sub-head">メール通信による<br class="sp-pc sp">安心・確実な手配と<br class="sp-pc sp">コーディネート</div>
+              <div class="img secondary"><img src="/assets/img/top-merit03.svg" alt=""></div>
+              <div class="text">料金も空席も変動する現在、現地と確認を取りながら、きめ細かく、日本語メールで個別対応を行い、お客様の満足できるカスタマイズツアーを手作りします</div>
             </div>
           </div>
         </div>
@@ -137,7 +134,7 @@
           </div>
           <div class="col col-12 col-md-6">
               <div class="inner private">
-                <div class="head">法人旅行・MICEトツアー</div>
+                <div class="head">法人旅行・MICE</div>
                 <div class="text">MICEとは、Meeting、Incentive Travel、Convention、Exhibition/Eventの頭文字を取った法人の行うビジネスイベントを意味する。その他、法人旅行には社員旅行、視察旅行、教育旅行等が含まれる。</div>
               </div>
           </div>
@@ -174,6 +171,7 @@
         </div>
       </div>
     </section>
+    <?php include 'components/category-navi.php';?>
   </main>
 </div>
 

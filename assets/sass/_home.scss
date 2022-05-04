@@ -13,6 +13,9 @@ main.home {
                 background-color: rgba(0, 0, 0, 0.5);
                 min-height: 530px;
                 z-index: 9997;
+                @media screen and (min-width: $tablet) {
+                    min-height: 900px;
+                }
                 .inner {
                     width: 100%;
                     margin: auto;
@@ -25,6 +28,9 @@ main.home {
                         text-align: center;
                         color: #fff;
                         font-size: 2.4rem;
+                        @media screen and (min-width: $tablet) {
+                            font-size: 5rem;
+                        }
                     }
                     >.text {
                         text-align: center;
@@ -100,6 +106,9 @@ main.home {
                     background-size: cover;
                     background-position: center center;
                     min-height: 530px;
+                    @media screen and (min-width: $tablet) {
+                        min-height: 900px;
+                    }
                     &.top-kv01 {
                         background-image: url(assets/img/top-kv01.jpg);
                     }
@@ -122,6 +131,7 @@ main.home {
             @include top-section;
             .inner {
                 @include gradient;
+                background: linear-gradient(135deg, #3dcde6 0%, #68dcb6 100%);
                 position: relative;
                 z-index: 1;
                 max-width: 100%;
@@ -154,7 +164,14 @@ main.home {
                 max-width: 100%;
                 .button {
                     @include btn-color;
-                    ;
+                    font-size: 1.6rem;
+                    padding: 5px 0;
+                    max-width: 235px;
+                    @media screen and (min-width: $tablet) {
+                        padding: 20px 0;
+                        font-size: 2rem;
+                        max-width: 400px;
+                    }
                 }
             }
         }
@@ -163,6 +180,7 @@ main.home {
             .inner {
                 @include inner;
                 @include gradient;
+                background: linear-gradient(135deg, #3dcde6 0%, #68dcb6 100%);
                 max-width: 100%;
                 &::after {
                     content: '';
@@ -245,6 +263,13 @@ main.home {
                 @include header-module;
                 @include search-module;
                 max-width: 1200px;
+                .head {
+                    span {
+                        @media screen and (min-width: $tablet) {
+                            font-size: 5rem;
+                        }
+                    }
+                }
                 .form {
                     margin-top: 20px;
                     @media screen and (min-width: $tablet) {
@@ -502,6 +527,7 @@ main.home {
         }
         &.consultation {
             @include gradient;
+            background: linear-gradient(135deg, #3dcde6 0%, #68dcb6 100%);
             padding-top: 30px;
             padding-bottom: 60px;
             @media screen and (min-width: $tablet) {
@@ -540,6 +566,7 @@ main.home {
                                 input,
                                 textarea {
                                     @include form_input;
+                                    background-color: #fff;
                                 }
                                 input[type="email"] {
                                     padding-left: 40px;
@@ -644,6 +671,11 @@ main.home {
                     background-color: $blue;
                     color: #fff;
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+                    @media screen and (min-width: $tablet) {
+                        max-width: 400px;
+                        font-size: 2rem;
+                        padding: 10px 0;
+                    }
                     &::after {
                         position: absolute;
                         font-family: "Font Awesome 5 Free";

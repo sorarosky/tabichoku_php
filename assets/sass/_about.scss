@@ -40,6 +40,9 @@ main.about {
                 margin: 0 auto;
                 margin-top: 80px;
                 max-width: 540px;
+                img {
+                    @include img;
+                }
             }
         }
         &.important {
@@ -51,6 +54,9 @@ main.about {
             .sub-head {}
             .col {
                 margin-top: 30px;
+                ul {
+                    padding-left: 24px;
+                }
             }
         }
         &.merit {
@@ -61,28 +67,115 @@ main.about {
                 margin-top: 10px;
                 text-align: center;
             }
-            .col {
-                margin-top: 30px;
-                .inner {
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
-                    border-radius: 10px;
-                    padding: 30px 20px;
+            // .col {
+            //     margin-top: 30px;
+            //     .inner {
+            //         box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+            //         border-radius: 10px;
+            //         padding: 30px 20px;
+            //         .head {
+            //             font-size: 2.4rem;
+            //             color: $blue02;
+            //             text-align: center;
+            //             span {
+            //                 font-size: 4.4rem;
+            //             }
+            //         }
+            //         .sub-head {
+            //             text-align: center;
+            //             font-size: 2.2rem;
+            //         }
+            //         .img {
+            //             max-width: 180px;
+            //             margin: 0 auto;
+            //             margin-top: 35px;
+            //         }
+            //     }
+            // }
+            .box {
+                @include box;
+                box-shadow: 0 0 10px #00000029;
+                margin-top: 20px;
+                padding: 20px;
+                position: relative;
+                &.merit01,
+                &.merit02,
+                &.merit03 {
+                    .img {
+                        &.primary {
+                            float: right;
+                            @media screen and (min-width: $tablet) {
+                                display: none;
+                            }
+                        }
+                        &.secondary {
+                            display: none;
+                            @media screen and (min-width: $tablet) {
+                                display: block;
+                                max-width: 180px;
+                                margin: 0 auto;
+                            }
+                        }
+                        img {
+                            @include img;
+                        }
+                    }
                     .head {
-                        font-size: 2.4rem;
-                        color: $blue02;
-                        text-align: center;
+                        color: $blue;
                         span {
                             font-size: 4.4rem;
                         }
                     }
                     .sub-head {
-                        text-align: center;
-                        font-size: 2.2rem;
+                        text-align: left;
+                        font-size: 1.6rem;
+                        @media screen and (min-width: $tablet) {
+                            font-size: 2.2rem;
+                            text-align: center;
+                        }
                     }
-                    .img {
-                        max-width: 180px;
-                        margin: 0 auto;
-                        margin-top: 35px;
+                }
+            }
+            .row {
+                .head {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    text-align: left;
+                    color: $blue;
+                    margin-top: 30px;
+                    @media screen and (min-width: $tablet) {
+                        text-align: center;
+                    }
+                }
+                .col {
+                    margin-top: 30px;
+                    a {
+                        @include box;
+                        padding: 10px;
+                        display: block;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+                        text-decoration: none;
+                        @media screen and (min-width: $tablet) {
+                            text-align: center;
+                        }
+                    }
+                }
+                .button {
+                    @include btn;
+                    background-color: $blue02;
+                    border-radius: 50px;
+                    color: #fff;
+                    padding: 5px;
+                    font-size: 1.6rem;
+                    margin-top: 30px;
+                    line-height: 40px;
+                    max-width: 360px;
+                    &::after {
+                        position: absolute;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: "\f105";
+                        right: 20px;
                     }
                 }
             }
@@ -91,12 +184,13 @@ main.about {
             .inner {
                 max-width: 900px;
                 .img {
+                    max-width: 240px;
+                    margin: 0 auto;
                     margin-top: 40px;
-                    max-width: 120px;
-                    float: right;
                     @media screen and (min-width: $tablet) {
-                        max-width: 240px;
+                        margin-right: 0;
                         margin-left: 60px;
+                        float: right;
                     }
                     img {
                         @include img;
@@ -148,12 +242,19 @@ main.about {
                 .inner {
                     background-color: #fff;
                     padding: 20px;
-                    padding-left: 160px;
                     margin-top: 40px;
-                    background-repeat: no-repeat;
-                    background-size: 120px;
-                    background-position: center left 20px;
                     min-height: 200px;
+                    padding-top: 100px;
+                    background-repeat: no-repeat;
+                    background-size: 80px;
+                    background-position: center top 10px;
+                    @media screen and (min-width: $tablet) {
+                        padding-top: 20px;
+                        padding-left: 160px;
+                        background-repeat: no-repeat;
+                        background-size: 120px;
+                        background-position: center left 20px;
+                    }
                     &.products {
                         background-image: url(assets/img/about-available01.svg);
                     }
@@ -187,6 +288,9 @@ main.about {
                     }
                 }
             }
+        }
+        &.category-navi {
+            @include category-navi;
         }
     }
 }

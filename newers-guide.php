@@ -20,7 +20,7 @@
         <div class="row links">
           <div class="col col-12 col-md-4 link">
             <a href="#basic">
-              <span>いろいろ検索して、自分で旅を探してみたい！</spa>
+              <span>いろいろ検索して、自分で旅を探してみたい！</span>
               <div class="button">
                 <span>旅を探す</span><br>
                 ベーシックコース
@@ -51,7 +51,7 @@
         </div>
       </div>
     </section>
-    <section id="" class="section-content basic">
+    <section id="basic" class="section-content basic">
       <div class="inner">
         <div class="head"><span>旅を探す</span> ベーシックコース</div>
         <div class="row">
@@ -63,7 +63,7 @@
               <img src="/assets/img/newers-guide-basic-step01.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">まずはさがす！</div>
             <div class="text">
             現地パートナーが提案する「旅コンテンツ」から自分の好きな旅を探してください。<br>
@@ -81,7 +81,7 @@
               <img src="/assets/img/newers-guide-basic-step02.svg" alt="">
             </div>
           </div>
-          <div class="col col-19">
+          <div class="col col-12 col-md-9">
             <div class="head">空き状況・料金を聞く！</div>
             <div class="text">
             すぐに申し込みたい気持ちを抑えて、まずは「旅コンテンツ」の空き状況と料金を聞いてみよう！<br>
@@ -101,7 +101,7 @@
               <img src="/assets/img/newers-guide-basic-step03.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">手配内容を承諾する！</div>
             <div class="text">
             現地から空き状況と料金が届いたら「見積書」をよく確認してください。現地通貨のものが日本円に換算されて届きます。質問や変更があったら、直接メッセージを送ってください。新しい見積書が送られてきます。<br>
@@ -121,7 +121,7 @@
               <img src="/assets/img/newers-guide-basic-step04.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">いざ、申し込む！</div>
             <div class="text">
             現地からメッセージで予約が取れたという連絡と「確定見積書」が届きます。<br>
@@ -160,7 +160,7 @@
               <img src="/assets/img/newers-guide-basic-step06.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">契約成立！</div>
             <div class="text">
             「申込」が完了しますと、メッセージで「請求書」「旅行条件書」が届きます。<br>
@@ -179,7 +179,7 @@
               <img src="/assets/img/newers-guide-basic-step07.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">旅をする！</div>
             <div class="text">
             サービスを受けるまでは自己責任です。旅券、査証、航空券、保険、その国の事情など旅の準備は大丈夫ですか？<br>
@@ -194,7 +194,7 @@
         <a href="" class="button">旅コンテンツを見る</a>
       </div>
     </section>
-    <section id="" class="section-content standard">
+    <section id="standard" class="section-content standard">
       <div class="inner">
       <div class="head"><span>事業者を探す</span> スタンダードコース</div>
         <div class="row">
@@ -206,7 +206,7 @@
               <img src="/assets/img/newers-guide-standard-step01.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">まずはさがす！</div>
             <div class="text">
             事業者を探すから自分の行きたいエリアを決めて、まずはその地域を担当する現地パートナーを探そう！<br>
@@ -226,7 +226,7 @@
               <img src="/assets/img/newers-guide-standard-step02.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">見積・日程を聞く！</div>
             <div class="text">
             はじめてコンタクトするときは誰でも緊張します。でも、事業者はホスピタリティ産業だから親切な人が多いよ。<br>
@@ -246,7 +246,7 @@
               <img src="/assets/img/newers-guide-standard-step03.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">手配内容を承諾する！</div>
             <div class="text">
             現地から「見積書」が届いたら、よく確認してください。現地通貨のものが日本円に換算されて届きます。<br>
@@ -266,7 +266,7 @@
               <img src="/assets/img/newers-guide-standard-step04.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">いざ、申し込む！</div>
             <div class="text">
             現地からメッセージで予約が取れたという連絡と「確定見積書」が届きます。<br>
@@ -286,7 +286,7 @@
               <img src="/assets/img/newers-guide-standard-step05.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">契約成立！</div>
             <div class="text">
             「申込」が完了しますと、メッセージで「請求書」「旅行条件書」が届きます。「取消料基準」をご確認下さい！
@@ -306,7 +306,7 @@
               <img src="/assets/img/newers-guide-standard-step06.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">ファイナルが届く！</div>
             <div class="text">
             ご利用日の1週間前頃には現地から「最終確認書」がメッセージで届きます。<br>
@@ -327,7 +327,7 @@
               <img src="/assets/img/newers-guide-standard-step07.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">旅をする！</div>
             <div class="text">
             サービスを受けるまでは自己責任です。旅券、査証、航空券、保険、その国の事情など旅の準備は大丈夫ですか？<br>
@@ -342,7 +342,7 @@
         <a href="" class="button">現地パートナーを探す</a>
       </div>
     </section>
-    <section id="" class="section-content full">
+    <section id="full" class="section-content full">
       <div class="inner"> 
         <div class="head"><span>たびチョク事務局に任せる</span> フルコース</div>
         <div class="row">
@@ -354,7 +354,7 @@
               <img src="/assets/img/newers-guide-full-step01.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">まずはお気軽に相談！</div>
             <div class="text">
             お客様のご依頼に基づいて、当社が旅行計画を企画し、航空券、地上費、企画費などを包括してお見積します。<br>
@@ -362,7 +362,7 @@
             ひとつのコンテンツ、ひとつの現地パートナーでは収まり切れないお客様を歓迎します！<br>
             個人旅行をオーダーメードで作りたい方はホテルや観光地のご希望イメージを送ってください。<br>
             遅くとも出発の3ヶ月前には会員登録をしておきましょう！<br>
-            メールアドレス、電話番号、ご希望のイメージを書いて、「会員登録」をしましょう！<br>
+            <span>メールアドレス、電話番号、ご希望のイメージを書いて、「会員登録」をしましょう！</span><br>
             </div>
           </div>
         </div>
@@ -375,14 +375,14 @@
               <img src="/assets/img/newers-guide-full-step02.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">見積・日程を聞く！</div>
             <div class="text">
             はじめてコンタクトするときは誰でも緊張します。でも、事業者はホスピタリティ産業だから親切な人が多いよ。<br>
             会員の方は「ログイン」をしてください。まだ登録していない方は「新規登録」をしてください。<br>
             見積・日程は48営業時間内に返信がありますが、内容によっては時間がかかります。時差や休業日もあるので少々お待ちください。<br>
             お問合せがスタートしたら、マイページから現地＆たびチョクにメッセージが可能になるよ。<br>
-            「見積・日程を聞く」ボタンを押して、「日程・見積相談フォーム」を記入して送信します。
+            <span>「見積・日程を聞く」ボタンを押して、「日程・見積相談フォーム」を記入して送信します。</span>
             </div>
           </div>
         </div>
@@ -395,14 +395,14 @@
               <img src="/assets/img/newers-guide-full-step03.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">見積・日程を承諾する！</div>
             <div class="text">
             たびチョクから「日程表」「見積書」が届いたら、よく中身をご確認してください。<br>
             質問や変更があったら、直接メッセージを送ってください。新しい日程表・見積書が送られてきます。<br>
             実際の手配がされている部分もあり、ホテルグレードでOKしたり、入金後にはじめて手配がOKになるものも混在しています。<br>
             旅行休暇を取ったり、スケジュールを固めたい方は、申込/旅行契約に急ぎましょう！<br>
-            「承諾」「保留」「辞退」の中から「承諾」ボタンを押し、予約の意思を示します。<br>
+            <span>「承諾」「保留」「辞退」の中から「承諾」ボタンを押し、予約の意思を示します。</span><br>
             </div>
           </div>
         </div>
@@ -415,14 +415,14 @@
               <img src="/assets/img/newers-guide-full-step04.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">いざ、申し込む！</div>
             <div class="text">
             メッセージで航空券やホテルの予約が取れたという連絡と「確定見積書」が届きます。<br>
             デポジットが必要の場合やチケット類などは、入金があってはじめて確保します。<br>
             渡航情報に同行者や旅行詳細情報を登録しましょう。<br>
             「確定見積書」が届いてから24時間以内にお申し込みの意思をお伝えください。<br>
-            「申込」「保留」「取消」の中から「申込」ボタンを押し、申込の意思を示します。<br>
+            <span>「申込」「保留」「取消」の中から「申込」ボタンを押し、申込の意思を示します。</span><br>
             </div>
           </div>
         </div>
@@ -435,7 +435,7 @@
               <img src="/assets/img/newers-guide-full-step05.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">契約成立！</div>
             <div class="text">
             「申込」が完了しますと、メッセージで「請求書」「旅行条件書」が届きます。「取消料基準」をご確認下さい！<br>
@@ -455,7 +455,7 @@
               <img src="/assets/img/newers-guide-full-step06.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">最終日程表が届く！</div>
             <div class="text">
             残金のお支払い後、ご利用日の1週間前頃には「最終日程表」がメッセージで届きます。<br>
@@ -476,7 +476,7 @@
               <img src="/assets/img/newers-guide-full-step07.svg" alt="">
             </div>
           </div>
-          <div class="col col-9">
+          <div class="col col-12 col-md-9">
             <div class="head">旅をする！</div>
             <div class="text">
             サービスを受けるまでは自己責任です。旅券、査証、航空券、保険、その国の事情など旅の準備は大丈夫ですか？<br>
@@ -494,7 +494,7 @@
             <dl>
               <dt class="required">メールアドレス</dt>
               <dd>
-                <input type="text" placeholder="tabichoku@example.com">
+                <input type="email" placeholder="tabichoku@example.com">
               </dd>
               <dt class="required">電話番号</dt>
               <dd>

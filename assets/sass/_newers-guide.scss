@@ -32,13 +32,19 @@ main.newers-guide {
                 }
                 .links {
                     max-width: 100%;
-                    margin-top: 60px;
+                    margin-top: 20px;
                     .link {
+                        margin-top: 40px;
                         a {
                             display: block;
                             text-decoration: none;
-                            color: $black;
                             text-align: center;
+                            color: $gray02;
+                            >span {
+                                color: $black;
+                                display: inline-block;
+                                min-height: 60px;
+                            }
                             .button {
                                 @include btn;
                                 padding: 5px 0 10px;
@@ -77,6 +83,7 @@ main.newers-guide {
                     margin-top: 100px;
                     .col {
                         padding: 0 15px;
+                        margin-top: 20px;
                         .img {
                             position: relative;
                             .step {
@@ -86,6 +93,9 @@ main.newers-guide {
                                 line-height: 6rem;
                                 top: -60px;
                                 left: -50px;
+                                @media screen and (min-width: $tablet) {
+                                    font-size: 6.8rem;
+                                }
                                 span {
                                     font-size: 4rem;
                                 }
@@ -134,7 +144,7 @@ main.newers-guide {
                         font-weight: bold;
                         text-align: center;
                         color: $green02;
-                        margin-top: 100px;
+                        margin-top: 180px;
                     }
                     >.text {
                         text-align: center;
@@ -145,19 +155,36 @@ main.newers-guide {
                         margin-top: 20px;
                         dt {
                             margin-top: 20px;
-                            &.reqqired {}
-                            &:after {
-                                content: '必須';
-                                background-color: $red;
-                                color: #fff;
-                                padding: 0 5px;
+                            &.required {
+                                &:after {
+                                    content: '必須';
+                                    background-color: $red;
+                                    color: #fff;
+                                    padding: 0 5px;
+                                }
                             }
                         }
-                        dd {}
+                        dd {
+                            input[type="email"] {
+                                padding-left: 40px;
+                                background-image: url(assets/img/mail.svg);
+                                background-repeat: no-repeat;
+                                background-size: 20px;
+                                background-position: left 10px center;
+                            }
+                            input[type="text"] {
+                                padding-left: 40px;
+                                background-image: url(assets/img/phone.svg);
+                                background-repeat: no-repeat;
+                                background-size: 20px;
+                                background-position: left 10px center;
+                            }
+                        }
                     }
                     input,
                     textarea {
                         @include form_input;
+                        border: 1px solid $blue;
                     }
                     .links {
                         @include flex;

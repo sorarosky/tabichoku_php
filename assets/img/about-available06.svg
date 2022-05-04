@@ -1,3 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-  <rect id="長方形_3101" data-name="長方形 3101" width="120" height="120" fill="rgba(255,255,255,0)"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3dcde6"/>
+      <stop offset="1" stop-color="#68dcb6"/>
+    </linearGradient>
+  </defs>
+  <g id="wedding" transform="translate(31 18)">
+    <rect id="長方形_3101" data-name="長方形 3101" width="120" height="120" transform="translate(-31 -18)" fill="rgba(255,255,255,0)"/>
+    <path id="パス_9253" data-name="パス 9253" d="M130.664,35.369a28.8,28.8,0,0,0-8.508-5.9l13.5-17.51L122.785,0H97.741L84.87,11.958l13.5,17.516a28.868,28.868,0,1,0,32.293,5.9Zm-13.009-7.5L115.1,31.19l1.315-3.617,2.626-7.192,10.1-7.406Zm-1.549-7.012-2.283,6.273-1.6,4.394-.566,1.544h-2.969l-.558-1.53-1.6-4.388-2.291-6.293h11.868Zm-12.061-2.592,1.518-6.03h9.222l1.518,6.03Zm18.9-11.925,4.786,4.447-8.981,6.589-1.5-5.991Zm-23.416-1.8H121l.029.034L115.3,9.642H105.225L99.5,4.565Zm-1.94,1.8,5.545,4.909v.006l-1.536,6.113-8.877-6.5Zm-5.967,6.939,9.684,7.1,2.631,7.231,1.136,3.118-2.206-2.858Zm35.841,59.684A24.319,24.319,0,1,1,101.23,33.18l2.414,3.132h13.238L119.3,33.18a24.33,24.33,0,0,1,8.162,39.784Z" transform="translate(-81.406)" fill="url(#linear-gradient)"/>
+    <path id="パス_9254" data-name="パス 9254" d="M169.592,233.9a17.109,17.109,0,1,0,12.1,5.011A17.068,17.068,0,0,0,169.592,233.9Zm9.345,26.457a13.218,13.218,0,1,1,3.872-9.347A13.158,13.158,0,0,1,178.937,260.353Z" transform="translate(-140.734 -195.237)" fill="url(#linear-gradient)"/>
+  </g>
 </svg>

@@ -1,3 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-  <rect id="長方形_2588" data-name="長方形 2588" width="120" height="120" fill="rgba(255,255,255,0)"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3dcde6"/>
+      <stop offset="1" stop-color="#68dcb6"/>
+    </linearGradient>
+  </defs>
+  <g id="Business" transform="translate(18 23)">
+    <rect id="長方形_2588" data-name="長方形 2588" width="120" height="120" transform="translate(-18 -23)" fill="rgba(255,255,255,0)"/>
+    <path id="パス_9247" data-name="パス 9247" d="M77.771,137.5H6.854A6.855,6.855,0,0,0,0,144.359v9.387l34.958,7.373v-4.674H49.465v4.674l35.159-7.42v-9.341A6.855,6.855,0,0,0,77.771,137.5Z" transform="translate(0 -119.854)" fill="url(#linear-gradient)"/>
+    <path id="パス_9248" data-name="パス 9248" d="M61.68,288.655H47.173v-9.424l-32.54-6.463v27.569a6.853,6.853,0,0,0,6.852,6.854H87.568a6.854,6.854,0,0,0,6.853-6.854V272.721l-32.742,6.51v9.424Z" transform="translate(-12.214 -232.723)" fill="url(#linear-gradient)"/>
+    <rect id="長方形_2790" data-name="長方形 2790" width="7.253" height="12.087" transform="translate(38.585 40.217)" fill="url(#linear-gradient)"/>
+    <path id="パス_9249" data-name="パス 9249" d="M164.129,37.576a.983.983,0,0,1,.979-.982h18.607a.978.978,0,0,1,.978.982v4.9h5.875v-4.9a6.857,6.857,0,0,0-6.853-6.857H165.109a6.854,6.854,0,0,0-6.852,6.857v4.9h5.872v-4.9Z" transform="translate(-132.1 -30.719)" fill="url(#linear-gradient)"/>
+  </g>
 </svg>

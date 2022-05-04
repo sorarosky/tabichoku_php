@@ -253,13 +253,13 @@
             </div>
             <div class="head">マイページメニュー</div>
             <ul class="links mypage-navi">
-                <li><a class="link" href="">あなたの旅行情報</a></li>
-                <li><a class="link" href="">お客様情報</a></li>
-                <li><a class="link" href="">旅行者情報</a></li>
-                <li><a class="link" href="">お支払い情報</a></li>
-                <li><a class="link" href="">アカウント情報</a></li>
-                <li><a class="link" href="">テンプレート</a></li>
-                <li><a class="link" href="">お気に入り</a></li>
+                <li><a class="link travel" href="">あなたの旅行情報</a></li>
+                <li><a class="link user" href="">お客様情報</a></li>
+                <li><a class="link member" href="">旅行者情報</a></li>
+                <li><a class="link payment" href="">お支払い情報</a></li>
+                <li><a class="link account" href="">アカウント情報</a></li>
+                <li><a class="link template" href="">テンプレート</a></li>
+                <li><a class="link fav" href="">お気に入り</a></li>
             </ul>
             <div class="logout"><a href="">ログアウト</a></div>
             <div class="head">メニュー</div>

@@ -487,8 +487,11 @@ $blue03: #D8F5FA;
             margin: 0 auto;
             margin-top: 60px;
             margin-bottom: -20px;
-            display: block;
             position: relative;
+            display: none;
+            @media screen and (min-width: $tablet) {
+                display: block;
+            }
             .swiper-button-prev,
             .swiper-button-next {
                 width: 44px;
@@ -512,10 +515,12 @@ $blue03: #D8F5FA;
             width: 100%;
             max-width: 235px;
             margin: 0 auto;
-            padding: 20px 0;
+            padding: 5px 0;
             margin-top: 30px;
             @media screen and (min-width: $tablet) {
                 max-width: 400px;
+                padding: 20px 0;
+                font-size: 2rem;
             }
             &::after {
                 position: absolute;
@@ -759,7 +764,7 @@ $blue03: #D8F5FA;
     font-size: 1.4rem;
     padding: 10px;
     border: 1px solid #ccc;
-    background-color: #f7f7f7;
+    background-color: #fff;
     border-radius: 5px;
     &::-webkit-input-placeholder {
         color: #BBB;

@@ -810,7 +810,7 @@
             <div class="category">おしらせ</div></div>
             <a class="title" href="">マウスオーバーで下線表示、フォントサイズ16px</a>
         </div>
-        <a href="" class="button">もっと詳しくみる</a>
+        <a href="" class="button">もっと見る</a>
       </div>
     </section>
   </main>
