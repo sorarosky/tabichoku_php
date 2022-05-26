@@ -1,5 +1,5 @@
 <aside class="aside">
-  <div class="box travel-content-post">
+  <div class="box travel-content-post js-aside-box-travel-content-post shown">
     <div class="title">タイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入る</div>
     <dl>
       <dt>

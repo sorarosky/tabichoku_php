@@ -10,7 +10,7 @@
           <h1 class="title">タイトルが入る。タイトルが入るタイトルが入る。タイトルが入るタイトルが入る。タイトルが入る</h1>
           <div class="info">
             <div class="date">2022/00/00</div>
-            <div class="num">00000</div>
+            <div class="num"><i class="far fa-eye"></i> 00000</div>
             <div class="country-name">国名が入る、国名が入る</div>
           </div>
           <div class="company-name"><i class="fas fa-user"></i> 事業者名が入る2行場合、テキストテキストテキスト</div>

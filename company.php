@@ -1,7 +1,7 @@
 <?php include 'header.php';?>
 <?php include 'breadcrumb.php';?>
 <div class="contents-wrap">
-  <main class="main copmpany">
+  <main class="main company">
     <section class="section-content page-head">
         <div class="name">会社概要</div>
         <nav class="page-navi">
@@ -41,13 +41,13 @@
         </div>
 
         <div class="sub-head">Our Services <span>事業内容</span></div>
-        <ul>
+        <ol>
           <li>旅行業</li>
           <li>海外旅行の地上手配に関する事業</li>
           <li>旅行に関するコンサルティング</li>
           <li>各種広告並びに宣伝に関する事業</li>
           <li>各種市場調査並びに情報提供サービス業</li>
-        </ul>
+        </ol>
       </div>
     </section>
     <section class="section-content info">
@@ -114,7 +114,7 @@
           </tr>
           <tr>
             <th>営業所</th>
-            <td>本店</td>
+            <td>本店 <a class="button" href="">メールのお問い合わせはこちら</a></td>
           </tr>
           <tr>
             <th>旅行業務取扱管理者</th>
@@ -122,122 +122,9 @@
           </tr>
           <tr>
             <th>加盟団体</th>
-            <td>一般社団法人日本旅行業協会(JATA)正会員</td>
+            <td><span class="jata">一般社団法人日本旅行業協会(JATA)正会員</span></td>
           </tr>
         </table>
-      </div>
-    </section>
-    <section class="section-content important">
-      <div class="inner">
-        <div class="row">
-          <div class="col col-12">
-            <div class="inner">
-              <div class="head">POINT <span>01</span></div>
-              <div class="head">パック旅行ではできない<br>自己成長や事業成果の追求</div>
-              <div class="img">
-                <img src="/assets/img/aout-point01.svg" alt="">
-              </div>
-              <div class="text">豊富な知見やノウハウ、高い手配力を持つグローバルパートナーとの協働によって、旅の理想形をリスクを最小限に抑えて実現できるネットワークがあります</div>
-            </div>
-          </div>
-          <div class="col col-12">
-            <div class="inner">
-              <div class="head">POINT <span>02</span></div>
-              <div class="head">新たな価値や魅力を発見できる<br>旅行素材のネット予約</div>
-              <div class="img">
-                <img src="/assets/img/aout-point02.svg" alt="">
-              </div>
-              <div class="text">専門性の高い現地のプロが持ち寄った産地直販プラットフォームならではの特別感があり、秀逸な素材を中間組織を介せずダイレクトにご購入いただけます。</div>
-            </div>
-          </div>
-          <div class="col col-12">
-            <div class="inner">
-              <div class="head">POINT <span>03</span></div>
-              <div class="head">メール通信による安心・確実な手配とコーディネート</div>
-              <div class="img">
-                <img src="/assets/img/aout-point03.svg" alt="">
-              </div>
-              <div class="text">専門性の高い現地のプロが持ち寄った産地直販プラットフォームならではの特別感があり、秀逸な素材を中間組織を介せずダイレクトにご購入いただけます。</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-content new">
-      <div class="inner">
-        <div class="head">はじめての方</div>
-        <div class="img">
-          <img src="" alt="">
-        </div>
-        <div class="text">
-          大手旅行会社36年間の在職中、国内・海外旅行、インバウンド、MICE、SDGs等を企画し、在外支店で勤務した経験から、旅行業もデジタルとマニュアルの両輪を使えば閉ざされたドアが解放され、お客様が主導する新しい旅行スタイルが可能ではないかと思い、2021年に旅行業を開業し、2022年より「たびチョク」の運営をスタートしました。<br>
-          まず、タビナカビジネスですが、現地会社・DMCは日本の旅行会社への配慮もあって一歩引いておりましたが、実にエネルギッシュで賢く、顧客サービスに真剣な方々が揃っています。待っているだけではなくて、直接、お客様と接点を持つことが増えれば、もっとお客様に喜んでいただけるチャンスがあると思いました。<br>
-          次に、お客様の目に触れるのは募集型企画商品（パッケージツアー）やOTAのホテルサイトが多いと思われますが、まだ目につかない一般団体・教育団体の面白い企画がたくさんあり、きっとそのような戦略的コンテンツをウエブサイトで公開できればお客様の旅行意欲に火をつけることができると思いました。<br>
-          最後に、世界各地の旅行会社やガイドさんたちもスマホ時代になって、便利で収益性を見込めるインターネットビジネスに意欲的なのですが、孤立無援の独り相撲では成果がごく一部でした。たびチョクという世界のプロが結集する共通舞台に乗れば、顧客を拡大でき、成功事例を共有し、新しいアイデアを仕事に結びつけることが可能なので、これは現地に貢献できるのではないかと考えました。<br>
-          世界の旅行業はコロナの影響でダメージが大きく、観光による収入が頼りの貧困な国も何とか生き延びていこうと奮闘しています。<br>
-          私たちはSDGｓの目標17「持続可能な開発に向けて実施手段を強化し、グローバル・パートナーシップを活性化する」を理念とし、たびチョクを通じて観光資源をPRして、まだあまり知られていない国や貧しい人たちが観光業で豊かになれる社会を目標としています。<br>
-          ※DMC: Destination Management Company<br>
-          ※OTA: Online Travel Agent<br>
-        </div>
-        <a href="" class="button">もっと見る</a>
-      </div>
-    </section>
-    <section class="section-content available">
-      <div class="inner">
-        <div class="head">たびチョクで出来ること</div>
-        <div class="img">
-          <img src="" alt="">
-        </div>
-        <div class="row">
-          <div class="col col-12 col-6">
-              <div class="inner products">
-                <div class="head">着地型商品</div>
-                <div class="text">旅行先の現地会社が企画・主催・販売する旅行商品やプログラム。現地集合、現地解散の市内観光や空港送迎などがある。他のお客様と相乗りする混乗ツアーと専用車を使った貸切ツアーに分かれる。</div>
-              </div>
-          </div>
-          <div class="col col-12 col-6">
-              <div class="inner tour">
-                <div class="head">プライベートツアー</div>
-                <div class="text">他のお客様とは一緒に行動しないご自分だけの貸切ツアー。出発時刻や訪問個所などもご希望に沿って調整でき、自由度の高い旅行を楽しめる。ただし、混乗ツアーに比べて割高になる。</div>
-              </div>
-          </div>
-          <div class="col col-12 col-6">
-              <div class="inner private">
-                <div class="head">プライベー法人旅行・MICEトツアー</div>
-                <div class="text">MICEとは、Meeting、Incentive Travel、Convention、Exhibition/Eventの頭文字を取った法人の行うビジネスイベントを意味する。その他、法人旅行には社員旅行、視察旅行、教育旅行等が含まれる。</div>
-              </div>
-          </div>
-          <div class="col col-12 col-6">
-              <div class="inner codinator">
-                <div class="head">現地コーディネーター</div>
-                <div class="text">お客様と現地との架け橋となって、訪問先のプラニングやアドバイス、アポイント取り、スケジュール作成を行うコーディネーター。自身で通訳やサポートを行うこともある。</div>
-              </div>
-          </div>
-          <div class="col col-12 col-6">
-              <div class="inner support">
-                <div class="head">取材撮影サポート</div>
-                <div class="text">TV/雑誌などのメディアからの依頼で、スタッフと同行し、現地の取材をサポートしたり、通訳を行う。撮影許可を取ったり、カメラ撮影の補助を行い、撮影機材の運搬を手伝う。</div>
-              </div>
-          </div>
-          <div class="col col-12 col-6">
-              <div class="inner wedding">
-                <div class="head">ウエディング</div>
-                <div class="text">挙式場、貸衣装、ブーケ&ブートニア、新婦ヘア&メイク、記念撮影、パーティー、送迎車など人生の晴れの舞台を華やかに演出する。プラニングからアテンドまでトータルでプロデュースする。</div>
-              </div>
-          </div>
-          <div class="col col-12 col-6">
-              <div class="inner study">
-                <div class="head">留学・自己啓発</div>
-                <div class="text">高校生、大学生、社会人が現地校に通い、その宿舎やホームステイなどをアレンジする。長期滞在中でも生活に不安がないように学業以外でもサポートすることもある。査証のお手伝いも行う。</div>
-              </div>
-          </div>
-          <div class="col col-12 col-6">
-              <div class="inner sdgs">
-                <div class="head">SDGs・視察</div>
-                <div class="text">国連が定めた17の持続可能な開発目標SDGsのテーマに沿って海外の事例を学んだり、実際に海外で実践や体験できることも多い。視察は相手先の受入条件との調整が難しい。調整には費用や時間がかかる。</div>
-              </div>
-          </div>
-        </div>
       </div>
     </section>
   </main>

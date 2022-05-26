@@ -10,6 +10,7 @@
     <li class="link"><a href="recruit.php">リクルート recruit.php</a></li>
     <li class="link"><a href="entry-form.php">リクルート – エントリーフォーム entry-form.php</a></li>
     <li class="link"><a href="entry-form-conf.php">リクルート – 確認 entry-form-conf.php</a></li>
+    <li class="link"><a href="entry-form-thx.php">リクルート – 完了 entry-form-thx.php</a></li>
     <li class="link"><a href="advertise.php">広告掲載について advertise.php</a></li>
     <li class="link"><a href="chiebukuro.php">失敗しない海外旅行の知恵袋 chiebukuro.php</a></li>
     <li class="link"><a href="newers-guide.php">はじめての方（ご利用ガイド）newers-guide.php</a></li>

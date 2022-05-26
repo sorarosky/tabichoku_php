@@ -149,8 +149,8 @@ main.local-professionals-news-map {
             }
         }
         &.page-head {
+            padding-bottom: 60px;
             .text {
-                text-align: center;
                 margin-top: 20px;
                 font-size: 1.6rem;
             }
@@ -256,7 +256,7 @@ main.local-professionals-news-map {
         }
         &.entry-content {
             position: relative;
-            padding-top: 60px;
+            padding-top: 50px;
             padding-bottom: 100px;
             .id {
                 position: absolute;
@@ -294,7 +294,6 @@ main.local-professionals-news-map {
                 font-size: 2.4rem;
                 font-weight: bold;
                 color: $blue;
-                margin-top: 15px;
             }
             .info {
                 @include flex;

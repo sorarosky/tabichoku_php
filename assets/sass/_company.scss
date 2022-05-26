@@ -1,0 +1,117 @@
+main.company {
+    .section-content {
+        .inner {
+            @include inner;
+            >.head {
+                font-size: 2.4rem;
+                color: $green;
+                font-weight: bold;
+                text-align: center;
+                @media screen and (min-width: $tablet) {
+                    font-size: 3.2rem;
+                }
+            }
+        }
+        &.page-head {
+            background-image: url(assets/img/page-head-company.jpg);
+        }
+        &.company {
+            padding-bottom: 100px;
+            .inner {
+                .head {
+                    margin-top: 60px;
+                    margin-bottom: 40px;
+                }
+                .sub-head {
+                    font-size: 2.8rem;
+                    line-height: 1rem;
+                    border-bottom: 10px solid #E0F8F0;
+                    font-weight: bold;
+                    display: inline-block;
+                    span {
+                        font-weight: normal;
+                        font-size: 1.4rem;
+                    }
+                }
+                .copy {
+                    font-size: 2rem;
+                    margin-top: 30px;
+                }
+                .text {
+                    font-size: 1.6rem;
+                    margin-top: 20px;
+                    margin-bottom: 100px;
+                }
+                ol {
+                    padding-left: 2.4rem;
+                    margin-top: 20px;
+                }
+            }
+        }
+        &.info {
+            .inner {
+                .sub-head {
+                    font-size: 2.8rem;
+                    line-height: 1rem;
+                    border-bottom: 10px solid #E0F8F0;
+                    font-weight: bold;
+                    display: inline-block;
+                }
+                table {
+                    width: 100%;
+                    margin-top: 40px;
+                    margin-bottom: 60px;
+                    tbody {
+                        tr {
+                            @include flex;
+                            height: auto !important;
+                            th {
+                                font-size: 1.4rem;
+                                width: 100%;
+                                max-width: 250px;
+                                display: block;
+                                padding: 15px 0;
+                                border-bottom: 1px solid $gray;
+                                font-weight: normal;
+                                text-align: left;
+                                line-height: 2rem;
+                                height: auto !important;
+                            }
+                            td {
+                                font-size: 1.6rem;
+                                width: 100%;
+                                display: block;
+                                padding: 15px;
+                                border-bottom: 1px solid $gray;
+                                background-color: #fff;
+                                line-height: 3rem;
+                                height: auto !important;
+                                .button {
+                                    @include btn;
+                                    display: inline-block;
+                                    padding: 5px 20px;
+                                    color: #fff;
+                                    background-color: $blue;
+                                    border-radius: 20px;
+                                    margin-left: 0;
+                                    @media screen and (min-width: $tablet) {
+                                        display: initial;
+                                        margin-left: 40px;
+                                    }
+                                }
+                                .jata {
+                                    background-image: url(assets/img/jata.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: 30px;
+                                    background-position: left center;
+                                    padding: 10px 0;
+                                    padding-left: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

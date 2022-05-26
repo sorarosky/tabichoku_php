@@ -17,6 +17,11 @@
         <li><a href="">ハワイ(000)</a></li>
         <li><a href="">北米(000)</a></li>
         <li><a href="">中南米(000)</a></li>
+        <li><a href="">アジア(000)</a></li>
+        <li><a href="">大洋州(000)</a></li>
+        <li><a href="">ヨーロッパ(000)</a></li>
+        <li><a href="">中東(000)</a></li>
+        <li><a href="">アフリカ(000)</a></li>
       </ul>
       <div class="link"><a href="">国から探す →</a></div>
       

@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer js-footer">
   <div class="inner row">
     <div class="col col-12 col-md-4">
       <div class="logo">

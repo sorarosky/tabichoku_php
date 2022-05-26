@@ -610,6 +610,39 @@ jQuery(function($) {
         });
 
     };
+
+    if ($('.js-aside-box-travel-content-post').length) {
+        var aside = $('.js-aside-box-travel-content-post')
+        var footer = $('.js-footer')
+        $(window).scroll(function() {
+
+            footer.on('inview', function(event, isInView) {
+                if (isInView) {
+                    aside.hide();
+                } else {
+                    aside.show();
+                }
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            let once = false;
+            var aside = $('.js-aside-box-travel-content-post')
+                // ターゲットの画面トップからの距離
+            taeget_position = document.querySelector('.js-footer').getBoundingClientRect().top;
+
+            // 画面トップからの距離から画面の高さより小さければ実行する
+            if (taeget_position <= window.innerHeight) {
+                aside.removeClass('shown');
+            } else {
+                aside.addClass('shown');
+            }
+        });
+
+    };
+
+
+
     /* EOF travel-content.php */
 
 

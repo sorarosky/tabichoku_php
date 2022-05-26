@@ -376,6 +376,11 @@ main.travel-content-post {
         margin-bottom: 0;
         width: 100%;
         padding: 10px 20px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        &.shown {
+            opacity: 1;
+        }
         @media screen and (min-width: $tablet) {
             border-radius: 10px;
             right: 20px;

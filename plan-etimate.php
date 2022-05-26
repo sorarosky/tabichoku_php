@@ -1,14 +1,14 @@
 <?php include 'header.php';?>
 <?php include 'breadcrumb.php';?>
 <div class="contents-wrap">
-  <main class="main plan-etimate">
+  <main class="main plan-estimate">
     <section class="section-content page-head">
       <div class="name">日程・見積をきく</div>
       <nav class="page-navi">
         <ul class="links">
           <li class="link"><a href="">はじめての方</a></li>
           <li class="link"><a href="">海外旅行の知恵袋</a></li>
-          <li class="link"><a href="">日程・見積をきく</a></li>
+          <li class="link current"><a href="">日程・見積をきく</a></li>
           <li class="link"><a href="">よくある質問</a></li>
         </ul>
       </nav>
@@ -17,24 +17,26 @@
       <div class="inner">
         <nav class="row links">
           <div class="col col-12 col-md-4 link">
-            <a href="">パートナーを選ぶ</a>
+            <a href="#partner">パートナーを選ぶ</a>
           </div>
           <div class="col col-12 col-md-4 link">
-            <a href="">見積の準備</a>
+            <a href="#prepare">見積の準備</a>
           </div>
           <div class="col col-12 col-md-4 link">
-            <a href="">日程作成の準備</a>
+            <a href="#plan">日程作成の準備</a>
           </div>
         </nav>
-        <div class="head">パートナーを選ぶ</div>
+        <div id="partner" class="head">パートナーを選ぶ</div>
         <div class="text">たびチョクは「旅コンテンツ」から進む方法以外に、お客様のご希望の旅をカスタムメイドする方法があります。<br>
         お客様のご希望を「日程・相談フォーム」に記入して送信すれば、あとは連絡が来るのを待つだけです。その後は、お客様と事業者の間でやり取りを重ね、これで納得となったら「手配申込」ボタンを押して、確認を待ちます。<br>
         旅行計画の段階から自分の思いを伝えられるし、気になることは質問できるから安心して旅行をお任せできます。</div>
         <div class="row content">
           <div class="col col-12 col-md-6">
-            <div class="head">現地パートナーを選ぶ</div>
-            <div class="img">
-              <img src="" alt="">
+            <div class="img sp-pc sp">
+              <img src="/assets/img/plan-estimate01-sp.svg" alt="">
+            </div>
+            <div class="img sp-pc pc">
+              <img src="/assets/img/plan-estimate01-pc.svg" alt="">
             </div>
           </div>
           <div class="col col-12 col-md-6">
@@ -56,9 +58,11 @@
         </div>
         <div class="row content">
           <div class="col col-12 col-md-6">
-            <div class="head">たびチョクを選ぶ</div>
-            <div class="img">
-              <img src="" alt="">
+            <div class="img sp-pc sp">
+              <img src="/assets/img/plan-estimate02-sp.svg" alt="">
+            </div>
+            <div class="img sp-pc pc">
+              <img src="/assets/img/plan-estimate02-pc.svg" alt="">
             </div>
           </div>
           <div class="col col-12 col-md-6">
@@ -80,16 +84,16 @@
     </section>
     <section class="section-content estimate">
       <div class="inner">
-        <div class="head">見積の準備</div>
+        <div id="estimate" class="head">見積の準備</div>
         <div class="row">
-          <div class="col col-12 col-md-4">旅行期間を決める</div>
-          <div class="col col-12 col-md-4">人数を決める</div>
-          <div class="col col-12 col-md-4">目的を決める</div>
-          <div class="col col-12 col-md-4">見たいものを<br >決める</div>
-          <div class="col col-12 col-md-4">やりたいものを<br >決める</div>
-          <div class="col col-12 col-md-4">ホテルグレードを
-          <br >決める</div>
+          <div class="col col-12 col-md-4"><div class="inner estimate01"><span>旅行期間を決める</span></div></div>
+          <div class="col col-12 col-md-4"><div class="inner estimate02"><span>人数を決める</span></div></div>
+          <div class="col col-12 col-md-4"><div class="inner estimate03"><span>目的を決める</span></div></div>
+          <div class="col col-12 col-md-4"><div class="inner estimate04"><span>見たいものを<br class="sp-pc pc">決める</span></div></div>
+          <div class="col col-12 col-md-4"><div class="inner estimate05"><span>やりたいものを<br class="sp-pc pc">決める</span></div></div>
+          <div class="col col-12 col-md-4"><div class="inner estimate06"><span>ホテルグレードを<br class="sp-pc pc">決める</span></div></div>
         </div>
+        <div class="wrap">
         <div class="sub-head">旅行期間を決める</div>
         <div class="text">ご存知の通り、休前日と平日、夏季と冬季など細かく料金が分かれています。旅行出発日を固める前にダミーの日付で良いので仮日程のお見積を送ってください。予算感が出来たら、日付を固めましょう。現地訪問先、航空券、地上手配の順でスケジュールを決めてはいかがでしょう。月曜休館のミュージアムも多いようですし、日曜・祝日はショッピングが休みで、教会も礼拝中なんてこともあります。また、シーズン中の空港は大混雑のため余裕を持った行動が必要です。混乗バスは値段は安いが、ホテルの循環で時間がもったいないと感じる方います。現地への見積相談は、現地到着（利用開始日）から現地出発日（利用終了日）までになります。端的で聞きたいことをズバリ聞いてください。</div>
         <div class="sub-head">人数を決める</div>
@@ -108,75 +112,85 @@
         ちょっと非日常体験することは旅行の醍醐味をアップしますが、予算も見ておかなくてはいけません。</div>
         <div class="sub-head">ホテルグレードを決める</div>
         <div class="text">日本の旅行パンフレットを見ての通り、エコノミーホテルとデラックスホテルでは旅行代金は全く違います。お見積に最も影響を与えるのがホテルグレードです。さらにオーシャンビューのような室指定を加えるとお見積はアップします。地域やシーズンでも料金は変わります。同じラグジュアリーホテルでもクアラルンプールとパリでは大差があります。さらにラスベガスのカジノができるホテルでも木曜日と金曜日で宿泊料金は変わります。現地パートナーが強い仕入料金を持っている場合もありますので、ホテルグレードの中で良い料金が出るホテルを提案してもらうのも良いアイデアです。</div>
+        </div>
       </div>
     </section>
     <section class="section-content plan">
       <div class="inner">
-        <div class="head">日程作成の準備</div>
+        <div id="plan" class="head">日程作成の準備</div>
         <div class="row">
-          <div class="col col-12 col-md-4">日程全般について</div>
-          <div class="col col-12 col-md-4">航空機について</div>
-          <div class="col col-12 col-md-4">ホテルについて</div>
-          <div class="col col-12 col-md-4">ガイドについて</div>
-          <div class="col col-12 col-md-4">訪問地について</div>
-          <div class="col col-12 col-md-4">移動について</div>
+          <div class="col col-12 col-md-4"><div class="inner estimate07"><span>日程全般について</span></div></div>
+          <div class="col col-12 col-md-4"><div class="inner estimate08"><span>航空機について</span></div></div>
+          <div class="col col-12 col-md-4"><div class="inner estimate09"><span>ホテルについて</span></div></div>
+          <div class="col col-12 col-md-4"><div class="inner estimate10"><span>ガイドについて</span></div></div>
+          <div class="col col-12 col-md-4"><div class="inner estimate11"><span>訪問地について</span></div></div>
+          <div class="col col-12 col-md-4"><div class="inner estimate12"><span>移動について</span></div></div>
         </div>
-        <div class="sub-head">日程全般について</div>
-        <ul>
-          <li>和文日程表をベースに見積書の算出をしますので、仮日程をお送りください。</li>
-          <li>お客様ご自身が作成された日程表ではなくても、参考日程のURLや写真などのイメージでもOKです。</li>
-          <li>現地パートナーや当社が拝見して、日程表をよくするためにアドバイスをする場合があります。</li>
-          <li>一度のお問合せで見積書のご提案は2件までとさせていただきます。</li>
-          <li>現地からの返事は英文日程表となる場合が多く、和文日程表の修正はお客様ご自身の作業となります。</li>
-          <li>交通渋滞や入場のために並ぶところもありますので、スケジュールは余裕を持ってお作り下さい。</li>
-          <li>見積書にかかる日数は見積の内容によって異なります。通常は3日間以内に回答いたします。</li>
-          <li>見積書をお送りする時点では実際の手配は行っていません。お客様からの承諾があって手配を開始します。</li>
-        </ul>
-        <div class="sub-head">航空機について</div>
-        <ul>
-          <li>乗継時間を確認していますか？</li>
-          <li>発着時刻を日程表に書いていますか？暫定的なフライトでも予定を書き込みましょう。</li>
-          <li>航空機が遅延しても、接続した予定にリスクはありませんか？到着後のスケジュールは軽めが基本です。</li>
-          <li>同じ都市に空港が複数ありませんか？暫定的な空港名も日程表に書きましょう。</li>
-          <li>機内食がある航空機の場合には食事は外しておく方が良いでしょう。</li>
-          <li>航空券の手配はご自身でしょうか？それとも他のサービスと一緒に当社が行うのかご指示ください。</li>
-        </ul>
-        <div class="sub-head">ホテルについて</div>
-        <ul>
-          <li>ホテルについて</li>
-          <li>暫定的なホテル名でも予定を書き込みましょう。立地によってはスケジュールがかなり変わります。</li>
-          <li>但し、現地のホテルを任せたい場合は、「Any ホテル」「おまかせホテル」などとお知らせください。</li>
-          <li>夕食を日程に含めるときは、ホテルの食事でしょうか？ホテル外のレストランでしょうか？</li>
-          <li>ホテルの手配はご自身でしょうか？それとも他のサービスと一緒に当社が行うのかご指示ください。</li>
-        </ul>
-        <div class="sub-head">ガイドについて</div>
-        <ul>
-          <li>その町に日本語ガイドがいるのかお尋ね下さい。日本語ガイドがいない都市もあります。</li>
-          <li>暫定的なホテル名でも予定を書き込みましょう。立地によってはスケジュールがかなり変わります。</li>
-          <li>山岳ガイドなどの専門性の高いガイドが必要でしたらご指示ください。</li>
-          <li>ガイドの拘束時間は午前、午後、1日と分かれている地域が多いので、利用時間帯をお書きください。</li>
-          <li>ガイド・アシスタントを付けなければ対応できないこともありますので、アドバイスいたします。</li>
-          <li>ハイシーズンには日本語ガイドが手配できない場合がございます。早めにご連絡ください。</li>
-        </ul>
-        <div class="sub-head">訪問地について</div>
-        <ul>
-          <li>美術館や訪問先の休業日は確認していますか？曜日によっては閉館している場所もあります。</li>
-          <li>地域によっては冬場の日照時間の短かいことを注意して、観光の始まりと終わりを決めましょう。</li>
-          <li>予定が過密すぎると予定を消化できない場合があります。余裕を持ったスケジュールをお作り下さい。</li>
-          <li>オーロラや珍しい動物のように、タイミングが難しい日程はゆったりとした滞在計画をお立てください。</li>
-          <li>利用日当日、ガイドやドライバーに相談されてもお断りされることがあります。早めにご相談ください。</li>
-          <li>入場料のお支払い方法をご指示ください。多くのオプショナルツアーは入場料込みとなっています。</li>
-        </ul>
-        <div class="sub-head">移動について</div>
-        <ul>
-          <li>車両は専用車か混乗車（相乗り）かご指示下さい。混乗車サービスのない場所もあります。</li>
-          <li>発着時刻のご希望はありますか？現地にお任せの場合は無記入で結構です。</li>
-          <li>専用車の拘束時間は午前、午後、1日と分かれている地域が多いので、利用時間帯をお書きください。</li>
-          <li>利用時間のほかに、走行距離に応じて料金計算しますので、日程表に行き先をお書きください。</li>
-          <li>移動方法が専用車ではなく、徒歩または公共交通機関でしたら交通機関にその旨をお書きください。</li>
-          <li>ご自身で運転するレンタカーなどにはガイドが同乗できませんので、ガイドなしでご移動ください。</li>
-        </ul>
-        <a href="" class="link">サンプル日程表</a>
+        <div class="wrap">
+          <div class="sub-head">日程全般について</div>
+          <ul>
+            <li>和文日程表をベースに見積書の算出をしますので、仮日程をお送りください。</li>
+            <li>お客様ご自身が作成された日程表ではなくても、参考日程のURLや写真などのイメージでもOKです。</li>
+            <li>現地パートナーや当社が拝見して、日程表をよくするためにアドバイスをする場合があります。</li>
+            <li>一度のお問合せで見積書のご提案は2件までとさせていただきます。</li>
+            <li>現地からの返事は英文日程表となる場合が多く、和文日程表の修正はお客様ご自身の作業となります。</li>
+            <li>交通渋滞や入場のために並ぶところもありますので、スケジュールは余裕を持ってお作り下さい。</li>
+            <li>見積書にかかる日数は見積の内容によって異なります。通常は3日間以内に回答いたします。</li>
+            <li>見積書をお送りする時点では実際の手配は行っていません。お客様からの承諾があって手配を開始します。</li>
+          </ul>
+          <div class="sub-head">航空機について</div>
+          <ul>
+            <li>乗継時間を確認していますか？</li>
+            <li>発着時刻を日程表に書いていますか？暫定的なフライトでも予定を書き込みましょう。</li>
+            <li>航空機が遅延しても、接続した予定にリスクはありませんか？到着後のスケジュールは軽めが基本です。</li>
+            <li>同じ都市に空港が複数ありませんか？暫定的な空港名も日程表に書きましょう。</li>
+            <li>機内食がある航空機の場合には食事は外しておく方が良いでしょう。</li>
+            <li>航空券の手配はご自身でしょうか？それとも他のサービスと一緒に当社が行うのかご指示ください。</li>
+          </ul>
+          <div class="sub-head">ホテルについて</div>
+          <ul>
+            <li>ホテルについて</li>
+            <li>暫定的なホテル名でも予定を書き込みましょう。立地によってはスケジュールがかなり変わります。</li>
+            <li>但し、現地のホテルを任せたい場合は、「Any ホテル」「おまかせホテル」などとお知らせください。</li>
+            <li>夕食を日程に含めるときは、ホテルの食事でしょうか？ホテル外のレストランでしょうか？</li>
+            <li>ホテルの手配はご自身でしょうか？それとも他のサービスと一緒に当社が行うのかご指示ください。</li>
+          </ul>
+          <div class="sub-head">ガイドについて</div>
+          <ul>
+            <li>その町に日本語ガイドがいるのかお尋ね下さい。日本語ガイドがいない都市もあります。</li>
+            <li>暫定的なホテル名でも予定を書き込みましょう。立地によってはスケジュールがかなり変わります。</li>
+            <li>山岳ガイドなどの専門性の高いガイドが必要でしたらご指示ください。</li>
+            <li>ガイドの拘束時間は午前、午後、1日と分かれている地域が多いので、利用時間帯をお書きください。</li>
+            <li>ガイド・アシスタントを付けなければ対応できないこともありますので、アドバイスいたします。</li>
+            <li>ハイシーズンには日本語ガイドが手配できない場合がございます。早めにご連絡ください。</li>
+          </ul>
+          <div class="sub-head">訪問地について</div>
+          <ul>
+            <li>美術館や訪問先の休業日は確認していますか？曜日によっては閉館している場所もあります。</li>
+            <li>地域によっては冬場の日照時間の短かいことを注意して、観光の始まりと終わりを決めましょう。</li>
+            <li>予定が過密すぎると予定を消化できない場合があります。余裕を持ったスケジュールをお作り下さい。</li>
+            <li>オーロラや珍しい動物のように、タイミングが難しい日程はゆったりとした滞在計画をお立てください。</li>
+            <li>利用日当日、ガイドやドライバーに相談されてもお断りされることがあります。早めにご相談ください。</li>
+            <li>入場料のお支払い方法をご指示ください。多くのオプショナルツアーは入場料込みとなっています。</li>
+          </ul>
+          <div class="sub-head">移動について</div>
+          <ul>
+            <li>車両は専用車か混乗車（相乗り）かご指示下さい。混乗車サービスのない場所もあります。</li>
+            <li>発着時刻のご希望はありますか？現地にお任せの場合は無記入で結構です。</li>
+            <li>専用車の拘束時間は午前、午後、1日と分かれている地域が多いので、利用時間帯をお書きください。</li>
+            <li>利用時間のほかに、走行距離に応じて料金計算しますので、日程表に行き先をお書きください。</li>
+            <li>移動方法が専用車ではなく、徒歩または公共交通機関でしたら交通機関にその旨をお書きください。</li>
+            <li>ご自身で運転するレンタカーなどにはガイドが同乗できませんので、ガイドなしでご移動ください。</li>
+          </ul>
+          <a class="doc" href="assets/docs/" class="link">サンプル日程表</a>
+        </div>
+        <div class="government">
+          <div class="head">出発前に渡航先の安全情報を海外安全ホームページで確認、感染症情報もご確認ください。</div>
+          <div class="row">
+            <div class="col"><a href="">外務省海外安全ホームページ</a></div>
+            <div class="col"><a href="">厚生労働省 感染症情報</a></div>
+          </div>
+        </div>
         <a href="" class="button">和文日程表のひな形ダウンロード</a>
       </div>
     </section>
